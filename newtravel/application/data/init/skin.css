@@ -1,0 +1,246 @@
+/* 主导航条颜色 */
+.st-nav{
+    background: #nav_color#;
+}
+/* 移入导航条颜色 */
+.st-menu > ul > li.active,
+.st-menu > ul > li:hover,
+.st-menu > ul > li.this-hover{
+    background: #nav_hover_color#;
+}
+/* 自定义导航 */
+.st-global .global-bt{
+    background: #usernav_color#;
+}
+.tabcon-item{
+    border: 1px solid #usernav_color#;
+}
+.gl-list-tabbox h3.hover{
+    border:1px solid #usernav_color#;
+    border-right:1px solid #fff;
+    border-left:3px solid #usernav_color#;
+}
+/* 底部分栏背景色 */
+.st-brand{
+    background: #footer_level_color#;
+}
+/* 线条颜色 */
+.st-top-search,
+.hotel-list-con .list-child:hover,
+.scenic-list-con .list-child:hover,
+.car-list-con .list-child:hover{
+    border: 1px solid #line_color#;
+}
+.st-top-search .st-btn{
+    background: #line_color#;
+}
+.st-slideTab .st-tabnav span.on{
+    border-bottom: 3px solid #line_color#;
+}
+.slidemenu-list dl dd a:hover{
+    border:1px solid #line_color#;
+}
+.st-cp-slideTab .st-tabnav span.on,
+.st-gl-dest-module .st-tabnav span.on{
+    border-bottom: 3px solid #line_color#;
+}
+.st-cp-slideTab .st-tabnav span.on i,
+.st-gl-dest-module .st-tabnav span.on i{
+    border-bottom: 4px solid #line_color#;
+}
+.st-hotel-search{
+    border: 3px solid #line_color#;
+}
+.ship-menu-block,
+.ship-menu-block .item-block{
+    border: 2px solid #line_color#;
+}
+.ship-menu-block > ul > li:hover .hd-block{
+    border-top: 2px solid #line_color#;
+    border-bottom: 2px solid #line_color#;
+}
+.whole-destlist .st-tabdest .st-tabnav span.on,
+.st-dest-cplist .st-tabnav span.on,
+.dest-hot-article .st-tabnav span.on,
+.t-tab-box .t-tab-nav span.on,
+.deck-block .deck-tab-nav span.on{
+    border-bottom: 2px solid #line_color#;
+}
+.route-bt h3{
+    border-left: 3px solid #line_color#;
+}
+/* 背景颜色 */
+.st-line-dh .st-dh-tit{
+    background: url(../images/st-line-ico.png) no-repeat 20px -68px #main_color#;
+}
+.st-list-search .been-tj p span,
+.lineshow-con .tabnav-list span.on,
+.day-leftnav .day-navlist li a.cur,
+.eachday .end,
+.user-side-menu ul li > a.on,
+.user-side-menu ul li > a:hover,
+.user-side-menu ul li > .son > a.on,
+.user-side-menu ul li > .son > a:hover,
+.reg-cont-box .now-reg-btn a,
+.login-account-key ul li.dl-btn a,
+.mdd-city-box .ss-mdd-box .st-tabnav span.on,
+.st-hotel-search .st-hs-btn a,
+.hotelshow-con .tabnav-list span.on,
+.scenicshow-con .tabnav-list span.on,
+.carshow-con .tabnav-list span.on,
+.st-car-search .car-search-btn a,
+.visa-tabbox-country .st-tabnav span.on,
+.list_mdd_tj dl dd a.on,
+.list_mdd_tj dl dd a:hover,
+.visashow-con .tabnav-list span.on,
+.crowd-tabbox .st-tabnav span.on,
+.ship-nav-bar span.on,
+.check-show-btn,
+.hot-dest-box .hotlist a:hover,
+.help-side-menu a.on,
+.cloud-search-side a:hover,
+.cloud-search-side a.on,
+.personal-data .sex a.on,
+.personal-data .sex a.on,
+.personal-data .save-revise a,
+.add-linkman-box .linkman-con .keep-linkman a,
+.confirm-bar,
+.confirm-block .choose-btn .confirm-btn,
+.login-bind-box .login-bind-xz a.now-bind-btn,
+.login-bind-box .login-bind-xz a.not-bind-btn,
+.login-bind-box .login-bind-xz a.direct-login-btn,
+.password-xg .confirm-btn a,
+.verify-number .verify-con .verify-btn a.qd-btn,
+.success-box .success-con .success-btn a.qd-btn,
+.getback-pw-con .getback-pw-tit,
+.getback-pw-con .getback-pw-step span.on i,
+.getback-pw-con .getback-pw-step span.on,
+.success-get-back .get-link a:hover,
+.login-small-con .login-btn a,
+.nofound-page .btn-box a.back-home-btn{
+    background: #main_color#;
+}
+.lineshow-con .tabnav-list,
+.hotelshow-con .tabnav-list,
+.scenicshow-con .tabnav-list,
+.carshow-con .tabnav-list,
+.visashow-con .tabnav-list,
+.user-order-box .tabnav,
+.ship-show-nav{
+    border-bottom: 2px solid #main_color#;
+}
+.user-order-box .tabnav span.on{
+    border: 1px solid #main_color#;
+    border-bottom: 0;
+    background: #main_color#;
+}
+.ship-show-nav span.on{
+    background: #main_color#;
+    border: 1px solid #main_color#;
+}
+.st-line-dh .st-dh-con .st-dh-item,
+.nofound-page .btn-box a{
+    border: 1px solid #main_color#;
+}
+.st-line-dh .st-dh-con h3.hover{
+    border:1px solid #main_color#;
+    border-right:1px solid #fff;
+}
+.nofound-page .btn-box a.back-home-btn{
+    color: #fff;
+}
+.nofound-page .btn-box a.back-home-btn:hover{
+    border:1px solid #main_color#;
+    background:#main_color#}
+.nofound-page .btn-box a.back-prev-btn:hover{
+    color:#fff;
+    background:#main_color#}
+
+
+
+.login-bind-box .login-bind-xz a:hover.now-bind-btn,
+.login-bind-box .login-bind-xz a:hover.not-bind-btn,
+.login-bind-box .login-bind-xz a:hover.direct-login-btn,
+.verify-number .verify-con .verify-btn a.qd-btn:hover,
+.success-box .success-con .success-btn a.qd-btn:hover{
+    background: #main_color#;
+}
+.verify-number .verify-con .verify-btn a.qd-btn,
+.success-box .success-con .success-btn a.qd-btn,
+.success-get-back .get-link a{
+    border: 1px solid #main_color#;
+}
+/* 文字颜色 */
+.st-link-way em,
+.st-slideTab .st-tabnav h3,
+.st-slideTab .st-tabnav span.on,
+.st-cp-slideTab .st-tabnav h3,
+.st-cp-slideTab .st-tabnav span.on,
+.st-line-brief .dest-tit,
+.eachday .day-tit strong,
+.eachday .day-tb th span,
+.add-travel-notes,
+.personal-data .revise,
+.safe-center .aq-con li .part4 a,
+.safe-center .aq-con li .part2 em,
+.table-list .cp-tit,
+.user-order-box .order-no-have p a,
+.user-order-box .jf-no-have p a,
+.user-order-box .zx-no-have p a,
+.safe-center .bind-con li .part3 .clear-bind,
+.getback-pw-con .getback-pw-step span em,
+.success-get-back .get-txt span,
+.success-get-back .get-link a,
+.st-hotel-home-box .hotel-tit-ico h3,
+.st-list-search .line-search-tj dl.type dd p a.on,
+.ship-menu-block .item-block h4,
+.hot-content .hot-tit h3,
+.company-hd h3,
+.company-hd span.on,
+.l-tab-box .l-tab-nav span.on,
+.choice-content .more a,
+.ship-show-block .column-block .txtCon .more,
+.msg-txt-block .attr li .half .gs,
+.t-tab-box .t-tab-nav span.on,
+.deck-block .deck-tab-nav span.on,
+.st-gl-dest-module .st-tabnav h3,
+.st-gl-dest-module .st-tabnav span.on,
+.day-prefer h3,
+.xg-read-box h3,
+.publish-comment-box h3,
+.whole-destlist .st-tabdest .st-tabnav span.on,
+.whole-destlist .st-tabdest .st-tabcon dl dd a:hover,
+.st-dest-cplist .st-tabnav span.on,
+.dest-hot-article .st-tabnav span.on,
+.help-side-menu a:hover,
+.help-showCon h1,
+.st-jieban-home-list ul li .user span,
+.show-top-con .user-msg dl dt .name,
+.article_list h3,
+.online-conlist li .hf .con a.more,
+.yj-user-comment-box .xg-tit{
+    color: #font_color#;
+}
+.l-tab-box .l-tab-nav span.on:after{
+    border-left: 4px solid #font_color#;
+}
+/* 移入文字颜色 */
+.st-top-search span a:hover,
+.sub-list a:hover,
+.hotel-jx-box ul li a.more-fx:hover,
+.st-list-search .line-search-tj dl.type dd p a:hover,
+.whole-destlist .st-tabdest .st-tabcon dl dt a:hover{
+    color: #font_hover_color#;
+}
+/* 图标颜色 */
+.st-slideTab .st-tabnav h3:before,
+.st-line-icon,
+.st-user-icon,
+.eachday .day-tb th span:before,
+.eachday .day-num:before,
+#subPrev:before,
+#subNext:before,
+.each-day:before,
+.each-day .day-msg li span:before{
+    color: #icon_color#;
+}
