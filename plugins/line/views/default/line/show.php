@@ -377,13 +377,13 @@ $(document).ready(function(){
 
 						var people = '';
                         if(row.adultprice>0){
-                            people+='{Currency_Tool::symbol()}'+row.adultprice+'/成人 ';
+                            people+='{Currency_Tool::symbol()}'+row.adultprice+'/双人间/人 ';
                         }
                         if(row.childprice>0){
-                            people+='{Currency_Tool::symbol()}'+row.childprice+'/儿童 ';
+                            people+='{Currency_Tool::symbol()}'+row.childprice+'/三人间/人 ';
                         }
                         if(row.oldprice>0){
-                            people+='{Currency_Tool::symbol()}'+row.oldprice+'/老人 ';
+                            people+='{Currency_Tool::symbol()}'+row.oldprice+'/单人间/人 ';
                         }
 
 

@@ -3,59 +3,75 @@
 .st-header{
     width: 100%;
     height: 70px;
-    background: url("../images/header-bg.png") left top repeat-x;
+    /*background: url("../images/header-bg.png") left top repeat-x;*/
+    /*background: #3c3c3c;*/
+    /*background: linear-gradient(141deg, #1395ba 0%, #1fc8db 51%, #43abc9 75%);*/
+    background-color: #fff;
+    position: relative;
 }
 .header-block{
     height: 70px;
 }
 .st-logo{
     float: left;
-    width: 240px;
-    height: 70px;
+    width: 15%;
+    height: 67px;
+    margin-top: 1px;
+    border-radius: 17px;
     overflow: hidden;
 }
+.st-logo p{
+    float: right;
+    width: 60%;
+    margin-top: 35px;
+}
 .st-logo > a{
-    display: table-cell;
-    width: 240px;
+    /*display: table-cell;*/
+    width: 40%;
     height: 70px;
     vertical-align: middle;
     text-align: center;
 }
 .st-logo > a > img{
+    
     vertical-align: middle;
 }
 /* 主导航 */
 .st-nav{
     float: left;
-    width: 560px;
+    width: 972px;
     height: 70px;
     overflow: hidden;
 }
-.st-nav li{
+.st-nav .clearfix li{
     float: left;
     height: 70px;
 }
-.st-nav li a{
+.st-nav .clearfix li a{
     display: block;
-    color: #fff;
+    color: #333;
     height: 70px;
     line-height: 70px;
     padding: 0 30px;
     font-size: 16px;
-    font-weight:bold;
+    /*font-weight:bold;*/
 }
 .st-nav li a:hover{
-    color: #28cc7b;
+    text-decoration: none;
+    /*color: #1dd0f3;*/
+    font-size: 18px;
+    border-bottom: 1px solid #e00346;
+    color: #e00346;
 }
 /* 登录 */
 .st-rig{
     float: right;
     height: 30px;
-    padding: 20px 0;
+    padding: 7px 27px;
 }
 .st-rig .phone-num{
     float: left;
-    color: #fff;
+    color: #333;
     height: 30px;
     line-height: 30px;
     font-size: 14px;
@@ -71,13 +87,13 @@
 }
 .st-rig .login-before{
     float: left;
-    color: #fff;
+    color: #333;
     height: 30px;
     padding-left: 30px;
 }
 .st-rig .login-before a{
     display: inline-block;
-    color: #fff;
+    color: #333;
     height: 30px;
     line-height: 30px;
     padding: 0 5px;
@@ -86,7 +102,7 @@
 }
 .st-rig .login-after{
     float: left;
-    color: #fff;
+    color: #333;
     max-width: 200px;
     height: 30px;
     line-height: 30px;
@@ -97,5 +113,5 @@
     font-size: 14px;
 }
 .st-rig .login-after a{
-    color: #fff;
+    color: #333;
 }

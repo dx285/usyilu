@@ -2,7 +2,9 @@
 /*重置CSS*/
 body,
 html{
-	font-size:12px;}
+	font-size:12px;
+	font-family: "Helvetica Neue","Open Sans","Microsoft YaHei","微软雅黑","Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
 body,
 html,
 div,
@@ -25,10 +27,12 @@ td{
 	border:0;
 	outline:none;
 	word-break: break-all;
-	font-family:'微软雅黑'}
+	font-family: "Helvetica Neue","Open Sans","Microsoft YaHei","微软雅黑","Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
 select,textarea{
 	outline:none;
-	font-family:'微软雅黑'}
+	font-family: "Helvetica Neue","Open Sans","Microsoft YaHei","微软雅黑","Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
 table {
 	border-collapse:collapse;
 	border-spacing:0}
@@ -41,7 +45,7 @@ ol,ul {
 	list-style:none;
 	list-style-position:inside}
 a{
-	color:#333;
+	color:#ff3573;
 	text-decoration:none}
 caption,th{
 	text-align:left;}
@@ -119,8 +123,8 @@ abbr,acronym{
 	clear:both;
 	overflow:hidden}
 .st-guide{
-    color: #999;
-	height: 30px;
+    color: #fff;
+	height: 0px;
 	line-height: 30px;
 	padding: 10px 0;
 	overflow: hidden;
@@ -128,10 +132,10 @@ abbr,acronym{
 	text-overflow:ellipsis
 }
 .st-guide a{
-	color: #666;
+	color: #fff;
 }
 .st-guide a:hover{
-	color: #31a5e7;
+	color: #fff;
 }
 .st-main-page{
 	float:left;
@@ -227,22 +231,26 @@ abbr,acronym{
 /*搜索*/
 .st-list-search{
 	float:left;
-	width:903px;
+	width:930px;
 	border:1px solid #d8d8d8}
 .st-list-search .been-tj{
 	float:left;
-	width:903px;
+	width:930px;
 	min-height:44px;
 	background:#f9f9f9}
 .st-list-search .been-tj strong,
 .st-list-search .line-search-tj dl dt{
 	float:left;
-	color:#333;
-	width:83px;
+	color:#555;
+	font-size: 16px;
+	width:92px;
 	height:24px;
 	line-height:24px;
 	margin:10px 0;
 	text-align:right}
+.st-list-search .been-tj .chooseitems{
+	padding-left: 11px;
+}
 .st-list-search .been-tj p,
 .st-list-search .line-search-tj dl dd{
 	float:left;
@@ -256,7 +264,9 @@ abbr,acronym{
 	line-height:24px;
 	padding:0 8px 0 10px;
 	margin:0 10px 10px 0;
-	background:#00b7ee}
+	background:#00b7ee;
+	border-radius: 4px;
+}
 .st-list-search .been-tj p span i{
 	float:right;
 	display:block;
@@ -276,7 +286,7 @@ abbr,acronym{
 .st-list-search .line-search-tj,
 .st-list-search .line-search-tj dl{
 	float:left;
-	width:903px}
+	width:930px}
 .st-list-search .line-search-tj dl{
 	border-bottom:1px solid #d8d8d8}
 .st-list-search .line-search-tj dl.bor_0{
@@ -289,15 +299,19 @@ abbr,acronym{
 }
 .st-list-search .line-search-tj dl.type dd p a{
     float:left;
-    color:#333;
+    color:#777;
     height:24px;
     line-height:24px;
+	font-size: 13.5px;
     /*margin: 2px 0;*/
     padding: 0 12px;
 }
 .st-list-search .line-search-tj dl.type dd p a:hover,
 .st-list-search .line-search-tj dl.type dd p a.on{
-	color:#00b7ee}
+	color:#00b7ee;
+	background-color: #eee;
+	border-radius: 4px;
+}
 .st-list-search .line-search-tj dl.type dd em{
 	float:left;
 	width:100px;
@@ -394,7 +408,7 @@ abbr,acronym{
 	margin:-3px 5px 0 0;
 	background:url(../images/st-line-ico.png) no-repeat}
 .st-sort-menu .switch-show a.on{
-	color:#f60;
+	color:#ff3573;
 	background:#ebebeb}
 .st-sort-menu .switch-show a i.lt{
 	background-position:0 -180px}

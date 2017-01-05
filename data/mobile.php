@@ -2,8 +2,8 @@
 return array (
   'domain' => 
   array (
-    'mobile' => 'http://www.usyilu.com',
-    'main' => 'http://usyilu.com',
+    'mobile' => 'http://usyilu.com',
+    'main' => 'http://www.usyilu.com',
   ),
   'delimiterLeft' => '#mobile start',
   'delimiterRight' => '#mobile end',

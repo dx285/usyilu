@@ -6,7 +6,7 @@
     <title>{if !empty($destinfo['seotitle'])}{$destinfo['seotitle']}{else}{$searchtitle}{/if}-{$GLOBALS['cfg_webname']}</title>
     {$destinfo['keyword']}
     {$destinfo['description']}
-    {include "pub/varname"}
+<!--    {include "pub/varname"}-->
     {Common::css_plugin('car.css','car')}
     {Common::css('base.css,extend.css')}
     {Common::js('jquery.min.js,base.js,common.js,delayLoading.min.js')}
@@ -21,7 +21,71 @@
             <a href="{$cmsurl}">{$GLOBALS['cfg_indexname']}</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="{$cmsurl}cars/">{$channelname}</a>
 
         </div><!--面包屑-->
-    
+
+        <ul class="customizeNav">
+
+            {st:channel action="pc" row="4"}
+            {loop $data $row}
+            {if $row['url']=="http://www.usyilu.com/lines/"}
+
+<!--                <li class="item">-->
+<!--                    <a href="{$row['url']}all">接送</a>-->
+<!--                <li class="item">-->
+<!--                    <a href="{$row['url']}all">多日游</a>-->
+<!--                </li>-->
+<!--                <li class="item" >-->
+<!--                    <a href="{$row['url']}all" >一日游</a>-->
+<!--                </li>-->
+<!--                <li class="item">-->
+<!--                    <a href="{$row['url']}all">自驾游</a>-->
+<!--                </li>-->
+            {elseif $row['url']=="http://www.usyilu.com/cars/"}
+<!--            <li class="item" style="background-color: #00a0de">-->
+<!--                {if $row['kind']==2}-->
+<!--                <i class="st-hot-ico"></i><s></s>-->
+<!--                {elseif $row['kind']==3}-->
+<!--                <i class="st-jing-ico"></i><s></s>-->
+<!--                {elseif $row['kind']==4}-->
+<!--                <i class="st-jian-ico"></i><s></s>-->
+<!--                {/if}-->
+<!---->
+<!--                <a href="{$row['url']}all" style="color: white">一路接送机</a>-->
+<!---->
+<!--            </li>-->
+            {elseif $row['url']=="http://www.usyilu.com/customize/"}
+<!--            <li class="item">-->
+<!--                {if $row['kind']==2}-->
+<!--                <i class="st-hot-ico"></i><s></s>-->
+<!--                {elseif $row['kind']==3}-->
+<!--                <i class="st-jing-ico"></i><s></s>-->
+<!--                {elseif $row['kind']==4}-->
+<!--                <i class="st-jian-ico"></i><s></s>-->
+<!--                {/if}-->
+<!---->
+<!--                <a href="{$row['url']}">{$row['title']}</a>-->
+<!---->
+<!--            </li>-->
+            {else}
+<!--            <li class="item">-->
+<!--                {if $row['kind']==2}-->
+<!--                <i class="st-hot-ico"></i><s></s>-->
+<!--                {elseif $row['kind']==3}-->
+<!--                <i class="st-jing-ico"></i><s></s>-->
+<!--                {elseif $row['kind']==4}-->
+<!--                <i class="st-jian-ico"></i><s></s>-->
+<!--                {/if}-->
+<!---->
+<!--                <a href="{$row['url']}all">{$row['title']}</a>-->
+<!---->
+<!--            </li>-->
+            {/if}
+            {/loop}
+            {/st}
+
+        </ul>
+        <!-- End Di  test -->
+
+
       <div class="st-main-page">
       	<div class="st-carlist-box">
           <div class="st-list-search">
@@ -35,7 +99,7 @@
               </p>
             </div>
             <div class="line-search-tj">
-                <dl class="type">
+                <dl class="type" style="display: none" >
                     <dt>目的地：</dt>
                     <dd>
                         <p>
@@ -52,6 +116,7 @@
                 </dl>
               <dl class="type">
                 <dt>车型：</dt>
+
                 <dd>
                 	<p>
                         {st:car action="kind_list" row="10"}
@@ -68,18 +133,20 @@
                 {st:attr action="query" flag="grouplist" typeid="$typeid" return="grouplist"}
 
                 {loop $grouplist $group}
-                <dl class="type">
-                    <dt>{$group['attrname']}：</dt>
-                    <dd>
-                        <p>
-                            {st:attr action="query" flag="childitem" typeid="$typeid" groupid="$group['id']" return="attrlist"}
-                            {loop $attrlist $attr}
-                            <a href="{Model_Car::get_search_url($attr['id'],'attrid',$param)}" {if Common::check_in_attr($param['attrid'],$attr['id'])!==false}class="on"{/if}>{$attr['attrname']}</a>
-                            {/loop}
-                            {/st}
-                        </p>
-                    </dd>
-                </dl>
+                    {if $group['attrname'] == '优势服务'}
+                    <dl class="type">
+                        <dt>{$group['attrname']}：</dt>
+                        <dd>
+                            <p>
+                                {st:attr action="query" flag="childitem" typeid="$typeid" groupid="$group['id']" return="attrlist"}
+                                {loop $attrlist $attr}
+                                <a href="{Model_Car::get_search_url($attr['id'],'attrid',$param)}" {if Common::check_in_attr($param['attrid'],$attr['id'])!==false}class="on"{/if}>{$attr['attrname']}</a>
+                                {/loop}
+                                {/st}
+                            </p>
+                        </dd>
+                    </dl>
+                    {/if}
                 {/loop}
                 {/st}
             </div>
@@ -222,7 +289,6 @@
       </div>
     
     </div>
-
 
 {request "pub/footer"}
 

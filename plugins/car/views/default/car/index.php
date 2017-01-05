@@ -10,61 +10,267 @@
     {if $seoinfo['description']}
     <meta name="description" content="{$seoinfo['description']}" />
     {/if}
+
+    <!--    <link rel="stylesheet" href="/tools/js/DatePicker/jquery-ui-timepicker/include/ui-1.10.0/ui-lightness/jquery-ui-1.10.0.custom.min.css" type="text/css">-->
+<!--    <link rel="stylesheet" href="/tools/js/DatePicker/jquery-ui-timepicker/jquery.ui.timepicker.css">-->
+<!--    <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/include/jquery-1.9.0.min.js"></script>-->
+<!--    <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/include/ui-1.10.0/jquery.ui.core.min.js"></script>-->
+<!--    <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/include/ui-1.10.0/jquery.ui.position.min.js"></script>-->
+<!--    <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/include/ui-1.10.0/jquery.ui.tabs.min.js"></script>-->
+<!--    <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/include/ui-1.10.0/jquery.ui.widget.min.js"></script>-->
+
+
+    <script type="text/javascript" src="/tools/js/DatePicker/WdatePicker.js"></script>
+
+
+
+
+    <!---->
+
     {include "pub/varname"}
     {Common::css_plugin('car.css','car')}
     {Common::css('base.css,extend.css')}
     {Common::js('jquery.min.js,base.js,common.js,SuperSlide.min.js,template.js,delayLoading.min.js')}
+
+
+    <link rel="stylesheet" href="/tools/js/DatePicker/jquery-timepicker2/jonthornton-jquery-timepicker-0aea507/jquery.timepicker.css">
+    <script type="text/javascript" src="/tools/js/DatePicker/jquery-timepicker2/jonthornton-jquery-timepicker-0aea507/jquery.timepicker.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 
 </head>
 
 <body>
 
  {request "pub/header"}
-  
+
+
   <div class="big">
   	<div class="wm-1200">
     
-      <div class="st-guide">
-            <a href="{$cmsurl}">{$GLOBALS['cfg_indexname']}</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;{$channelname}
-      </div><!--面包屑-->
-      
+<!--      <div class="st-guide">-->
+<!--            <a href="{$cmsurl}">{$GLOBALS['cfg_indexname']}</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;{$channelname}-->
+<!--      </div><!--面包屑-->
+
+
       <div class="st-car-home-top">
-				<div class="st-car-search">
 
-        	<dl class="search-dl">
-          	<dt>车型</dt>
-            <dd>
-              <input type="text" class="cs-text up-ico carkind" placeholder="车型" data-id="0" />
-              <div class="cs-select-box">
-                {st:car action="kind_list" row="10"}
-                  {loop $data $kind}
-                    <span data-id="{$kind['id']}">{$kind['title']}</span>
-                  {/loop}
-                {/st}
+          <ul class="tab">
+              <li><a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openCity(event, 'jieji')">接机</a></li>
+              <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'songji')">送机</a></li>
+          </ul>
 
-              </div>
-            </dd>
-          </dl>
-           {st:attr action="query" flag="grouplist" row="3" typeid="$typeid" return="grouplist"}
+        <div id="jieji" class="st-car-search tabcontent">
+
+<!--        	<dl class="search-dl">-->
+<!--          	<dt>选择车型</dt>-->
+<!--            <dd>-->
+<!--              <input type="text" class="cs-text up-ico carkind" placeholder="车选择型" data-id="0" />-->
+<!--              <div class="cs-select-box">-->
+<!--                {st:car action="kind_list" row="10"}-->
+<!--                  {loop $data $kind}-->
+<!--                    <span data-id="{$kind['id']}">{$kind['title']}</span>-->
+<!--                  {/loop}-->
+<!--                {/st}-->
+<!---->
+<!--              </div>-->
+<!--            </dd>-->
+<!--          </dl>-->
+           {st:attr action="query" flag="grouplist" row="8" typeid="$typeid" return="grouplist"}
             {loop $grouplist $group}
-        	<dl class="search-dl">
-          	<dt>{$group['attrname']}</dt>
-            <dd>
-            	<input type="text" class="cs-text up-ico searchattr" placeholder="{$group['attrname']}" data-id="0" />
-              <div class="cs-select-box">
-                  {st:attr action="query" flag="childitem" groupid="$group['id']" row="10" typeid="$typeid"}
-                      {loop $data $r}
+            {if $group['attrname'] == '送机机场' or $group['attrname'] == '出发地点'}
+            {elseif $group['attrname'] == '邮编'}
+                <dl class="search-dl">
+                    <dt>{$group['attrname']}</dt>
+                    <dd>
+                        <input type="text" class="cs-text up-ico searchattr" id="zipcode_jie" placeholder="{$group['attrname']}" data-id="0" />
+                      <div class="cs-select-box">
+                          {st:attr action="query" flag="childitem" groupid="$group['id']" row="10" typeid="$typeid"}
+                              {loop $data $r}
+                                <span data-id="{$r['id']}">{$r['title']}</span>
+                              {/loop}
+                          {/st}
+                          <script type="text/javascript">
+                              var complex = <?php echo json_encode($data); ?>;
+                              console.log("complex: "+complex);
+                          </script>
+                      </div>
+                    </dd>
+                </dl>
+            {elseif $group['attrname'] == '送达地点'}
+            <dl class="search-dl">
+                <dt>{$group['attrname']}</dt>
+                <dd>
+                    <input type="text" class="cs-text up-ico searchattr" id="autocomplete1" placeholder="{$group['attrname']}" " data-id="0" />
+                    <div class="cs-select-box">
+<!--                        {st:attr action="query" flag="childitem" groupid="$group['id']" row="10" typeid="$typeid"}-->
+<!--                        {loop $data $r}-->
                         <span data-id="{$r['id']}">{$r['title']}</span>
-                      {/loop}
-                  {/st}
+<!--                        {/loop}-->
+<!--                        {/st}-->
 
-              </div>
-            </dd>
-          </dl>
-          {/loop}
+                    </div>
+                </dd>
+            </dl>
+            {elseif $group['attrname'] != '优势服务'}
+                <dl class="search-dl">
+                    <dt>{$group['attrname']}</dt>
+                    <dd>
+                        <input type="text" class="cs-text up-ico searchattr" placeholder="{$group['attrname']}" data-id="0" />
+                        <div class="cs-select-box">
+                            {st:attr action="query" flag="childitem" groupid="$group['id']" row="10" typeid="$typeid"}
+                            {loop $data $r}
+                            <span data-id="{$r['id']}">{$r['title']}</span>
+                            {/loop}
+                            {/st}
+                        </div>
+                    </dd>
+                </dl>
+            {/if}
 
-          <div class="car-search-btn"><a href="javascript:;">搜索</a></div>
-        </div><!--租车搜索-->
+            {/loop}
+            <dl class="search-dl" style="display: none; ">
+
+                <dt>车型选择</dt>
+                <dd>
+                    <input type="text" class="cs-text up-ico carkind" placeholder="车型选择" data-id="0" />
+                    <div class="cs-select-box">
+                        {st:car action="kind_list" row="10"}
+                        {loop $data $kind}
+                            <span data-id="{$kind['id']}">{$kind['title']}</span>
+                        {/loop}
+                        {/st}
+
+                    </div>
+                </dd>
+            </dl>
+            <dl class="search-dl">
+                <dt class="item">选择日期</dt>
+                <dd class="con"><input type="text" class="custom-default-text up-ico-day noblank endtime_jieji" placeholder="选择日期" name="days" style="width: 95%; font-size:14px; " /></dd>
+            </dl>
+
+            <dl class="search-dl">
+                <dt class="item">选择时间</dt>
+                <dd class="con"><input type="text" class="custom-default-text up-ico-day pickTime" placeholder="选择时间" id="jieji-time-inputs" name="more" style="width: 95%; font-size:14px;" /></dd>
+            </dl>
+
+            <div class="car-search-btn"><a href="javascript:;">搜索</a></div>
+        </div><!--接车搜索-->
+
+          <!--送车搜索-->
+          <div id="songji" class="st-car-search tabcontent">
+
+<!--                <dl class="search-dl">-->
+<!--                    <dt>选择车型</dt>-->
+<!--                  <dd>-->
+<!--                    <input type="text" class="cs-text up-ico carkind" placeholder="车选择型" data-id="0" />-->
+<!--                    <div class="cs-select-box">-->
+<!--                      {st:car action="kind_list" row="10"}-->
+<!--                        {loop $data $kind}-->
+<!--                          <span data-id="{$kind['id']}">{$kind['title']}</span>-->
+<!--                        {/loop}-->
+<!--                      {/st}-->
+<!---->
+<!--                    </div>-->
+<!--                  </dd>-->
+<!--                </dl>-->
+              {st:attr action="query" flag="grouplist" row="8" typeid="$typeid" return="grouplist"}
+              {loop $grouplist $group}
+              {if $group['attrname'] == '邮编'}
+              <dl class="search-dl">
+                  <dt>{$group['attrname']}</dt>
+                  <dd>
+                      <input type="text" class="cs-text up-ico searchattr" id="zipcode_song" placeholder="{$group['attrname']}" data-id="0" />
+                      <div class="cs-select-box">
+                          {st:attr action="query" flag="childitem" groupid="$group['id']" row="10" typeid="$typeid"}
+                          {loop $data $r}
+                          <span data-id="{$r['id']}">{$r['title']}</span>
+                          {/loop}
+                          {/st}
+                          <script type="text/javascript">
+                              var complex = <?php echo json_encode($data); ?>;
+                              console.log("complex: "+complex);
+                          </script>
+
+                      </div>
+                  </dd>
+              </dl>
+              {elseif $group['attrname'] == '出发地点'}
+              <dl class="search-dl">
+                  <dt>{$group['attrname']}</dt>
+                  <dd>
+                      <input type="text" class="cs-text up-ico searchattr" placeholder="{$group['attrname']}" id="autocomplete2" onFocus="geolocate1()" data-id="0" />
+                      <div class="cs-select-box">
+                          {st:attr action="query" flag="childitem" groupid="$group['id']" row="10" typeid="$typeid"}
+                          {loop $data $r}
+                          <span data-id="{$r['id']}">{$r['title']}</span>
+                          {/loop}
+                          {/st}
+                          <script type="text/javascript">
+                              var complex = <?php echo json_encode($data); ?>;
+                              console.log("complex: "+complex);
+                          </script>
+
+                      </div>
+                  </dd>
+              </dl>
+              {elseif $group['attrname'] == '送机机场'}
+              <dl class="search-dl">
+                  <dt>{$group['attrname']}</dt>
+                  <dd>
+                      <input type="text" class="cs-text up-ico searchattr" placeholder="{$group['attrname']}" data-id="0" />
+                      <div class="cs-select-box">
+                          {st:attr action="query" flag="childitem" groupid="$group['id']" row="10" typeid="$typeid"}
+                          {loop $data $r}
+                          <span data-id="{$r['id']}">{$r['title']}</span>
+                          {/loop}
+                          {/st}
+                          <script type="text/javascript">
+                              var complex = <?php echo json_encode($data); ?>;
+                              console.log("complex: "+complex);
+                          </script>
+
+                      </div>
+                  </dd>
+              </dl>
+              {/if}
+
+              {/loop}
+              <dl class="search-dl" style="display: none; ">
+                  <?php
+                  $_COOKIE['varname'] = "999";
+                  //                    echo $_COOKIE['varname'];
+                  setcookie("TestCookie","919",time()+3600*24);
+                  //                    echo $_COOKIE['TestCookie'];
+                  ?>
+                  <!--                <dt>车型选择</dt>-->
+                  <dt>车型选择</dt>
+                  <dd>
+                      <input type="text" class="cs-text up-ico carkind" placeholder="车型选择" data-id="0" />
+                      <div class="cs-select-box">
+                          {st:car action="kind_list" row="10"}
+                          {loop $data $kind}
+                          <span data-id="{$kind['id']}">{$kind['title']}</span>
+                          {/loop}
+                          {/st}
+
+                      </div>
+                  </dd>
+              </dl>
+              <dl class="search-dl">
+                  <dt class="item">选择日期</dt>
+                  <dd class="con"><input type="text" class="custom-default-text up-ico-day noblank2 endtime_songji" placeholder="选择日期" name="days" style="width: 95%; font-size:14px; " /></dd>
+              </dl>
+
+              <dl class="search-dl">
+                  <dt class="item">选择时间</dt>
+                  <dd class="con"><input type="text" class="custom-default-text up-ico-day pickTime" placeholder="选择时间" id="songji-time-inputs" name="more" style="width: 95%; font-size:14px;" /></dd>
+              </dl>
+
+              <div class="car-search-btn-songji"><a href="javascript:;">搜索</a></div>
+          </div><!--送车搜索-->
+
+
         <div id="st-car-slideBox" class="st-car-slideBox">
           <div class="hd">
             <ul>
@@ -77,7 +283,7 @@
           <div class="bd">
             <ul>
                 {loop $carad['aditems'] $v}
-                    <li><a href="{$v['adlink']}" target="_blank"><img src="{Product::get_lazy_img()}" original-src="{Common::img($v['adsrc'],815,320)}" /></a></li>
+                    <li><a href="{$v['adlink']}" target="_blank"><img src="{Product::get_lazy_img()}" original-src="{Common::img($v['adsrc'])}" /></a></li>
                 {/loop}
             </ul>
           </div>
@@ -86,8 +292,15 @@
           <a class="next" href="javascript:void(0)"></a>
         </div><!--租车首页焦点图-->
       </div>
-      
-      <div class="st-cp-slideTab">
+
+
+<!--        <div id="locationField">-->
+<!--            <input id="autocomplete" placeholder="Enter your address"-->
+<!--                   onFocus="geolocate1()" type="text"/>-->
+<!--        </div>-->
+
+        
+        <div class="st-cp-slideTab">
       	<div class="st-tabnav">
           <h3>热门推荐</h3>
           {st:car action="kind_list" return="carkind"}
@@ -157,12 +370,8 @@
                                concontain.html(licontent);
                                concontain.data(carkindid,licontent);
 
-
-
                         });
-
                     }
-
                 })
             })
         </script>
@@ -202,6 +411,123 @@
 
  {request "pub/flink"}
 
+<!-- <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/jquery.ui.timepicker.js" />-->
+
+ <script>
+     // This example displays an address form, using the autocomplete feature
+     // of the Google Places API to help users fill in the information.
+
+     // This example requires the Places library. Include the libraries=places
+     // parameter when you first load the API. For example:
+     // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+    var zipcodeValid = true;
+//     var placeSearch, autocomplete1, autocomplete2, placeValid;
+//     var componentForm = {
+//
+//         postal_code: 'short_name'
+//
+//     };
+//
+//     function initAutocomplete() {
+//         // Create the autocomplete object, restricting the search to geographical
+//         // location types.
+//         autocomplete1 = new google.maps.places.Autocomplete(
+//             /** @type {!HTMLInputElement} */(document.getElementById('autocomplete1')),
+//             {types: ['geocode']});
+//
+//         autocomplete2 = new google.maps.places.Autocomplete(
+//             /** @type {!HTMLInputElement} */(document.getElementById('autocomplete2')),
+//             {types: ['geocode']});
+//
+//         // When the user selects an address from the dropdown, populate the address
+//         // fields in the form.
+//         autocomplete1.addListener('place_changed', fillInAddress1);
+//         autocomplete2.addListener('place_changed', fillInAddress2);
+//     }
+//
+//     function fillInAddress1() {
+//         // Get the place details from the autocomplete object.
+//         var place = autocomplete1.getPlace();
+//         console.log("user select place: " + JSON.stringify(place));
+//         console.log("user select components: " + place.address_components);
+//         if(place.address_components && place.address_components !== "null" && place.address_components !== "undefined") {
+//             console.log("place is valid");
+//
+//
+//             // Get each component of the address from the place details
+//             // and fill the corresponding field on the form.
+//             for (var i = 0; i < place.address_components.length; i++) {
+//                 var addressType = place.address_components[i].types[0];
+//
+//                 if (addressType == 'postal_code') {
+//                     console.log("component val: " + place.address_components[i][componentForm[addressType]]);
+//                     var val = place.address_components[i][componentForm[addressType]];
+//                     document.getElementById('zipcode_jie').value = val;
+//                 }
+//             }
+//             placeValid = true;
+//         }else{
+//             console.log("place not valid");
+//             placeValid = false;
+//             return false;
+//         }
+//     }
+//
+//     function fillInAddress2() {
+//         // Get the place details from the autocomplete object.
+//         var place = autocomplete2.getPlace();
+//
+//         // Get each component of the address from the place details
+//         // and fill the corresponding field on the form.
+//         for (var i = 0; i < place.address_components.length; i++) {
+//             var addressType = place.address_components[i].types[0];
+//
+//             if(addressType=='postal_code'){
+//                 console.log("component val: "+place.address_components[i][componentForm[addressType]]);
+//                 var val = place.address_components[i][componentForm[addressType]];
+//                 document.getElementById('zipcode_song').value = val;
+//             }
+//         }
+//     }
+//
+//     // Bias the autocomplete object to the user's geographical location,
+//     // as supplied by the browser's 'navigator.geolocation' object.
+//     function geolocate1() {
+//         if (navigator.geolocation) {
+//             navigator.geolocation.getCurrentPosition(function(position) {
+//                 var geolocation = {
+//                     lat: position.coords.latitude,
+//                     lng: position.coords.longitude
+//                 };
+//                 var circle = new google.maps.Circle({
+//                     center: geolocation,
+//                     radius: position.coords.accuracy
+//                 });
+//                 autocomplete1.setBounds(circle.getBounds());
+//                 autocomplete2.setBounds(circle.getBounds());
+//             });
+//         }
+//     }
+//
+//
+//     $("#autocomplete1").focus(function() {
+//
+//         console.log('in');
+//
+//     }).blur(function() {
+//
+//         console.log('out');
+//
+//         console.log("out get current address: "+ document.getElementById('autocomplete1').value);
+//         fillInAddress1();
+//     });
+
+
+ </script>
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeQdRCMmFcS4EBmFpGk-hzF-dm-9p6gvU&libraries=places&callback=initAutocomplete" async defer></script>-->
+
+
  <script>
      $(function(){
          //租车首页焦点图
@@ -235,19 +561,67 @@
              $(this).parent().prev().attr('data-id',value);
              $(this).parent().hide();
          });
-         //搜索
+
+         //接机搜索
          $(".car-search-btn").click(function(){
-             var carkind = $(".carkind").attr('data-id');
-             var attrid = '';
-             var attrArr = [];
-              $('.searchattr').each(function(i,obj){
-                  attrArr.push($(obj).attr('data-id'))
-              })
-             attrid = attrArr.join('_',attrArr);
-             var url = SITEURL+'cars/all-'+carkind+'-'+attrid;
-             location.href = url;
+
+
+             if (checkForm()) {
+
+                 console.log("checkForm return true");
+                 var carkind = $(".carkind").attr('data-id');
+                 var attrid = '';
+                 var attrArr = [];
+                 console.log("carkind: " + carkind);
+
+                 $('.searchattr').each(function (i, obj) {
+                     attrArr.push($(obj).attr('data-id'))
+                 })
+
+                 attrid = attrArr.join('_', attrArr);
+                 console.log("carkind: " + attrid);
+
+//             var url = SITEURL+'cars/all-'+carkind+'-'+attrid;
+                 var url = SITEURL + 'cars/all-' + carkind + '-' + attrid;
+                 location.href = url;
+                 console.log("carkind: " + carkind);
+                 console.log("attrid: " + attrid);
+             }else {
+                 console.log("checkForm return false");
+             }
 
          })
+
+         //送机搜索
+         $(".car-search-btn-songji").click(function(){
+
+
+             if (checkForm()) {
+
+                 console.log("checkForm return true");
+                 var carkind = $(".carkind").attr('data-id');
+                 var attrid = '';
+                 var attrArr = [];
+                 console.log("carkind: " + carkind);
+
+                 $('.searchattr').each(function (i, obj) {
+                     attrArr.push($(obj).attr('data-id'))
+                 })
+
+                 attrid = attrArr.join('_', attrArr);
+                 console.log("carkind: " + attrid);
+
+//             var url = SITEURL+'cars/all-'+carkind+'-'+attrid;
+                 var url = SITEURL + 'cars/all-' + carkind + '-' + attrid;
+                 location.href = url;
+                 console.log("carkind: " + carkind);
+                 console.log("attrid: " + attrid);
+             }else {
+                 console.log("checkForm return false");
+             }
+
+         })
+
          $(document).mouseup(function(e){
              var _con = $('.cs-select-box');   // 设置目标区域
              if(!_con.is(e.target) && _con.has(e.target).length === 0){ // Mark 1
@@ -256,7 +630,135 @@
          });
 
      })
+
+     function checkForm() {
+
+         $(".noblank").each(function (index, element) {
+             var val = $(element).val();
+             console.log("val: " + val);
+             val = $.trim(val);
+
+             document.cookie = "daytime="+val;
+             //alert(document.cookie);
+             console.log("after trim val: " + val);
+             var date_regex = /^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/ ;
+
+             console.log("regre date test: "+ date_regex.test(val));
+
+             if (!val || !(date_regex.test(val))) {
+                 var offset = $(element).offset();
+                 $(window).scrollTop(offset.top - 100);
+                 $(element).css("border", "1px solid red");
+                 isvalidateDate = false;
+//                 return false;
+             }
+             else {
+                 $(element).css("border", "1px solid #dcdcdc");
+                 isvalidateDate = true;
+             }
+         });
+
+         $(".pickTime").each(function (index, element) {
+             var val = $(element).val();
+             console.log("pickTime: " + val);
+             val = $.trim(val);
+
+             document.cookie = "pickTime="+val;
+             alert(document.cookie);
+             console.log("after trim pickTime: " + val);
+
+             var time_regex = /^(0?[1-9]|1[012])(:[0-5]\d)[APap][mM]$/;
+             console.log("regre time test: "+ time_regex.test(val));
+             if (!val || !(time_regex.test(val))) {
+                 console.log("pickTime val is not valid");
+                 var offset = $(element).offset();
+                 $(window).scrollTop(offset.top - 100);
+                 $(element).css("border", "1px solid red");
+                 isvalidateTime = false;
+                 //return false;
+             }
+             else {
+                 console.log("pickTime val is valid");
+                 $(element).css("border", "1px solid #dcdcdc");
+                 //return true;
+                 isvalidateTime = true;
+             }
+//             console.log("pickTime Finish false");
+//             return false;
+         });
+         
+         console.log("return true here: " + isvalidateDate +", " +isvalidateTime + ", "+zipcodeValid);
+
+         if(!isvalidateDate){
+             alert("您输入的日期不正确, 请重新填写正确日期。");
+             return false;
+         }else if(!isvalidateTime){
+             alert("您输入的时间不正确, 请重新填写正确时间。");
+             return false;
+         }else if(!zipcodeValid){
+             alert("您输入的地址不正确, 请重新填写正确地址。");
+             $('#autocomplete1').css("border", "1px solid red");
+             return false;
+         }
+
+         return (isvalidateDate & isvalidateTime & zipcodeValid);
+     }
  </script>
+
+<script>
+    //结束时间
+    $(".endtime_jieji").click(function(){
+        WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd',minDate:'%y-%M-%d'});
+        console.log("end time pick");
+    })
+
+
+    $(".endtime_songji").click(function(){
+        WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd',minDate:'%y-%M-%d'});
+        console.log("end time pick");
+    })
+
+
+    //结束时间2
+
+//    $('#timepicker').timepicker();
+
+//    $(document).ready(function() {
+//        $('#timepicker').timepicker( {
+//            showAnim: 'blind'
+//        });
+//    });
+
+    $('#jieji-time-inputs').timepicker({ 'step': 15 });
+    $('#songji-time-inputs').timepicker({ 'step': 15 });
+
+
+    document.getElementById("defaultOpen").click();
+
+    function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+
+</script>
+
 
 </body>
 </html>

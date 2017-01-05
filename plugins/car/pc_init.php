@@ -25,6 +25,7 @@ Route::set('car_book', 'cars/book', array())->defaults(array(
 //租车列表
 Route::set('car_list', 'cars/(<destpy>)(<sign>)(-<carkindid>)(-<sorttype>)(-<attrid>)(-<p>)',
     array(
+
         'destpy' => '[0-9a-zA-Z]+',
         'sign'=>'\/?',
         'carkindid' => '[0-9]+',

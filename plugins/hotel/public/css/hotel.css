@@ -1012,6 +1012,42 @@
 
 
 
+/* Di */
+.customizeNav{
+	border:1px solid #e7e7e7;
+	background-color: #f4f4f4!important;
+	width: 903px;
+}
+
+.customizeNav > .item{
+	display: inline-block;
+	color: white;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 30px;
+	font-size: 16px;
+	font-weight:bold;
+	text-align: center;
+	box-sizing: border-box;
+	/*background-color: #f4f4f4!important;*/
+}
+
+.customizeNav > .item:hover{
+	background-color: #d8d8d8;
+	/*background-color: #008CBA;*/
+	cursor: pointer;
+}
+
+.customizeNav > .item > a{
+	color: #666;
+}
+
+
+
+/*.customizeNav > .item > a:active{*/
+/*color: white;*/
+/*background-color: #008CBA;*/
+/*}*/
 
 
 

@@ -2,7 +2,7 @@
 
 class Controller_Admin_Line extends Stourweb_Controller
 {
-    private $_jiaotong = array('飞机', '汽车', '火车', '轮船');
+    private $_jiaotong = array('凯迪拉克SUV', '美国福特15座', '高顶奔驰15座','丰田商务8人座','明星保姆9座','福特12座商旅车');
     private $_typeid = 1;
 
     public function before()

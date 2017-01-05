@@ -719,15 +719,21 @@ class Model_Line extends ORM
     {
         if ($lowerprice != '' && $highprice != '')
         {
-            $title = '&yen;' . $lowerprice . '元-' . '&yen;' . $highprice . '元';
+//            $title = '&yen;' . $lowerprice . '元-' . '&yen;' . $highprice . '元';
+            $title = '$' . $lowerprice . ' - ' . '$' . $highprice . '';
+
         }
         else if ($lowerprice == '')
         {
-            $title = '&yen;' . $highprice . '元以下';
+//            $title = '&yen;' . $highprice . '元以下';
+            $title = '$' . $highprice . '以下';
+
         }
         else if ($highprice == '')
         {
-            $title = '&yen;' . $lowerprice . '元以上';
+//            $title = '&yen;' . $lowerprice . '元以上';
+            $title = '$' . $lowerprice . '以上';
+
         }
         return $title;
     }

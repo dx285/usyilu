@@ -45,6 +45,69 @@
             &gt;&nbsp;&nbsp;<a href="{$cmsurl}hotels/{$pre['pinyin']}/">{$pre['kindname']}</a>
             {/loop}
       </div><!--面包屑-->
+
+        <!-- Di  要不要把这块导航放到一个独立的文件里 -->
+        <ul class="customizeNav">
+
+            {st:channel action="pc" row="4"}
+            {loop $data $row}
+            {if $row['url']=="http://www.usyilu.com/lines/"}
+            <li class="item">
+                <a href="{$row['url']}all">接送</a>
+            <li class="item">
+                <a href="{$row['url']}all">多日游</a>
+            </li>
+            <li class="item" >
+                <a href="{$row['url']}all" >一日游</a>
+            </li>
+            <li class="item">
+                <a href="{$row['url']}all">自驾游</a>
+            </li>
+            {elseif $row['url']=="http://www.usyilu.com/hotels/"}
+                <li class="item" style="background-color: #00a0de">
+                    {if $row['kind']==2}
+                    <i class="st-hot-ico"></i><s></s>
+                    {elseif $row['kind']==3}
+                    <i class="st-jing-ico"></i><s></s>
+                    {elseif $row['kind']==4}
+                    <i class="st-jian-ico"></i><s></s>
+                    {/if}
+
+                    <a href="{$row['url']}all" style="color: white">{$row['title']}</a>
+
+                </li>
+            {elseif $row['url']=="http://www.usyilu.com/customize/"}
+                <li class="item">
+                    {if $row['kind']==2}
+                    <i class="st-hot-ico"></i><s></s>
+                    {elseif $row['kind']==3}
+                    <i class="st-jing-ico"></i><s></s>
+                    {elseif $row['kind']==4}
+                    <i class="st-jian-ico"></i><s></s>
+                    {/if}
+
+                    <a href="{$row['url']}">{$row['title']}</a>
+
+                </li>
+            {else}
+                <li class="item">
+                    {if $row['kind']==2}
+                    <i class="st-hot-ico"></i><s></s>
+                    {elseif $row['kind']==3}
+                    <i class="st-jing-ico"></i><s></s>
+                    {elseif $row['kind']==4}
+                    <i class="st-jian-ico"></i><s></s>
+                    {/if}
+
+                    <a href="{$row['url']}all">{$row['title']}</a>
+
+                </li>
+            {/if}
+            {/loop}
+            {/st}
+
+        </ul>
+        <!-- End Di  test -->
       
       <div class="st-main-page">
       	<div class="st-hotellist-box">

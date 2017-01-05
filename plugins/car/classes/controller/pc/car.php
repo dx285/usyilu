@@ -264,11 +264,11 @@ class Controller_Pc_Car extends Stourweb_Controller
             exit();
         }
         //安全校验码验证
-        $orgCode = Common::session('code');
-        if ($orgCode != $frmCode)
-        {
-            exit();
-        }
+//        $orgCode = Common::session('code');
+//        if ($orgCode != $frmCode)
+//        {
+//            exit();
+//        }
 
         //会员信息
         $userInfo = Product::get_login_user_info();
@@ -282,6 +282,11 @@ class Controller_Pc_Car extends Stourweb_Controller
         $linkMan = Common::remove_xss(Arr::get($_POST, 'linkman'));//联系人姓名
         $linkTel = Common::remove_xss(Arr::get($_POST, 'linktel'));//联系人电话
         $linkEmail = Arr::get($_POST, 'linkemail');//联系人邮箱
+
+        //additional
+        $linkQQ = Common::remove_xss(Arr::get($_POST, 'linkman'));//联系人姓名
+
+
 
         $linkTel = empty($linkTel) && !empty($userInfo)?$userInfo['mobile']:$linkTel;
         $linkEmail = empty($linkEmail) && !empty($userInfo)?$userInfo['email']:$linkEmail;
@@ -344,12 +349,16 @@ class Controller_Pc_Car extends Stourweb_Controller
             'memberid' => $memberId,
             'dingjin' => $suitInfo['dingjin'],
             'paytype' => $suitInfo['paytype'],
+//            '1' => $suitInfo['paytype'],
             'suitid' => $suitId,
             'usejifen' => $useJifen,
             'needjifen' => $needJifen,
-            'status' => $status,
+//            'status' => $status,
+            'status' => 10,
+//            0 => $status,
             'remark' => $remark,
-            'isneedpiao' => 0
+            'isneedpiao' => 0,
+            'linkqq' => $linkQQ
 
         );
 
@@ -380,6 +389,7 @@ class Controller_Pc_Car extends Stourweb_Controller
             if ($suitInfo['paytype'] != 3)
             {
                 $payurl = Common::get_main_host() . "/payment/?ordersn=" . $orderSn;
+//                $payurl = "http//:www.usyilu.com" . "/payment/?ordersn=" . $orderSn;
                 $this->request->redirect($payurl);
             }
             else

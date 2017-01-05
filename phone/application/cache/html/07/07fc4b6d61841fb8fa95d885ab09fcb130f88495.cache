@@ -1,0 +1,292 @@
+3600
+s:19517:" <!doctype html> <html> <head> <meta charset="utf-8"> <title>华盛顿-美国一路</title> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <link type="text/css" href="/public/css/amazeui.css" rel="stylesheet" />
+<link type="text/css" href="/public/css/style.css" rel="stylesheet" />
+<link type="text/css" href="/public/css/extend.css" rel="stylesheet" />
+ <script type="text/javascript" src="/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/public/js/amazeui.js"></script>
+<script type="text/javascript" src="/public/js/template.js"></script>
+ </head> <body> <header>  <div class="header_top sys_header">  <div class="st_logo"><a href="http://usyilu.com"><img src="http://www.usyilu.com/uploads/main/allimg/20161105/20161105001429.png" height="30" alt="美国一路"/></a></div>  <h1 class="tit"> 线路 </h1> <div class="st_top_menu"> <span data-am-offcanvas="{target: '#my-st-slide'}"></span> <div id="my-st-slide" class="am-offcanvas"> <!--登录后--> <div class="am-offcanvas-bar" id="login-html"> <div class="st_user_header_pic" id="log_head"> <img src="/phone/public/images/member_nopic.png" /> <p> <a href="/member/login">登录</a>|
+                            <a href="/member/register">注册</a> </p> </div> <div class="st_user_cz" id="log_nav"> <a href="/order/index"><i class="ico_05"></i>订单查询</a> </div> </div> </div> </div> </div> </header> <script>
+    var SITEURL = "/";
+    $(function(){
+        $('#my-st-slide').offCanvas('close');
+        $('.st-slider').flexslider({pauseOnAction: false});
+        $("body").delegate("#logout",'click',function(){
+            $.get(SITEURL+'member/login/ajax_out','',function(){
+                window.location.href='http://'+window.location.host+SITEURL;
+            });
+        })
+        //检测登陆
+        $('body').append('<script'+' type="text/javascript" src="'+SITEURL+'member/login/ajax_islogin"></'+'script>');
+    })
+    function is_login($obj){
+        var fx_url="content=";
+         if($obj['islogin']==1){
+           $('#log_head').html($obj['info']['head']);
+           $('#log_nav').html($obj['info']['nav']);
+           if($obj['info']['fx_member']){
+               if(window.location.href.indexOf('/show_')!=-1)
+                   $('.bom_fixed').append($obj['info']['fx_btn'].replace('[fx_url]',fx_url));
+           }
+         }
+    }
+</script> <section> <div class="mid_content"> <div class="term-list"> <div class="st_search"> <div class="st_search_box"> <input type="text" class="st_home_txt" id="keyword" placeholder="请输入关键词" value="" /> <input type="button" class="st_home_btn btn_search" value="搜索" /> </div><!--搜索--> </div> <div class="tabnav"> <ul> <li><a href="javascript:;" id="destname" data-py="">华盛顿<i class="am-icon-caret-down"></i></a></li> <li><a href="javascript:;">综合排序<i class="am-icon-caret-down"></i></a></li> <li><a href="javascript:;">筛选<i class="am-icon-caret-down"></i></a></li> </ul> </div> <div class="tabcon"> <div class="tablist"> <div class="dest-mbx-dh" id="dest_nav" > <a data-id="0">目的地</a>&gt;
+        </div> <ul id="dest_content"> </ul> </div> <div class="tablist"> <!--这里可根据typeid添加相应的排序规则--> <ul id="list-reorder"> <li data-id="0" class="on" data-type="sorttype">默认</li>  <li data-id="1"  data-type="sorttype">价格从低到高</li> <li data-id="2"  data-type="sorttype">价格从高到低</li> <li data-id="3"  data-type="sorttype">销量最高</li> <li data-id="4"  data-type="sorttype">产品推荐</li>  </ul> </div> <div class="tablist"> <ul id="list-way"> <!--这里添加对应栏目的标识-->  <li data-id="city" class="city"  data-child="city" data-type="city">出发地</li>   <li  data-id="0" data-flag="rank" data-child="gday" data-ajax-div="lsit-child">行程天数</li> <li  data-id="0" data-flag="lineprice" data-child="gprice" data-ajax-div="lsit-child">价格</li>      <li  data-id="4" data-flag="attr" data-child="gattr4" data-ajax-div="lsit-child">选择区域</li>  <li  data-id="2" data-flag="attr" data-child="gattr2" data-ajax-div="lsit-child">车型选择</li>  <li  data-id="3" data-flag="attr" data-child="gattr3" data-ajax-div="lsit-child">优惠专区</li>  <li  data-id="1" data-flag="attr" data-child="gattr1" data-ajax-div="lsit-child">旅行方式</li>   </ul> <ul id="lsit-child"> <!--根据typeid来添加相应的参数-->  <li data-id="0" class="gday" data-type="dayid">全部</li>   <li  data-id="2" class="gday "  data-type="dayid" >三日游</li>  <li  data-id="3" class="gday "  data-type="dayid" >四日游</li>  <li  data-id="4" class="gday "  data-type="dayid" >五日游</li>  <li  data-id="5" class="gday "  data-type="dayid" >六日游以上</li>  <li data-id="0" class="gprice" data-type="priceid">全部</li>   <li  data-id="1" class="gprice "  data-type="priceid" >$4000-$6000</li>  <li  data-id="2" class="gprice "  data-type="priceid" >$6000-$8000</li>  <li  data-id="3" class="gprice on"  data-type="priceid" >$8000-$10000</li>  <li  data-id="4" class="gprice "  data-type="priceid" >$10000-$12000</li>     <!--景点价格筛选-->   <!--属性组-->  <li data-id="0" class="gattr4" data-type="attrid">全部</li>    <li  data-id="16"  class="gattr4 " data-type="attrid" >东海岸</li>  <li  data-id="17"  class="gattr4 " data-type="attrid" >西海岸</li>  <li  data-id="26"  class="gattr4 " data-type="attrid" >黄石</li>   <li data-id="0" class="gattr2" data-type="attrid">全部</li>    <li  data-id="19"  class="gattr2 " data-type="attrid" >丰田商务8人座</li>  <li  data-id="22"  class="gattr2 " data-type="attrid" >小型SUV</li>  <li  data-id="23"  class="gattr2 " data-type="attrid" >大型SUV</li>  <li  data-id="24"  class="gattr2 " data-type="attrid" >敞篷跑车</li>  <li  data-id="25"  class="gattr2 " data-type="attrid" >大型雪佛莱</li>   <li data-id="0" class="gattr3" data-type="attrid">全部</li>    <li  data-id="11"  class="gattr3 " data-type="attrid" >门票特惠</li>  <li  data-id="12"  class="gattr3 " data-type="attrid" >商店特惠</li>  <li  data-id="13"  class="gattr3 " data-type="attrid" >米其林餐厅优惠</li>   <li data-id="0" class="gattr1" data-type="attrid">全部</li>    <li  data-id="5"  class="gattr1 " data-type="attrid" >自由自驾</li>  <li  data-id="6"  class="gattr1 " data-type="attrid" >团队自驾</li>  <li  data-id="7"  class="gattr1 " data-type="attrid" >定制自驾</li>  <li  data-id="18"  class="gattr1 " data-type="attrid" >小团</li>  <li  data-id="27"  class="gattr1 " data-type="attrid" >一日游</li>     <li  data-id="75"  class="city  " data-type="startcityid"  >纽约</li>  <li  data-id="76"  class="city  " data-type="startcityid"  >波士顿</li>  <li  data-id="77"  class="city  " data-type="startcityid"  >华盛顿</li>  <li  data-id="78"  class="city  " data-type="startcityid"  >黄石</li>  <li  data-id="79"  class="city  on  " data-type="startcityid"  >拉斯维加斯</li>  <li  data-id="80"  class="city  " data-type="startcityid"  >洛杉矶</li>  <li  data-id="81"  class="city  " data-type="startcityid"  >旧金山</li>   </ul> </div> </div> <div class="tab_bottom_btn"> <a class="cancel_btn" href="javascript:;">取消</a> <a class="sure_btn" href="javascript:;">确定</a> </div> <input type="hidden" id="destpy" value=""/> <input type="hidden" id="destname" value="华盛顿"/> <input type="hidden" id="sorttype" value="0"/> <input type="hidden" id="attrid" value="0"/>  <input type="hidden" id="priceid" value="3"/> <input type="hidden" id="dayid" value="0"/> <input type="hidden" id="startcityid" value="79"/>     <script>
+    var py = '';
+    var curdestpy='washingtondc';
+    var typeid = '1';
+    function DestaddClass(py,typeid,curdestpy){
+        $.getJSON(SITEURL+'pub/ajax_get_destall',{destpy:py,'curdest':curdestpy,typeid:typeid},function(data){
+            var navLen=data['nav'].length;
+            var destLen=data['list'].length;
+            var navHtml='';
+            var destHtml='';
+            for(var i=0;i<navLen;i++){
+                if(i+1!=navLen){
+                    navHtml+='<a class="dest_load" href="javascript:void(0)" data-py="'+data['nav'][i]['pinyin']+'">'+data['nav'][i]['kindname']+'</a> &gt;'
+                }else{
+                    navHtml+='<span>'+data['nav'][i]['kindname']+'</span>';
+                }
+            }
+            $('#dest_nav').html(navHtml);
+            for(var i=0;i<destLen;i++){
+                if(data['list'][i]['haschild']){
+                    destHtml+='<li class="dest_load" data-py="'+data['list'][i]['pinyin']+'">'+data['list'][i]['kindname']+'<i class="icon-right"></i></li>';
+                }else{
+                    var selected='';console.log(data['curDest'],data['list'][i]['pinyin']);
+                    if(data['curDest']==data['list'][i]['pinyin']){
+                        selected='class="icon-pitch-on"'
+                    }
+                    destHtml+='<li data-id="'+data['list'][i]['id']+'" class="hasnext" data-py="'+data['list'][i]['pinyin']+'" data-flag="dest">'+data['list'][i]['kindname']+'<i '+selected+'></i></li>';
+                }
+            }
+            $('#dest_content').html(destHtml);
+        })
+    }
+    $(function(){
+        if($("#list-province li.on").length==0){
+            $("#hot_dest").addClass('on');
+        }
+        var typeid = '1';
+        //选中上次选中的
+        DestaddClass(py,typeid,curdestpy);
+        //栏目下拉
+        var $tabli = $('.tabnav ul li');
+        var $tablist = $('.tablist');
+        $tabli.click(function(){
+            $('body').css('overflow','hidden')
+            var $hg = $(window).height();
+            $('.tablist ul').css('height',$hg-161)
+            $('.tab_bottom_btn').css('display','-webkit-box')
+            var index = $($tabli).index(this)
+            $(this).addClass('on').siblings().removeClass('on')
+            $($tablist).parent('.tabcon').show()
+            $($tablist).eq(index).show().siblings().hide()
+        })
+        //绑定获取下级事件.
+        $("body").delegate(".hasnext",'click',function(){
+            $("#destpy").val(py);
+        });
+       $("body").delegate('.dest_load','click',function(){
+           var py=$(this).attr('data-py');
+           $("#destpy").val(py);
+           DestaddClass(py,typeid)
+       });
+        //热门目的地事件绑定
+        $("body").delegate('#dest_content li,#dest_nav a','click',function(){
+            var py = $(this).attr('data-py');
+            $("#destpy").val(py);
+            $(this).addClass('on').siblings().removeClass('on').find('i').removeClass('icon-pitch-on');
+            $(this).find('i').not('.icon-right').addClass('icon-pitch-on');
+        })
+        //属性组点击事件.
+        $("body").delegate("#lsit-child li",'click',function(){
+            var datatype = $(this).attr('data-type');
+            var id = $(this).attr('data-id');
+            var childclass = $(this).attr('class')
+            if(datatype == 'attr'){
+                $('#'+datatype).val()
+            }
+            $('#'+datatype).val(id);
+            $(this).addClass('on').siblings('.'+childclass).removeClass('on');
+        })
+        //排序子项点击Q
+        $('#list-reorder').children('li').click(function(){
+            var datatype = $(this).attr('data-type');
+            var id = $(this).attr('data-id');
+            $('#'+datatype).val(id);
+            $(this).addClass('on').siblings().removeClass('on');
+        })
+        //隐藏属性筛选
+        $("#lsit-child").find('li').hide();
+        $("#list-way").find('li').click(function(){
+           var childclass = $(this).attr('data-child');
+           $("#lsit-child").find('li').hide();
+           $('#lsit-child').find('.'+childclass).show();
+           $(this).addClass('on').siblings().removeClass('on');
+        })
+       //取消选择
+        $('.cancel_btn').click(function(){
+            $('.tabcon').hide();
+            $('.tab_bottom_btn').hide();
+        })
+        //默认选中第一个
+        if($("#destpy").val() == '0' || $("#destpy").val() == '' || $("#destpy").val() == 'all'){
+            $($(".tablist").get(0)).find('li').first().trigger('click');
+        }
+        //设定第3列属性的选中状态
+        var firstChildChoosed=$("#lsit-child li.on:first");
+        if(firstChildChoosed.length>=1)
+        {
+            var childCls = firstChildChoosed.attr('class');
+            childCls= $.trim(childCls.replace('on',''));
+            var childClsArr=childCls.split(' ');
+            for(var i in childClsArr)
+            {
+                childClsArr[i]= $.trim(childClsArr[i]);
+            }
+            var hasFound=false;
+            $("#list-way li").each(function(index,ele){
+                   if(!hasFound)
+                   {
+                       var dataFlag = $(this).data('child');
+                       if($.inArray(dataFlag,childClsArr)!=-1)
+                       {
+                           $(this).trigger('click');
+                           hasFound=true;
+                       }
+                   }
+            });
+        }
+        else
+        {
+            $("#list-way li:first").trigger('click');
+        }
+    })
+ </script> <script type="text/html" id="tpl_li_item"> <li class="{{liclass}}" data-id="all" data-py="all" data-flag="{{flag}}" data-type="{{type}}">全部</li>
+    {{each list as value i }}
+    <li class="{{liclass}}" data-id="{{value.id}}" data-py="{{value.pinyin}}" data-flag="{{flag}}" data-type="{{type}}" data-ajax-div="{{ajaxdiv}}">{{value.kindname}}</li>
+    {{/each}}
+</script>
+ </div> <!--栏目筛选--> <div class="st_list_line" id="list-content"> <ul id="result_list"> </ul> <div class="tuan_more" id="btn_getmore"><a class="cursor">加载更多</a></div> </div> <!--没有相关信息--> <div class="no-content" id="no-content" style="display: none"> <img src="/public/images/nocon.png"/> <p>啊哦，暂时没有相关信息</p> </div> </div> <input type="hidden" id="keyword" value=""/> <input type="hidden" id="page" value="1"/> </section> <script type="text/html" id="tpl_hotel_item">
+    {{each list as value i}}
+    <li> <a href="{{value.url}}"> <div class="pic"><img src="{{value.litpic}}" alt="{{value.title}}"/></div> <div class="txt"> <p class="bt">{{value.title}}</p> <!--
+                <p class="myd_type">
+                    {{each value.attrlist as at k}}
+                    <span>{{at.attrname}}</span>
+                    {{/each}}
+                </p>--> <p class="price">
+                    {{if value.price>0}}
+                    <span><i class="currency_sy">$</i><b>{{value.price}}</b>起</span>
+                    {{else}}
+                    <span><b>电询</b></span>
+                    {{/if}}
+                    <del>{{value.storeprice}}元</del> </p> <p class="num"> <span>已售{{value.sellnum}}</span> <span>满意度{{value.satisfyscore}}</span> </p> </div> </a> </li>
+    {{/each}}
+</script> <script type="text/javascript" src="/public/js/layer/layer.m.js"></script>
+ <script>
+    //搜索
+    $(".btn_search").click(function(){
+        var keyword = $('#keyword').val();
+        var url = SITEURL+'lines/all';
+        if(keyword!='')
+        {
+            url+='?keyword='+encodeURIComponent(keyword);
+        }
+        window.location.href = url;
+    })
+    //初始页码
+    var initpage = '1';
+    $(function () {
+        if(initpage !=  $("#page").val()){
+            $("#page").val(initpage);
+        }
+        //pub/select 确定选择点击事件在这里重写.
+        $('.sure_btn').click(function () {
+            $("#page").val(1);
+            $('.tabcon').hide();
+            $('.tab_bottom_btn').hide();
+            var url = SITEURL + 'lines/' + get_url();
+            //get_data();
+            window.location.href = url;
+        })
+        //获取更新数据
+        $('#btn_getmore').click(function () {
+            get_data();
+        })
+        //第一次加载数据
+        get_data();
+    })
+    //获取list地址
+    function get_url() {
+        //获取选中的目的地
+        var url = $("#destpy").val();
+        //获取dayid
+        var dayid = $("#dayid").val();
+        //获取priceid
+        var priceid = $("#priceid").val();
+        //startcityid
+        var startcityid = $("#startcityid").val();
+        //获取选中的属性
+        var attr = [];
+        $('#lsit-child').find("li[class^='gattr']").each(function (i, obj) {
+            if ($(obj).attr('data-type') == 'attrid' && $(this).hasClass('on')) {
+                attr.push($(this).attr('data-id'));
+            }
+        })
+        var attrid = $("#attrid").val();
+        if (attr.length > 0) {
+            attrid = attr.join('_');
+        }
+        //排序规则
+        var sorttype = $("#sorttype").val();
+        //搜索名称
+        var keyword = $('#keyword').val();
+        //当前页 page
+        var page = $("#page").val();
+        keyword = keyword == '' ? 0 : keyword;
+        url += '-' + dayid + '-' + priceid + '-' + sorttype + '-0-' + startcityid + '-' + attrid + '-' + page;
+        if (keyword != 0) {
+            url += '?keyword=' + keyword;
+        }
+        return url;
+    }
+    //ajax获取数据
+    var contentNum = 0;
+    function get_data() {
+        var paramUrl = get_url();
+        var url = SITEURL + 'line/ajax_line_more/' + paramUrl;
+        layer.open({
+            type: 2,
+            content: '',
+            time: 20
+        });
+        $.getJSON(url, {}, function (data) {
+            if (data.list.length > 0) {
+                var itemHtml = template('tpl_hotel_item', data);
+                $("#result_list").append(itemHtml);
+                contentNum++;
+            }
+            //设置分页
+            if (data.page != -1) {
+                $("#page").val(data.page);
+            } else {
+                $("#btn_getmore").hide();
+            }
+            //设置内内容显示
+            if (contentNum == 0) {
+                $('#list-content').hide();
+                $("#no-content").show();
+            }
+            layer.closeAll();
+        })
+    }
+</script> <div style="text-align: center">  </div> <footer> <div class="foot"> <div class="foot_menu">   <a href="http://usyilu.com/servers/index_1.html">一日游</a> |  <a href="http://usyilu.com/servers/index_4.html">精品多日游</a> |  <a href="http://usyilu.com/servers/index_2.html">自驾游</a> |  <a href="http://usyilu.com/servers/index_11.html">热门景点</a> |  <a href="http://usyilu.com/servers/index_10.html">友情链接</a> |  <a href="http://usyilu.com/servers/index_12.html">底端导航</a>   </div> <div class="txt"></div> <div class="foot_btn clearfix"> <a class="foot_ico01" href="http://usyilu.com"> <em></em> <span>首页</span> </a> <a class="foot_ico02" href="/help/"> <em></em> <span>帮助中心</span> </a> <a class="foot_ico03" href="tel:"> <em></em> <span>客服电话</span> </a> <a class="foot_ico04" id="roll_top" href="javascript:;"> <em></em> <span>返回顶部</span> </a> </div> </div> </footer> <script>
+   $(function(){
+       //返回顶部
+       $('#roll_top').click(function(){
+           $('html,body').animate({scrollTop: '0px'}, 800);
+       });
+   })
+</script> </body> </html>
+";

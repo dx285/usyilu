@@ -67,6 +67,8 @@ class St_Functions
             $rs = $rs['weburl'];
         }
         return $rs;
+//        return 'http://www.usyilu.com';
+
     }
 
     /**

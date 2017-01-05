@@ -1,0 +1,549 @@
+3600
+s:73095:"<!doctype html><html><head><meta charset="utf-8"><title>纽约起止全景8天7夜自驾游-美国一路</title><script>
+    window.SITEURL = "/";
+    window.CURRENCY_SYMBOL="$";
+</script><link type="text/css" href="/min/?f=plugins/line/public/css/lines.css" rel="stylesheet"  />
+<link type="text/css" href="/min/?f=/res/css/base.css,/res/css/extend.css,/res/css/calendar.css" rel="stylesheet"  />
+<script type="text/javascript"src="/min/?f=/res/js/jquery.min.js,/res/js/base.js,/res/js/common.js"></script>
+</head><body><link type="text/css" href="/min/?f=/usertpl/dw_st16239_no198_index/css/header.css" rel="stylesheet"  />
+<!-- header开始 --><div class="st-header"><div class="wm-1200"><div class="header-block"><div class="st-logo"><a href="http://www.usyilu.com"><img src="http://www.usyilu.com/uploads/main/allimg/20161217/20161217030520_70x70.png" alt="美国一路" /></a><p>全美首家:租车 + 小团</p></div><div class="st-nav"><ul class="clearfix"><li><a href="/">首页</a></li><li><!--                        --><a href="/cars/">一路接机</a><!--                        <a href="/cars/">一路接机</a>--></li><li><!--                        --><a href="/lines/all-0-0-0-0-0-27-1">落地参团</a><!--                        <a href="/lines/">落地参团</a>--></li><li><!--                        --><a href="http://www.usyilu.com/cars/">一路租车</a><!--                        <a href="http://www.usyilu.com/cars/">一路租车</a>--></li><li><!--                        --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1">一路自驾</a><!--                        <a href="/lines/">一路自驾</a>--></li><li><!--                        --><a href="http://www.usyilu.com/customize/">一路包车</a><!--                        <a href="http://www.usyilu.com/customize/">一路包车</a>--></li><li><!--                        --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1">特价酒店</a><!--                        <a href="http://www.usyilu.com/hotels/">特价酒店</a>--></li><li><a href="/help/index_1.html" rel="nofollow">关于我们</a></li><li></li><li></li><li></li></ul></div><!-- 主导航 --><div class="st-rig"><div class="phone-num">1718-475-9550</div><span id="loginstatus"></span></div></div></div></div><script>
+    var SITEURL = "/";
+    $(function(){
+        //导航的选中状态
+        $(".st-menu a").each(function(){
+            var url= window.location.href;
+            url=url.replace('index.php','');
+            url=url.replace('index.html','');
+            var ulink=$(this).attr("href");
+            if(url==ulink)
+            {
+                $(this).parents("li:first").addClass('active');
+            }
+        })
+        //登陆状态
+        $.ajax({
+            type:"POST",
+            async:false,
+            url:SITEURL+"member/login/ajax_is_login",
+            dataType:'json',
+            success:function(data){
+                if(data.status){
+                    $txt = '<div class="login-after"><a class="dl" style="padding:0" href="javascript:;">你好,</a>';
+                    //Di 避免直接暴露ip
+//                    $txt+= '<a class="dl" href="http://47.90.15.0/member/">'+data.user.nickname+  '&nbsp;&nbsp;</a>';
+//                    $txt+= '<a class="dl" href="http://47.90.15.0/member/login/loginout">退出</a></div>';
+                    $txt+= '<a class="dl" href="/member/">'+data.user.nickname+  '&nbsp;&nbsp;</a>';
+                    $txt+= '<a class="dl" href="/member/login/loginout">退出</a></div>';
+                    //$txt+= '<a class="dl" href="/member">个人中心</a>';
+                }else{
+                    //Di 避免直接暴露ip
+//                    $txt = ' <div class="login-before"><a class="dl" href="http://47.90.15.0/member/login">登录</a>|';
+//                    $txt+= '<a class="zc" href="http://47.90.15.0/member/register">注册</a></div>';
+                    $txt = ' <div class="login-before"><a class="dl" href="/member/login">登录</a>|';
+                    $txt+= '<a class="zc" href="/member/register">注册</a></div>';
+                }
+                $("#loginstatus").html($txt);
+            }
+        })
+    })
+</script><div class="big"><div class="wm-1200"><div class="st-guide"><a href="/">首页</a>&gt;<a href="/lines/">一路小团</a>&gt;
+            <a href="/lines/niuyue/">纽约</a>&gt;
+            纽约起止全景8天7夜自驾游</div><!--面包屑--><div class="st-main-page"><div class="st-line-show"><div class="lineshow-tw"><div class="lw-title"><a href="/line/print/id/25" class="print-btn">打印行程</a><h1>纽约起止全景8天7夜自驾游<img src="http://www.usyilu.com/uploads/icon/hot.png" /><img src="http://www.usyilu.com/uploads/icon/discount.png" /><img src="http://www.usyilu.com/uploads/icon/huodong.png" /></h1><p>全程纽约往返；纽约、费城、华盛顿最佳游览线路，更有壮观美景尼亚加拉大瀑布。 </p></div><div class="focus-slide"><div class="imgnav" id="imgnav"><div id="img"><img src="http://www.usyilu.com/uploads/2017/0105/1585a97d2ecb2e74abf75b997b336061_460x312.jpg"/><img src="http://www.usyilu.com/uploads/2017/0105/fb927e4b90b466a234d409feccc8c03f_460x312.jpg"/><img src="http://www.usyilu.com/uploads/2017/0105/77bacd0b2ff32828162f8948ae7d2e1d_460x312.jpg"/><img src="http://www.usyilu.com/uploads/2017/0105/a5cd0150f88a5e87855407cf983649db_460x312.jpg"/><img src="http://www.usyilu.com/uploads/2017/0105/3847fef8f334a19d29f5f57df8030694_460x312.jpg"/><img src="http://www.usyilu.com/uploads/2017/0105/cf12355dd267bbcd5170016754a7e5f1_460x312.png"/><div id="front" title="上一张"><a href="javaScript:void(0)" class="pngFix"></a></div><div id="next" title="下一张"><a href="javaScript:void(0)" class="pngFix"></a></div></div><div id="cbtn"><i class="picSildeLeft"><img src="/res/images/picSlideLeft.gif"/></i><i class="picSildeRight"><img src="/res/images/picSlideRight.gif"/></i><div id="cSlideUl"><ul><li><img src="http://www.usyilu.com/uploads/2017/0105/1585a97d2ecb2e74abf75b997b336061_90x61.jpg"/></li><li><img src="http://www.usyilu.com/uploads/2017/0105/fb927e4b90b466a234d409feccc8c03f_90x61.jpg"/></li><li><img src="http://www.usyilu.com/uploads/2017/0105/77bacd0b2ff32828162f8948ae7d2e1d_90x61.jpg"/></li><li><img src="http://www.usyilu.com/uploads/2017/0105/a5cd0150f88a5e87855407cf983649db_90x61.jpg"/></li><li><img src="http://www.usyilu.com/uploads/2017/0105/3847fef8f334a19d29f5f57df8030694_90x61.jpg"/></li><li><img src="http://www.usyilu.com/uploads/2017/0105/cf12355dd267bbcd5170016754a7e5f1_90x61.png"/></li></ul></div></div></div></div><div class="cp-show-msg"><div class="jg" id="min_price_tips"><span class="hide">优惠价：<i class="currency_sy">$</i><b id="minprice">823</b>起</span><span class="hide">优惠价：<b>电询</b></span></div><div class="sl"><span>销量：321</span><s>|</s><span class="myd">满意度：100%</span></div><dl class="tc"><dt>套餐类型：</dt><dd class="type suitlist"><a href="javascript:;" data-suitid="23" data-minprice="823" data-jifentprice="5" data-jifenbook="50">纽约起止全景8天7夜自驾游</a></dd><dd class="select-bj"><span>出发日期：</span><select class="bj-list date-list"></select></dd><dd class="yd-btn"><a href="javascript:;" class="btn-yd gobook">立即预订</a></dd></dl><ul class="msg-ul"><li><em>线路编号：</em><p>1125</p></li><li><em>积分优惠：</em><p><span class="fan jifentprice"><i></i></span><span class="song jifenbook"><i></i></span></p></li><li><em>往返交通：</em><p></p></li><li><em>提前报名：</em><p>15天以上</p></li><li class="mb_0"><em>付款方式：</em><p><img src="/res/images/pay_yl.gif" /></p></li></ul></div></div><div class="lineshow-con"><div class="tabnav-list"><span class="on">在线预订</span><span>行程安排</span><span>费用包含</span><span>线路特色</span><span>费用不含</span><span>签约付款</span><span>客户评价</span><span>我要咨询</span><a class="yd-btn yd-btn-menu hide gobook btn-yd"  href="javascript:;">立即预订</a></div><!--线路导航--><div class="tabbox-list"><div class="tabcon-list" id="calendar"></div><div class="tabcon-list"><div class="list-tit"><strong>行程安排</strong></div><div class="eachday"><div class="day-con part" id="day_c_1"><div class="day-num"><i class="sz">1</i></div><div class="day-tit"><strong>第一天</strong><p>纽约接机</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">新泽西</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3">汽车</td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">纽约接机后办理提车，入住酒店，自由活动。</span></p><p><br/></p></div></div><div class="day-con part" id="day_c_2"><div class="day-num"><i class="sz">2</i></div><div class="day-tit"><strong>第二天</strong><p>纽约市内游览</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">新泽西</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3">汽车</td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">上到纽约市地标-帝国大厦嘹望观景台，欣赏中央公园和纽约全景。乘坐观光环岛游轮游览哈德逊河，与自由女神像和布鲁克林桥摄影留念。登上花费1.2亿美元重新整修开放的国家历史文物-大无畏号航空母舰，并参观协和号超音速客机和各种战机。漫步世界金融、证券交易中心华尔街，象征牛市的铜牛雕塑和纽约股票交易所。参观大都会博物馆，时代广场，杜莎夫人蜡像馆与总统奥巴马等名人合影。途径第五大道，洛克菲勒中心，联合国总部。</span></p><p> </p><p>​<br/></p><p style="text-align: center;"><strong><span style="font-size:16px;font-family:方正姚体;color:red">纽约</span></strong></p><p><img src="/uploads/2017/0105/5bd274de9ad29bc1ac5777ba17e69726.jpg" alt="" title=""/><img src="/uploads/2017/0105/e0ebfcc42da91648cc2f8a7b3563902e.jpg" alt="" title=""/><img src="/uploads/2017/0105/669c03a06c0780a1a7e4aac34783f7df.jpg" alt="" title=""/></p><p><span style="font-size:16px;font-family:方正姚体">纽约：</span><span style="font-size:12px;font-family:方正姚体;color:#643718">纽约市，濒临大西洋。它由五个区组成：</span><a href="http://baike.baidu.com/view/1358138.htm" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">布朗克斯区</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">（The Bronx）、</span><a href="http://baike.baidu.com/view/749799.htm" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">布鲁克林区</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">（Brooklyn）、</span><a href="http://baike.baidu.com/view/43636.htm" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">曼哈顿</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">（Manhattan）、</span><a href="http://baike.baidu.com/view/1358134.htm" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">皇后区</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">（昆斯区）（Queens）、</span><a href="http://baike.baidu.com/view/1358144.htm" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">斯塔滕岛</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">（Staten Island）。全市总面积达1214.4平方公里。</span></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">&nbsp;</span></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">其中除了曼哈顿的大理石丘外，布朗克斯是纽约市唯一与美国本土相接的区域，世界上最大的市内动物园</span><a href="http://baike.baidu.com/view/5480574.htm" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">布朗克斯动物园</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">也位于此地；布鲁克林区人口最多的行政区；曼哈顿岛是纽约的核心，在五个区中面积最小，仅57.91平方公里。但这个东西窄、南北长的小岛却是美国的金融中心；皇后区面积最大的行政区；斯塔滕岛是纽约市人口最少的一个区。</span></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">&nbsp;</span></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">推荐美食：Chef&#39;s Table at Brooklyn Fare（新美式餐）</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">&nbsp;</span><span style="font-size:12px;font-family:方正姚体;color:#643718">，布鲁克林地区唯一的一家米其林三星餐厅。开放式的厨房外仅有18个座位，主厨Cesar Ramirez为客人亲自烹饪餐厅特别推荐套餐，超过20道（小盘）美味盛宴一定让您终生难忘。想要品尝这家餐厅菜肴，常常要提前6周预订，客人无法提前知晓菜单，神秘的美味每天都在变化，直到用餐那刻，惊喜才会从客人的舌尖迸发。人均消费为$225(不含小费和消费税)</span></p><p> </p><p><strong><span style="font-size:12px;font-family:方正姚体">地址:</span></strong><strong><span style="font-size:12px">&nbsp;</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">200 Schermerhorn St., Brooklyn NY</span></p><p> </p><p><strong><span style="font-size:12px;font-family:方正姚体">电话:</span></strong> <span style="font-size:12px;font-family:方正姚体;color:#643718">718-243-0050</span></p><p><img src="/uploads/2017/0105/264c85f52a9893799617f8c8f2fa460d.png" alt="" title=""/><img src="/uploads/2017/0105/c23dd0578dcd2ef4e092205f28931d6d.png" alt="" title=""/>​</p></div></div><div class="day-con part" id="day_c_3"><div class="day-num"><i class="sz">3</i></div><div class="day-tit"><strong>第三天</strong><p>纽约 –费城 – 华盛顿</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">华盛顿</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3">汽车</td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">早餐后前往华盛顿，途径费城参观国家诞生地&quot;费城&quot;，漫步在独立公园，在想像中感受1776年在此宣读独立宣言时的振奋心情。与美国国父-华盛顿雕像，旧国会大厦和独立宫合影留念，参观自由钟</span><span style="font-size:12px">&nbsp;</span><span style="font-size:12px;font-family:方正姚体">。游览普林斯顿大学，华盛顿，入住酒店休息。</span></p><p><span style="font-size:12px;font-family:方正姚体"></span></p><p style="text-align:center"><strong><span style="font-size:16px;font-family:方正姚体;color:red">费城</span></strong></p><p><span style="font-size:12px;font-family:方正姚体"><img src="/uploads/2017/0105/a52c1632cb386921a3eed067fce7e24f.jpg" alt="" title=""/><img src="/uploads/2017/0105/d24c9fb5ee589b1428171e973f6d5fa7.jpg" alt="" title=""/><img src="/uploads/2017/0105/cf4bcfc2fa5cdccff220a0852790a882.jpg" alt="" title=""/></span><br/></p><p><span style="font-size:12px;font-family:方正姚体"></span></p><p style="line-height:16px"><span style="font-size:16px;font-family:方正姚体">费城：</span><span style="font-size: 12px;font-family:方正姚体;color:#643718">绿意盎然的费城，每年从全美各地涌进不计其数的游客，都是专程前来欣赏这个国家的诞生地。因此，费城也是著名的观光都市之一。1682年，英国探险家威廉</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">·</span><span style="font-size:12px;font-family:方正姚体;color:#643718">潘（Quaker William Penn）发现并命名了费城，同一时期当地建了357间屋子；到了1699年，人口已快速成长为7000。18世纪中叶，费城的贸易额已超越了波士顿。之后，这个城市成为美国的诞生地，也是美国的第二个首都。</span><a href="http://baike.baidu.com/view/53928.htm" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">本杰明</span><span style="font-size:12px;color:#643718;text-underline:none">·</span><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">富兰克林</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">这个伟大的政治家、作家及发明家，虽然出生在</span><a href="http://baike.baidu.com/view/88690.htm" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">波士顿</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">，但在少年时代离家出走至此，创业开印刷所、办报纸、结交总督、地方名人，创办大学，并于1790年逝世于此。</span></p><p> </p><p style="line-height:16px"><span style="font-size:12px;font-family:方正姚体;color:#643718">&nbsp;</span></p><p> </p><p style=";margin-bottom:0;line-height:20px;background:#FAFCFC"><span style="font-size:12px;font-family:方正姚体;color:#643718">推荐美食： Stateside是费城的一家明星餐厅，主厨George Sabatino曾获得过多项大奖，餐馆也多次被评为费城最棒的餐馆。Stateside已烹制美式美食为骄傲，从特色菜单，到熙熙攘攘的人群，Stateside仿佛充满魔力，吸引着络绎不绝的本地人和游客。 一定不要错过这里的特色美食，熏猪肉配韩式烧烤酱（smoked pork rillette with Korean BBQ sauce）</span></p><p> </p><p style=";margin-bottom:0;line-height:24px;background:#FAFCFC"><strong><span style="font-size:12px;font-family:方正姚体">地址：</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">1536 E &nbsp;Passyunk &nbsp;Ave, Philadelphia, PA 19147</span></p><p> </p><p style=";margin-bottom:0;line-height:24px;background:#FAFCFC"><strong><span style="font-size:12px;font-family:方正姚体">电话：</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">(+1) 215 5512500</span></p><p> </p><p><strong><span style="font-size:12px;font-family:方正姚体">营业时间：</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">Mon</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">–</span><span style="font-size:12px;font-family:方正姚体;color:#643718">Fri&nbsp; 4:30 PM</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">–</span><span style="font-size:12px;font-family:方正姚体;color:#643718">Midnight</span><span style="font-size:12px;font-family: 方正姚体;color:#643718">；Sat</span><span style="font-size:12px;font-family: &#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">–</span><span style="font-size:12px;font-family: 方正姚体;color:#643718">Sun 4:30 PM</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">–</span><span style="font-size:12px;font-family:方正姚体;color:#643718">12:20 AM</span></p><p><span style="font-size:12px;font-family:方正姚体"><img src="/uploads/2017/0105/434e73f6b22b86b69c940a670b76993e.jpg" alt="" title=""/><img src="/uploads/2017/0105/fcad340c006cf05479536e0cbcae3641.jpg" alt="" title=""/>​</span><br/></p><p><br/></p></div></div><div class="day-con part" id="day_c_4"><div class="day-num"><i class="sz">4</i></div><div class="day-tit"><strong>第四天</strong><p>华盛顿市内游览</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">华盛顿</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3">汽车</td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">全天市内游览，参观【华盛顿纪念碑】，【林肯纪念堂】，【越战纪念墙】和【韩战纪念碑】，【国会大厦】，【白宫】（外观）—美国总统正式官邸，也是美国政府的代名词。随后来到【华盛顿国家广场】，您将按照自己的兴趣步行到附近的史密斯国家博物馆群自由免费参观，包括【自然历史博物馆】及【航天航空博物馆】，【印第安人博物馆】，【雕像馆】海鲜码头，品尝鲜活龙虾，生蚝，马里兰蓝蟹。</span></p><p><span style="font-size:12px;font-family:方正姚体"></span></p><p style="text-align:center"><strong><span style="font-size:16px;font-family:方正姚体;color:red">华盛顿</span></strong></p><p><span style="font-size:12px;font-family:方正姚体"><img src="/uploads/2017/0105/eeb1dc144a4eea44d0000a45ca652904.jpg" alt="" title=""/><img src="/uploads/2017/0105/a25421fd441e1bc2c7709b2cf9760e02.jpg" alt="" title=""/><img src="/uploads/2017/0105/b205443f04de8fb46d6da2f11fe90791.jpg" alt="" title=""/></span></p><p><span style="font-size:16px;font-family:方正姚体">华盛顿：</span><span style="font-size:12px;font-family:方正姚体;color:#643718">拥有着众多举世闻名的博物馆，华盛顿曾数次被评为全球最佳的博物馆旅行目的地。其馆藏之丰富，上溯数亿年前的珍贵化石，下至现当代的顶尖艺术珍宝，若是想要单单一览所有这些来自古今东西的稀世藏品，就得花上数月的时间。在华盛顿旅行同样十分亲民</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">——</span><span style="font-size:12px;font-family:方正姚体;color:#643718">可以说，世界上没有任何一座城市拥有像华盛顿这么多的免费景点。除了各类博物馆常年免费向每一位游客敞开，作为首都和政治中心，华盛顿同样以它众多开放的政治建筑、历史遗迹，向人们慷慨地展示它的历史和积淀。在这里，你可以走在总统们踏过的路上，探索发掘这座城市、这个民族、乃至全人类的历史，而各种动、植物园，风姿卓盼的湖泊、公园也给华盛顿增添了一分别样的美。</span></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">&nbsp;</span></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">推荐美食：马里兰蓝蟹。马里兰州拥有4000多英里海岸线，以海鲜肥美著称，尤其是当地特产蓝蟹，这种蟹滋味细腻。巴尔的摩位于切萨皮克湾顶端的西侧，离华盛顿特区仅60多公里，是马里兰州最大的城市。游人可以沿着切萨皮克湾，乘船或划皮划艇探索美丽的海滨风光，也可以在海湾的内港来一顿丰盛的海滨大餐。每年8月，哈维</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">•</span><span style="font-size:12px;font-family:方正姚体;color:#643718">德恩海鲜节(Harve de Grace Seafood Festival)在切萨皮克湾哈福德郡举行。</span></p><p><span style="font-size:12px;font-family:方正姚体"><img src="/uploads/2017/0105/bffa88ec3358f2bbe5f435fa3a7bbca5.jpg" alt="" title=""/><img src="/uploads/2017/0105/7ed1e7173978cb8040ed3ab0fd044368.jpg" alt="" title=""/>​</span><br/></p><p><br/></p></div></div><div class="day-con part" id="day_c_5"><div class="day-num"><i class="sz">5</i></div><div class="day-tit"><strong>第五天</strong><p>华盛顿-尼亚加拉瀑布</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">布法罗</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3">汽车</td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">早餐后，前往世界500强企业的总部-康宁玻璃中心，参观全球最大的玻璃收藏博物馆，欣赏现场制作玻璃表演技术。午餐后，参观尼加拉瓜大瀑布，游览瀑布国家公园，眺望「美国瀑布」，「马蹄瀑布」及「新娘面纱瀑布」。搭乘着名的&quot;雾中少女&quot;号游船（冬季关闭）穿梭于波涛起伏的瀑布间。回到访客中心观看Imax电影。傍晚，我们将体验到一个真实的美国原住民舞蹈表演，又称印第安人歌舞秀。结束行程前往酒店。</span></p><p><span style="font-size:12px;font-family:方正姚体"></span></p><p style="text-align:center"><strong><span style="font-size:16px;font-family:方正姚体;color:red">尼亚加拉大瀑布</span></strong></p><p><span style="font-size:12px;font-family:方正姚体"><img src="/uploads/2017/0105/0a5c7c466f522169722788247009218f.jpg" alt="" title=""/><img src="/uploads/2017/0105/344550416f8d8054c150d3c72c5e30cc.jpg" alt="" title=""/><img src="/uploads/2017/0105/def7643e01722883766daf0d6ba82204.jpg" alt="" title=""/></span></p><p><span style="font-size:16px;font-family:方正姚体">尼亚加拉大瀑布：</span><span style="font-size:12px;font-family:方正姚体;color:#643718">举世闻名的尼亚加拉瀑布就在布法罗，位于加拿大和美国交界的尼亚加拉河上，由伊利湖的支流尼亚加拉河向安大略湖北流的途中所形成的，两条河流本意要相互的融合，却在一场无意的冲突中造就了自然界罕有的奇观，它那丰沛而浩瀚的水汽和磅礴的气势，使所有前来观赏的游人都为之震撼。瀑布的英文名叫Niagara Falls，瀑布所在的城市也因此而得名。在加拿大境内的城市为Niagara Falls, Ontario，美国的位于纽约州，则叫Niagara Falls, New York。这个瀑布群，由加拿大的Canadian/Horseshoe Falls（马蹄瀑布），美国境内的American falls和Bridal Veil Falls（婚纱瀑布）组成，可乘“雾中少女号“游船体验瀑布。</span></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">&nbsp;</span></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">推荐美食：布法罗鸡翅。布法罗辣鸡翅是在1964年10月3日在布法罗商业街近北大街的船锚吧首度面世的。身为其夫法兰克的合伙人，泰蕾莎</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">·</span><span style="font-size:12px;font-family:方正姚体;color:#643718">贝利西莫(Teressa Bellissimo)，为了招呼她的儿子多明尼克(Dominic)和他的朋友，把鸡翅炸了，配上酱汁，马上受到了欢迎。正宗的店要数Anchor Bar Anchor Bar。 每月卖出的鸡翅达36,000 磅。这道菜色在美国其他地方称为布法罗辣鸡翅(Buffalo wings)，但在布法罗周围和东北部大部分地区就直呼为鸡翅(chicken wings 或 wings)。</span></p><p> </p><p><strong><span style="font-size:12px;font-family:方正姚体">地址：</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">1047 Main Street Buffalo, NY 14209, United States</span></p><p> </p><p><strong><span style="font-size:12px;font-family:方正姚体">电话：</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">(1716)8831134</span></p><p><span style="font-size:12px;font-family:方正姚体"><img src="/uploads/2017/0105/ffc6505fed0870707aa7e54d2c194ceb.jpg" alt="" title=""/><img src="/uploads/2017/0105/e1cd3711e242d62019c8998b8ccefc07.jpg" alt="" title=""/>​</span><br/></p><p><br/></p></div></div><div class="day-con part" id="day_c_6"><div class="day-num"><i class="sz">6</i></div><div class="day-tit"><strong>第六天</strong><p>布法罗—波士顿</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">波士顿</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3">汽车</td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">早餐后前往波士顿，下午到达麻省剑桥市，参观哈佛大学。最古老的校园区，与闻名世界的谎言雕像－哈佛雕像合影。留影于麻省理工学院主教学楼。波士顿市区观光，停留在古老的三一大教堂和汉考克摩天大楼前的广场拍照留念，途径波士顿公园、天鹅湖公园、普天寿大楼，波士顿图书馆，金色圆顶的州议会大楼。晚上享受极富盛名的新鲜龙虾大餐。</span></p><p><span style="font-size:12px;font-family:方正姚体"></span></p><p style="text-align:center"><strong><span style="font-size:16px;font-family:方正姚体;color:red">哈佛大学</span></strong></p><p><strong><span style="font-size:16px;font-family:方正姚体;color:red"></span></strong></p><p><span style="font-size:16px;font-family:方正姚体">哈佛大学：</span><span style="font-size:12px;font-family:方正姚体;color:#643718">哈佛大学，是</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=460812" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">美国历史</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">最悠久的高等学府，亦是</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=64757138&ss_c=ssc.citiao.link" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">常春藤</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">盟校成员之一，也是</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=735628" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">北美</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">最古老的法人机构。其最初称之为</span><span style="font-size: 12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">“</span><span style="font-size:12px;font-family:方正姚体;color:#643718">新学院</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">”</span><span style="font-size:12px;font-family:方正姚体;color:#643718">，该机构为了感谢一名年轻的牧师</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=54820662" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">约翰</span><span style="font-size:12px;color:#643718;text-underline:none">·</span><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">哈佛</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">所作出的捐赠，而改名为</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">“</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=63134" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">哈佛学院</span></a><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">”</span><span style="font-size:12px;font-family:方正姚体;color:#643718">。最早的</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=7871865" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">私立大学</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">之一。以培养研究生和从事科学研究为主的</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=6498443" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">综合性大学</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">。哈佛大学共出过8位美国总统，44名</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=63417495" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">诺贝尔奖获得者</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">和30名</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=177573" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">普利策奖</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">获得者。此外，还出了一大批知名的学术创始人、世界级的学术带头人、</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=59537" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">文学家</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">、思想家.</span></p><p><strong><span style="font-size:16px;font-family:方正姚体;color:red"></span></strong><br/></p><p><span style="font-size:12px;font-family:方正姚体"><img src="/uploads/2017/0105/c1cca39539bd32b48d7fe040048b9c44.jpg" alt="" title=""/><img src="/uploads/2017/0105/d66e6aff8d251bcbd6e59ec8718031bd.jpg" alt="" title=""/><img src="/uploads/2017/0105/24dcd87049351fe2b0447166854cbd2a.jpg" alt="" title=""/></span><br/></p><p style="text-indent:224px"><span style="font-size:16px;font-family:方正姚体;color:red">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p><p style="text-indent:224px"><span style="font-size:16px;font-family:方正姚体;color:red">波士顿</span></p><p><img src="/uploads/2017/0105/151652384bc7c6ef7dda7ea35dcd95f6.jpg" alt="" title=""/><img src="/uploads/2017/0105/27205601b9a6251f840f07ea33e8db78.jpg" alt="" title=""/><img src="/uploads/2017/0105/87d33611deaf060f739263b435fe6c9b.jpg" alt="" title=""/></p><p><strong><span style="font-size:16px;font-family:方正姚体;color:#643718;background:#FAFAFA">波士顿</span></strong><strong><span style="font-size:16px;font-family: 宋体;color:#643718;background:#FAFAFA">：</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">波士顿是</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=48184" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">美国</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">马萨诸塞州的首府和最大城市，也是</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=34568" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">新英格兰</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">地区的最大城市。该市位于美国东北部大西洋沿岸，创建于1630年，是美国最古老、最有文化价值的城市之一。波士顿是</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=48272" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">美国革命</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">期间一些重要事件的发生地点，曾经是一个重要的航运港口和制造业中心。该市是高等教育和</span><a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=7629465" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">医疗保健</span></a><span style="font-size:12px;font-family:方正姚体;color:#643718">的中心，它的经济基础是科研、金融与技术</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">—</span><span style="font-size:12px;font-family:方正姚体;color:#643718">特别是生物工程，并被认为是一个全球性城市或世界性城市。</span></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">&nbsp;</span></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">推荐餐厅：</span></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">Union Oyster House</span><span style="font-size:12px;font-family:方正姚体;color:#643718">是美国历史上的第一家餐厅，以美味的各式海鲜和新英格兰地区的特色菜而出名。餐厅里还有专门为约翰</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">•</span><span style="font-size:12px;font-family:方正姚体;color:#643718">肯尼迪（John F</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">•</span><span style="font-size:12px;font-family:方正姚体;color:#643718">Kennedy</span><span style="font-size:12px;font-family: 方正姚体;color:#643718">）预留的桌子，你的品位是不是和总统一样呢？</span></p><p> </p><p><strong><span style="font-size:12px;font-family:方正姚体">地址：</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">41 Union Street, Boston, MA 02108</span></p><p> </p><p><strong><span style="font-size:12px;font-family:方正姚体">营业时间：</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">周一至周六10:30-21:00，周日10:30-18:00</span></p><p> </p><p><strong><span style="font-size:12px;font-family:方正姚体">人均消费：</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">20-40</span><span style="font-size: 12px;font-family:方正姚体;color:#643718">美元</span></p><p><img src="/uploads/2017/0105/71703ff729621d82ca0183e11ef7c3a4.png" alt="" title=""/><img src="/uploads/2017/0105/db1dfdb40fce448d48d16bd2f0ded458.png" alt="" title=""/></p><p><a href="http://place.qyer.com/poi/V2UJYlFlBzdTbVI8/" target="_blank"><span style="font-size:12px;font-family:方正姚体;color:#643718;text-underline:none">Legal Sea Foods(East Boston)</span></a></p><p> </p><p><span style="font-size:12px;font-family:方正姚体;color:#643718">这家海鲜店在美国非常出名，在各地都有连锁分店。餐厅选用的海鲜都非常新鲜，一般都是刚下渔船最新鲜的。他们店的口号是 </span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">“</span><span style="font-size:12px;font-family:方正姚体;color:#643718">If it isn</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">’</span><span style="font-size:12px;font-family:方正姚体;color:#643718">t Fresh, it isn</span><span style="font-size: 12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">’</span><span style="font-size:12px;font-family: 方正姚体;color:#643718">t Legal!</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">”“</span><span style="font-size:12px;font-family:方正姚体;color:#643718">如果不新鲜 便不合法!</span><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#643718">”</span></p><p> </p><p><strong><span style="font-size:12px;font-family:方正姚体">地址：</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">1 Harborside Dr Boston, MA 02128</span></p><p> </p><p><strong><span style="font-size:12px;font-family:方正姚体">电话：</span></strong><span style="font-size:12px;font-family:方正姚体;color:#643718">568-2800</span></p><p><img src="/uploads/2017/0105/e4132646beeb9f6d5e2ab64de29987cd.png" alt="" title=""/>​</p></div></div><div class="day-con part" id="day_c_7"><div class="day-num"><i class="sz">7</i></div><div class="day-tit"><strong>第七天</strong><p>波士顿—纽约</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">新泽西</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3">汽车</td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">清晨乘车前往【耶鲁大学】。耶鲁大学是一所坐落于美国康涅狄格州纽黑文市的私立大学，创于1701年，是美国历史上建立的第三所大学，耶鲁大学的美丽校园环境甚为著名耶鲁特别强调自由的思想和自由的学术空气。随后前往纽约，抵达后，送入住酒店休息。</span></p><p><br/></p></div></div><div class="day-con part" id="day_c_8"><div class="day-num"><i class="sz">8</i></div><div class="day-tit"><strong>第八天</strong><p>纽约结束</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3"></td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3">汽车</td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">纽约还车，结束美东的经典旅行。</span></p><p><br/></p></div></div><div class="day-leftnav" id="day-leftNav"><ul class="day-navlist"><li><a href="#day_c_1" class="">DAY1</a></li><li><a href="#day_c_2" class="">DAY2</a></li><li><a href="#day_c_3" class="">DAY3</a></li><li><a href="#day_c_4" class="">DAY4</a></li><li><a href="#day_c_5" class="">DAY5</a></li><li><a href="#day_c_6" class="">DAY6</a></li><li><a href="#day_c_7" class="">DAY7</a></li><li><a href="#day_c_8" class="">DAY8</a></li></ul></div><div class="end"></div></div></div><div class="tabcon-list"><div class="list-tit"><strong>费用包含</strong></div><div class="list-txt"><p><span style=";font-family:方正姚体">1.</span><span style=";font-family: 方正姚体">自驾游车辆一辆(租车费和税费):5座SUV,如升级为其他豪华车型,请具体咨询我司操作人员.</span></p><p> </p><p><span style=";font-family:方正姚体">2.</span><span style=";font-family: 方正姚体">全程所列酒店标准间住宿一间，参考酒店：Days Inn、Comfort Inn等同级别酒店</span></p><p><br/></p></div></div><div class="tabcon-list"><div class="list-tit"><strong>线路特色</strong></div><div class="list-txt"><p><span style="font-size:14px;font-family:方正姚体">全程纽约往返</span><span style="font-size:14px;font-family:方正姚体">；</span><span style="font-size:14px;font-family:方正姚体">纽约、费城、华盛顿最佳游览线路</span><span style="font-size:14px;font-family:方正姚体">，</span><span style="font-size:14px;font-family:方正姚体">更有壮观美景尼亚加拉大瀑布。</span></p></div></div><div class="tabcon-list"><div class="list-tit"><strong>费用不含</strong></div><div class="list-txt"><p><span style=";font-family:方正姚体">1.</span><span style=";font-family: 方正姚体">全程酒店单房差</span></p><p> </p><p><span style=";font-family:方正姚体">2.</span><span style=";font-family: 方正姚体">美国签证费</span></p><p> </p><p><span style=";font-family:方正姚体">3.</span><span style=";font-family: 方正姚体">个人护照工本费</span></p><p> </p><p><span style=";font-family:方正姚体">4.</span><span style=";font-family: 方正姚体">自驾游全程餐饮酒店门票</span></p><p> </p><p><span style=";font-family:方正姚体">5.</span><span style=";font-family: 方正姚体">行李物品托运费以及托运行李超重费</span></p><p> </p><p><span style=";font-family:方正姚体">6.</span><span style=";font-family: 方正姚体">因节假日酒店、机票、燃油过路过桥费</span></p><p> </p><p><span style=";font-family:方正姚体">7.</span><span style=";font-family: 方正姚体">在自驾游期间内出现的和车辆有关的罚单</span></p><p> </p><p><span style=";font-family:方正姚体">8.</span><span style=";font-family: 方正姚体">驾驶员保险费，第一驾驶人是32美金人/天，第二驾驶人是15美金人/天</span></p><p> </p><p><span style=";font-family:方正姚体">9.</span><span style=";font-family: 方正姚体">以上服务内容中未提及的其他费用</span></p><p><br/></p></div></div><div class="tabcon-list"><div class="list-tit"><strong>签约付款</strong></div><div class="list-txt"><p>​</p><p>
+</p><p><span id="1348816711927E">&nbsp;<span style="font-size: larger">网上预订：直接通过网站下单，在线选择产品并填写相关信息后，提交订单。</span></span></p><p>
+</p><p>&nbsp;<span style="font-size: larger">在线预订：拨打咨询/预订电话，由客服帮助您完成信息的确认和下单操作。</span></p></div></div><link type="text/css" href="/min/?f=/res/css/jquery.fancybox.css" rel="stylesheet"  />
+<script type="text/javascript"src="/min/?f=/res/js/jquery.fancybox.js"></script>
+<div class="tabcon-list"><div class="list-tit"><strong>客户点评</strong></div><div class="st-list-pl"><div class="st-pl-box" style="border-bottom: 1px solid #d8d8d8;"><span class="myd" data-myd="100%">满意度<strong>100%</strong></span><span class="txt">回程归来发表点评即可获赠积分，<br>获得的积分可在下次消费时抵用部分现金。</span><a class="pl-btn" href="/member">我要评论 </a></div></div></div><script type="text/html" id="tpl_user_comment">
+    {{each list as value i}}
+    <dl><dt><img src="{{value.litpic}}"><span>{{value.nickname}}</span><em class="level">{{value.level}}</em></dt><dd><div class="zs"><span class="grade"><i style="width: {{value.percent}}"></i></span><span class="jf">{{value.jifencomment}}分<i></i></span></div><div class="txt">{{value.content}}</div>
+            {{if value.piclist}}
+            <div class="plImgBox clearfix">
+                {{include 'tpl_user_comment_pic' value}}
+            </div>
+            {{/if}}
+            <div class="date">{{value.addtime}}</div></dd></dl>
+    {{/each}}
+</script><script type="text/html" id="tpl_user_comment_pic">
+    {{each piclist as pic i}}
+    <a class="fancybox" href="{{pic}}" data-fancybox-group="gallery"><img src="{{picthumb[i]}}" width="86px" height="86px"></a>
+    {{/each}}
+</script><script>
+    $(function(){
+        init_fancybox();
+        //分页功能
+        $(".comment-nav span").click(function(){
+            if($(this).hasClass("on"))
+            {
+                return;
+            }
+            else
+            {
+                $(this).addClass("on").siblings().removeClass("on");
+                get_comment_list(1);
+            }
+        });
+        //初始化分页
+        gen_pager(0,1,5);
+        //检测layer是否加载
+        if(typeof(layer)=='undefined')
+        {
+            $.getScript("/res/js/layer/layer.js")
+        }
+        //判断template是否加载
+        if(typeof(template)=='undefined')
+        {
+            $.getScript("/res/js/template.js")
+        }
+        //满意度设置
+        var myd = $(".st-list-pl .st-pl-box .myd").attr("data-myd");
+        if(myd)
+        {
+            $(".cp-show-msg .sl .myd").html("满意度："+myd);
+        }
+    });
+    //获取评论列表
+    function get_comment_list(pageno)
+    {
+        var index = layer.load(2, {time: 10*1000});
+        var flag = $(".comment-nav span.on").attr("data-flag");
+        $.ajax({
+            type:'POST',
+            aysnc:true,
+            url:SITEURL+'comment/ajax_get_pinlun',
+            data:{
+                typeid:1,
+                flag:flag,
+                articleid:25,
+                pageno:pageno
+            },
+            dataType:'json',
+            success:function(data){
+                //console.info(data);
+                var html = "";
+                $(".comment-con").html(html);
+                if(data.list.length>0){
+                    html = template('tpl_user_comment',data);
+                    $(".comment-con").html(html);
+                    init_fancybox();
+                    gen_pager(data.total,data.pageno,data.pagesize)
+                }
+                else
+                {
+                    $(".main_mod_page").html('');
+                }
+            }
+        })
+        layer.close(index);
+    }
+    //初始化图片查看功能
+    function init_fancybox(){
+        $(".comment-con .plImgBox").each(function(){
+            var cls = "fancybox_"+Math.floor(Math.random()*10000);
+            $(this).find("a").addClass(cls);
+            $("."+cls).fancybox({
+                'overlayShow'   :   false,
+                'showNavArrows' : true
+            });
+        });
+    }
+    //生成分页
+    function gen_pager(total, pageno, pagesize)
+    {
+        $(".main_mod_page").html('');
+        //分页不够不显示分页
+        if(total<=pagesize)
+        {
+            return;
+        }
+        var page_count = Math.ceil(total/pagesize);
+        var start_page = pageno - 2;
+        var end_page = pageno + 2;
+        //var seed = 5-1;
+        if(start_page <= 0)
+        {
+            var num = end_page + Math.abs(start_page) + 1;
+            if (num <= page_count)
+            {
+                end_page = num;
+            }
+            else
+            {
+                end_page = page_count;
+            }
+            start_page = 1;
+        }
+        if(end_page >= page_count)
+        {
+            var num = start_page - (end_page-page_count);
+            if (num >= 1)
+            {
+                start_page = num;
+            }
+            else
+            {
+                start_page = 1;
+            }
+            end_page = page_count;
+        }
+        var pager = '<p class="page_right">';
+        if(pageno > 1)
+        {
+            pager += '<a class="back-first" title="第一页" href="#" data-pageno="1"></a>' +
+                '<a class="prev" title="上一页" href="#" data-pageno="'+(pageno-1)+'"></a>'
+        }
+        pager += '<span class="mod_pagenav_count">';
+        for(var i=start_page; i<=end_page; i++)
+        {
+            var cls = pageno == i ? 'class="current"' : '';
+            pager += '<a title="第'+i+'页" '+cls+' href="#" data-pageno="'+i+'">'+i+'</a>';
+        }
+        pager += '</span>';
+        if(pageno < page_count)
+        {
+            pager +='<a class="next" title="下一页" href="#" data-pageno="'+(pageno+1)+'"></a>' +
+                '<a class="go-last" title="尾页" href="#" data-pageno="'+page_count+'"></a>';
+        }
+        pager += '</p>';
+        $(".main_mod_page").html(pager);
+        bind_pager_click();
+    }
+    //绑定分页点击事件
+    function bind_pager_click()
+    {
+        $(".main_mod_page a").click(function(e){
+            e.preventDefault();
+            var pageno = $(this).attr("data-pageno");
+            get_comment_list(pageno);
+        });
+    }
+</script><script type="text/javascript"src="/min/?f=/res/js/layer/layer.js"></script>
+<div class="tabcon-list"><div class="list-tit"><strong>我要咨询</strong></div><div class="st-consult"><ul></ul><div class="pagediv" style="text-align: center;display: none" data-quecount=""  id="page"></div><div class="st-tj-question"><textarea name="question" id="question" cols="" placeholder="请填写你的问题" rows=""></textarea><div class="msg"><a class="tj-btn" href="javascript:;" data-productid="25" data-typeid="1">提交</a><span><em>验证码：</em><input type="text" id="checkcode" style="padding-left: 5px" /><img src="/captcha"  onClick="this.src=this.src+'?math='+ Math.random()" width="80" height="30" /></span><span><em>昵称：</em><span id="_c_u" style="line-height: 30px;height: 30px"></span></span></div></div></div></div><script>
+    //提交问答
+    $(".tj-btn").click(function(){
+        var question = $("#question").val();
+        var checkcode = $("#checkcode").val();
+        var productid = $(this).attr('data-productid');
+        var typeid = $(this).attr('data-typeid');
+        var nickname = $("#nickname").val();
+        if(question.length<5){
+            layer.alert('请输入你的问题,至少5个汉字', {
+                icon: 5,
+                title: '提示'
+            })
+            return false;
+        }
+        if(checkcode==''){
+            layer.alert('请输入验证码', {
+                icon: 5,
+                title: '提示'
+            })
+            return false;
+        }
+        $.ajax({
+            type:'POST',
+            url:SITEURL+'pub/ajax_add_question',
+            data:{
+                productid:productid,
+                content:question,
+                checkcode:checkcode,
+                nickname:nickname,
+                typeid:typeid,
+                questype:0
+            },
+            success:function(data){
+                if(data==1){
+                    layer.alert('验证码错误', {
+                        icon: 5,
+                        title: '提示'
+                    })
+                    //重新加载验证码
+                    $("#imgcheckcode").attr('src',"/captcha?"+Math.random());
+                }else if(data==3){
+                    layer.msg('提问成功,请耐心等待管理员回复',{
+                        icon:6,
+                        time:1500
+                    });
+                    location.reload();
+                }else{
+                    layer.alert('提问失败,请联系网站管理员!', {
+                        icon: 5,
+                        title: '提示'
+                    })
+                }
+            }
+        })
+    })
+    //登陆状态
+    $.ajax({
+        type:"POST",
+        url:SITEURL+"member/login/ajax_is_login",
+        dataType:'json',
+        success:function(data){
+            if(data.status){
+                $txt = '<span>'+data.user.nickname+'</span><input type="hidden" value="'+data.user.nickname+'" name="nickname" id="nickname" />';
+            }else{
+                $txt = '<input type="text" name="nickname" id="nickname" /><a href="/member/login/">登录</a>';
+            }
+            $("#_c_u").html($txt);
+        }
+    })
+</script></div></div></div><!--详情主体--><div class="st-sidebox"></div><!--边栏模块--></div></div></div><link type="text/css" href="/min/?f=/usertpl/dw_st16239_no198_index/css/footer.css" rel="stylesheet"  />
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">--><div class="st-help"><div class="wm-1200"><div class="help-lsit"><dl><dt><a href="/help/index_1.html" rel="nofollow">关于我们</a></dt><dd><a href="/help/show_51.html" target="_blank" rel="nofollow">发展历程</a><a href="/help/show_52.html" target="_blank" rel="nofollow">加入我们</a><a href="/help/show_53.html" target="_blank" rel="nofollow">联系我们</a><a href="/help/show_27.html" target="_blank" rel="nofollow">专业团队</a><a href="/help/show_3.html" target="_blank" rel="nofollow">美国一路简介</a></dd></dl><dl><dt><a href="/help/index_10.html" rel="nofollow">服务条款</a></dt><dd><a href="/help/show_48.html" target="_blank" rel="nofollow">客户协议</a><a href="/help/show_16.html" target="_blank" rel="nofollow">预订酒店的问题</a><a href="/help/show_49.html" target="_blank" rel="nofollow">签订旅游合同</a><a href="/help/show_1.html" target="_blank" rel="nofollow">纯玩是什么意思？</a><a href="/help/show_8.html" target="_blank" rel="nofollow">外地游客怎样付款？</a></dd></dl><dl><dt><a href="/help/index_11.html" rel="nofollow">签订合同</a></dt><dd><a href="/help/show_9.html" target="_blank" rel="nofollow">定金支付比例如何？</a><a href="/help/show_7.html" target="_blank" rel="nofollow">本地游客如何付款？</a><a href="/help/show_10.html" target="_blank" rel="nofollow">对于支付团款的建议</a></dd></dl><dl><dt><a href="/help/index_12.html" rel="nofollow">帮助中心</a></dt><dd><a href="/help/show_47.html" target="_blank" rel="nofollow">旅游保险</a><a href="/help/show_45.html" target="_blank" rel="nofollow">常见问题</a><a href="/help/show_46.html" target="_blank" rel="nofollow">旅美需知</a></dd></dl><div class="st-wechat"><img src="/uploads/main/allimg/20161123/20161123005148.png" width="100" height="100" /><span>微信扫一扫，<br />优惠多多！</span></div></div></div></div><!--帮助 扫码--><div class="st-help"><ul class="wm-1200 foot-ad"><ul class="foot-nav-pills" style="text-align: center"><li class="foot-nav-item foot-nav-item-certificate">
+                企业认证
+            </li><li class="foot-nav-item foot-nav-item-certificate">
+                |
+            </li><li class="foot-nav-item foot-nav-item-coop">
+                合作伙伴
+            </li><li class="foot-nav-item foot-nav-item-certificate">
+                |
+            </li><li class="foot-nav-item foot-nav-item-otherlinks">
+                友情链接
+            </li></ul><ul class="foot-certificate" style="text-align: center"><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/IATA2.jpg" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/NTA.gif" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/DOT.jpg" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/CHP.jpg" ></li></ul><ul class="foot-coop" style="text-align: center"><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/中国国旅.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/惠租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/携程.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/港中旅.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/租租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/锦江旅游.gif" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/飞猪.jpg" ></li></ul><ul class="foot-otherlinks" style="text-align: center"><li class="foot-otherlinks-item" id="" ><a target="_blank"  href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li></ul></div></div><div class="st-footer"><div class="wm-1200"><div class="st-foot-menu"><a href="/servers/index_1.html" target="_blank" rel="nofollow">一日游</a><a href="/servers/index_4.html" target="_blank" rel="nofollow">精品多日游</a><a href="/servers/index_2.html" target="_blank" rel="nofollow">自驾游</a><a href="/servers/index_11.html" target="_blank" rel="nofollow">热门景点</a><a href="/servers/index_10.html" target="_blank" rel="nofollow">友情链接</a></div><!--底部导航--><div class="st-foot-edit"><div class="foot_con"><p>
+        经营许可证号：XXX　业务接待地址：美国纽约州纽约XXXX</p></div></div><!--网站底部介绍--><p></p></div></div><script src="/plugins/qq_kefu/public/js/qqkefu.js"></script><!-- 编辑器内容 --><div class="st-link"><div class="wm-1200"><div class="st-link-list"><strong>友情链接：</strong><div class="child"><a href="http://www.gogogous.com" target="_blank">佳晨旅游</a></div></div></div></div><!--友情链接--><script>
+    $(".foot-nav-item-certificate").hover(
+        function () {
+            $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+            $(".foot-certificate").show();
+            $(".foot-coop").hide();
+            $(".foot-otherlinks").hide();
+//            $(".foot-certificate").addClass('showContent');
+        },
+        function () {
+            $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+        }
+    );
+    $(".foot-nav-item-coop").hover(
+        function () {
+            $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+            $(".foot-certificate").hide();
+            $(".foot-coop").show();
+            $(".foot-coop").css({"visibility" : "visible"});
+            $(".foot-otherlinks").hide();
+//            $(".foot-certificate").addClass('showContent');
+        },
+        function () {
+            $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+        }
+    );
+    $(".foot-nav-item-otherlinks").hover(
+        function () {
+            $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+            $(".foot-certificate").hide();
+            $(".foot-coop").hide();
+            $(".foot-otherlinks").css({"visibility" : "visible"});
+            $(".foot-otherlinks").show();
+//            $(".foot-certificate").addClass('showContent');
+        },
+        function () {
+            $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+        }
+    );
+    $(".foot-otherlinks-item").click(function() {
+        $(this).css('color', '#fff');
+    });
+</script><script type="text/javascript"src="/min/?f=/res/js/floatmenu/floatmenu.js"></script>
+<script type="text/javascript"src="/min/?f=/res/js/SuperSlide.min.js,/res/js/template.js,/res/js/date.js,/res/js/calendar.js,/res/js/scorll.img.js"></script>
+<link type="text/css" href="/min/?f=/res/js/floatmenu/floatmenu.css" rel="stylesheet"  />
+<!--隐藏域--><input type="hidden" id="suitid" value=""/><input type="hidden" id="lineid" value="25"/><script type="text/javascript">
+$(document).ready(function(){
+    var topHeight = $('.tabnav-list').offset().top;
+    $(window).scroll(function(){
+        if($(document).scrollTop() >= topHeight){
+            $(".yd-btn-menu").show()
+        }else{
+            $(".yd-btn-menu").hide();
+        }
+    });
+    //线路内容切换
+    $.floatMenu({
+        menuContain : '.tabnav-list',
+        tabItem : 'span',
+        chooseClass : 'on',
+        contentContain : '.tabbox-list',
+        itemClass : '.tabcon-list'});
+    //套餐选择
+    $('.suitlist').find('a').click(function(){
+        var minprice=$(this).attr('data-minprice');
+        if(parseInt(minprice)>0){
+            $('#min_price_tips').find('span:eq(0)').removeClass('hide').siblings('span').addClass('hide');
+            $('#minprice').text(minprice);
+        }else{
+            $('#min_price_tips').find('span:eq(1)').removeClass('hide').siblings('span').addClass('hide');
+        }
+        var suitid = $(this).attr('data-suitid');
+        var jifentprice = $(this).attr('data-jifentprice');
+        var jifenbook = $(this).attr('data-jifenbook');
+        if(jifentprice){
+            $('.jifentprice').html(jifentprice+'元<i></i>')
+        }else{
+            $('.jifentprice').hide();
+        }
+        if(jifenbook){
+            $('.jifenbook').html(jifenbook+'分<i></i>')
+        }else{
+            $('.jifenbook').hide();
+        }
+        $("#suitid").val(suitid);
+        $(this).addClass('on').siblings().removeClass('on');
+        var lineid = $("#lineid").val();
+        get_calendar(suitid,lineid);
+        get_date_list(suitid,lineid);
+    })
+    //选中第一个
+    $('.suitlist').find('a').first().trigger('click');
+    //预订页面
+    $('body').delegate('.gobook','click',function(){
+        var usedate = $('.date-list').val();
+        var suitid = $('#suitid').val();
+        var lineid = $('#lineid').val();
+        if(usedate == null){
+            return false;
+        }
+        var url = "http://www.usyilu.com/lines/book/?usedate="+usedate+'&suitid='+suitid+"&lineid="+lineid;
+        window.location.href = url;
+    })
+
+    
+    //获取日历报价
+    function get_calendar(suitid,lineid)
+    {
+        showCalendar('calendar',suitid,function(){$(".calendar:first").css("margin-right","15px")},lineid);
+    }
+    //获取日历下拉列表
+    function get_date_list(suitid,lineid){
+        $.ajax({
+            type:'POST',
+            url:SITEURL+'line/ajax_date_options',
+            data:{suitid:suitid,lineid:lineid},
+            dataType:'json',
+            success:function(data){
+                $('.date-list').empty();
+                var html = '';
+                if(data.list!=''){
+                    $.each(data.list,function(i,row){
+var people = '';
+                        if(row.adultprice>0){
+                            people+='$'+row.adultprice+'/双人间/人 ';
+                        }
+                        if(row.childprice>0){
+                            people+='$'+row.childprice+'/三人间/人 ';
+                        }
+                        if(row.oldprice>0){
+                            people+='$'+row.oldprice+'/单人间/人 ';
+                        }
+                        html+='<option value="'+row.useday+'">'+row.shortdate+'('+row.weekday+')'+people+'</option>';
+                        $(".btn-yd").text('立即预订');
+                        $(".btn-yd").attr('style','background:#ff8a00');
+                        $(".btn-yd").addClass('gobook');
+                    })
+                }
+                else{
+                    html+='<option value="0">请选择日期</option>';
+                    $(".btn-yd").text('不可预订');
+                    $(".btn-yd").attr('style','background:#ccc');
+                    $(".btn-yd").removeClass('gobook');
+                }
+                $('.date-list').append(html);
+            }
+        })
+    }
+
+});
+//预订产品
+  function setBeginTime(y,m,d,price,lineid,suitid)
+  {
+      if(!is_login_order()){
+          return false;
+      }
+      var udate = y+'-'+m+'-'+d;
+      var url = SITEURL+"lines/book/?usedate="+udate+"&lineid="+lineid+"&suitid="+suitid;
+      window.location.href = url;
+  }
+</script><script>
+    var isLoginOrder="0";
+    var isLogin=false;
+    //登陆下订单
+    function is_login_order(){
+        var bool=true;
+        var text=$('#loginstatus').text();
+        var reg=/免费注册/g;
+        isLogin=!reg.test(text);
+        if(isLoginOrder==1 && !isLogin){
+            $('#is_login_order').removeClass('hide');
+            bool=false;
+        }
+        return bool;
+    }
+</script></body></html><script>
+  $(document).ready(function(){
+    $(window).onload = pageScroll();
+    $(window).bind('scroll', pageScroll);
+    $(".day-navlist li").click(function (e) {
+        //$(window).unbind("scroll");
+        var index = $(this).index(),
+            offset = $('.part').eq(index).offset().top,
+            scrollTop = $(window).scrollTop();
+        $(".day-navlist a").removeClass("cur");
+        $(this).find("a").addClass("cur");
+        $("html, body").animate({
+            scrollTop: offset
+        }, "slow", function () {
+            $(window).bind('scroll', pageScroll);
+        });
+        e.preventDefault();
+    })
+    function pageScroll() {
+        var scrollTop = $(window).scrollTop();
+        var size = $(".day-navlist a").size();
+        var listTop = $(".part").eq(0).offset().top;
+        if (size != null) {
+            for (var i = 0; i < size; i++) {
+                var firstOffset = $(".part").eq(0).offset().top,
+                    edge = $(".part").eq(size - 1).offset().top + $(".part").eq(size - 1).height(),
+                    offset = $(".part").eq(i).offset().top;
+                if (scrollTop < firstOffset || scrollTop > edge) {
+                    $(".day-navlist a").removeClass("cur");
+                    $("#day-leftNav").hide();
+                } else if (scrollTop >= offset && scrollTop <= edge) {
+                    $(".day-navlist a").removeClass("cur");
+                    $(".day-navlist a").eq(i).addClass("cur");
+                    $("#day-leftNav").show();
+                }
+            }
+        }
+    
+    }
+  })
+</script>";

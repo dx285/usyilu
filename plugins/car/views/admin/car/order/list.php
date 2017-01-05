@@ -249,7 +249,6 @@ Ext.onReady(
                     }
 
                 },
-
                 {
                     text: '产品名称',
                     width: '24%',
@@ -280,6 +279,7 @@ Ext.onReady(
                             str+='<br>' +record.get('linktel');
                         }
                         return str;
+
                     }
 
                 },

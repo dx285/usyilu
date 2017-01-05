@@ -502,7 +502,9 @@
 	margin-top:15px;
 	position:relative;
 	border:1px solid #d8d8d8;
-	border-radius:3px}
+	border-radius:3px;
+	box-shadow: 0 0 10px #999;
+}
 .txt-line-list ul li .hot-ico{
 	position:absolute;
 	top:-5px;
@@ -533,6 +535,14 @@
 	float:left;
 	width:430px;
 	margin-top:10px}
+.txt-line-list ul li .txt .strongPoints{
+	float:left;
+	width:38px;
+	margin-top: 12px;
+}
+.txt-line-list ul li .txt .strongPoints .strongPoint{
+	padding: 3px;
+}
 .txt-line-list ul li .txt .bt a{
 	float:left;
 	color:#333;
@@ -541,7 +551,7 @@
 	overflow:hidden;
 	font-size:14px}
 .txt-line-list ul li .txt .bt a:hover{
-    color: #f80;
+    color: #ff3573;
 }
 .txt-line-list ul li .txt .bt a img{
 	vertical-align:middle;
@@ -562,6 +572,16 @@
 	color:#333;
 	height:40px;
 	line-height:20px;
+
+	overflow:hidden}
+.txt-line-list ul li .txt .strongPoint{
+	color:#fff;
+	background-color: #5bc0de;
+	height:18px;
+	line-height:18px;
+	width: 50px;
+	margin-left: 5px;
+	padding: 3px;
 	overflow:hidden}
 .txt-line-list ul li .msg span{
 	float:left;
@@ -576,7 +596,7 @@
 	position:relative}
 .txt-line-list ul li .booking .yh{
 	float:left;
-	color:#f60;
+	color:#ff3573;
 	width:150px;
 	margin-top:20px;
 	text-align:center}
@@ -603,7 +623,7 @@
 	font-size:14px;
 	text-align:center;
 	border-radius:3px;
-	background:#f60}
+	background:#f8ab10}
 
 .pic-line-list li{
 	margin:25px 25px 0 0}
@@ -1177,3 +1197,44 @@
 .day-leftnav .day-navlist li a.cur{
 	color:#fff;
 	background:#00b7ee}
+
+
+/* Di */
+.customizeNav{
+	border:1px solid #e7e7e7;
+	background-color: #f4f4f4!important;
+	width: 930px;
+}
+
+.customizeNav > .item{
+	display: inline-block;
+	color: white;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 30px;
+	font-size: 16px;
+	font-weight:bold;
+	text-align: center;
+	box-sizing: border-box;
+	/*background-color: #f4f4f4!important;*/
+}
+
+.customizeNav > .item:hover{
+	background-color: #00b7ee;
+	/*background-color: #008CBA;*/
+	cursor: pointer;
+}
+
+.customizeNav > .item > a{
+	color: #666;
+}
+
+.customizeNav > .item > a:hover{
+	color: #fff;
+}
+
+
+/*.customizeNav > .item > a:active{*/
+	/*color: white;*/
+	/*background-color: #008CBA;*/
+/*}*/

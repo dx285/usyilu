@@ -1,0 +1,165 @@
+3600
+s:20605:"<!doctype html><html><head><meta charset="utf-8"><title>租车_7座商旅车-美国一路</title><!--    <script>
+    window.SITEURL = "/";
+    window.CURRENCY_SYMBOL="$";
+</script>--><link type="text/css" href="/min/?f=plugins/car/public/css/car.css" rel="stylesheet"  />
+<link type="text/css" href="/min/?f=/res/css/base.css,/res/css/extend.css" rel="stylesheet"  />
+<script type="text/javascript"src="/min/?f=/res/js/jquery.min.js,/res/js/base.js,/res/js/common.js,/res/js/delayLoading.min.js"></script>
+</head><body><link type="text/css" href="/min/?f=/usertpl/dw_st16239_no198_index/css/header.css" rel="stylesheet"  />
+<!-- header开始 --><div class="st-header"><div class="wm-1200"><div class="header-block"><div class="st-logo"><a href="http://www.usyilu.com"><img src="http://www.usyilu.com/uploads/main/allimg/20161217/20161217030520_70x70.png" alt="美国一路" /></a><p>全美首家:租车 + 小团</p></div><div class="st-nav"><ul class="clearfix"><li><a href="/">首页</a></li><li><!--                        --><a href="/cars/">一路接机</a><!--                        <a href="/cars/">一路接机</a>--></li><li><!--                        --><a href="/lines/all-0-0-0-0-0-27-1">落地参团</a><!--                        <a href="/lines/">落地参团</a>--></li><li><!--                        --><a href="http://www.usyilu.com/cars/">一路租车</a><!--                        <a href="http://www.usyilu.com/cars/">一路租车</a>--></li><li><!--                        --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1">一路自驾</a><!--                        <a href="/lines/">一路自驾</a>--></li><li><!--                        --><a href="http://www.usyilu.com/customize/">一路包车</a><!--                        <a href="http://www.usyilu.com/customize/">一路包车</a>--></li><li><!--                        --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1">特价酒店</a><!--                        <a href="http://www.usyilu.com/hotels/">特价酒店</a>--></li><li><a href="/help/index_1.html" rel="nofollow">关于我们</a></li><li></li><li></li><li></li></ul></div><!-- 主导航 --><div class="st-rig"><div class="phone-num">1718-475-9550</div><span id="loginstatus"></span></div></div></div></div><script>
+    var SITEURL = "/";
+    $(function(){
+        //导航的选中状态
+        $(".st-menu a").each(function(){
+            var url= window.location.href;
+            url=url.replace('index.php','');
+            url=url.replace('index.html','');
+            var ulink=$(this).attr("href");
+            if(url==ulink)
+            {
+                $(this).parents("li:first").addClass('active');
+            }
+        })
+        //登陆状态
+        $.ajax({
+            type:"POST",
+            async:false,
+            url:SITEURL+"member/login/ajax_is_login",
+            dataType:'json',
+            success:function(data){
+                if(data.status){
+                    $txt = '<div class="login-after"><a class="dl" style="padding:0" href="javascript:;">你好,</a>';
+                    //Di 避免直接暴露ip
+//                    $txt+= '<a class="dl" href="http://47.90.15.0/member/">'+data.user.nickname+  '&nbsp;&nbsp;</a>';
+//                    $txt+= '<a class="dl" href="http://47.90.15.0/member/login/loginout">退出</a></div>';
+                    $txt+= '<a class="dl" href="/member/">'+data.user.nickname+  '&nbsp;&nbsp;</a>';
+                    $txt+= '<a class="dl" href="/member/login/loginout">退出</a></div>';
+                    //$txt+= '<a class="dl" href="/member">个人中心</a>';
+                }else{
+                    //Di 避免直接暴露ip
+//                    $txt = ' <div class="login-before"><a class="dl" href="http://47.90.15.0/member/login">登录</a>|';
+//                    $txt+= '<a class="zc" href="http://47.90.15.0/member/register">注册</a></div>';
+                    $txt = ' <div class="login-before"><a class="dl" href="/member/login">登录</a>|';
+                    $txt+= '<a class="zc" href="/member/register">注册</a></div>';
+                }
+                $("#loginstatus").html($txt);
+            }
+        })
+    })
+</script><div class="big"><div class="wm-1200"><div class="st-guide"><a href="/">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/cars/">一路租车</a></div><!--面包屑--><ul class="customizeNav"><!--            <li class="item">--><!--                --><!----><!--                <a href="/cars/all">一路接机</a>--><!----><!--            </li>--><!--            <li class="item">--><!--                --><!----><!--                <a href="/lines/all">落地参团</a>--><!----><!--            </li>--><!--            <li class="item" style="background-color: #00a0de">--><!--                --><!----><!--                <a href="http://www.usyilu.com/cars/all" style="color: white">一路接送机</a>--><!----><!--            </li>--><!--            <li class="item">--><!--                --><!----><!--                <a href="/lines/all">一路自驾</a>--><!----><!--            </li>--></ul><!-- End Di  test --><div class="st-main-page"><div class="st-carlist-box"><div class="st-list-search"><div class="been-tj" ><strong>已选条件：</strong><p><span class="chooseitem" data-url="http://www.usyilu.com/cars/all-0-4-0-1">7座商旅车<i></i></span><a href="javascript:;" class="clearc">清空筛选条件 </a></p></div><div class="line-search-tj"><dl class="type" style="display: none" ><dt>目的地：</dt><dd><p><a href="/cars/yellowstone/">黄石</a><a href="/cars/losangeles/">洛杉矶</a><a href="/cars/sanfrancisco/">旧金山</a><a href="/cars/lasvegas/">拉斯维加斯</a><a href="/cars/washingtondc/">华盛顿</a><a href="/cars/boston/">波士顿</a><a href="/cars/niuyue/">纽约</a></p></dd></dl><dl class="type"><dt>车型：</dt><dd><p><a href="http://www.usyilu.com/cars/all-1-4-0-1" >5座SUV</a><a href="http://www.usyilu.com/cars/all-2-4-0-1" class="on">7座商旅车</a><a href="http://www.usyilu.com/cars/all-3-4-0-1" >12座福特</a></p></dd></dl><!--属性组读取--><dl class="type"><dt>优势服务：</dt><dd><p><a href="http://www.usyilu.com/cars/all-2-4-27-1" >举牌接机</a><a href="http://www.usyilu.com/cars/all-2-4-28-1" >中文司机</a><a href="http://www.usyilu.com/cars/all-2-4-29-1" >英文司机</a></p></dd></dl></div></div><!--条件搜索--><div class="st-carlist-con"><div class="st-sort-menu"><span class="sort-sum"><a data-url="http://www.usyilu.com/cars/all-2-0-0-1">综合排序</a><a href="javascript:;">价格
+                      <i class="jg-default" data-url="http://www.usyilu.com/cars/all-2-1-0-1"></i><a href="javascript:;">销量
+                    <i class="xl-default" data-url="http://www.usyilu.com/cars/all-2-3-0-1"></i></a><a href="javascript:;">推荐
+                    <i class="tj-down" data-url="http://www.usyilu.com/cars/all-2-0-0-1"></i></a></span><!--排序--></div><div class="car-list-con"><div class="list-child"><div class="lc-image-text"><div class="pic"><a href="/cars/show_7.html" target="_blank"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/82b18206fd3ea7f5b71ead2bd688fdfc_265x180.png" alt="高顶奔驰豪华型15座车" /></a></div><div class="text"><p class="bt"><a href="/cars/show_7.html" target="_blank">高顶奔驰豪华型15座车<img src="http://www.usyilu.com/uploads/icon/huodong.png" /></a></p><p class="attr"><span>销量：118</span><span>满意度：100%</span><span>推荐：100</span></p><p class="js">推荐理由：买二送二</p><p class="ads">车型：7座商旅车</p></div><div class="lowest-jg"><span><i class="currency_sy">$</i><b>1098</b>起</span></div></div><div class="car-typetable"><table width="100%" border="0"><tr><th width="240" height="40" scope="col"><span class="pl20">豪华</span></th><th width="80" align="center" scope="col">用车日期</th><th width="80" scope="col">单位</th><th width="80" align="center" scope="col">优惠价</th><th width="100" scope="col">支付方式</th><th width="200" scope="col">&nbsp;</th><th scope="col">&nbsp;</th></tr><tr><td height="40"><strong class="type-tit">jjjj</strong></td><td align="center"><span class="date" data-suitid="1">选择日期</span></td><td align="center">jjj</td><td align="center"><span class="price"><i class="currency_sy">$</i>1098起</span></td><td><span class="fk-way">定金支付</span></td><td><span class="s-jf">11分<i></i></span><span class="p-jf">99分<i></i></span><span class="d-jf">99元<i></i></span></td><td><a class="booking-btn" href="javascript:;" data-url="/cars/show_7.html" >预订</a></td></tr><tr style="display: none"><td colspan="7"><div class="cartype-nr"><p>jjjjjj</p></div></td></tr></table></div></div><div class="list-child"><div class="lc-image-text"><div class="pic"><a href="/cars/show_6.html" target="_blank"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/7e7e8f3cdba070f634a25c01e8929207_265x180.jpg" alt="豪华明星保姆车" /></a></div><div class="text"><p class="bt"><a href="/cars/show_6.html" target="_blank">豪华明星保姆车<img src="http://www.usyilu.com/uploads/icon/buy.png" /></a></p><p class="attr"><span>销量：100</span><span>满意度：100%</span><span>推荐：100</span></p><p class="js">推荐理由：买二送二</p><p class="ads">车型：7座商旅车</p></div><div class="lowest-jg"><span>电询</span></div></div><div class="car-typetable"><table width="100%" border="0"></table></div></div><div class="list-child"><div class="lc-image-text"><div class="pic"><a href="/cars/show_4.html" target="_blank"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/2ed6fd9c349457c1104f234c421565b0_265x180.jpg" alt="福特商务车" /></a></div><div class="text"><p class="bt"><a href="/cars/show_4.html" target="_blank">福特商务车<img src="http://www.usyilu.com/uploads/icon/special.png" /></a></p><p class="attr"><span>销量：100</span><span>满意度：100%</span><span>推荐：100</span></p><p class="js">推荐理由：买二送二</p><p class="ads">车型：7座商旅车</p></div><div class="lowest-jg"><span>电询</span></div></div><div class="car-typetable"><table width="100%" border="0"></table></div></div><div class="list-child"><div class="lc-image-text"><div class="pic"><a href="/cars/show_2.html" target="_blank"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/b6c5d77226617e1a3f0330272fff3c80_265x180.jpg" alt="丰田商务车" /></a></div><div class="text"><p class="bt"><a href="/cars/show_2.html" target="_blank">丰田商务车<img src="http://www.usyilu.com/uploads/icon/hot.png" /></a></p><p class="attr"><span>销量：100</span><span>满意度：100%</span><span>推荐：100</span></p><p class="js">推荐理由：买二送二</p><p class="ads">车型：7座商旅车</p></div><div class="lowest-jg"><span>电询</span></div></div><div class="car-typetable"><table width="100%" border="0"></table></div></div><div class="main_mod_page clear"></div></div></div></div><div class="st-sidebox"></div><!--边栏模块--></div></div><link type="text/css" href="/min/?f=/usertpl/dw_st16239_no198_index/css/footer.css" rel="stylesheet"  />
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">--><div class="st-help"><div class="wm-1200"><div class="help-lsit"><dl><dt><a href="/help/index_1.html" rel="nofollow">关于我们</a></dt><dd><a href="/help/show_51.html" target="_blank" rel="nofollow">发展历程</a><a href="/help/show_52.html" target="_blank" rel="nofollow">加入我们</a><a href="/help/show_53.html" target="_blank" rel="nofollow">联系我们</a><a href="/help/show_27.html" target="_blank" rel="nofollow">专业团队</a><a href="/help/show_3.html" target="_blank" rel="nofollow">美国一路简介</a></dd></dl><dl><dt><a href="/help/index_10.html" rel="nofollow">服务条款</a></dt><dd><a href="/help/show_48.html" target="_blank" rel="nofollow">客户协议</a><a href="/help/show_16.html" target="_blank" rel="nofollow">预订酒店的问题</a><a href="/help/show_49.html" target="_blank" rel="nofollow">签订旅游合同</a><a href="/help/show_1.html" target="_blank" rel="nofollow">纯玩是什么意思？</a><a href="/help/show_8.html" target="_blank" rel="nofollow">外地游客怎样付款？</a></dd></dl><dl><dt><a href="/help/index_11.html" rel="nofollow">签订合同</a></dt><dd><a href="/help/show_9.html" target="_blank" rel="nofollow">定金支付比例如何？</a><a href="/help/show_7.html" target="_blank" rel="nofollow">本地游客如何付款？</a><a href="/help/show_10.html" target="_blank" rel="nofollow">对于支付团款的建议</a></dd></dl><dl><dt><a href="/help/index_12.html" rel="nofollow">帮助中心</a></dt><dd><a href="/help/show_47.html" target="_blank" rel="nofollow">旅游保险</a><a href="/help/show_45.html" target="_blank" rel="nofollow">常见问题</a><a href="/help/show_46.html" target="_blank" rel="nofollow">旅美需知</a></dd></dl><div class="st-wechat"><img src="/uploads/main/allimg/20161123/20161123005148.png" width="100" height="100" /><span>微信扫一扫，<br />优惠多多！</span></div></div></div></div><!--帮助 扫码--><div class="st-help"><ul class="wm-1200 foot-ad"><ul class="foot-nav-pills" style="text-align: center"><li class="foot-nav-item foot-nav-item-certificate">
+                企业认证
+            </li><li class="foot-nav-item foot-nav-item-certificate">
+                |
+            </li><li class="foot-nav-item foot-nav-item-coop">
+                合作伙伴
+            </li><li class="foot-nav-item foot-nav-item-certificate">
+                |
+            </li><li class="foot-nav-item foot-nav-item-otherlinks">
+                友情链接
+            </li></ul><ul class="foot-certificate" style="text-align: center"><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/IATA2.jpg" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/NTA.gif" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/DOT.jpg" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/CHP.jpg" ></li></ul><ul class="foot-coop" style="text-align: center"><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/中国国旅.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/惠租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/携程.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/港中旅.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/租租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/锦江旅游.gif" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/飞猪.jpg" ></li></ul><ul class="foot-otherlinks" style="text-align: center"><li class="foot-otherlinks-item" id="" ><a target="_blank"  href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li></ul></div></div><div class="st-footer"><div class="wm-1200"><div class="st-foot-menu"><a href="/servers/index_1.html" target="_blank" rel="nofollow">一日游</a><a href="/servers/index_4.html" target="_blank" rel="nofollow">精品多日游</a><a href="/servers/index_2.html" target="_blank" rel="nofollow">自驾游</a><a href="/servers/index_11.html" target="_blank" rel="nofollow">热门景点</a><a href="/servers/index_10.html" target="_blank" rel="nofollow">友情链接</a></div><!--底部导航--><div class="st-foot-edit"><div class="foot_con"><p>
+        经营许可证号：XXX　业务接待地址：美国纽约州纽约XXXX</p></div></div><!--网站底部介绍--><p></p></div></div><script src="/plugins/qq_kefu/public/js/qqkefu.js"></script><!-- 编辑器内容 --><div class="st-link"><div class="wm-1200"><div class="st-link-list"><strong>友情链接：</strong><div class="child"><a href="http://www.gogogous.com" target="_blank">佳晨旅游</a></div></div></div></div><!--友情链接--><script>
+    $(".foot-nav-item-certificate").hover(
+        function () {
+            $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+            $(".foot-certificate").show();
+            $(".foot-coop").hide();
+            $(".foot-otherlinks").hide();
+//            $(".foot-certificate").addClass('showContent');
+        },
+        function () {
+            $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+        }
+    );
+    $(".foot-nav-item-coop").hover(
+        function () {
+            $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+            $(".foot-certificate").hide();
+            $(".foot-coop").show();
+            $(".foot-coop").css({"visibility" : "visible"});
+            $(".foot-otherlinks").hide();
+//            $(".foot-certificate").addClass('showContent');
+        },
+        function () {
+            $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+        }
+    );
+    $(".foot-nav-item-otherlinks").hover(
+        function () {
+            $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+            $(".foot-certificate").hide();
+            $(".foot-coop").hide();
+            $(".foot-otherlinks").css({"visibility" : "visible"});
+            $(".foot-otherlinks").show();
+//            $(".foot-certificate").addClass('showContent');
+        },
+        function () {
+            $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+        }
+    );
+    $(".foot-otherlinks-item").click(function() {
+        $(this).css('color', '#fff');
+    });
+</script><script>
+    $(function(){
+        //租车搜索条件去掉最后一条边框
+        $('.line-search-tj').find('dl').last().addClass('bor_0')
+        $(".line-search-tj dl dd em").toggle(function(){
+            $(this).prev().children('.hide-list').hide();
+            $(this).children('b').text('展开');
+            $(this).children('i').removeClass('up')
+        },function(){
+            $(this).prev().children('.hide-list').show();
+            $(this).children('b').text('收起');
+            $(this).children('i').addClass('up')
+        });
+        //套餐点击
+        $(".type-tit").click(function(){
+            $(this).parents('tr').first().next().toggle();
+        })
+        //隐藏没有属性下级分类
+        $(".type").each(function(i,obj){
+            var len = $(obj).find('dd p a').length;
+            if(len<1){
+                $(obj).hide();
+            }
+        })
+        //排序方式点击
+        $('.sort-sum').find('a').click(function(){
+            var url = $(this).find('i').attr('data-url');
+            if(url==undefined){
+                url = location.href;
+            }
+            window.location.href = url;
+        })
+        //删除已选
+        $(".chooseitem").find('i').click(function(){
+            var url = $(this).parent().attr('data-url');
+            window.location.href = url;
+        })
+        //清空筛选条件
+        $('.clearc').click(function(){
+            var url = SITEURL+'cars/all/';
+            window.location.href = url;
+        })
+        //预订
+        $(".booking-btn").click(function(){
+            var dataurl = $(this).attr('data-url');
+            window.location.href = dataurl;
+            //$(this).parents('tr').first().find('.date').trigger('click');
+        })
+    })
+</script></body></html>
+";

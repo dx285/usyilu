@@ -125,7 +125,7 @@
                                               <td class="tit">日期范围：</td><td><input type="text" name="starttime"  value="{$info['lastoffer']['starttime']}" class="set-text-xh text_100 choosetime"/> <span class="fl">&nbsp;~&nbsp;</span> <input value="{$info['lastoffer']['endtime']}" type="text" class="set-text-xh text_100 choosetime" name="endtime"/></td>
                                           </tr>
                                           <tr>
-                                              <td class="tit">适用人群：</td><td class="prop-group"><input type="checkbox" name="propgroup[]" value="2" id="adultgroup"/>成人&nbsp;&nbsp;&nbsp;<input type="checkbox" name="propgroup[]" value="1" id="childgroup">儿童&nbsp;&nbsp;&nbsp;<input type="checkbox" name="propgroup[]" value="3" id="oldgroup">老人
+                                              <td class="tit">适用人群：</td><td class="prop-group"><input type="checkbox" name="propgroup[]" value="2" id="adultgroup"/>双人间&nbsp;&nbsp;&nbsp;<input type="checkbox" name="propgroup[]" value="1" id="childgroup">三人间&nbsp;&nbsp;&nbsp;<input type="checkbox" name="propgroup[]" value="3" id="oldgroup">单人间
                                               </td>
                                           </tr>
                                           <tr>
@@ -133,7 +133,7 @@
                                                   <table class="group-tb">
                                                       <tbody>
                                                       <tr class="group_2" style="display:none">
-                                                          <td width="80">成人价格：</td>
+                                                          <td width="80">双人间价格：</td>
                                                           <td>
                                                               <span class="fl">成本</span>
                                                               <input type="text" class="set-text-xh text_60 mt-2 ml-10" name="adultbasicprice" onkeyup="calPrice(this)" value="{$info['lastoffer']['adultbasicprice']}" autocomplete="off">
@@ -143,7 +143,7 @@
                                                           </td>
                                                       </tr>
                                                       <tr class="group_1" style="display:none">
-                                                          <td width="80">儿童价格：</td>
+                                                          <td width="80">三人间价格：</td>
                                                           <td>
                                                               <span class="fl">成本</span>
                                                               <input type="text" class="set-text-xh text_60 mt-2 ml-10" name="childbasicprice" onkeyup="calPrice(this)" value="{$info['lastoffer']['childbasicprice']}" autocomplete="off">
@@ -153,7 +153,7 @@
                                                           </td>
                                                       </tr>
                                                       <tr class="group_3" style="display:none">
-                                                          <td width="80">老人价格：</td>
+                                                          <td width="80">单人间价格：</td>
                                                           <td>
                                                               <span class="fl">成本</span>
                                                               <input type="text" class="set-text-xh text_60 mt-2 ml-10" name="oldbasicprice" autocomplete="off" onkeyup="calPrice(this)" value="{$info['lastoffer']['oldbasicprice']}">

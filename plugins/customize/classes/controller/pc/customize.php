@@ -46,7 +46,7 @@ class Controller_Pc_Customize extends Stourweb_Controller{
         $dest = Common::remove_xss(Arr::get($_POST,'dest'));
         $starttime = strtotime(Common::remove_xss(Arr::get($_POST,'starttime')));
         $startplace = Common::remove_xss(Arr::get($_POST,'startplace'));
-        $days = Common::remove_xss(Arr::get($_POST,'days'));
+        $days = strtotime(Common::remove_xss(Arr::get($_POST,'days')));
         $adultnum = Common::remove_xss(Arr::get($_POST,'adultnum'));
         $childnum = Common::remove_xss(Arr::get($_POST,'childnum'));
         $planerank = Common::remove_xss(Arr::get($_POST,'planerank'));

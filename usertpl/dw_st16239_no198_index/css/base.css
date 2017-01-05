@@ -25,7 +25,8 @@ td{
 	border:0;
 	outline:none;
 	word-break: break-all;
-	font-family:'微软雅黑'}
+	/*font-family:'微软雅黑';*/
+}
 select,textarea{
 	outline:none;
 	font-family:'微软雅黑'}
@@ -39,7 +40,9 @@ address,caption,cite,code,dfn,em,strong,th,var{
 	font-weight:normal}
 ol,ul {
 	list-style:none;
-	list-style-position:inside}
+	list-style-position:inside
+
+}
 a{
 	color:#333;
 	text-decoration:none}
@@ -95,7 +98,7 @@ abbr,acronym{
 	width:100%;
 	min-width:1200px}
 .wm-1200{
-	width:1200px;
+	width:1300px;
 	margin:0 auto;
 	position:relative}
 .wm-1200:before,

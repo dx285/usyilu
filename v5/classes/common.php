@@ -789,7 +789,9 @@ EOT;
             $out .= '.';
             $k++;
         }
-        $out = substr($out, 0, strlen($out) - 1);
+        //Di delete the first '.', otherwise '.usyilu' instead of 'usyilu'
+        //$out = substr($out, 0, strlen($out) - 1);
+        $out = substr($out, 1, strlen($out) - 2);
         return $out;
 
     }
@@ -802,7 +804,10 @@ EOT;
 
         $sql = "SELECT webprefix FROM `sline_weblist` WHERE webid=0";
         $row = DB::query(1, $sql)->execute()->as_array();
+        //Di comment out 'www'
         return $row[0]['webprefix'] ? $row[0]['webprefix'] : 'www';
+        //return $row[0]['webprefix'];
+
     }
 
     /**
@@ -823,7 +828,19 @@ EOT;
         {
             $prefix = self::get_main_prefix();
         }
-        $url = 'http://' . $prefix . $domain;
+        //Di comment out duplicate prefix
+        $pre = substr(['cfg_basehost'], 0, 10);
+
+        if ($pre == 'http://www'){
+            $url = 'http://' . $domain;
+
+        }else{
+            //$url = 'http://' . $prefix . '.' . $domain;
+        }
+        //$url = 'http://' . $prefix . '.' . $domain;
+        //$url = 'http://' . $domain;
+        //$url = 'http://' . $prefix . $domain;  //original
+
         return $url;
 
 

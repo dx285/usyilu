@@ -164,7 +164,7 @@
                             </dd>
                         </dl>
                         <dl>
-                            <dt>往返交通:</dt>
+                            <dt>车型选择:</dt>
                             <dd>
                                 {loop $sysjiaotong $v}
 

@@ -164,16 +164,213 @@
 
 
 
+/*Di new*/
+.dest-nav-pills{
+
+	padding-bottom: 10px;
+}
+
+
+.dest-nav-pills .dest-nav-city-ny:hover{
+	/*color: #24ccff;*/
+	cursor: pointer;
+}
+
+.dest-city-ny{
+	color: #fff;
+	height: 300px;
+	padding-top: 90px;
+	/*visibility: hidden;*/
+}
+
+.dest-city-ny .foot-certificate-item{
+	/*display: inline;*/
+	margin: -3%;
+}
+
+.dest-city-ny .foot-certificate-item > img{
+	/*height: 122px;*/
+	/*width: 192px;*/
+	display: inline;
+}
+
+.dest-city-boston{
+	visibility: hidden;
+	display: none;
+	height: 300px;
+	padding-top: 90px;
+
+}
+
+.dest-city-boston .foot-coop-item{
+	/*display: inline;*/
+	margin: -3%;
+}
+
+.dest-city-boston .foot-coop-item > img{
+	/*height: 80px;*/
+	/*width: 135px;*/
+}
+
+.dest-city-dc{
+
+	/*color: #fff;*/
+	height: 300px;
+	padding-top: 90px;
+	visibility: hidden;
+	display: none;
+}
+
+.dest-city-dc .foot-otherlinks-item{
+	/*display: inline;*/
+	margin: -3%;
+	/*background-color: #fff;*/
+	font-size: 18px;
+
+}
+
+.dest-city-dc .foot-otherlinks-item > a:link{
+	color: #ffffff;
+}
+
+.dest-city-dc .foot-otherlinks-item > a:hover{
+	/*text-decoration: none;*/
+	color: #24ccff;
+}
+
+.dest-city-ys{
+
+	/*color: #fff;*/
+	height: 300px;
+	padding-top: 90px;
+	visibility: hidden;
+	display: none;
+}
+
+.dest-city-ys .foot-otherlinks-item{
+	/*display: inline;*/
+	margin: -3%;
+	/*background-color: #fff;*/
+	font-size: 18px;
+
+}
+
+.dest-city-lv{
+
+	/*color: #fff;*/
+	height: 300px;
+	padding-top: 90px;
+	visibility: hidden;
+	display: none;
+}
+
+.dest-city-lv .foot-otherlinks-item{
+	/*display: inline;*/
+	margin: -3%;
+	/*background-color: #fff;*/
+	font-size: 18px;
+
+}
+
+.dest-city-la{
+
+	/*color: #fff;*/
+	height: 300px;
+	padding-top: 90px;
+	visibility: hidden;
+	display: none;
+}
+
+.dest-city-la .foot-otherlinks-item{
+	/*display: inline;*/
+	margin: -3%;
+	/*background-color: #fff;*/
+	font-size: 18px;
+
+}
+
+.dest-city-sf{
+
+	/*color: #fff;*/
+	height: 300px;
+	padding-top: 90px;
+	visibility: hidden;
+	display: none;
+}
+
+.dest-city-sf .foot-otherlinks-item{
+	/*display: inline;*/
+	margin: -3%;
+	/*background-color: #fff;*/
+	font-size: 18px;
+
+}
+
+.showContent{
+	visibility: visible;
+
+}
 
 
 
+/*car display css*/
+.pick-suvs{
+	color: #fff;
+	height: 400px;
+	width: 600px;
+	padding-top: 90px;
+}
 
 
 
+.pick-ford15{
+	visibility: hidden;
+	display: none;
+	height: 400px;
+	padding-top: 90px;
+}
 
+.pick-benz{
+	visibility: hidden;
+	display: none;
+	height: 400px;
+	padding-top: 90px;
+}
 
+.pick-toyota{
+	visibility: hidden;
+	display: none;
+	height: 400px;
+	padding-top: 90px;
+}
 
+.pick-star{
+	visibility: hidden;
+	display: none;
+	height: 400px;
+	padding-top: 90px;
+}
 
+.pick-ford12{
+	visibility: hidden;
+	display: none;
+	height: 400px;
+	padding-top: 90px;
+}
 
+img.destPicSize{
+	height: 370px;
+	width: 560px;
+	padding-bottom: 36px;
+	padding-left: 2.5%;
+}
+
+img.carPicSize{
+	height: 400px;
+	width: 600px;
+	max-width: 100%;
+	max-height: 100%;
+	padding-left: 33%;
+}
 
 

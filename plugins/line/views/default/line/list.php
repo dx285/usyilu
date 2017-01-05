@@ -3,7 +3,10 @@
 <html>
 <head>
 <meta charset="utf-8">
+<!-- Di   -->
 <title>{if !empty($destinfo['seotitle'])}{$destinfo['seotitle']}{else}{$searchtitle}{/if}-{$GLOBALS['cfg_webname']}</title>
+<!--    <title>{if !empty($destinfo['seotitle'])}{$destinfo['seotitle']}{else}{$searchtitle}{/if}-{$GLOBALS['cfg_webname']}</title>-->
+
     {$destinfo['keyword']}
     {$destinfo['description']}
     {include "pub/varname"}
@@ -15,90 +18,233 @@
 <body>
 
    {request "pub/header"}
-  
+  <?php $choose_district;  ?>
+  <?php $choose_xiaotuan;  ?>
+   <?php $choose_oneDayTrip;  ?>
   <div class="big">
   	<div class="wm-1200">
-    
+
     	<div class="st-guide">
-      	<a href="{$cmsurl}">{$GLOBALS['cfg_indexname']}</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="{$cmsurl}lines/">{$channelname}</a>
-            {loop $predest $pre}
-               &gt;&nbsp;&nbsp;<a href="{$cmsurl}lines/{$pre['pinyin']}/">{$pre['kindname']}</a>
-            {/loop}
+<!--      	<a href="{$cmsurl}">{$GLOBALS['cfg_indexname']}</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="{$cmsurl}lines/">{$channelname}</a>-->
+<!--            {loop $predest $pre}-->
+<!--               &gt;&nbsp;&nbsp;<a href="{$cmsurl}lines/{$pre['pinyin']}/">{$pre['kindname']}</a>-->
+<!--            {/loop}-->
       </div><!--面包屑-->
-      
+
       <div class="st-main-page">
-      	<div class="st-linelist-box">
-        	<div class="st-line-brief">
-          	<div class="dest-tit"><i class="st-line-icon line-mdd-icon"></i>{if $destinfo['kindname']}{$destinfo['kindname']}{else}{$channelname}{/if}</div>
-            {if $destinfo['jieshao']}
-                <div class="brief-con">
-                    {$destinfo['jieshao']}
-                </div>
-            {/if}
-          </div><!--栏目介绍-->
+
+          {st:attr action="query" flag="grouplist" typeid="$typeid" return="grouplist"}
+          <?php $actual_link = $_SERVER[REQUEST_URI];
+            $tmp = substr($actual_link, -4, 2);
+          $tmp2 = substr($actual_link, -2, 2);
+
+                ?>
+              {if $tmp == '27' or $tmp == '18'}
+                  {loop $grouplist $group}
+                  <dl class="customizeNav">
+
+                          {if $group['attrname'] == '旅行方式'}
+                              {st:attr action="query" flag="childitem" typeid="$typeid" groupid="$group['id']" return="attrlist"}
+                              {loop $attrlist $attr}
+
+                                  {if $attr['attrname'] == '小团' or $attr['attrname'] == '一日游'} 
+                                    <div class="item">  <a href="{Model_Line::get_search_url($attr['id'],'attrid',$param)}" {if
+                                                         Common::check_in_attr($param['attrid'],$attr['id'])!==false}class="on"{/if}>{$attr['attrname']}</a>
+                                       
+                                    </div>
+
+                                   {/if}
+
+                              {/loop}
+                          {/st}
+                          {/if}
+                  </dl>
+                  {/loop}
+              {elseif $tmp2 == '-1'}
+                  {loop $grouplist $group}
+                    <dl class="customizeNav">
+
+                        {if $group['attrname'] == '旅行方式'}
+                            {st:attr action="query" flag="childitem" typeid="$typeid" groupid="$group['id']" return="attrlist"}
+                            {loop $attrlist $attr}
+
+                            {if $attr['attrname'] == '自由自驾' or $attr['attrname'] == '团队自驾' or $attr['attrname'] == '定制自驾'} 
+                                <div class="item">  <a href="{Model_Line::get_search_url($attr['id'],'attrid',$param)}" {if
+                                                       Common::check_in_attr($param['attrid'],$attr['id'])!==false}class="on"{/if}>{$attr['attrname']}</a>
+                                     
+                                </div>
+
+                             {/if}
+
+                            {/loop}
+                            {/st}
+                        {/if}
+
+                    </dl>
+                {/loop}
+              {/if}
+
+          {/st}
+
+
+      <div class="st-linelist-box">
           <div class="st-list-search">
-          	<div class="been-tj" {if count($chooseitem)<1}style="display:none"{/if}>
+
+
+              <div class="been-tj" {if count($chooseitem)<1}style="display:none"{/if}>
             	<strong>已选条件：</strong>
-              <p>
+              <p class="chooseitems">
                 {loop $chooseitem $item}
+                  <?php
+                    if ($item['itemname'] == "东海岸" or $item['itemname'] == "西海岸" or $item['itemname'] == "黄石"){
+                      $choose_district = $item['itemname'];
+                    }
+                  if ($item['itemname'] == "小团"){
+                      $choose_xiaotuan = $item['itemname'];
+                  }
+                  if ($item['itemname'] == "一日游"){
+                      $choose_oneDayTrip = $item['itemname'];
+                  }
+
+                  ?>
               	    <span class="chooseitem" data-url="{$item['url']}">{$item['itemname']}<i></i></span>
                 {/loop}
                 <a href="javascript:;" class="clearc">清空筛选条件 </a>
               </p>
             </div>
             <div class="line-search-tj">
-              <dl class="type">
-                <dt>目的地：</dt>
-                <dd>
-                	<p>
-                       {st:dest action="query" typeid="$typeid" flag="nextsame" row="100" pid="$destid" return="destlist"}
-                        {loop $destlist $dest}
-                           <a {if $param['destpy']==$dest['pinyin']}class="on"{/if} href="{Model_Line::get_search_url($dest['pinyin'],'destpy',$param)}">{$dest['kindname']}</a>
-                        {/loop}
-                       {/st}
-                  </p>
-                   {if count($destlist)>10}
-                   <em><b>收起</b><i class='up'></i></em>
-                   {/if}
-                </dd>
-              </dl>
-              <!--出发城市开始-->
-                {if $GLOBALS['cfg_startcity_open']}
-                  <dl class="type">
-                    <dt>出发城市：</dt>
-                    <dd>
-                        <p>
-                        {st:startplace action="city" row="100" return="startcitylist"}
-                            {loop $startcitylist $city}
-                              <a {if $param['startcityid']==$city['id']}class="on"{/if} href="{Model_Line::get_search_url($city['id'],'startcityid',$param)}">{$city['title']}</a>
-                            {/loop}
-                        {/st}
-                      </p>
-                        {if count($startcitylist)>10}
-                           <em><b>收起</b><i class='up'></i></em>
-                        {/if}
-                    </dd>
-                  </dl>
-                {/if}
-                <!--出发城市结束-->
-                <!--属性组读取-->
-              {st:attr action="query" flag="grouplist" typeid="$typeid" return="grouplist"}
+                {st:attr action="query" flag="grouplist" typeid="$typeid" return="grouplist"}
                 {loop $grouplist $group}
-                  <dl class="type">
+                <dl class="type">
+                    {if $group['attrname'] == '选择区域'}
                     <dt>{$group['attrname']}：</dt>
                     <dd>
                         <p>
-                         {st:attr action="query" flag="childitem" typeid="$typeid" groupid="$group['id']" return="attrlist"}
+                            {st:attr action="query" flag="childitem" typeid="$typeid" groupid="$group['id']" return="attrlist"}
                             {loop $attrlist $attr}
-                                <a href="{Model_Line::get_search_url($attr['id'],'attrid',$param)}" {if Common::check_in_attr($param['attrid'],$attr['id'])!==false}class="on"{/if}>{$attr['attrname']}</a>
+                            <a href="{Model_Line::get_search_url($attr['id'],'attrid',$param)}" {if Common::check_in_attr($param['attrid'],$attr['id'])!==false}class="on"{/if}>{$attr['attrname']}</a>
                             {/loop}
-                         {/st}
-                      </p>
+                            {/st}
+                        </p>
                     </dd>
+                    {/if}
+                </dl>
+                {/loop}
+                {/st}
+
+                <!--出发城市开始-->
+                {if $GLOBALS['cfg_startcity_open']}
+                <dl class="type">
+                    <dt>出发城市：</dt>
+                    <dd>
+                        <p>
+                            {st:startplace action="city" row="10" return="startcitylist"}
+                            {loop $startcitylist $city}
+                                {if $choose_xiaotuan == '小团' or $choose_oneDayTrip == '一日游'}
+                                    {if ($choose_district == '东海岸') }
+                                         {if $city['title'] == '纽约' or $city['title'] == '波士顿' or $city['title'] == '华盛顿'} 
+                                        <a {if $param['startcityid']==$city['id']}class="on"{/if} href="{Model_Line::get_search_url($city['id'],'startcityid',$param)}">{$city['title']}</a> 
+                                        {/if}
+                                    {elseif ($choose_district == '西海岸')}
+                                        {if $city['title'] == '旧金山' or $city['title'] == '洛杉矶' or $city['title'] == '拉斯维加斯'} 
+                                        <a {if $param['startcityid']==$city['id']}class="on"{/if} href="{Model_Line::get_search_url($city['id'],'startcityid',$param)}">{$city['title']}</a> 
+                                        {/if}
+                                    {elseif ($choose_district == '黄石')}
+                                        {if $city['title'] == '黄石' } 
+                                        <a {if $param['startcityid']==$city['id']}class="on"{/if} href="{Model_Line::get_search_url($city['id'],'startcityid',$param)}">{$city['title']}</a> 
+                                        {/if}
+                                    {else}
+                                        <a {if $param['startcityid']==$city['id']}class="on"{/if} href="{Model_Line::get_search_url($city['id'],'startcityid',$param)}">{$city['title']}</a> 
+                                     {/if}
+                                {else}
+                                    <a {if $param['startcityid']==$city['id']}class="on"{/if} href="{Model_Line::get_search_url($city['id'],'startcityid',$param)}">{$city['title']}</a> 
+                                {/if}
+
+                            {/loop}
+                            {/st}
+                        </p>
+                        {if count($startcitylist)>10}
+                        <em><b>收起</b><i class='up'></i></em>
+                        {/if}
+                    </dd>
+                </dl>
+                {/if}
+                <!--出发城市结束-->
+
+                <dl class="type">
+                    <!-- Di change displayed text -->
+                    <dt>结束城市：</dt>
+                    <dd>
+                        <p>
+                            {st:dest action="query" typeid="$typeid" flag="nextsame" row="100" pid="$destid" return="destlist"}
+                            {loop $destlist $dest}
+                            {if $choose_xiaotuan == '小团' or $choose_oneDayTrip == '一日游'}
+                                {if ($choose_district == '东海岸') }
+                                     {if $dest['kindname'] == '纽约' or $dest['kindname'] == '波士顿' or $dest['kindname'] == '华盛顿'} 
+                                    <a {if $param['destpy']==$dest['pinyin']}class="on"{/if} href="{Model_Line::get_search_url($dest['pinyin'],'destpy',$param)}">{$dest['kindname']}</a>
+                                    {/if}
+                                {elseif ($choose_district == '西海岸')}
+                                    {if $dest['kindname'] == '旧金山' or $dest['kindname'] == '洛杉矶' or $dest['kindname'] == '拉斯维加斯'} 
+                                    <a {if $param['destpy']==$dest['pinyin']}class="on"{/if} href="{Model_Line::get_search_url($dest['pinyin'],'destpy',$param)}">{$dest['kindname']}</a>
+                                    {/if}
+                                {elseif ($choose_district == '黄石')}
+                                    {if $dest['kindname'] == '黄石' } 
+                                    <a {if $param['destpy']==$dest['pinyin']}class="on"{/if} href="{Model_Line::get_search_url($dest['pinyin'],'destpy',$param)}">{$dest['kindname']}</a>
+                                    {/if}
+                                {else}
+                                    <a {if $param['destpy']==$dest['pinyin']}class="on"{/if} href="{Model_Line::get_search_url($dest['pinyin'],'destpy',$param)}">{$dest['kindname']}</a>
+                                {/if}
+                            {else}
+                                <a {if $param['destpy']==$dest['pinyin']}class="on"{/if} href="{Model_Line::get_search_url($dest['pinyin'],'destpy',$param)}">{$dest['kindname']}</a> 
+                            {/if}
+                            {/loop}
+                            {/st}
+                        </p>
+                        {if count($destlist)>10}
+                        <em><b>收起</b><i class='up'></i></em>
+                        {/if}
+                    </dd>
+                </dl>
+
+                <!--属性组读取-->
+<!--                {loop $chooseitem $item}-->
+<!--                <span class="chooseitem" data-url="{$item['url']}">{$item['itemname']}<i></i></span>-->
+<!--                {/loop}-->
+              {st:attr action="query" flag="grouplist" typeid="$typeid" return="grouplist"}
+                {loop $grouplist $group}
+                  <dl class="type">
+                      {if $group['attrname'] == '车型选择'}
+                          {if $choose_xiaotuan != '小团' and $choose_oneDayTrip != '一日游' }
+                          <dt>{$group['attrname']}：</dt>
+                            <dd>
+                                <p>
+                                 {st:attr action="query" flag="childitem" typeid="$typeid" groupid="$group['id']" return="attrlist"}
+                                    {loop $attrlist $attr}
+                                        <!-- 加各种团条件 -->
+                                        <a href="{Model_Line::get_search_url($attr['id'],'attrid',$param)}" {if Common::check_in_attr($param['attrid'],$attr['id'])!==false}class="on"{/if}>{$attr['attrname']}</a>
+                                    {/loop}
+                                 {/st}
+                              </p>
+                            </dd>
+                          {/if}
+
+                      {elseif $group['attrname'] != '旅行方式' and $group['attrname'] != '选择区域'}
+                          <dt>{$group['attrname']}：</dt>
+                          <dd>
+                              <p>
+                                  {st:attr action="query" flag="childitem" typeid="$typeid" groupid="$group['id']" return="attrlist"}
+                                  {loop $attrlist $attr}
+                                  <a href="{Model_Line::get_search_url($attr['id'],'attrid',$param)}" {if Common::check_in_attr($param['attrid'],$attr['id'])!==false}class="on"{/if}>{$choose_xiaotuan}{$attr['attrname']}</a>
+                                  {/loop}
+                                  {/st}
+                              </p>
+                          </dd>
+                      {/if}
                   </dl>
                 {/loop}
               {/st}
 
+            {if $choose_oneDayTrip != '一日游' }
               <dl class="type">
                 <dt>出游天数：</dt>
                 <dd>
@@ -111,11 +257,12 @@
                     </p>
                 </dd>
               </dl>
+             {/if}
+
               <dl class="type">
                 <dt>价格区间：</dt>
                 <dd>
                     <p>
-
                         {st:line action="price_list"}
                             {loop $data $r}
                                 <a {if $param['priceid']==$r['id']}class="on"{/if} href="{Model_Line::get_search_url($r['id'],'priceid',$param)}">{$r['title']}</a>
@@ -163,6 +310,8 @@
                 <a {if $param['displaytype']==1} class="on" {/if} href="{Model_Line::get_search_url(1,'displaytype',$param,$currentpage)}"><i class="pic"></i>图片模式</a>
               </span><!--切换模式-->
             </div>
+
+              <?php $strongPoints; ?>
            {if !empty($list)}
                {if $param['displaytype']==0}
                 <div class="txt-line-list">
@@ -184,8 +333,15 @@
                           <span>满意度：{$line['score']}</span><s>|</s>
                           <span>推荐：{$line['recommendnum']}</span>
                         </p>
-                        <p class="ts">特色：{$line['sellpoint']}</p>
-                        <p class="msg">
+                          <?php $strongPoints = explode(",",$line['sellpoint']); ?>
+<!--                        <p class="ts">特色：{$line['sellpoint']}{$strongPoints}</p>-->
+                        <p class="ts strongPoints">特色：
+                            {loop $strongPoints $strongPoint}
+                            <p class="strongPoint">{$strongPoint}</p>
+                            {/loop}
+                        </p>
+
+                          <p class="msg">
                             <span>
                                 {if !empty($line['startcity'])}
                                  [{$line['startcity']}出发]
@@ -264,7 +420,7 @@
             {st:right action="get" typeid="$typeid" data="$templetdata" pagename="search"}
         </div><!--边栏模块-->
       </div>
-    
+
     </div>
   </div>
 
@@ -311,6 +467,10 @@
                 if(len<1){
                     $(obj).hide();
                 }
+            })
+
+            $(".customizeNav").next(".item").click(function(){
+                $(this).css({"background-color" : "#24ccff"});
             })
         })
 

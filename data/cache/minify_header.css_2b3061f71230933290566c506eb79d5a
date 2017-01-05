@@ -1,8 +1,9 @@
-.st-header{width:100%;height:70px;background:url("/usertpl/dw_st16239_no198_index/images/header-bg.png") left top repeat-x}.header-block{height:70px}.st-logo{float:left;width:240px;height:70px;overflow:hidden}.st-logo>a{display:table-cell;width:240px;height:70px;vertical-align:middle;text-align:center}.st-logo>a>img{vertical-align:middle}.st-nav{float:left;width:560px;height:70px;overflow:hidden}.st-nav
-li{float:left;height:70px}.st-nav li
-a{display:block;color:#fff;height:70px;line-height:70px;padding:0
-30px;font-size:16px;font-weight:bold}.st-nav li a:hover{color:#28cc7b}.st-rig{float:right;height:30px;padding:20px
-0}.st-rig .phone-num{float:left;color:#fff;height:30px;line-height:30px;font-size:14px}.st-rig .phone-num:before{content:"";display:inline-block;width:21px;height:16px;vertical-align:middle;margin:-4px 10px 0 0;background:url("/usertpl/dw_st16239_no198_index/images/st-index-ico.png") no-repeat 0 -48px}.st-rig .login-before{float:left;color:#fff;height:30px;padding-left:30px}.st-rig .login-before
-a{display:inline-block;color:#fff;height:30px;line-height:30px;padding:0
-5px;vertical-align:middle;font-size:14px}.st-rig .login-after{float:left;color:#fff;max-width:200px;height:30px;line-height:30px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding-left:30px;font-size:14px}.st-rig .login-after
-a{color:#fff}
+.st-header{width:100%;height:70px;background-color:#fff;position:relative}.header-block{height:70px}.st-logo{float:left;width:15%;height:67px;margin-top:1px;border-radius:17px;overflow:hidden}.st-logo
+p{float:right;width:60%;margin-top:35px}.st-logo>a{width:40%;height:70px;vertical-align:middle;text-align:center}.st-logo>a>img{vertical-align:middle}.st-nav{float:left;width:972px;height:70px;overflow:hidden}.st-nav .clearfix
+li{float:left;height:70px}.st-nav .clearfix li
+a{display:block;color:#333;height:70px;line-height:70px;padding:0
+30px;font-size:16px}.st-nav li a:hover{text-decoration:none;font-size:18px;border-bottom:1px solid #e00346;color:#e00346}.st-rig{float:right;height:30px;padding:7px
+27px}.st-rig .phone-num{float:left;color:#333;height:30px;line-height:30px;font-size:14px}.st-rig .phone-num:before{content:"";display:inline-block;width:21px;height:16px;vertical-align:middle;margin:-4px 10px 0 0;background:url("/usertpl/dw_st16239_no198_index/images/st-index-ico.png") no-repeat 0 -48px}.st-rig .login-before{float:left;color:#333;height:30px;padding-left:30px}.st-rig .login-before
+a{display:inline-block;color:#333;height:30px;line-height:30px;padding:0
+5px;vertical-align:middle;font-size:14px}.st-rig .login-after{float:left;color:#333;max-width:200px;height:30px;line-height:30px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding-left:30px;font-size:14px}.st-rig .login-after
+a{color:#333}

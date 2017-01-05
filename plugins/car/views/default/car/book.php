@@ -31,7 +31,7 @@
       <form id="orderfrm" method="post" action="{$cmsurl}car/create">
       	<div class="con-order-box">
         	<div class="product-msg">
-          	<h3 class="pm-tit"><strong class="ico01">预定信息</strong></h3>
+          	<h3 class="pm-tit"><strong class="ico01">预定信息</span></strong></h3>
             <dl class="pm-list">
             	<dt>产品编号：</dt>
               <dd>{$info['series']}</dd>
@@ -282,6 +282,7 @@
         get_total_price();
 
         $('.tj-btn').click(function(){
+            console.log("submit order")
             $("#orderfrm").submit();
         })
 

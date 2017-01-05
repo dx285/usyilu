@@ -18,6 +18,10 @@
 	line-height:30px;
 	font-size:15px;
 	font-weight:bold}
+.help-lsit dl dt a:hover{
+	text-decoration: none;
+	color: #fff;
+}
 .help-lsit dl dd a{
 	display:block;
 	color: #dadada;
@@ -29,6 +33,7 @@
 	white-space:nowrap}
 .help-lsit dl dd a:hover{
     color: #fff;
+	text-decoration: none;
 }
 .st-wechat{
 	float:right;
@@ -64,7 +69,8 @@
     font-size: 13px
 }
 .st-foot-menu a:hover{
-    color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 .st-foot-menu a:first-child{
 	border-left:0}
@@ -110,4 +116,94 @@
 }
 .st-link-list a:hover{
     color: #999;
+}
+
+/*new*/
+
+.foot-ad{
+
+	height: 150px;
+
+}
+
+
+.foot-nav-pills{
+	/*margin-left: auto;*/
+	/*margin-left: 41%;*/
+	/*background-color: #373a3c;*/
+	padding-bottom: 10px;
+}
+
+.foot-nav-pills .foot-nav-item{
+	display: inline;
+	margin-left: 3%;
+	color: #fff;
+	font-size: 18px;
+
+}
+
+.foot-nav-pills .foot-nav-item:hover{
+	color: #24ccff;
+	cursor: pointer;
+}
+
+.foot-certificate{
+
+	color: #fff;
+	/*visibility: hidden;*/
+}
+
+.foot-certificate .foot-certificate-item{
+	display: inline;
+	margin: 3%;
+}
+
+.foot-certificate .foot-certificate-item > img{
+	height: 122px;
+	width: 192px;
+}
+
+.foot-coop{
+
+	color: #fff;
+	visibility: hidden;
+}
+
+.foot-coop .foot-coop-item{
+	display: inline;
+	margin: 1%;
+}
+
+.foot-coop .foot-coop-item > img{
+	height: 80px;
+	width: 135px;
+}
+
+.foot-otherlinks{
+
+	/*color: #fff;*/
+	visibility: hidden;
+}
+
+.foot-otherlinks .foot-otherlinks-item{
+	display: inline;
+	margin: 3%;
+	/*background-color: #fff;*/
+	font-size: 18px;
+
+}
+
+.foot-otherlinks .foot-otherlinks-item > a:link{
+	color: #ffffff;
+}
+
+.foot-otherlinks .foot-otherlinks-item > a:hover{
+	/*text-decoration: none;*/
+	color: #24ccff;
+	text-decoration: none;
+}
+
+.showContent{
+	visibility: visible;
+
 }

@@ -1,0 +1,547 @@
+3600
+s:45452:"<!doctype html><html><head><meta charset="utf-8"><title>1号公路欢乐自驾8日游-美国一路</title><script>
+    window.SITEURL = "/";
+    window.CURRENCY_SYMBOL="$";
+</script><link type="text/css" href="/min/?f=plugins/line/public/css/lines.css" rel="stylesheet"  />
+<link type="text/css" href="/min/?f=/res/css/base.css,/res/css/extend.css,/res/css/calendar.css" rel="stylesheet"  />
+<script type="text/javascript"src="/min/?f=/res/js/jquery.min.js,/res/js/base.js,/res/js/common.js"></script>
+</head><body><link type="text/css" href="/min/?f=/usertpl/dw_st16239_no198_index/css/header.css" rel="stylesheet"  />
+<!-- header开始 --><div class="st-header"><div class="wm-1200"><div class="header-block"><div class="st-logo"><a href="http://www.usyilu.com"><img src="http://www.usyilu.com/uploads/main/allimg/20161217/20161217030520_70x70.png" alt="美国一路" /></a><p>全美首家:租车 + 小团</p></div><div class="st-nav"><ul class="clearfix"><li><a href="/">首页</a></li><li><!--                        --><a href="/cars/">一路接机</a><!--                        <a href="/cars/">一路接机</a>--></li><li><!--                        --><a href="/lines/all-0-0-0-0-0-27-1">落地参团</a><!--                        <a href="/lines/">落地参团</a>--></li><li><!--                        --><a href="http://www.usyilu.com/cars/">一路租车</a><!--                        <a href="http://www.usyilu.com/cars/">一路租车</a>--></li><li><!--                        --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1">一路自驾</a><!--                        <a href="/lines/">一路自驾</a>--></li><li><!--                        --><a href="http://www.usyilu.com/customize/">一路包车</a><!--                        <a href="http://www.usyilu.com/customize/">一路包车</a>--></li><li><!--                        --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1">特价酒店</a><!--                        <a href="http://www.usyilu.com/hotels/">特价酒店</a>--></li><li><a href="/help/index_1.html" rel="nofollow">关于我们</a></li><li></li><li></li><li></li></ul></div><!-- 主导航 --><div class="st-rig"><div class="phone-num">1718-475-9550</div><span id="loginstatus"></span></div></div></div></div><script>
+    var SITEURL = "/";
+    $(function(){
+        //导航的选中状态
+        $(".st-menu a").each(function(){
+            var url= window.location.href;
+            url=url.replace('index.php','');
+            url=url.replace('index.html','');
+            var ulink=$(this).attr("href");
+            if(url==ulink)
+            {
+                $(this).parents("li:first").addClass('active');
+            }
+        })
+        //登陆状态
+        $.ajax({
+            type:"POST",
+            async:false,
+            url:SITEURL+"member/login/ajax_is_login",
+            dataType:'json',
+            success:function(data){
+                if(data.status){
+                    $txt = '<div class="login-after"><a class="dl" style="padding:0" href="javascript:;">你好,</a>';
+                    //Di 避免直接暴露ip
+//                    $txt+= '<a class="dl" href="http://47.90.15.0/member/">'+data.user.nickname+  '&nbsp;&nbsp;</a>';
+//                    $txt+= '<a class="dl" href="http://47.90.15.0/member/login/loginout">退出</a></div>';
+                    $txt+= '<a class="dl" href="/member/">'+data.user.nickname+  '&nbsp;&nbsp;</a>';
+                    $txt+= '<a class="dl" href="/member/login/loginout">退出</a></div>';
+                    //$txt+= '<a class="dl" href="/member">个人中心</a>';
+                }else{
+                    //Di 避免直接暴露ip
+//                    $txt = ' <div class="login-before"><a class="dl" href="http://47.90.15.0/member/login">登录</a>|';
+//                    $txt+= '<a class="zc" href="http://47.90.15.0/member/register">注册</a></div>';
+                    $txt = ' <div class="login-before"><a class="dl" href="/member/login">登录</a>|';
+                    $txt+= '<a class="zc" href="/member/register">注册</a></div>';
+                }
+                $("#loginstatus").html($txt);
+            }
+        })
+    })
+</script><div class="big"><div class="wm-1200"><div class="st-guide"><a href="/">首页</a>&gt;<a href="/lines/">一路小团</a>&gt;
+            <a href="/lines/sanfrancisco/">旧金山</a>&gt;
+            1号公路欢乐自驾8日游</div><!--面包屑--><div class="st-main-page"><div class="st-line-show"><div class="lineshow-tw"><div class="lw-title"><a href="/line/print/id/20" class="print-btn">打印行程</a><h1>1号公路欢乐自驾8日游<img src="http://www.usyilu.com/uploads/icon/hot.png" /><img src="http://www.usyilu.com/uploads/icon/discount.png" /><img src="http://www.usyilu.com/uploads/icon/special.png" /></h1><p>全程一辆专属SUV、说走就走。驰骋最美一号公路，流连于特色丹麦小镇</p></div><div class="focus-slide"><div class="imgnav" id="imgnav"><div id="img"><img src="http://www.usyilu.com/uploads/2017/0104/bc6c72c1417ebdb0fe1d323f11c95748_460x312.jpg"/><img src="http://www.usyilu.com/uploads/2017/0104/de661af7eedddc0a23ac2a8144c5fc55_460x312.jpg"/><img src="http://www.usyilu.com/uploads/2016/1027/4ddb50a42e73561ae98fc533d04bd71b_460x312.jpg"/><img src="http://www.usyilu.com/uploads/2016/1027/d212afca0de9350a54c4ee0bcd36ce9c_460x312.jpg"/><div id="front" title="上一张"><a href="javaScript:void(0)" class="pngFix"></a></div><div id="next" title="下一张"><a href="javaScript:void(0)" class="pngFix"></a></div></div><div id="cbtn"><i class="picSildeLeft"><img src="/res/images/picSlideLeft.gif"/></i><i class="picSildeRight"><img src="/res/images/picSlideRight.gif"/></i><div id="cSlideUl"><ul><li><img src="http://www.usyilu.com/uploads/2017/0104/bc6c72c1417ebdb0fe1d323f11c95748_90x61.jpg"/></li><li><img src="http://www.usyilu.com/uploads/2017/0104/de661af7eedddc0a23ac2a8144c5fc55_90x61.jpg"/></li><li><img src="http://www.usyilu.com/uploads/2016/1027/4ddb50a42e73561ae98fc533d04bd71b_90x61.jpg"/></li><li><img src="http://www.usyilu.com/uploads/2016/1027/d212afca0de9350a54c4ee0bcd36ce9c_90x61.jpg"/></li></ul></div></div></div></div><div class="cp-show-msg"><div class="jg" id="min_price_tips"><span class="hide">优惠价：<i class="currency_sy">$</i><b id="minprice">870</b>起</span><span class="hide">优惠价：<b>电询</b></span></div><div class="sl"><span>销量：330</span><s>|</s><span class="myd">满意度：100%</span></div><dl class="tc"><dt>套餐类型：</dt><dd class="type suitlist"><a href="javascript:;" data-suitid="20" data-minprice="870" data-jifentprice="0" data-jifenbook="0">1号公路欢乐自驾8日游</a></dd><dd class="select-bj"><span>出发日期：</span><select class="bj-list date-list"></select></dd><dd class="yd-btn"><a href="javascript:;" class="btn-yd gobook">立即预订</a></dd></dl><ul class="msg-ul"><li><em>线路编号：</em><p>1120</p></li><li><em>积分优惠：</em><p><span class="fan jifentprice"><i></i></span><span class="song jifenbook"><i></i></span></p></li><li><em>往返交通：</em><p></p></li><li><em>提前报名：</em><p>0天以上</p></li><li class="mb_0"><em>付款方式：</em><p><img src="/res/images/pay_yl.gif" /></p></li></ul></div></div><div class="lineshow-con"><div class="tabnav-list"><span class="on">在线预订</span><span>行程安排</span><span>签约付款</span><span>客户评价</span><span>我要咨询</span><a class="yd-btn yd-btn-menu hide gobook btn-yd"  href="javascript:;">立即预订</a></div><!--线路导航--><div class="tabbox-list"><div class="tabcon-list" id="calendar"></div><div class="tabcon-list"><div class="list-tit"><strong>行程安排</strong></div><div class="eachday"><div class="day-con part" id="day_c_1"><div class="day-num"><i class="sz">1</i></div><div class="day-tit"><strong>第一天</strong><p>中国-洛杉矶</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">洛杉矶</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3"></td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">搭乘国际航空飞往洛杉矶，您愉快的旅程将从您降落于洛杉矶机场那刻开始。工作人员将会在国际航班请在出口处等候。接机后安排提车入住酒店，客人可以自由活动，或者休息调整时差。</span>​</p></div></div><div class="day-con part" id="day_c_2"><div class="day-num"><i class="sz">2</i></div><div class="day-tit"><strong>第二天</strong><p>洛杉矶市内游览</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                      晚餐：洛杉矶特色手抓虾</td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">洛杉矶</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3"></td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">自驾开始市内游览：前往游览【好莱坞环球影城】</span><span style="font-size:12px;font-family:方正姚体">,游客到洛杉矶的必游之地，游玩结束后前往参观【星光大道】、【文氏中国戏院】、【柯达剧院】。好莱坞是全球时尚业的发源地，是全球音乐，电影产业的中心地带，晚餐洛杉矶特色手抓虾，酒足饭饱后</span></p><p><span style="font-size:12px;font-family:方正姚体"><br/></span></p><p><span style="font-size:12px;font-family:方正姚体">​<br/></span></p></div></div><div class="day-con part" id="day_c_3"><div class="day-num"><i class="sz">3</i></div><div class="day-tit"><strong>第三天</strong><p>洛杉矶-拉斯维加斯</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">拉斯维加斯</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3"></td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">早餐后自驾车前往美国著名的赌城</span><span style="font-size:12px;font-family:方正姚体">-拉斯维加斯，在这里您可以观看电脑控制的火山爆发景象、大型喷泉芭蕾、街头灯光表演，在这里您可以看到世界上最奢华的一面。晚餐后自由选择观看表演秀：Las Vegas这座人间天堂最不缺的就是精彩和热情，你可以在这里瞬间倾家荡产或者华丽转身为亿万富豪、可以一秒闪婚变已婚者、可以沉醉在“愈夜愈美丽”的纸醉金迷里……你最不能错过的，当属那些令人眼花缭乱的秀：O秀，K秀等。</span></p></div></div><div class="day-con part" id="day_c_4"><div class="day-num"><i class="sz">4</i></div><div class="day-tit"><strong>第四天</strong><p>美国大峡谷</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">拉斯维加斯</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3"></td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">科罗拉多大峡谷是科罗拉多河的杰作，也是地球上自然界七大奇景之一。让人无限敬畏的美国大峡谷，除了拜倒在它脚下以外，也许，你可以以一种全新视角来感受它的辽阔震撼。当你登上直升飞机，大峡谷这部“活的地质教科书”，就像地质画卷一样展露在你面前。有人说，在太空唯一用肉眼可看到的自然景观就是科罗拉多大峡谷，太空太远，不如踏上直升飞机，来一趟鸟瞰科罗拉多的庆典之旅吧</span><span style="font-size:12px;font-family:方正姚体">,下午回到拉斯维加斯.自驾车10分钟到达拉斯维加斯奥特莱斯，尽情享受你的购物天堂。</span></p></div></div><div class="day-con part" id="day_c_5"><div class="day-num"><i class="sz">5</i></div><div class="day-tit"><strong>第五天</strong><p>拉斯维加斯-圣巴巴拉</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">圣巴巴拉</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3"></td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">早餐后自驾车前往圣巴巴拉，圣巴巴拉被誉为“美国的蔚蓝海岸”、“太平洋岸边的乐园，圣巴巴拉是很安逸的小城，这里的码头吹吹海风，看看背后的群山，前边的大海，还是很惬意的，到达后入住酒店。晚餐沿着</span><span style="font-size:12px;font-family:方正姚体">State St.一直走去了那最出名的码头Stearns Wharf，走到码头的最尽头，就是吃海鲜最出名的一个小饭馆Santa Barbara Shellfish Company</span>​</p></div></div><div class="day-con part" id="day_c_6"><div class="day-num"><i class="sz">6</i></div><div class="day-tit"><strong>第六天</strong><p>圣巴巴拉-丹麦村-卡梅尔-17英里-旧金山</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">旧金山</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3"></td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">早餐后自驾车途径丹麦村，一个具有典型北欧风光小镇，小镇内有图画般的丹麦式建筑、丹麦风车、丹麦食品、葡萄酒及丹麦特色工艺品。之后沿美国最美公路</span><span style="font-size:12px;font-family:方正姚体">--1号公路前往贝克菲尔一边感受轻柔的海风, 蜿蜒的海岸,澎湃的浪花,奇特的礁岩,可爱的海狗徜徉其间。鹅卵石沙滩上风格各异的亿万富翁豪宅，俯视着绝美的海景BIG SUR（大瑟尔）-- 一号公路最精华的路段，国家地理曾评为每个人一生中要去的50个地方之一，之后经过韵味十足的卡梅尔小镇，卡梅尔小镇山光水景、花繁意绿，是旧金山艺术家和作家建造的一个美国上流社会，承载着美好梦想的乌托邦小城。那里始终保持着一种纯自然的状态，住宅风格典雅，是世界上最美的地区之一。</span></p></div></div><div class="day-con part" id="day_c_7"><div class="day-num"><i class="sz">7</i></div><div class="day-tit"><strong>第七天</strong><p>旧金山市内游览</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                    早餐：不含
+                                </td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3">旧金山</td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3"></td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">早餐后可以安排市内游览：富有意大利风情的渔人码头，它是旧金山充满快乐气息的地方。安排搭乘恶魔岛游船，登上素有《恶魔岛》之称的阿卡特兹岛参观，这是以前美国联邦政府囚禁重大恶犯的地方，且因电影《绝地任务》为其背景故事而使其声名大噪。参观罗马艺术宫，罗马式的圆顶配上玫瑰红的科林斯石柱，顶面上浮凸着一副精细的石雕，这几乎是每个文人墨客最喜欢的旧金山名胜。参观素有“美国小国会”之称的旧金山市政厅（外观），这是经历</span><span style="font-size:12px;font-family:方正姚体">1906年旧金山大地震后于1915年以华盛顿的议事堂为原型修建的。它的圆顶模仿巴黎荣军院的巴洛克穹顶，是世界第5大穹顶，高达93.73米，比美国国会大厦还高14英寸。参观号称是“世界上最弯曲的街道”的九曲花街，这里是旧金山丘陵市区的旅游景点中最有特色的景观。游览金门大桥此桥是旧金山最知名的景点，不仅成为旧金山的地标，在全美更是享有首屈一指的声誉。之后前往旧金山市中心联合广场。联合广场附近的大商店、名牌商场林立，是购物者的天堂。这里是旧金山的商业中心，号称旧金山的“第五大道”乘坐邮轮游览恶魔岛。晚上渔人码头自由品尝特色海鲜餐。</span></p></div></div><div class="day-con part" id="day_c_8"><div class="day-num"><i class="sz">8</i></div><div class="day-tit"><strong>第八天</strong><p>旧金山还车</p></div><table class="day-tb" width="100%" border="0" bgcolor="#f9f8f8"><tr><th width="110" scope="row"><span class="yc">用餐情况：</span></th><td width="237">                                      早餐：酒店早餐</td><td width="237">                                    午餐：不含
+                                </td><td width="237">                                    晚餐:不含
+                                </td></tr><tr><th width="110" scope="row"><span class="zs">住宿情况：</span></th><td colspan="3"></td></tr><tr class="bor_0"><th width="110" scope="row"><span class="gj">交通工具：</span></th><td colspan="3"></td></tr></table><div class="txt"><p><span style="font-size:12px;font-family:方正姚体">早餐后，办理还车，结束了美国海陆空自驾游。</span></p></div></div><div class="day-leftnav" id="day-leftNav"><ul class="day-navlist"><li><a href="#day_c_1" class="">DAY1</a></li><li><a href="#day_c_2" class="">DAY2</a></li><li><a href="#day_c_3" class="">DAY3</a></li><li><a href="#day_c_4" class="">DAY4</a></li><li><a href="#day_c_5" class="">DAY5</a></li><li><a href="#day_c_6" class="">DAY6</a></li><li><a href="#day_c_7" class="">DAY7</a></li><li><a href="#day_c_8" class="">DAY8</a></li></ul></div><div class="end"></div></div></div><div class="tabcon-list"><div class="list-tit"><strong>签约付款</strong></div><div class="list-txt"><p>​</p><p>
+</p><p><span id="1348816711927E">&nbsp;<span style="font-size: larger">网上预订：直接通过网站下单，在线选择产品并填写相关信息后，提交订单。</span></span></p><p>
+</p><p>&nbsp;<span style="font-size: larger">在线预订：拨打咨询/预订电话，由客服帮助您完成信息的确认和下单操作。</span></p></div></div><link type="text/css" href="/min/?f=/res/css/jquery.fancybox.css" rel="stylesheet"  />
+<script type="text/javascript"src="/min/?f=/res/js/jquery.fancybox.js"></script>
+<div class="tabcon-list"><div class="list-tit"><strong>客户点评</strong></div><div class="st-list-pl"><div class="st-pl-box" style="border-bottom: 1px solid #d8d8d8;"><span class="myd" data-myd="100%">满意度<strong>100%</strong></span><span class="txt">回程归来发表点评即可获赠积分，<br>获得的积分可在下次消费时抵用部分现金。</span><a class="pl-btn" href="/member">我要评论 </a></div></div></div><script type="text/html" id="tpl_user_comment">
+    {{each list as value i}}
+    <dl><dt><img src="{{value.litpic}}"><span>{{value.nickname}}</span><em class="level">{{value.level}}</em></dt><dd><div class="zs"><span class="grade"><i style="width: {{value.percent}}"></i></span><span class="jf">{{value.jifencomment}}分<i></i></span></div><div class="txt">{{value.content}}</div>
+            {{if value.piclist}}
+            <div class="plImgBox clearfix">
+                {{include 'tpl_user_comment_pic' value}}
+            </div>
+            {{/if}}
+            <div class="date">{{value.addtime}}</div></dd></dl>
+    {{/each}}
+</script><script type="text/html" id="tpl_user_comment_pic">
+    {{each piclist as pic i}}
+    <a class="fancybox" href="{{pic}}" data-fancybox-group="gallery"><img src="{{picthumb[i]}}" width="86px" height="86px"></a>
+    {{/each}}
+</script><script>
+    $(function(){
+        init_fancybox();
+        //分页功能
+        $(".comment-nav span").click(function(){
+            if($(this).hasClass("on"))
+            {
+                return;
+            }
+            else
+            {
+                $(this).addClass("on").siblings().removeClass("on");
+                get_comment_list(1);
+            }
+        });
+        //初始化分页
+        gen_pager(0,1,5);
+        //检测layer是否加载
+        if(typeof(layer)=='undefined')
+        {
+            $.getScript("/res/js/layer/layer.js")
+        }
+        //判断template是否加载
+        if(typeof(template)=='undefined')
+        {
+            $.getScript("/res/js/template.js")
+        }
+        //满意度设置
+        var myd = $(".st-list-pl .st-pl-box .myd").attr("data-myd");
+        if(myd)
+        {
+            $(".cp-show-msg .sl .myd").html("满意度："+myd);
+        }
+    });
+    //获取评论列表
+    function get_comment_list(pageno)
+    {
+        var index = layer.load(2, {time: 10*1000});
+        var flag = $(".comment-nav span.on").attr("data-flag");
+        $.ajax({
+            type:'POST',
+            aysnc:true,
+            url:SITEURL+'comment/ajax_get_pinlun',
+            data:{
+                typeid:1,
+                flag:flag,
+                articleid:20,
+                pageno:pageno
+            },
+            dataType:'json',
+            success:function(data){
+                //console.info(data);
+                var html = "";
+                $(".comment-con").html(html);
+                if(data.list.length>0){
+                    html = template('tpl_user_comment',data);
+                    $(".comment-con").html(html);
+                    init_fancybox();
+                    gen_pager(data.total,data.pageno,data.pagesize)
+                }
+                else
+                {
+                    $(".main_mod_page").html('');
+                }
+            }
+        })
+        layer.close(index);
+    }
+    //初始化图片查看功能
+    function init_fancybox(){
+        $(".comment-con .plImgBox").each(function(){
+            var cls = "fancybox_"+Math.floor(Math.random()*10000);
+            $(this).find("a").addClass(cls);
+            $("."+cls).fancybox({
+                'overlayShow'   :   false,
+                'showNavArrows' : true
+            });
+        });
+    }
+    //生成分页
+    function gen_pager(total, pageno, pagesize)
+    {
+        $(".main_mod_page").html('');
+        //分页不够不显示分页
+        if(total<=pagesize)
+        {
+            return;
+        }
+        var page_count = Math.ceil(total/pagesize);
+        var start_page = pageno - 2;
+        var end_page = pageno + 2;
+        //var seed = 5-1;
+        if(start_page <= 0)
+        {
+            var num = end_page + Math.abs(start_page) + 1;
+            if (num <= page_count)
+            {
+                end_page = num;
+            }
+            else
+            {
+                end_page = page_count;
+            }
+            start_page = 1;
+        }
+        if(end_page >= page_count)
+        {
+            var num = start_page - (end_page-page_count);
+            if (num >= 1)
+            {
+                start_page = num;
+            }
+            else
+            {
+                start_page = 1;
+            }
+            end_page = page_count;
+        }
+        var pager = '<p class="page_right">';
+        if(pageno > 1)
+        {
+            pager += '<a class="back-first" title="第一页" href="#" data-pageno="1"></a>' +
+                '<a class="prev" title="上一页" href="#" data-pageno="'+(pageno-1)+'"></a>'
+        }
+        pager += '<span class="mod_pagenav_count">';
+        for(var i=start_page; i<=end_page; i++)
+        {
+            var cls = pageno == i ? 'class="current"' : '';
+            pager += '<a title="第'+i+'页" '+cls+' href="#" data-pageno="'+i+'">'+i+'</a>';
+        }
+        pager += '</span>';
+        if(pageno < page_count)
+        {
+            pager +='<a class="next" title="下一页" href="#" data-pageno="'+(pageno+1)+'"></a>' +
+                '<a class="go-last" title="尾页" href="#" data-pageno="'+page_count+'"></a>';
+        }
+        pager += '</p>';
+        $(".main_mod_page").html(pager);
+        bind_pager_click();
+    }
+    //绑定分页点击事件
+    function bind_pager_click()
+    {
+        $(".main_mod_page a").click(function(e){
+            e.preventDefault();
+            var pageno = $(this).attr("data-pageno");
+            get_comment_list(pageno);
+        });
+    }
+</script><script type="text/javascript"src="/min/?f=/res/js/layer/layer.js"></script>
+<div class="tabcon-list"><div class="list-tit"><strong>我要咨询</strong></div><div class="st-consult"><ul></ul><div class="pagediv" style="text-align: center;display: none" data-quecount=""  id="page"></div><div class="st-tj-question"><textarea name="question" id="question" cols="" placeholder="请填写你的问题" rows=""></textarea><div class="msg"><a class="tj-btn" href="javascript:;" data-productid="20" data-typeid="1">提交</a><span><em>验证码：</em><input type="text" id="checkcode" style="padding-left: 5px" /><img src="/captcha"  onClick="this.src=this.src+'?math='+ Math.random()" width="80" height="30" /></span><span><em>昵称：</em><span id="_c_u" style="line-height: 30px;height: 30px"></span></span></div></div></div></div><script>
+    //提交问答
+    $(".tj-btn").click(function(){
+        var question = $("#question").val();
+        var checkcode = $("#checkcode").val();
+        var productid = $(this).attr('data-productid');
+        var typeid = $(this).attr('data-typeid');
+        var nickname = $("#nickname").val();
+        if(question.length<5){
+            layer.alert('请输入你的问题,至少5个汉字', {
+                icon: 5,
+                title: '提示'
+            })
+            return false;
+        }
+        if(checkcode==''){
+            layer.alert('请输入验证码', {
+                icon: 5,
+                title: '提示'
+            })
+            return false;
+        }
+        $.ajax({
+            type:'POST',
+            url:SITEURL+'pub/ajax_add_question',
+            data:{
+                productid:productid,
+                content:question,
+                checkcode:checkcode,
+                nickname:nickname,
+                typeid:typeid,
+                questype:0
+            },
+            success:function(data){
+                if(data==1){
+                    layer.alert('验证码错误', {
+                        icon: 5,
+                        title: '提示'
+                    })
+                    //重新加载验证码
+                    $("#imgcheckcode").attr('src',"/captcha?"+Math.random());
+                }else if(data==3){
+                    layer.msg('提问成功,请耐心等待管理员回复',{
+                        icon:6,
+                        time:1500
+                    });
+                    location.reload();
+                }else{
+                    layer.alert('提问失败,请联系网站管理员!', {
+                        icon: 5,
+                        title: '提示'
+                    })
+                }
+            }
+        })
+    })
+    //登陆状态
+    $.ajax({
+        type:"POST",
+        url:SITEURL+"member/login/ajax_is_login",
+        dataType:'json',
+        success:function(data){
+            if(data.status){
+                $txt = '<span>'+data.user.nickname+'</span><input type="hidden" value="'+data.user.nickname+'" name="nickname" id="nickname" />';
+            }else{
+                $txt = '<input type="text" name="nickname" id="nickname" /><a href="/member/login/">登录</a>';
+            }
+            $("#_c_u").html($txt);
+        }
+    })
+</script></div></div></div><!--详情主体--><div class="st-sidebox"></div><!--边栏模块--></div></div></div><link type="text/css" href="/min/?f=/usertpl/dw_st16239_no198_index/css/footer.css" rel="stylesheet"  />
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">--><div class="st-help"><div class="wm-1200"><div class="help-lsit"><dl><dt><a href="/help/index_1.html" rel="nofollow">关于我们</a></dt><dd><a href="/help/show_51.html" target="_blank" rel="nofollow">发展历程</a><a href="/help/show_52.html" target="_blank" rel="nofollow">加入我们</a><a href="/help/show_53.html" target="_blank" rel="nofollow">联系我们</a><a href="/help/show_27.html" target="_blank" rel="nofollow">专业团队</a><a href="/help/show_3.html" target="_blank" rel="nofollow">美国一路简介</a></dd></dl><dl><dt><a href="/help/index_10.html" rel="nofollow">服务条款</a></dt><dd><a href="/help/show_48.html" target="_blank" rel="nofollow">客户协议</a><a href="/help/show_16.html" target="_blank" rel="nofollow">预订酒店的问题</a><a href="/help/show_49.html" target="_blank" rel="nofollow">签订旅游合同</a><a href="/help/show_1.html" target="_blank" rel="nofollow">纯玩是什么意思？</a><a href="/help/show_8.html" target="_blank" rel="nofollow">外地游客怎样付款？</a></dd></dl><dl><dt><a href="/help/index_11.html" rel="nofollow">签订合同</a></dt><dd><a href="/help/show_9.html" target="_blank" rel="nofollow">定金支付比例如何？</a><a href="/help/show_7.html" target="_blank" rel="nofollow">本地游客如何付款？</a><a href="/help/show_10.html" target="_blank" rel="nofollow">对于支付团款的建议</a></dd></dl><dl><dt><a href="/help/index_12.html" rel="nofollow">帮助中心</a></dt><dd><a href="/help/show_47.html" target="_blank" rel="nofollow">旅游保险</a><a href="/help/show_45.html" target="_blank" rel="nofollow">常见问题</a><a href="/help/show_46.html" target="_blank" rel="nofollow">旅美需知</a></dd></dl><div class="st-wechat"><img src="/uploads/main/allimg/20161123/20161123005148.png" width="100" height="100" /><span>微信扫一扫，<br />优惠多多！</span></div></div></div></div><!--帮助 扫码--><div class="st-help"><ul class="wm-1200 foot-ad"><ul class="foot-nav-pills" style="text-align: center"><li class="foot-nav-item foot-nav-item-certificate">
+                企业认证
+            </li><li class="foot-nav-item foot-nav-item-certificate">
+                |
+            </li><li class="foot-nav-item foot-nav-item-coop">
+                合作伙伴
+            </li><li class="foot-nav-item foot-nav-item-certificate">
+                |
+            </li><li class="foot-nav-item foot-nav-item-otherlinks">
+                友情链接
+            </li></ul><ul class="foot-certificate" style="text-align: center"><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/IATA2.jpg" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/NTA.gif" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/DOT.jpg" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/CHP.jpg" ></li></ul><ul class="foot-coop" style="text-align: center"><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/中国国旅.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/惠租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/携程.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/港中旅.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/租租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/锦江旅游.gif" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/飞猪.jpg" ></li></ul><ul class="foot-otherlinks" style="text-align: center"><li class="foot-otherlinks-item" id="" ><a target="_blank"  href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li></ul></div></div><div class="st-footer"><div class="wm-1200"><div class="st-foot-menu"><a href="/servers/index_1.html" target="_blank" rel="nofollow">一日游</a><a href="/servers/index_4.html" target="_blank" rel="nofollow">精品多日游</a><a href="/servers/index_2.html" target="_blank" rel="nofollow">自驾游</a><a href="/servers/index_11.html" target="_blank" rel="nofollow">热门景点</a><a href="/servers/index_10.html" target="_blank" rel="nofollow">友情链接</a></div><!--底部导航--><div class="st-foot-edit"><div class="foot_con"><p>
+        经营许可证号：XXX　业务接待地址：美国纽约州纽约XXXX</p></div></div><!--网站底部介绍--><p></p></div></div><script src="/plugins/qq_kefu/public/js/qqkefu.js"></script><!-- 编辑器内容 --><div class="st-link"><div class="wm-1200"><div class="st-link-list"><strong>友情链接：</strong><div class="child"><a href="http://www.gogogous.com" target="_blank">佳晨旅游</a></div></div></div></div><!--友情链接--><script>
+    $(".foot-nav-item-certificate").hover(
+        function () {
+            $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+            $(".foot-certificate").show();
+            $(".foot-coop").hide();
+            $(".foot-otherlinks").hide();
+//            $(".foot-certificate").addClass('showContent');
+        },
+        function () {
+            $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+        }
+    );
+    $(".foot-nav-item-coop").hover(
+        function () {
+            $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+            $(".foot-certificate").hide();
+            $(".foot-coop").show();
+            $(".foot-coop").css({"visibility" : "visible"});
+            $(".foot-otherlinks").hide();
+//            $(".foot-certificate").addClass('showContent');
+        },
+        function () {
+            $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+        }
+    );
+    $(".foot-nav-item-otherlinks").hover(
+        function () {
+            $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+            $(".foot-certificate").hide();
+            $(".foot-coop").hide();
+            $(".foot-otherlinks").css({"visibility" : "visible"});
+            $(".foot-otherlinks").show();
+//            $(".foot-certificate").addClass('showContent');
+        },
+        function () {
+            $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+        }
+    );
+    $(".foot-otherlinks-item").click(function() {
+        $(this).css('color', '#fff');
+    });
+</script><script type="text/javascript"src="/min/?f=/res/js/floatmenu/floatmenu.js"></script>
+<script type="text/javascript"src="/min/?f=/res/js/SuperSlide.min.js,/res/js/template.js,/res/js/date.js,/res/js/calendar.js,/res/js/scorll.img.js"></script>
+<link type="text/css" href="/min/?f=/res/js/floatmenu/floatmenu.css" rel="stylesheet"  />
+<!--隐藏域--><input type="hidden" id="suitid" value=""/><input type="hidden" id="lineid" value="20"/><script type="text/javascript">
+$(document).ready(function(){
+    var topHeight = $('.tabnav-list').offset().top;
+    $(window).scroll(function(){
+        if($(document).scrollTop() >= topHeight){
+            $(".yd-btn-menu").show()
+        }else{
+            $(".yd-btn-menu").hide();
+        }
+    });
+    //线路内容切换
+    $.floatMenu({
+        menuContain : '.tabnav-list',
+        tabItem : 'span',
+        chooseClass : 'on',
+        contentContain : '.tabbox-list',
+        itemClass : '.tabcon-list'});
+    //套餐选择
+    $('.suitlist').find('a').click(function(){
+        var minprice=$(this).attr('data-minprice');
+        if(parseInt(minprice)>0){
+            $('#min_price_tips').find('span:eq(0)').removeClass('hide').siblings('span').addClass('hide');
+            $('#minprice').text(minprice);
+        }else{
+            $('#min_price_tips').find('span:eq(1)').removeClass('hide').siblings('span').addClass('hide');
+        }
+        var suitid = $(this).attr('data-suitid');
+        var jifentprice = $(this).attr('data-jifentprice');
+        var jifenbook = $(this).attr('data-jifenbook');
+        if(jifentprice){
+            $('.jifentprice').html(jifentprice+'元<i></i>')
+        }else{
+            $('.jifentprice').hide();
+        }
+        if(jifenbook){
+            $('.jifenbook').html(jifenbook+'分<i></i>')
+        }else{
+            $('.jifenbook').hide();
+        }
+        $("#suitid").val(suitid);
+        $(this).addClass('on').siblings().removeClass('on');
+        var lineid = $("#lineid").val();
+        get_calendar(suitid,lineid);
+        get_date_list(suitid,lineid);
+    })
+    //选中第一个
+    $('.suitlist').find('a').first().trigger('click');
+    //预订页面
+    $('body').delegate('.gobook','click',function(){
+        var usedate = $('.date-list').val();
+        var suitid = $('#suitid').val();
+        var lineid = $('#lineid').val();
+        if(usedate == null){
+            return false;
+        }
+        var url = "http://www.usyilu.com/lines/book/?usedate="+usedate+'&suitid='+suitid+"&lineid="+lineid;
+        window.location.href = url;
+    })
+
+    
+    //获取日历报价
+    function get_calendar(suitid,lineid)
+    {
+        showCalendar('calendar',suitid,function(){$(".calendar:first").css("margin-right","15px")},lineid);
+    }
+    //获取日历下拉列表
+    function get_date_list(suitid,lineid){
+        $.ajax({
+            type:'POST',
+            url:SITEURL+'line/ajax_date_options',
+            data:{suitid:suitid,lineid:lineid},
+            dataType:'json',
+            success:function(data){
+                $('.date-list').empty();
+                var html = '';
+                if(data.list!=''){
+                    $.each(data.list,function(i,row){
+var people = '';
+                        if(row.adultprice>0){
+                            people+='$'+row.adultprice+'/双人间/人 ';
+                        }
+                        if(row.childprice>0){
+                            people+='$'+row.childprice+'/三人间/人 ';
+                        }
+                        if(row.oldprice>0){
+                            people+='$'+row.oldprice+'/单人间/人 ';
+                        }
+                        html+='<option value="'+row.useday+'">'+row.shortdate+'('+row.weekday+')'+people+'</option>';
+                        $(".btn-yd").text('立即预订');
+                        $(".btn-yd").attr('style','background:#ff8a00');
+                        $(".btn-yd").addClass('gobook');
+                    })
+                }
+                else{
+                    html+='<option value="0">请选择日期</option>';
+                    $(".btn-yd").text('不可预订');
+                    $(".btn-yd").attr('style','background:#ccc');
+                    $(".btn-yd").removeClass('gobook');
+                }
+                $('.date-list').append(html);
+            }
+        })
+    }
+
+});
+//预订产品
+  function setBeginTime(y,m,d,price,lineid,suitid)
+  {
+      if(!is_login_order()){
+          return false;
+      }
+      var udate = y+'-'+m+'-'+d;
+      var url = SITEURL+"lines/book/?usedate="+udate+"&lineid="+lineid+"&suitid="+suitid;
+      window.location.href = url;
+  }
+</script><script>
+    var isLoginOrder="0";
+    var isLogin=false;
+    //登陆下订单
+    function is_login_order(){
+        var bool=true;
+        var text=$('#loginstatus').text();
+        var reg=/免费注册/g;
+        isLogin=!reg.test(text);
+        if(isLoginOrder==1 && !isLogin){
+            $('#is_login_order').removeClass('hide');
+            bool=false;
+        }
+        return bool;
+    }
+</script></body></html><script>
+  $(document).ready(function(){
+    $(window).onload = pageScroll();
+    $(window).bind('scroll', pageScroll);
+    $(".day-navlist li").click(function (e) {
+        //$(window).unbind("scroll");
+        var index = $(this).index(),
+            offset = $('.part').eq(index).offset().top,
+            scrollTop = $(window).scrollTop();
+        $(".day-navlist a").removeClass("cur");
+        $(this).find("a").addClass("cur");
+        $("html, body").animate({
+            scrollTop: offset
+        }, "slow", function () {
+            $(window).bind('scroll', pageScroll);
+        });
+        e.preventDefault();
+    })
+    function pageScroll() {
+        var scrollTop = $(window).scrollTop();
+        var size = $(".day-navlist a").size();
+        var listTop = $(".part").eq(0).offset().top;
+        if (size != null) {
+            for (var i = 0; i < size; i++) {
+                var firstOffset = $(".part").eq(0).offset().top,
+                    edge = $(".part").eq(size - 1).offset().top + $(".part").eq(size - 1).height(),
+                    offset = $(".part").eq(i).offset().top;
+                if (scrollTop < firstOffset || scrollTop > edge) {
+                    $(".day-navlist a").removeClass("cur");
+                    $("#day-leftNav").hide();
+                } else if (scrollTop >= offset && scrollTop <= edge) {
+                    $(".day-navlist a").removeClass("cur");
+                    $(".day-navlist a").eq(i).addClass("cur");
+                    $("#day-leftNav").show();
+                }
+            }
+        }
+    
+    }
+  })
+</script>";

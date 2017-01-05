@@ -9,25 +9,39 @@
 .bg-grey{
     background: #f6f6f6;
 }
+
 /* 首页焦点图 */
 .head-container{
-    height: 730px;
+    height: 550px;
+    /*Di*/
+    /*height: 730px;*/
+    width: 100%;
     position: relative;
 }
+
 .header-slide{
     width: 100%;
-    height: 730px;
+    height: 550px;
+    /*Di*/
+    /*height: 730px;*/
     position: relative;
     overflow: hidden;
 }
+
 .header-slide .bd{
     position: absolute;
-    left: 50%;
+    /*left: 50%;*/
     top:0;
-    width: 1920px;
-    height: 730px;
-    margin-left: -960px;
+    /*width: 1920px;*/
+    width: 100%;
+    height: 550px;
+    /*Di*/
+    /*height: 730px;*/
+    margin-left: 0px;
+    /*margin-left: -960px;*/
+
 }
+
 .header-slide .bd ul,
 .header-slide .bd ul li,
 .header-slide .bd ul li img{
@@ -62,10 +76,10 @@
 .header-search{
     position: absolute;
     bottom: 60px;
-    left:50%;
+    left:51%;
     z-index:99999;
-    width: 540px;
-    padding: 18px 15px;
+    width: 460px;
+    padding: 5px 15px;
     margin-left: -250px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -99,25 +113,26 @@
     border-bottom-right-radius: 5px;
     background: #2ccea3;
 }
-.header-search .hot-dest{
-    height: 20px;
-    padding-top: 10px;
-    overflow: hidden;
-}
-.header-search .hot-dest span,
-.header-search .hot-dest a{
-    float: left;
-    color: #fff;
-    height: 20px;
-    line-height: 20px;
-    font-size: 14px;
-}
-.header-search .hot-dest a{
-    padding:0 10px;
-}
-.header-search .hot-dest a:hover{
-    color: #ffde00;
-}
+/*Di*/
+/*.header-search .hot-dest{*/
+    /*height: 20px;*/
+    /*padding-top: 10px;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.header-search .hot-dest span,*/
+/*.header-search .hot-dest a{*/
+    /*float: left;*/
+    /*color: #fff;*/
+    /*height: 20px;*/
+    /*line-height: 20px;*/
+    /*font-size: 14px;*/
+/*}*/
+/*.header-search .hot-dest a{*/
+    /*padding:0 10px;*/
+/*}*/
+/*.header-search .hot-dest a:hover{*/
+    /*color: #ffde00;*/
+/*}*/
 /* 目的地选择 */
 .dest-content{
     padding: 60px 0 80px;
@@ -249,7 +264,8 @@
     font-size: 14px;
 }
 .line-block li .bt a:hover{
-    color: #fd9319;
+    text-decoration: none;
+    color: #ff3573;
 }
 .line-block li .data{
     padding: 0 10px;
@@ -261,7 +277,7 @@
     font-size: 14px;
 }
 .line-block li .data .day span{
-    color: #fd9319;
+    color: #ff3573;
 }
 .line-block li .data .jg{
     float: right;
@@ -271,7 +287,7 @@
     line-height: 30px;
     text-align: center;
     font-size: 14px;
-    background: #fd9319;
+    background: #ff3573;
 }
 .line-block li .data .jg strong{
     font-size: 18px;

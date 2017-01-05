@@ -80,8 +80,9 @@
                     {php} if(in_array($data['typeid'],array(4,6,10,11,14,101,null))){$_article[]=$data;continue;}{/php}
                     <li>
                         <div class="ietm-child">
-                            <strong class="column-tit"><a href="javascript:;" class="product_item" data-url="{$data['url']}">{if !empty($data['typeid'])}{Model_Menu_New::get_nav_title($data['typeid'],'shortname')}{else}{$data['title']}{/if}</a></strong>
-                                <span class="column-cz clearfix">
+<!--                            <strong class="column-tit"><a href="javascript:;" class="product_item" data-url="{$data['url']}">{if !empty($data['typeid'])}{Model_Menu_New::get_nav_title($data['typeid'],'shortname')}{else}{$data['title']}{/if}</a></strong>-->
+                            <strong class="column-tit"><a href="javascript:;" class="product_item" data-url="{$data['url']}">{if !empty($data['typeid'])}{if Model_Menu_New::get_nav_title($data['typeid'],'shortname')=='一路小团'}一路旅行{else}{Model_Menu_New::get_nav_title($data['typeid'],'shortname')}{/if}{else}{$data['title']}{/if}</a></strong>
+                            <span class="column-cz clearfix">
                                     {if strpos($data['datainfo'],'1') !== false}
                                     {php}
                                     if(isset($data['order_id'])){

@@ -1,0 +1,114 @@
+3600
+s:14331:"<!doctype html> <html> <head> <meta charset="utf-8"> <title>一路行-美国一路</title>  <meta name="keywords" content="一路行，佳晨旅游"/>   <meta name="description" content="一路行，佳晨旅游"/>  <meta name="author" content="美国一路"/> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <link rel="icon" href="http://usyilu.com/favicon.ico" type="image/x-icon"/> <link rel="shortcut icon" href="http://usyilu.com/favicon.ico" type="image/x-icon"/> <link type="text/css" href="/public/css/amazeui.css" rel="stylesheet" />
+<link type="text/css" href="/public/css/style.css" rel="stylesheet" />
+<link type="text/css" href="/public/css/index.css" rel="stylesheet" />
+<link type="text/css" href="/public/css/extend.css" rel="stylesheet" />
+ <script type="text/javascript" src="/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/public/js/amazeui.js"></script>
+<script type="text/javascript" src="/public/js/template.js"></script>
+<script type="text/javascript" src="/public/js/layer/layer.m.js"></script>
+<script type="text/javascript" src="/public/js/delayLoading.min.js"></script>
+ </head> <body> <header>  <div class="header_top sys_header">  <div class="st_logo"><a href="http://usyilu.com"><img src="http://www.usyilu.com/uploads/main/allimg/20161105/20161105001429.png" height="30" alt="美国一路"/></a></div>  <h1 class="tit">  </h1> <div class="st_top_menu"> <span data-am-offcanvas="{target: '#my-st-slide'}"></span> <div id="my-st-slide" class="am-offcanvas"> <!--登录后--> <div class="am-offcanvas-bar" id="login-html"> <div class="st_user_header_pic" id="log_head"> <img src="/phone/public/images/member_nopic.png" /> <p> <a href="/member/login">登录</a>|
+                            <a href="/member/register">注册</a> </p> </div> <div class="st_user_cz" id="log_nav"> <a href="/order/index"><i class="ico_05"></i>订单查询</a> </div> </div> </div> </div> </div> </header> <script>
+    var SITEURL = "/";
+    $(function(){
+        $('#my-st-slide').offCanvas('close');
+        $('.st-slider').flexslider({pauseOnAction: false});
+        $("body").delegate("#logout",'click',function(){
+            $.get(SITEURL+'member/login/ajax_out','',function(){
+                window.location.href='http://'+window.location.host+SITEURL;
+            });
+        })
+        //检测登陆
+        $('body').append('<script'+' type="text/javascript" src="'+SITEURL+'member/login/ajax_islogin"></'+'script>');
+    })
+    function is_login($obj){
+        var fx_url="content=";
+         if($obj['islogin']==1){
+           $('#log_head').html($obj['info']['head']);
+           $('#log_nav').html($obj['info']['nav']);
+           if($obj['info']['fx_member']){
+               if(window.location.href.indexOf('/show_')!=-1)
+                   $('.bom_fixed').append($obj['info']['fx_btn'].replace('[fx_url]',fx_url));
+           }
+         }
+    }
+</script> <section> <div class="mid_content"> <div class="am-slider am-slider-default"  id="home-column"> <ul class="am-slides">   <li><a href=""><img src="/public/images/grey.gif" original-src="http://www.usyilu.com/uploads/2016/0819/fff9d73683f0cf7b63b6481daea73b1f_640x214.png" title=""></a></li>  <li><a href=""><img src="/public/images/grey.gif" original-src="http://www.usyilu.com/uploads/2016/0819/3285817a8d6e85dedeb8a9b11b0544cb_640x214.png" title=""></a></li>  </ul> </div> <!--轮播图--> <div class="st_search"> <div class="st_search_box"> <input type="text" class="st_home_txt" id="keyword" placeholder="搜索产品"/> <input type="button" class="st_home_btn" value="搜索"/> </div> </div> <!--搜索--> <nav> <div class="st_home_menu"> <p>   <a href="/lines/"> <span><img src="/public/images/menu_ico02.png"/></span> <strong>线路</strong> </a>  <a href="/hotels/"> <span><img src="/public/images/menu_ico01.png"/></span> <strong>酒店</strong> </a>  <a href="/cars/"> <span><img src="/public/images/menu_ico05.png"/></span> <strong>租车</strong> </a>  <a href="/raiders/"> <span><img src="/public/images/menu_ico09.png"/></span> <strong>攻略</strong> </a>  </p> </div> </nav> <!--导航--> <div class="st_sale_box"> <h3><i></i>特价优惠</h3> <div class="st_sale_con"> <div class="st_advpic_l">   <a href=""><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/0819/f3ea0e4d8e1b2eb236c26ca3ee5c6baa_340x340.jpg" title=""></a>  </div> <div class="st_advpic_r">   <a href=""><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/0819/9c70bee58d88c7846ff4b4a2505e3cca_340x170.jpg" title=""></a>    <a href=""><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/0819/4b88e2708c5ae35644ed1f491ed864d3_340x170.jpg" title=""></a>  </div> </div> </div> <!--特价优惠-->  <div class="st_hot_list"> <div class="st_tit"> <h3>线路</h3> </div> <div class="st_list_con"> <ul class="st_list_ul">   <li> <a href="http://usyilu.com/lines/show_1.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/899ff48823a54ba42a543375a3a3807f_302x205.jpg" alt="纽约三日游"/></p> <p class="tit">纽约三日游<span class="sell-point">买二送一</span></p> <p class="num">  <span><strong>电询</strong></span>  </p> </a> </li>  <li> <a href="http://usyilu.com/lines/show_2.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/de8a11cdd3587bea69394f97934423d1_302x205.jpg" alt="波士顿二日游"/></p> <p class="tit">波士顿二日游<span class="sell-point">买二送一</span></p> <p class="num">  <span><i class="currency_sy">$</i><strong>5000</strong>起</span>  </p> </a> </li>  <li> <a href="http://usyilu.com/lines/show_3.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/507f6d6096a5760161f48829ded28961_302x205.jpg" alt="华盛顿一日游"/></p> <p class="tit">华盛顿一日游<span class="sell-point">买二送一</span></p> <p class="num">  <span><strong>电询</strong></span>  </p> </a> </li>  <li> <a href="http://usyilu.com/lines/show_6.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/bf78eccc80fd14b8a3c2fd4216f4d248_302x205.jpg" alt="拉斯维加斯三日游"/></p> <p class="tit">拉斯维加斯三日游<span class="sell-point">买二送一</span></p> <p class="num">  <span><strong>电询</strong></span>  </p> </a> </li>  </ul> <div class="list_more"><a href="/lines/all/">查看更多</a></div> <div style=" clear:both"></div> </div> </div> <!--热门线路-->   <div class="st_hot_list"> <div class="st_tit"> <h3>酒店</h3> </div> <div class="st_list_con"> <ul class="st_list_ul">   <li> <a href="http://usyilu.com/hotels/show_6.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1028/db417658bf04a5fcec58a0d55954b2e5_302x205.jpg" alt="Bellagio"/></p> <p class="tit">Bellagio<span class="sell-point">买二送一</span></p> <p class="num">  <span><strong>电询</strong></span>  </p> </a> </li>  <li> <a href="http://usyilu.com/hotels/show_5.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1028/15153a9a5f6c59c06afac45d91d38635_302x205.jpg" alt="Gray Wolf Inn & Suites"/></p> <p class="tit">Gray Wolf Inn & Suites<span class="sell-point"></span></p> <p class="num">  <span><strong>电询</strong></span>  </p> </a> </li>  <li> <a href="http://usyilu.com/hotels/show_4.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/6ad4f4f8895003ab1cbebdc79111b2c2_302x205.JPEG" alt="Comfort Inn"/></p> <p class="tit">Comfort Inn<span class="sell-point">买二送二</span></p> <p class="num">  <span><strong>电询</strong></span>  </p> </a> </li>  <li> <a href="http://usyilu.com/hotels/show_2.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/48d26b8643db08c09ad594347fecedf0_302x205.jpg" alt="Holiday Inn"/></p> <p class="tit">Holiday Inn<span class="sell-point">买二送一</span></p> <p class="num">  <span><strong>电询</strong></span>  </p> </a> </li>  </ul> <div class="list_more"><a href="/hotels/all/">查看更多</a></div> <div style=" clear:both"></div> </div> </div> <!--热门酒店-->   <div class="st_hot_list"> <div class="st_tit"> <h3>租车</h3> </div> <div class="st_list_con"> <ul class="st_list_ul">   <li> <a href="http://usyilu.com/cars/show_7.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/82b18206fd3ea7f5b71ead2bd688fdfc_302x205.png" alt="高顶奔驰豪华型15座车"/></p> <p class="tit">高顶奔驰豪华型15座车<span class="sell-point">买二送二</span></p> <p class="num">  <span><i class="currency_sy">$</i><strong>1098</strong>起</span>  </p> </a> </li>  <li> <a href="http://usyilu.com/cars/show_6.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/7e7e8f3cdba070f634a25c01e8929207_302x205.jpg" alt="豪华明星保姆车"/></p> <p class="tit">豪华明星保姆车<span class="sell-point">买二送二</span></p> <p class="num">  <span><strong>电询</strong></span>  </p> </a> </li>  <li> <a href="http://usyilu.com/cars/show_4.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/2ed6fd9c349457c1104f234c421565b0_302x205.jpg" alt="福特商务车"/></p> <p class="tit">福特商务车<span class="sell-point">买二送二</span></p> <p class="num">  <span><strong>电询</strong></span>  </p> </a> </li>  <li> <a href="http://usyilu.com/cars/show_3.html"> <p class="pic"><img src="/public/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/cbef3da44d7da14548603e1328bed370_302x205.jpg" alt="奔驰GL450"/></p> <p class="tit">奔驰GL450<span class="sell-point">买二送二</span></p> <p class="num">  <span><strong>电询</strong></span>  </p> </a> </li>  </ul> <div class="list_more"><a href="/cars/all/">查看更多</a></div> <div style=" clear:both"></div> </div> </div> <!--热门租车-->      <div class="gl_hot_list"> <h3 class="tit"><span>攻略</span></h3> <ul>   </ul> <div class="list_more"><a href="/raiders/all/">查看更多</a></div> </div> <!--游记攻略-->  </div> </section> <div style="text-align: center">  </div> <footer> <div class="foot"> <div class="foot_menu">   <a href="http://usyilu.com/servers/index_1.html">一日游</a> |  <a href="http://usyilu.com/servers/index_4.html">精品多日游</a> |  <a href="http://usyilu.com/servers/index_2.html">自驾游</a> |  <a href="http://usyilu.com/servers/index_11.html">热门景点</a> |  <a href="http://usyilu.com/servers/index_10.html">友情链接</a> |  <a href="http://usyilu.com/servers/index_12.html">底端导航</a>   </div> <div class="txt"></div> <div class="foot_btn clearfix"> <a class="foot_ico01" href="http://usyilu.com"> <em></em> <span>首页</span> </a> <a class="foot_ico02" href="/help/"> <em></em> <span>帮助中心</span> </a> <a class="foot_ico03" href="tel:"> <em></em> <span>客服电话</span> </a> <a class="foot_ico04" id="roll_top" href="javascript:;"> <em></em> <span>返回顶部</span> </a> </div> </div> </footer> <script>
+   $(function(){
+       //返回顶部
+       $('#roll_top').click(function(){
+           $('html,body').animate({scrollTop: '0px'}, 800);
+       });
+   })
+</script>  <script>
+    $(function () {
+        //首页轮播图
+        $('#home-column').flexslider({
+            animationSpeed:200,
+            slideshowSpeed:3000,
+            init:function(slider){
+                var imgobj = slider.find('li:lt(2)').find('a img');
+                imgobj.attr('src',imgobj.attr('original-src'));
+            },
+            before:function(slider){
+                var index = slider.animatingTo+1;
+                var imgobj = slider.find('li:eq('+index+')').find('a img');
+                imgobj.attr('src',imgobj.attr('original-src'));
+            }
+        })
+        //全局搜索
+        $('.st_home_btn').click(function () {
+            var keyword = $("#keyword").val();
+            if (keyword == '') {
+                layer.open({
+                    content: '关键词不能为空',
+                    btn: ['确定']
+                });
+                return false;
+            } else {
+                url = SITEURL + 'search?keyword=' + encodeURIComponent(keyword);
+                window.location.href = url;
+            }
+        })
+        //团购时间
+        $('.tuan_hm_list').find('.date_time').each(function (index, element) {
+            show_count(element);
+        });
+        function show_count(node) {
+            var endTime = $(node).attr('end-time') * 1000;
+            var startTime = $(node).attr('start-time') * 1000;
+            var timer_rt = window.setInterval(function () {
+                var time;
+                var now = new Date();
+                now = now.getTime();
+                if (startTime > now) {
+                    time = startTime - now;
+                    $(node).find('em').html('开始时间');
+                } else if (endTime > now) {
+                    time = endTime - now;
+                    $(node).find('em').html('结束时间');
+                } else {
+                    $(node).find('em').html('已结束');
+                    $(node).parents('li').remove();
+                    clearInterval(timer_rt);
+                }
+                time = parseInt(time / 1000);
+                var day = Math.floor(time / (60 * 60 * 24));
+                var hour = Math.floor((time - day * 24 * 60 * 60) / 3600);
+                var minute = Math.floor((time - day * 24 * 60 * 60 - hour * 3600) / 60);
+                var html = '';
+                if (day > 0) {
+                    html += day + '天';
+                }
+                if (hour > 0) {
+                    html += hour + '时';
+                }
+                if (minute > 0) {
+                    html += minute + '分';
+                }
+                $(node).find('span').html(html);
+            }, 1000);
+        }
+    })
+</script> </body> </html>
+";

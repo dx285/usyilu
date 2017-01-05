@@ -247,6 +247,7 @@ class Taglib_Line
         $sql .= "LIMIT {$offset},{$row}";
         $arr = self::execute($sql);
         //提前报名天数
+        //Di delete comment
         //$arr['linebefore'] = empty($arr['linebefore'])? "无":$arr['linebefore'];
         return $arr;
     }

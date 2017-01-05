@@ -64,8 +64,6 @@ class Taglib_Car
     public static function query($params)
     {
 
-
-
         $default = array(
             'row' => '4',
             'offset' => 0,

@@ -69,13 +69,107 @@
       	<h3>step1&nbsp;&nbsp;您的旅行计划</h3>
         <div class="block-content">
         	<ul>
-          	<li class="half-li">
-            	<em class="item">目的地：</em>
-              <div class="con"><input type="text" class="custom-default-text w270 noblank" name="dest" /></div>
+            <li class="full-li">
+                <em class="item">出发地点：</em>
+                <div class="con dest-nav-pills">
+                    <input type="hidden" name="startplace" value="纽约"/>
+                    <a class="custom-child-item cc-active  dest-nav-city-ny" href="javascript:void(0)">纽约</a>
+                    <a class="custom-child-item dest-nav-city-boston" href="javascript:void(0)">波士顿</a>
+                    <a class="custom-child-item dest-nav-city-dc" href="javascript:void(0)">华盛顿</a>
+                    <a class="custom-child-item dest-nav-city-ys" href="javascript:void(0)">黄石</a>
+                    <a class="custom-child-item dest-nav-city-lv" href="javascript:void(0)">拉斯维加斯</a>
+                    <a class="custom-child-item dest-nav-city-la" href="javascript:void(0)">洛杉矶</a>
+                    <a class="custom-child-item dest-nav-city-sf" href="javascript:void(0)">旧金山</a>
+                </div>
             </li>
+
+<!--            new york-->
+            <ul class="dest-city-ny" >
+                <li class="foot-certificate-item" id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/NY图.jpg">
+                </li>
+                <li class="foot-certificate-item" id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/NY文字.jpg">
+                </li>
+            </ul>
+
+<!--            boston-->
+            <ul class="dest-city-boston" >
+                <li class="foot-coop-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/NY图.jpg">
+                </li>
+                <li class="foot-coop-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/NY文字.jpg">
+                </li>
+            </ul>
+
+<!--            washington DC-->
+            <ul class="dest-city-dc" >
+                <li class="foot-otherlinks-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/DC图.jpg">
+                </li>
+                <li class="foot-otherlinks-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/DC文字.jpg">
+                </li>
+            </ul>
+
+<!--            yellow stone-->
+            <ul class="dest-city-ys" >
+                <li class="foot-otherlinks-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/DC图.jpg">
+                </li>
+                <li class="foot-otherlinks-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/DC文字.jpg">
+                </li>
+            </ul>
+
+<!--            las vegas-->
+            <ul class="dest-city-lv" >
+                <li class="foot-otherlinks-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/SF图.jpg">
+                </li>
+                <li class="foot-otherlinks-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/SF文字.jpg">
+                </li>
+            </ul>
+
+<!--            Los angeles-->
+            <ul class="dest-city-la" >
+                <li class="foot-otherlinks-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/LA图.jpg">
+                </li>
+                <li class="foot-otherlinks-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/LA文字.jpg">
+                </li>
+            </ul>
+
+<!--            San Francisco-->
+            <ul class="dest-city-sf" >
+                <li class="foot-otherlinks-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/SF图.jpg">
+                </li>
+                <li class="foot-otherlinks-item " id="">
+                    <img class="destPicSize" src="http://usyilu.com/uploads/2016/1203/SF文字.jpg">
+                </li>
+            </ul>
+
+          <li class="full-li">
+                <em class="item">结束地点：</em>
+                <div class="con">
+                    <input type="hidden" name="dest" value="纽约"/>
+                    <a class="custom-child-item cc-active" href="javascript:void(0)">纽约</a>
+                    <a class="custom-child-item" href="javascript:void(0)">波士顿</a>
+                    <a class="custom-child-item" href="javascript:void(0)">华盛顿</a>
+                    <a class="custom-child-item" href="javascript:void(0)">黄石</a>
+                    <a class="custom-child-item" href="javascript:void(0)">拉斯维加斯</a>
+                    <a class="custom-child-item" href="javascript:void(0)">洛杉矶</a>
+                    <a class="custom-child-item" href="javascript:void(0)">旧金山</a>
+                </div>
+            </li>
+
           	<li class="half-li">
-            	<em class="item">出发时长：</em>
-              <div class="con"><input type="text" class="custom-default-text w270 noblank"   name="days" /></div>
+            	<em class="item">结束时间：</em>
+              <div class="con"><input type="text" class="custom-default-text w270 noblank endtime" name="days" /></div>
             </li>
           	<li class="half-li">
             	<em class="item">出发时间：</em>
@@ -85,25 +179,62 @@
             	<em class="item">成人数：</em>
               <div class="con"><input type="text" class="custom-default-text w270 noblank" name="adultnum" /></div>
             </li>
+
           	<li class="half-li">
-            	<em class="item">出发地点：</em>
-              <div class="con"><input type="text" class="custom-default-text w270 noblank" name="startplace" /></div>
-            </li>
-          	<li class="half-li">
-            	<em class="item">儿童数：</em>
-              <div class="con"><input type="text" class="custom-default-text w270"  name="childnum"/></div>
+            	<em class="item">儿童座位：</em>
+              <div class="con"><input type="text" class="custom-default-text w270"  name="childnum" value="0"/></div>
             </li>
           	<li class="full-li">
-            	<em class="item">交通方式：</em>
+            	<em class="item">车型选择：</em>
               <div class="con">
-                  <input type="hidden" name="planerank" value="飞机"/>
-              	<a class="custom-child-item cc-active" href="javascript:void(0)">飞机</a>
-              	<a class="custom-child-item" href="javascript:void(0)">火车</a>
-              	<a class="custom-child-item" href="javascript:void(0)">汽车</a>
-              	<a class="custom-child-item" href="javascript:void(0)">自驾</a>
-              	<a class="custom-child-item" href="javascript:void(0)">无</a>
+                  <input type="hidden" name="planerank" value="凯迪拉克SUV"/>
+              	<a class="custom-child-item pick-car-suv cc-active" href="javascript:void(0)">凯迪拉克SUV</a>
+              	<a class="custom-child-item pick-cars-ford15" href="javascript:void(0)">美国福特15座</a>
+              	<a class="custom-child-item pick-car-benz" href="javascript:void(0)">高顶奔驰15座</a>
+              	<a class="custom-child-item pick-car-toyota" href="javascript:void(0)">丰田商务8座</a>
+              	<a class="custom-child-item pick-car-star" href="javascript:void(0)">明星保姆9座</a>
+                <a class="custom-child-item pick-car-ford12" href="javascript:void(0)">福特12座商旅车</a>
               </div>
             </li>
+
+            <!-- add car pic-->
+            <ul class="pick-suvs" >
+                <li class="pick-car-suvPic" id="">
+                    <img class="carPicSize" src="http://usyilu.com/uploads/2017/0105/凯迪拉克SUV.jpg">
+                </li>
+            </ul>
+
+            <ul class="pick-ford15" >
+                <li class="custom-car-ford15Pic" id="">
+                    <img class="carPicSize" src="http://usyilu.com/uploads/2017/0105/福特15座.jpg">
+                </li>
+            </ul>
+
+            <ul class="pick-benz" >
+                <li class="custom-car-benzPic" id="">
+                    <img class="carPicSize" src="http://usyilu.com/uploads/2017/0105/高顶奔驰15座.png">
+                </li>
+            </ul>
+
+            <ul class="pick-toyota" >
+                <li class="custom-car-toyotaPic" id="">
+                    <img class="carPicSize" src="http://usyilu.com/uploads/2017/0105/丰田商务8座.jpg">
+                </li>
+            </ul>
+
+            <ul class="pick-star" >
+                <li class="custom-car-starPic" id="">
+                    <img class="carPicSize" src="http://www.usyilu.com/uploads/2017/0105/明星保姆9座.jpg">
+                </li>
+            </ul>
+
+            <ul class="pick-ford12" >
+                <li class="custom-car-ford12Pic" id="">
+                    <img class="carPicSize" src="http://usyilu.com/uploads/2017/0105/福特12座商旅车.jpg">
+                </li>
+            </ul>
+
+
           	<li class="full-li">
             	<em class="item">酒店星级：</em>
               <div class="con">
@@ -165,10 +296,10 @@
             	<em class="item">电子邮箱：</em>
               <div class="con"><input type="text" class="custom-default-text w270" name="email" /></div>
             </li>
-          	<li class="full-li">
-            	<em class="item">所在地点：</em>
-              <div class="con"><input type="text" class="custom-default-text w790 noblank" name="address" /></div>
-            </li>
+<!--          	<li class="full-li">-->
+<!--            	<em class="item">所在地点：</em>-->
+<!--              <div class="con"><input type="text" class="custom-default-text w790 noblank" name="address" /></div>-->
+<!--            </li>-->
           	<li class="full-li">
             	<em class="item">合适的联系时间：</em>
               <div class="con">
@@ -203,12 +334,25 @@
        });
        //日历选择
        $(".starttime").click(function(){
+           WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd',minDate:'%y-%M-%d'});
+           console.log("start time pick");
+       })
+
+       //结束时间
+       $(".endtime").click(function(){
            WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd',minDate:'%y-%M-%d'})
+           console.log("end time pick");
        })
 
        $(".custom-submit-btn").click(function(){
            $("#cusfm").submit();
        })
+
+
+//
+//       $(".custom-submit-btn").click(function(){
+//           $("#cusfm").submit();
+//       })
 
        function checkForm()
        {
@@ -216,7 +360,9 @@
            var isvalidate=true;
            $(".noblank").each(function(index, element) {
                var val=$(element).val();
+               console.log("val: " + val);
                val=$.trim(val);
+               console.log("after trim val: " + val);
                if(!val)
                {
                    var offset=$(element).offset();
@@ -232,6 +378,7 @@
            });
            if(isvalidate){
 
+               console.log("valid")
                $("#cusfm").submit();
                $.ajax({
                    type:'POST',
@@ -259,6 +406,274 @@
            }
                //$("#cusfm").submit();
        }
+
+
+       //城市选择
+//       $(".foot-nav-item-certificate").hover(
+       $(".dest-nav-city-ny").hover(
+           function () {
+               $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+               $(".dest-city-ny").show();
+               $(".dest-city-boston").hide();
+               $(".dest-city-dc").hide();
+               $(".dest-city-ys").hide();
+               $(".dest-city-la").hide();
+               $(".dest-city-lv").hide();
+               $(".dest-city-sf").hide();
+
+//            $(".foot-certificate").addClass('showContent');
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+       $(".dest-nav-city-boston").hover(
+           function () {
+               $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+               $(".dest-city-ny").hide();
+               $(".dest-city-boston").show();
+               $(".dest-city-boston").css({"visibility" : "visible"});
+               $(".dest-city-dc").hide();
+               $(".dest-city-ys").hide();
+               $(".dest-city-la").hide();
+               $(".dest-city-lv").hide();
+               $(".dest-city-sf").hide();
+
+//            $(".foot-certificate").addClass('showContent');
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+       $(".dest-nav-city-dc").hover(
+           function () {
+               $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+               $(".dest-city-ny").hide();
+               $(".dest-city-boston").hide();
+               $(".dest-city-dc").css({"visibility" : "visible"});
+               $(".dest-city-dc").show();
+               $(".dest-city-ys").hide();
+               $(".dest-city-la").hide();
+               $(".dest-city-lv").hide();
+               $(".dest-city-sf").hide();
+
+//            $(".foot-certificate").addClass('showContent');
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+       $(".dest-nav-city-ys").hover(
+           function () {
+               $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+               $(".dest-city-ny").hide();
+               $(".dest-city-boston").hide();
+               $(".dest-city-ys").css({"visibility" : "visible"});
+               $(".dest-city-ys").show();
+               $(".dest-city-dc").hide();
+               $(".dest-city-la").hide();
+               $(".dest-city-lv").hide();
+               $(".dest-city-sf").hide();
+
+//            $(".foot-certificate").addClass('showContent');
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+       $(".dest-nav-city-lv").hover(
+           function () {
+               $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+               $(".dest-city-ny").hide();
+               $(".dest-city-boston").hide();
+               $(".dest-city-lv").css({"visibility" : "visible"});
+               $(".dest-city-lv").show();
+               $(".dest-city-dc").hide();
+               $(".dest-city-ys").hide();
+               $(".dest-city-la").hide();
+               $(".dest-city-sf").hide();
+
+//            $(".foot-certificate").addClass('showContent');
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+       $(".dest-nav-city-la").hover(
+           function () {
+               $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+               $(".dest-city-ny").hide();
+               $(".dest-city-boston").hide();
+               $(".dest-city-la").css({"visibility" : "visible"});
+               $(".dest-city-la").show();
+               $(".dest-city-dc").hide();
+               $(".dest-city-ys").hide();
+               $(".dest-city-lv").hide();
+               $(".dest-city-sf").hide();
+
+//            $(".foot-certificate").addClass('showContent');
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+       $(".dest-nav-city-sf").hover(
+           function () {
+               $(this).addClass('hover');
+//            $("foot-certificate-item").addClass('showContent');
+//            $(".foot-certificate").css({"background-color": "yellow"});
+               $(".dest-city-ny").hide();
+               $(".dest-city-boston").hide();
+               $(".dest-city-sf").css({"visibility" : "visible"});
+               $(".dest-city-sf").show();
+               $(".dest-city-dc").hide();
+               $(".dest-city-ys").hide();
+               $(".dest-city-la").hide();
+               $(".dest-city-lv").hide();
+
+//            $(".foot-certificate").addClass('showContent');
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+
+       //车型选择
+       $(".pick-car-suv").hover(
+           function () {
+               $(this).addClass('hover');
+               $(".pick-suvs").show();
+
+               $(".pick-ford15").hide();
+               $(".pick-benz").hide();
+               $(".pick-toyota").hide();
+               $(".pick-star").hide();
+               $(".pick-ford12").hide();
+
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+
+       $(".pick-cars-ford15").hover(
+           function () {
+               $(this).addClass('hover');
+               $(".pick-suvs").hide();
+
+               $(".pick-ford15").css({"visibility" : "visible"});
+               $(".pick-ford15").show();
+               $(".pick-benz").hide();
+               $(".pick-toyota").hide();
+               $(".pick-star").hide();
+               $(".pick-ford12").hide();
+
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+
+       $(".pick-car-benz").hover(
+           function () {
+               $(this).addClass('hover');
+               $(".pick-suvs").hide();
+               $(".pick-ford15").hide();
+
+               $(".pick-benz").css({"visibility" : "visible"});
+               $(".pick-benz").show();
+               $(".pick-toyota").hide();
+               $(".pick-star").hide();
+               $(".pick-ford12").hide();
+
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+
+
+       $(".pick-car-toyota").hover(
+           function () {
+               $(this).addClass('hover');
+               $(".pick-suvs").hide();
+               $(".pick-ford15").hide();
+               $(".pick-benz").hide();
+
+               $(".pick-toyota").css({"visibility" : "visible"});
+               $(".pick-toyota").show();
+               $(".pick-star").hide();
+               $(".pick-ford12").hide();
+
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+
+
+       $(".pick-car-star").hover(
+           function () {
+               $(this).addClass('hover');
+               $(".pick-suvs").hide();
+               $(".pick-ford15").hide();
+               $(".pick-benz").hide();
+               $(".pick-toyota").hide();
+
+               $(".pick-star").css({"visibility" : "visible"});
+               $(".pick-star").show();
+               $(".pick-ford12").hide();
+
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
+
+
+       $(".pick-car-ford12").hover(
+           function () {
+               $(this).addClass('hover');
+               $(".pick-suvs").hide();
+
+               $(".pick-ford15").hide();
+               $(".pick-benz").hide();
+               $(".pick-toyota").hide();
+               $(".pick-star").hide();
+
+               $(".pick-ford12").css({"visibility" : "visible"});
+               $(".pick-ford12").show();
+
+           },
+           function () {
+               $(this).removeClass("hover");
+//            $(".foot-certificate").hide();
+           }
+       );
 
 
 

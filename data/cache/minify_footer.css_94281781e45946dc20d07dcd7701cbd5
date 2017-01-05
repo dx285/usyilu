@@ -2,18 +2,18 @@
 0;background:#3c3c3c}.help-lsit{float:left;width:1200px}.help-lsit
 dl{float:left;width:160px}.help-lsit dl dt,
 .help-lsit dl dt
-a{color:#dadada;height:30px;line-height:30px;font-size:15px;font-weight:bold}.help-lsit dl dd
-a{display:block;color:#dadada;height:26px;line-height:26px;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.help-lsit dl dd a:hover{color:#fff}.st-wechat{float:right;width:210px}.st-wechat
+a{color:#dadada;height:30px;line-height:30px;font-size:15px;font-weight:bold}.help-lsit dl dt a:hover{text-decoration:none;color:#fff}.help-lsit dl dd
+a{display:block;color:#dadada;height:26px;line-height:26px;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.help-lsit dl dd a:hover{color:#fff;text-decoration:none}.st-wechat{float:right;width:210px}.st-wechat
 span{color:#fff;float:right;width:100px;line-height:20px;padding:60px
 0 0 10px;font-size:13px}.st-footer{float:left;width:100%;min-width:1200px;padding:10px
 0;background:#3c3c3c}.st-foot-menu{float:left;width:1200px;padding:10px
 0;text-align:center;font-size:0}.st-foot-menu
 a{color:#fff;display:inline-block;height:13px;line-height:13px;padding:0
-10px;border-left:2px solid #c1c1c1;font-size:13px}.st-foot-menu a:hover{color:#fff}.st-foot-menu a:first-child{border-left:0}.st-foot-edit{float:left;color:#fff;width:1200px;line-height:20px;margin-top:10px;text-align:center;font-size:13px}.st-link{float:left;width:100%;padding:10px
+10px;border-left:2px solid #c1c1c1;font-size:13px}.st-foot-menu a:hover{text-decoration:none;color:#fff}.st-foot-menu a:first-child{border-left:0}.st-foot-edit{float:left;color:#fff;width:1200px;line-height:20px;margin-top:10px;text-align:center;font-size:13px}.st-link{float:left;width:100%;padding:10px
 0;min-width:1200px;background:#3c3c3c}.st-link-list{float:left;width:1200px;padding-top:10px;border-top:1px solid #535353}.st-link-list strong,
 .st-link-list
 a{color:#fff;height:26px;line-height:26px}.st-link-list
 strong{float:left;width:65px}.st-link-list
 .child{float:left;width:1135px}.st-link-list
 a{float:left;margin:0
-30px 0 0}.st-link-list a:hover{color:#999}
+30px 0 0}.st-link-list a:hover{color:#999}.foot-ad{height:150px}.foot-nav-pills{padding-bottom:10px}.foot-nav-pills .foot-nav-item{display:inline;margin-left:3%;color:#fff;font-size:18px}.foot-nav-pills .foot-nav-item:hover{color:#24ccff;cursor:pointer}.foot-certificate{color:#fff}.foot-certificate .foot-certificate-item{display:inline;margin:3%}.foot-certificate .foot-certificate-item>img{height:122px;width:192px}.foot-coop{color:#fff;visibility:hidden}.foot-coop .foot-coop-item{display:inline;margin:1%}.foot-coop .foot-coop-item>img{height:80px;width:135px}.foot-otherlinks{visibility:hidden}.foot-otherlinks .foot-otherlinks-item{display:inline;margin:3%;font-size:18px}.foot-otherlinks .foot-otherlinks-item>a:link{color:#fff}.foot-otherlinks .foot-otherlinks-item>a:hover{color:#24ccff;text-decoration:none}.showContent{visibility:visible}

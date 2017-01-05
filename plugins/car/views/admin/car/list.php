@@ -947,7 +947,7 @@
 						        return "<a href='javascript:;' class='row-mod-btn' onclick=\"modSuit("+suitid+")\" title='编辑'></a>&nbsp;&nbsp;<a href='javascript:;' title='删除' class='row-del-btn' onclick=\"delSuit('"+id+"')\"></a>";
 						   }
 					     else
-						    return '<a href="javascript:;" class="row-add-suit-btn" onclick="ST.Util.addTab(\''+name+'-套餐类型\',\'car/admin/car/suittype/menuid/{$_GET['menuid']}/parentkey/product/itemid/3/carid/'+id+'\')">套餐类型<a>&nbsp;&nbsp;<a href="javascript:;" class="row-add-suit-btn" onclick="ST.Util.addTab(\'添加套餐\',\'car/admin/car/addsuit/menuid/{$_GET['menuid']}/parentkey/product/itemid/3/carid/'+id+'\')">添加套餐</a>';
+                             return '<a href="javascript:;" class="row-add-suit-btn" onclick="ST.Util.addTab(\'' + name + '-套餐类型\',\'car/admin/car/suittype/menuid/{$_GET['menuid']}/parentkey/product/itemid/3/carid/' + id + '\')">套餐类型<a>&nbsp;&nbsp;<a href="javascript:;" class="row-add-suit-btn" onclick="ST.Util.addTab(\'添加套餐\',\'car/admin/car/addsuit/menuid/{$_GET['menuid']}/parentkey/product/itemid/3/carid/' + id + '\')">添加套餐</a>';
                                    // return getExpandableImage(value, metadata,record);
                     },
 				    listeners:{

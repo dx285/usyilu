@@ -117,6 +117,47 @@ class Taglib_Channel{
 
     }
 
+    //Di
+    public static function pc2($params)
+    {
+        global $sys_webid;
+        $default = array(
+            'flag' => 'top',
+            'offset' => '0',
+            'row' => '8'
+        );
+        $params = array_merge($default, $params);
+        extract($params);
+        $sql = "SELECT * FROM sline_nav ";
+        $sql.= "WHERE isopen=1 AND pid=0 AND webid='{$sys_webid}' AND id!=6 ";
+        $sql.= "ORDER BY displayorder ASC LIMIT {$offset},{$row}";
+
+        $arr = DB::query(1, $sql)->execute()->as_array();
+
+        foreach($arr as &$r)
+        {
+            $r['url'] = !empty($r['linktype'])?$GLOBALS['cfg_basehost'].$r['url']:$r['url'];
+            $r['title'] = $r['shortname'];
+            $r['submenu'] =DB::select()->from('nav')
+                ->where('isopen','=',1)
+                ->and_where('pid','=',$r['id'])
+                ->and_where('webid','=',$sys_webid)
+                ->order_by('displayorder','asc')
+                ->execute()
+                ->as_array();
+            foreach($r['submenu'] as &$sub)
+            {
+                $sub['url'] = !empty($sub['linktype'])?$GLOBALS['cfg_basehost'].$sub['url']:$sub['url'];
+                $sub['title'] = $sub['shortname'];
+            }
+
+        }
+
+
+        return $arr;
+
+    }
+
 
 
 }

@@ -88,9 +88,7 @@
 
    </script>
 {/if}
-
-
-
+  
 
     <div class="st-side-menu-block" style="{$conf['pos']}:0px">
         <div class="st-side-menu-list">
@@ -148,14 +146,14 @@
                     </div>
                 </li>
                 {/if}
-                {if !empty($Glb['cfg_weibo_url'])}
-                <li>
-                    <span class="side-blog"></span>
-                    <div class="child-block">
-                        <div class="side-link-num" onclick="window.open('{$Glb['cfg_weibo_url']}','_blank')">关注官方微博</div>
-                    </div>
-                </li>
-                {/if}
+<!--                {if !empty($Glb['cfg_weibo_url'])}-->
+<!--                <li>-->
+<!--                    <span class="side-blog"></span>-->
+<!--                    <div class="child-block">-->
+<!--                        <div class="side-link-num" onclick="window.open('{$Glb['cfg_weibo_url']}','_blank')">关注官方微博</div>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                {/if}-->
             </ul>
             <div class="st-side-back-top">TOP</div>
             <div class="st-side-close"></div>

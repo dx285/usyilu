@@ -66,7 +66,7 @@
               </div>
               <div class="price">
                   {if !empty($info['price'])}
-                    <span><i class="currency_sy">{Currency_Tool::symbol()}</i><b>{$info['price']}</b>起</span>
+                    <span><i class="currency_sy">{Currency_Tool::symbol()}</i><b>{$info['price']}</b>起</span></span>
                   {else}
                     <span>电询</span>
                   {/if}
