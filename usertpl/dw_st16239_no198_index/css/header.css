@@ -2,7 +2,7 @@
 /* logo */
 .st-header{
     width: 100%;
-    height: 70px;
+    height: 88px;
     /*background: url("../images/header-bg.png") left top repeat-x;*/
     /*background: #3c3c3c;*/
     /*background: linear-gradient(141deg, #1395ba 0%, #1fc8db 51%, #43abc9 75%);*/
@@ -10,12 +10,12 @@
     position: relative;
 }
 .header-block{
-    height: 70px;
+    height: 88px;
 }
 .st-logo{
     float: left;
     width: 15%;
-    height: 67px;
+    height: 88px;
     margin-top: 1px;
     border-radius: 17px;
     overflow: hidden;
@@ -23,7 +23,11 @@
 .st-logo p{
     float: right;
     width: 60%;
-    margin-top: 35px;
+    margin-top: 8px;
+}
+
+.st-logo #phoneNum{
+    margin-top: -12px;
 }
 .st-logo > a{
     /*display: table-cell;*/

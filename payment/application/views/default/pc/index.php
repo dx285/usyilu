@@ -11,12 +11,43 @@
                 <div class="payment-msg">
                     <div class="msg-tit">
                         <strong class="gfk">立即付款</strong>
-                        <span>订单总额：<b><?php  echo Currency_Tool::symbol();  ?><?php echo $info['total'];?></b></span>
+                        <span>订单总额：<b><?php  echo Currency_Tool::symbol();  ?><?php echo $_GET['price'];?><?php echo $orderTotalPrice;?></b></span>
                     </div>
                     <div class="msg-list">
                         <ul>
+
+                            <?php
+                                $detailArr = explode(',', $info['remark']);
+                                $orderBtn = $detailArr[2];
+                                $orderairport = $detailArr[3];
+                                $orderflightNum = $detailArr[4];
+                                $orderzhuanpin = $detailArr[5];
+                                $orderaddr = $detailArr[6];
+                                $orderzipcode = $detailArr[7];
+                                $orderdate = $detailArr[8];
+                                $ordertime = $detailArr[9];
+                                $orderCarNum = $detailArr[10];
+                                $orderServiceNum = $detailArr[11];
+                                $orderTotalPrice = $detailArr[12];
+
+                            ?>
+<!--                            <li><em>测试号：</em><a>--><?php //print_r(array_values($detailArr));?><!--</a></li>-->
+
+                            <li><em>接送机选择：</em><a><?php echo $orderBtn;?></a></li>
+                            <li><em>机场名称：</em><a><?php echo $orderairport;?></a></li>
+                            <li><em>航班号：</em><a><?php echo $orderflightNum;?></a></li>
+                            <li><em>专拼选择：</em><a><?php echo $orderzhuanpin;?></a></li>
+                            <li><em>接送地址：</em><a><?php echo $orderaddr;?></a></li>
+                            <li><em>接送邮编：</em><a><?php echo $orderzipcode;?></a></li>
+                            <li><em>接送日期：</em><a><?php echo $orderdate;?></a></li>
+                            <li><em>接送时间：</em><a><?php echo $ordertime;?></a></li>
+                            <li><em>车辆数：</em><a><?php echo $orderCarNum;?></a></li>
+                            <li><em>举牌接机服务数：</em><a><?php echo $orderServiceNum;?></a></li>
+                            <li><em>总价：</em><a><?php echo $orderTotalPrice;?></a></li>
+
+
                             <li><em>订单号：</em><a><?php echo $info['ordersn'];?></a></li>
-                            <li><em>产品名称：</em><a target="_blank"><?php echo $info['productname'];?></a></li>
+                            <li><em>产品名称：</em><a ><?php echo $info['productname'];?></a></li>
                             <li><em>产品编号：</em><?php echo $number;?></li>
                             <li><em>购买时间：</em><?php echo date('Y年m月d日 H:i:s')?></li>
                         </ul>
@@ -30,6 +61,7 @@
                         <dl>
                             <dt>线上支付</dt>
                             <dd>
+                            <!-- 
                                 <ul>
                                     <?php $i=1; foreach($pay_method['online'] as $k=>$v):?>
                                         <li data="<?php echo $v['id']; ?>" class="<?php if(isset($v['selected'])){ echo 'active';}?><?php if($i%5==0):?> mr_0<?php endif;?>">
@@ -41,6 +73,21 @@
                                         <?php $i++;?>
                                     <?php endforeach;?>
                                 </ul>
+                                 -->
+                                <form name="_xclick" action="https://www.paypal.com/uk/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="Sinousholding@gmail.com">
+<input type="hidden" name="return" value="http://www.usyilu.com/payment/?ordersn=<?php echo $info['ordersn'];?>">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="item_name" value="usyilu.com Paypal - v3.0">
+<input type="hidden" name="amount" value="<?php echo $_GET['price'];?>">
+<input type="image" src="https://www.paypalobjects.com/zh_XC/C2/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+
+                                 
                             </dd>
                         </dl>
                     </div>
@@ -62,7 +109,7 @@
                     </div>
                     </div>
                     <?php  endif; ?>
-                    <div class="payment-now-btn"><a href="javascript:" class="error" id="st-payment-submit">立即付款</a></div>
+                    <div class="payment-now-btn"><a  style="display: none" href="javascript:" class="error" id="st-payment-submit">立即付款</a></div>
                 </div>
                 <?php  endif; ?>
             </div>

@@ -10,8 +10,20 @@
  .st-payment-way .payment-msg .msg-tit span{ float:right; height:40px; line-height:40px; font-size:14px; color:#1b1b1b }
  .st-payment-way .payment-msg .msg-tit span b{ color:#fb4734; font-size:24px }
  .st-payment-way .payment-msg .msg-list{ margin-top:20px }
- .st-payment-way .payment-msg .msg-list ul li{ color:#333; line-height:28px; font-size:14px }
- .st-payment-way .payment-msg .msg-list ul li em{ font-style: normal; font-weight: normal; color:#000; float:left; width:100px; text-align:right }
+ .st-payment-way .payment-msg .msg-list ul li{
+  color:#333;
+  line-height:28px;
+  font-size:14px;
+  width: 500px;
+ }
+ .st-payment-way .payment-msg .msg-list ul li em{
+  font-style: normal;
+  font-weight: normal;
+  color:#000;
+  float:left;
+  width:120px;
+  text-align:left;
+ }
  .st-payment-way .payment-msg .msg-list ul li a{ color:#333; font-size:14px }
  .st-payment-way .payment-msg .msg-list ul li a:hover{ color:#f60; text-decoration:underline }
  .st-payment-way .payment-con{ padding:20px 47px; margin-top:15px; border:1px solid #d8d8d8 }

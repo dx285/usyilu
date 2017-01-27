@@ -1,7 +1,7 @@
 body,html{font-size:12px;font-family:"Helvetica Neue","Open Sans","Microsoft YaHei","微软雅黑","Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif}body,html,div,blockquote,img,label,p,h1,h2,h3,h4,h5,h6,pre,ul,ol,li,dl,dt,dd,form,a,fieldset,input,th,td{margin:0;padding:0;border:0;outline:none;word-break:break-all;font-family:"Helvetica Neue","Open Sans","Microsoft YaHei","微软雅黑","Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif}select,textarea{outline:none;font-family:"Helvetica Neue","Open Sans","Microsoft YaHei","微软雅黑","Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,i,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none;list-style-position:inside}a{color:#ff3573;text-decoration:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:'.';display:block;height:0;clear:both;visibility:hidden}abbr,acronym{border:0}@font-face{font-family:"st-iconfont";src:url('/res/fonts/iconfont.eot?t=1471499964');src:url('/res/fonts/iconfont.eot?t=1471499964#iefix') format('embedded-opentype'), url('/res/fonts/iconfont.woff?t=1471499964') format('woff'), url('/res/fonts/iconfont.ttf?t=1471499964') format('truetype'), url('/res/fonts/iconfont.svg?t=1471499964#iconfont') format('svg')}.fl{float:left}.fr{float:right}.clear{clear:both}.clearfix:before,.clearfix:after{content:'.';display:block;height:0;clear:both;overflow:hidden}.w105{width:105px}.w230{width:230px}.w250{width:250px}.w270{width:270px}.w790{width:790px}.mt15{margin-top:15px}.mt20{margin-top:20px}.mt50{margin-top:50px}.ml5{margin-left:5px}.ml10{margin-left:10px}.ml15{margin-left:15px}.mb15{margin-bottom:15px}.hide{display:none}.big{float:left;width:100%;min-width:1200px}.wm-1200{width:1200px;margin:0
 auto;position:relative}.wm-1200:before,.wm-1200:after{content:'.';display:block;height:0;clear:both;overflow:hidden}.st-guide{color:#fff;height:0px;line-height:30px;padding:10px
 0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.st-guide
-a{color:#fff}.st-guide a:hover{color:#fff}.st-main-page{float:left;width:1200px}.st-star-ico{color:#ff3f3f;height:30px;line-height:30px}.st-ts-ico{float:left;width:15px;height:15px;margin:8px
+a{color:#fff}.st-guide a:hover{color:#fff}.st-main-page{float:left;width:1200px;margin-top:20px}.st-star-ico{color:#ff3f3f;height:30px;line-height:30px}.st-ts-ico{float:left;width:15px;height:15px;margin:8px
 0 0 10px;background:url(/res/images/st-ts-ico.png) no-repeat 0 bottom}.st-ts-text{color:#ff3f3f;float:left;height:30px;line-height:30px;padding-left:20px;margin-left:5px;font-size:12px;background:url(/res/images/st-ts-ico.png) no-repeat 0 -42px}.st-delete-ico{display:block;width:14px;height:17px;cursor:pointer;background:url(/res/images/delete-ico.png) no-repeat 0 bottom}.st-delete-ico:hover{background:url(/res/images/delete-ico.png) no-repeat 0 top}.main_mod_page{width:100%;padding:20px
 0;overflow:hidden}.main_mod_page
 p.page_right{width:100%;height:30px;text-align:center}.main_mod_page .back-first,
@@ -16,23 +16,22 @@ a{display:inline-block;*zoom:1;*display:inline;color:#ccc;width:28px;height:28px
 1px 0;border:1px
 solid #ccc;border-radius:3px}.main_mod_page .mod_pagenav_count a.current,
 .main_mod_page .mod_pagenav_count a:hover{color:#f60;border:1px
-solid #f60}.st-list-search{float:left;width:930px;border:1px
+solid #f60}.st-list-search{float:left;width:894px;border:1px
 solid #d8d8d8}.st-list-search .been-tj{float:left;width:930px;min-height:44px;background:#f9f9f9}.st-list-search .been-tj strong,
 .st-list-search .line-search-tj dl
 dt{float:left;color:#555;font-size:16px;width:92px;height:24px;line-height:24px;margin:10px
 0;text-align:right}.st-list-search .been-tj
 .chooseitems{padding-left:11px}.st-list-search .been-tj p,
 .st-list-search .line-search-tj dl
-dd{float:left;width:820px;min-height:24px;margin:10px
+dd{float:left;width:800px;min-height:24px;margin:10px
 0}.st-list-search .been-tj p
 span{float:left;color:#fff;height:24px;line-height:24px;padding:0
 8px 0 10px;margin:0
 10px 10px 0;background:#00b7ee;border-radius:4px}.st-list-search .been-tj p span
 i{float:right;display:block;width:7px;height:7px;margin:9px
 0 0 5px;cursor:pointer;background:url(/res/images/st-line-ico.png) no-repeat 0 0}.st-list-search .been-tj p
-a{float:left;height:24px;line-height:24px}.st-list-search .line-search-tj{position:relative}.st-list-search .line-search-tj,
-.st-list-search .line-search-tj
-dl{float:left;width:930px}.st-list-search .line-search-tj
+a{float:left;height:24px;line-height:24px}.st-list-search .line-search-tj{position:relative}.st-list-search .line-search-tj{float:left;width:100%}.st-list-search .line-search-tj
+dl{float:left;width:100%}.st-list-search .line-search-tj
 dl{border-bottom:1px solid #d8d8d8}.st-list-search .line-search-tj
 dl.bor_0{border-bottom:0}.st-list-search .line-search-tj dl.type dd
 p{float:left;width:720px;overflow:hidden}.st-list-search .line-search-tj dl.type dd p
@@ -48,7 +47,7 @@ dt{height:28px;line-height:28px}.st-list-search .line-search-tj dl.date
 input{float:left;color:#333;width:120px;height:26px;line-height:26px;padding-left:5px;border:1px
 solid #d8d8d8;border-radius:3px;background:url(/res/images/st-line-ico.png) no-repeat 104px -140px}.st-list-search .line-search-tj dl.date
 span{float:left;height:28px;line-height:28px;margin:0
-10px}.st-sort-menu{float:left;width:905px;height:46px;margin-top:15px;background:#f9f8f8}.st-sort-menu .sort-sum{float:left;height:46px}.st-sort-menu .sort-sum
+10px}.st-sort-menu{float:left;width:894px;height:46px;margin-top:15px;background:#f9f8f8}.st-sort-menu .sort-sum{float:left;height:46px}.st-sort-menu .sort-sum
 a{float:left;height:46px;line-height:46px;padding:0
 20px;font-size:14px}.st-sort-menu .sort-sum a
 i{display:inline-block;*zoom:1;*display:inline;width:7px;height:10px;margin-left:2px;background:url(/res/images/sort-menu-ico.png) no-repeat}.st-sort-menu .sort-sum a i.jg-default{background-position:0 0}.st-sort-menu .sort-sum a i.jg-up{background-position:-8px 0}.st-sort-menu .sort-sum a i.jg-down{background-position:-16px 0}.st-sort-menu .sort-sum a i.xl-default,

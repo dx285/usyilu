@@ -1,231 +1,0 @@
-3600
-s:34792:"<!doctype html><html><head><meta charset="utf-8"><!-- Di   --><title>线路-美国一路</title><!--    <title>线路-美国一路</title>--><script>
-    window.SITEURL = "/";
-    window.CURRENCY_SYMBOL="$";
-</script><link type="text/css" href="/min/?f=plugins/line/public/css/lines.css" rel="stylesheet"  />
-<link type="text/css" href="/min/?f=/res/css/base.css,/res/css/extend.css" rel="stylesheet"  />
-<script type="text/javascript"src="/min/?f=/res/js/jquery.min.js,/res/js/base.js,/res/js/common.js,/res/js/delayLoading.min.js"></script>
-</head><body><link type="text/css" href="/min/?f=/usertpl/dw_st16239_no198_index/css/header.css" rel="stylesheet"  />
-<!-- header开始 --><div class="st-header"><div class="wm-1200"><div class="header-block"><div class="st-logo"><a href="http://www.usyilu.com"><img src="http://www.usyilu.com/uploads/main/allimg/20161217/20161217030520_70x70.png" alt="美国一路" /></a><p>全美首家:租车 + 小团</p></div><div class="st-nav"><ul class="clearfix"><li><a href="/">首页</a></li><li><!--                        --><a href="/cars/">一路接机</a><!--                        <a href="/cars/">一路接机</a>--></li><li><!--                        --><a href="/lines/all-0-0-0-0-0-27-1">落地参团</a><!--                        <a href="/lines/">落地参团</a>--></li><li><!--                        --><a href="http://www.usyilu.com/cars/">一路租车</a><!--                        <a href="http://www.usyilu.com/cars/">一路租车</a>--></li><li><!--                        --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1">一路自驾</a><!--                        <a href="/lines/">一路自驾</a>--></li><li><!--                        --><a href="http://www.usyilu.com/customize/">一路包车</a><!--                        <a href="http://www.usyilu.com/customize/">一路包车</a>--></li><li><!--                        --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1">特价酒店</a><!--                        <a href="http://www.usyilu.com/hotels/">特价酒店</a>--></li><li><a href="/help/index_1.html" rel="nofollow">关于我们</a></li><li></li><li></li><li></li></ul></div><!-- 主导航 --><div class="st-rig"><div class="phone-num">1718-475-9550</div><span id="loginstatus"></span></div></div></div></div><script>
-    var SITEURL = "/";
-    $(function(){
-        //导航的选中状态
-        $(".st-menu a").each(function(){
-            var url= window.location.href;
-            url=url.replace('index.php','');
-            url=url.replace('index.html','');
-            var ulink=$(this).attr("href");
-            if(url==ulink)
-            {
-                $(this).parents("li:first").addClass('active');
-            }
-        })
-        //登陆状态
-        $.ajax({
-            type:"POST",
-            async:false,
-            url:SITEURL+"member/login/ajax_is_login",
-            dataType:'json',
-            success:function(data){
-                if(data.status){
-                    $txt = '<div class="login-after"><a class="dl" style="padding:0" href="javascript:;">你好,</a>';
-                    //Di 避免直接暴露ip
-//                    $txt+= '<a class="dl" href="http://47.90.15.0/member/">'+data.user.nickname+  '&nbsp;&nbsp;</a>';
-//                    $txt+= '<a class="dl" href="http://47.90.15.0/member/login/loginout">退出</a></div>';
-                    $txt+= '<a class="dl" href="/member/">'+data.user.nickname+  '&nbsp;&nbsp;</a>';
-                    $txt+= '<a class="dl" href="/member/login/loginout">退出</a></div>';
-                    //$txt+= '<a class="dl" href="/member">个人中心</a>';
-                }else{
-                    //Di 避免直接暴露ip
-//                    $txt = ' <div class="login-before"><a class="dl" href="http://47.90.15.0/member/login">登录</a>|';
-//                    $txt+= '<a class="zc" href="http://47.90.15.0/member/register">注册</a></div>';
-                    $txt = ' <div class="login-before"><a class="dl" href="/member/login">登录</a>|';
-                    $txt+= '<a class="zc" href="/member/register">注册</a></div>';
-                }
-                $("#loginstatus").html($txt);
-            }
-        })
-    })
-</script><div class="big"><div class="wm-1200"><div class="st-guide"><!--      <a href="/">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/lines/">一路小团</a>--><!--            --></div><!--面包屑--><div class="st-main-page"><dl class="customizeNav"></dl><dl class="customizeNav"></dl><dl class="customizeNav"></dl><dl class="customizeNav"> 
-                                <div class="item">  <a href="http://www.usyilu.com/lines/all-0-0-0-0-0-5-1" >自由自驾</a>
-                                     
-                                </div>
-                              
-                                <div class="item">  <a href="http://www.usyilu.com/lines/all-0-0-0-0-0-6-1" >团队自驾</a>
-                                     
-                                </div>
-                              
-                                <div class="item">  <a href="http://www.usyilu.com/lines/all-0-0-0-0-0-7-1" >定制自驾</a>
-                                     
-                                </div>
-                             </dl><div class="st-linelist-box"><div class="st-list-search"><div class="been-tj" style="display:none"><strong>已选条件：</strong><p class="chooseitems"><a href="javascript:;" class="clearc">清空筛选条件 </a></p></div><div class="line-search-tj"><dl class="type"><dt>选择区域：</dt><dd><p><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-16-1" >东海岸</a><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-17-1" >西海岸</a><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-26-1" >黄石</a></p></dd></dl><dl class="type"></dl><dl class="type"></dl><dl class="type"></dl><!--出发城市开始--><dl class="type"><dt>出发城市：</dt><dd><p><a  href="http://www.usyilu.com/lines/all-0-0-0-0-75-0-1">纽约</a> 
-                                <a  href="http://www.usyilu.com/lines/all-0-0-0-0-76-0-1">波士顿</a> 
-                                <a  href="http://www.usyilu.com/lines/all-0-0-0-0-77-0-1">华盛顿</a> 
-                                <a  href="http://www.usyilu.com/lines/all-0-0-0-0-78-0-1">黄石</a> 
-                                <a  href="http://www.usyilu.com/lines/all-0-0-0-0-79-0-1">拉斯维加斯</a> 
-                                <a  href="http://www.usyilu.com/lines/all-0-0-0-0-80-0-1">洛杉矶</a> 
-                                <a  href="http://www.usyilu.com/lines/all-0-0-0-0-81-0-1">旧金山</a> 
-                                </p></dd></dl><!--出发城市结束--><dl class="type"><!-- Di change displayed text --><dt>结束城市：</dt><dd><p><a  href="http://www.usyilu.com/lines/washingtondc-0-0-0-0-0-0-1">华盛顿</a> 
-                            <a  href="http://www.usyilu.com/lines/boston-0-0-0-0-0-0-1">波士顿</a> 
-                            <a  href="http://www.usyilu.com/lines/niuyue-0-0-0-0-0-0-1">纽约</a> 
-                            <a  href="http://www.usyilu.com/lines/yellowstone-0-0-0-0-0-0-1">黄石</a> 
-                            <a  href="http://www.usyilu.com/lines/losangeles-0-0-0-0-0-0-1">洛杉矶</a> 
-                            <a  href="http://www.usyilu.com/lines/sanfrancisco-0-0-0-0-0-0-1">旧金山</a> 
-                            <a  href="http://www.usyilu.com/lines/lasvegas-0-0-0-0-0-0-1">拉斯维加斯</a> 
-                            </p></dd></dl><!--属性组读取--><!--                --><dl class="type"></dl><dl class="type"><dt>车型选择：</dt><dd><p><!-- 加各种团条件 --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-22-1" >小型SUV</a><!-- 加各种团条件 --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-23-1" >大型SUV</a><!-- 加各种团条件 --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-19-1" >丰田商务8人座</a><!-- 加各种团条件 --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-25-1" >大型雪佛莱</a><!-- 加各种团条件 --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-24-1" >敞篷跑车</a></p></dd></dl><dl class="type"><dt>优惠专区：</dt><dd><p><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-11-1" >门票特惠</a><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-12-1" >商店特惠</a><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-13-1" >米其林餐厅优惠</a></p></dd></dl><dl class="type"></dl><dl class="type"><dt>出游天数：</dt><dd><p><a  href="http://www.usyilu.com/lines/all-3-0-0-0-0-0-1">三日游</a><a  href="http://www.usyilu.com/lines/all-4-0-0-0-0-0-1">四日游</a><a  href="http://www.usyilu.com/lines/all-5-0-0-0-0-0-1">五日游</a><a  href="http://www.usyilu.com/lines/all-6-0-0-0-0-0-1">六日游以上</a></p></dd></dl><dl class="type"><dt>价格区间：</dt><dd><p><a  href="http://www.usyilu.com/lines/all-0-1-0-0-0-0-1">$4000-$6000</a><a  href="http://www.usyilu.com/lines/all-0-2-0-0-0-0-1">$6000-$8000</a><a  href="http://www.usyilu.com/lines/all-0-3-0-0-0-0-1">$8000-$10000</a><a  href="http://www.usyilu.com/lines/all-0-4-0-0-0-0-1">$10000-$12000</a></p></dd></dl></div></div><!--条件搜索--><div class="st-linelist-con"><div class="st-sort-menu"><span class="sort-sum"><a href="javascript:;">综合排序</a><a href="javascript:;">价格
-                    <i class="jg-default" data-url="http://www.usyilu.com/lines/all-0-0-1-0-0-0-1"></i><a href="javascript:;">销量
-                    <i class="xl-default" data-url="http://www.usyilu.com/lines/all-0-0-3-0-0-0-1"></i></a><a href="javascript:;">推荐
-                    <i class="tj-default" data-url="http://www.usyilu.com/lines/all-0-0-4-0-0-0-1"></i></a></span><span class="switch-show"><a  class="on"  href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1"><i class="lt"></i>列表模式</a><a  href="http://www.usyilu.com/lines/all-0-0-0-1-0-0-1"><i class="pic"></i>图片模式</a></span><!--切换模式--></div><div class="txt-line-list"><ul><li><div class="pic"><a href="/lines/show_1.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/899ff48823a54ba42a543375a3a3807f_265x180.jpg" alt="纽约三日游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_1.html" target="_blank">纽约三日游<img src="http://www.usyilu.com/uploads/icon/special.png" /></a></p><p class="data"><span>销量：302</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：100</span></p><!--                        <p class="ts">特色：买二送一Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">买二送一</p></p><p class="msg"><span>                                 [纽约出发]
-                                </span><span>行程：3 天</span><span>出团日期：电询</span></p></div><div class="booking"><span class="yh">                             电询
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>8000</del></span><a href="/lines/show_1.html" target="_blank">立即预订</a></div></li><li><div class="pic"><a href="/lines/show_2.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/de8a11cdd3587bea69394f97934423d1_265x180.jpg" alt="波士顿二日游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_2.html" target="_blank">波士顿二日游<img src="http://www.usyilu.com/uploads/icon/special.png" /></a></p><p class="data"><span>销量：100</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：100</span></p><!--                        <p class="ts">特色：买二送一Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">买二送一</p></p><p class="msg"><span>                                 [纽约出发]
-                                </span><span>行程：2 天</span><span>出团日期：01-06、01-07、01-08、01-09、01-10、01-11日,</span></p></div><div class="booking"><span class="yh"><i class="currency_sy">$</i><b>5000</b>起
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>4000</del></span><a href="/lines/show_2.html" target="_blank">立即预订</a></div></li><li><div class="pic"><a href="/lines/show_3.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/507f6d6096a5760161f48829ded28961_265x180.jpg" alt="华盛顿一日游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_3.html" target="_blank">华盛顿一日游<img src="http://www.usyilu.com/uploads/icon/buy.png" /></a></p><p class="data"><span>销量：100</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：100</span></p><!--                        <p class="ts">特色：买二送一Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">买二送一</p></p><p class="msg"><span>                                 [纽约出发]
-                                </span><span>行程：1 天</span><span>出团日期：电询</span></p></div><div class="booking"><span class="yh">                             电询
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>3000</del></span><a href="/lines/show_3.html" target="_blank">立即预订</a></div></li><li><div class="pic"><a href="/lines/show_6.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/bf78eccc80fd14b8a3c2fd4216f4d248_265x180.jpg" alt="拉斯维加斯三日游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_6.html" target="_blank">拉斯维加斯三日游<img src="http://www.usyilu.com/uploads/icon/discount.png" /></a></p><p class="data"><span>销量：100</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：100</span></p><!--                        <p class="ts">特色：买二送一Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">买二送一</p></p><p class="msg"><span>                                 [拉斯维加斯出发]
-                                </span><span>行程：3 天</span><span>出团日期：电询</span></p></div><div class="booking"><span class="yh">                             电询
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>9999</del></span><a href="/lines/show_6.html" target="_blank">立即预订</a></div></li><li><div class="pic"><a href="/lines/show_5.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/d212afca0de9350a54c4ee0bcd36ce9c_265x180.jpg" alt="洛杉矶二日游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_5.html" target="_blank">洛杉矶二日游<img src="http://www.usyilu.com/uploads/icon/hot.png" /><img src="http://www.usyilu.com/uploads/icon/chuxiao.png" /></a></p><p class="data"><span>销量：100</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：100</span></p><!--                        <p class="ts">特色：买二送一Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">买二送一</p></p><p class="msg"><span>                                 [洛杉矶出发]
-                                </span><span>行程：3 天</span><span>出团日期：电询</span></p></div><div class="booking"><span class="yh">                             电询
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>9999</del></span><a href="/lines/show_5.html" target="_blank">立即预订</a></div></li><li><div class="pic"><a href="/lines/show_4.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/4ddb50a42e73561ae98fc533d04bd71b_265x180.jpg" alt="旧金山三日游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_4.html" target="_blank">旧金山三日游<img src="http://www.usyilu.com/uploads/icon/chuxiao.png" /><img src="http://www.usyilu.com/uploads/icon/discount.png" /></a></p><p class="data"><span>销量：100</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：100</span></p><!--                        <p class="ts">特色：买二送二Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">买二送二</p></p><p class="msg"><span>                                 [旧金山出发]
-                                </span><span>行程：3 天</span><span>出团日期：电询</span></p></div><div class="booking"><span class="yh">                             电询
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>9999</del></span><a href="/lines/show_4.html" target="_blank">立即预订</a></div></li><li><div class="pic"><a href="/lines/show_7.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/55865ee008f4504979c55136c85fa241_265x180.jpg" alt="黄石三日游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_7.html" target="_blank">黄石三日游<img src="http://www.usyilu.com/uploads/icon/huodong.png" /><img src="http://www.usyilu.com/uploads/icon/buy.png" /></a></p><p class="data"><span>销量：100</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：100</span></p><!--                        <p class="ts">特色：买二送一Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">买二送一</p></p><p class="msg"><span>                                 [拉斯维加斯出发]
-                                </span><span>行程：3 天</span><span>出团日期：电询</span></p></div><div class="booking"><span class="yh">                             电询
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>9999</del></span><a href="/lines/show_7.html" target="_blank">立即预订</a></div></li><li><div class="pic"><a href="/lines/show_10.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/899ff48823a54ba42a543375a3a3807f_265x180.jpg" alt="纽约5日游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_10.html" target="_blank">纽约5日游<img src="http://www.usyilu.com/uploads/icon/hot.png" /><img src="http://www.usyilu.com/uploads/icon/chuxiao.png" /><img src="http://www.usyilu.com/uploads/icon/discount.png" /><img src="http://www.usyilu.com/uploads/icon/huodong.png" /></a></p><p class="data"><span>销量：100</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：100</span></p><!--                        <p class="ts">特色：买二送一Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">买二送一</p></p><p class="msg"><span>                                 [纽约出发]
-                                </span><span>行程：5 天</span><span>出团日期：01-06、01-07、01-08、01-09、01-10、01-11日,</span></p></div><div class="booking"><span class="yh"><i class="currency_sy">$</i><b>13000</b>起
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>10000</del></span><a href="/lines/show_10.html" target="_blank">立即预订</a></div></li><li><div class="pic"><a href="/lines/show_9.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/55865ee008f4504979c55136c85fa241_265x180.jpg" alt="黄石一日游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_9.html" target="_blank">黄石一日游<img src="http://www.usyilu.com/uploads/icon/hot.png" /><img src="http://www.usyilu.com/uploads/icon/buy.png" /></a></p><p class="data"><span>销量：100</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：100</span></p><!--                        <p class="ts">特色：买二送一Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">买二送一</p></p><p class="msg"><span>                                 [拉斯维加斯出发]
-                                </span><span>行程：1 天</span><span>出团日期：01-06、01-07、01-08、01-09、01-10、01-11日,</span></p></div><div class="booking"><span class="yh"><i class="currency_sy">$</i><b>4000</b>起
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>2000</del></span><a href="/lines/show_9.html" target="_blank">立即预订</a></div></li><li><div class="pic"><a href="/lines/show_8.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1101/5c8c7041c66571d2cf3935a57d49504b_265x180.jpg" alt="纽约二日游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_8.html" target="_blank">纽约二日游<img src="http://www.usyilu.com/uploads/icon/hot.png" /><img src="http://www.usyilu.com/uploads/icon/huodong.png" /><img src="http://www.usyilu.com/uploads/icon/buy.png" /></a></p><p class="data"><span>销量：100</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：100</span></p><!--                        <p class="ts">特色：买二送一Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">买二送一</p></p><p class="msg"><span>                                 [纽约出发]
-                                </span><span>行程：2 天</span><span>出团日期：电询</span></p></div><div class="booking"><span class="yh">                             电询
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>3000</del></span><a href="/lines/show_8.html" target="_blank">立即预订</a></div></li><li><div class="pic"><a href="/lines/show_25.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2017/0105/cb59c95d4a7a10286a7c6d25b8a22ccd_265x180.png" alt="洛杉矶-拉斯维加斯6天自驾游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_25.html" target="_blank">洛杉矶-拉斯维加斯6天自驾游<img src="http://www.usyilu.com/uploads/icon/hot.png" /><img src="http://www.usyilu.com/uploads/icon/special.png" /><img src="http://www.usyilu.com/uploads/icon/buy.png" /></a></p><p class="data"><span>销量：236</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：134</span></p><!--                        <p class="ts">特色：全程免费提供app（景点餐饮购物精准定位软件）、APP在手说走就走。美景、购物两不误。Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">全程免费提供app（景点餐饮购物精准定位软件）、APP在手说走就走。美景、购物两不误。</p></p><p class="msg"><span>                                 [洛杉矶出发]
-                                </span><span>行程：6 天</span><span>出团日期：01-06、01-07、01-08、01-09、01-10、01-11日,</span></p></div><div class="booking"><span class="yh"><i class="currency_sy">$</i><b>578</b>起
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>578</del></span><a href="/lines/show_25.html" target="_blank">立即预订</a></div></li><li><div class="pic"><a href="/lines/show_24.html"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2017/0105/144ae8f32cc596a5ecc0ef2ae3d80b86_265x180.png" alt="最美黄石公园深度4天自驾游"/></a></div><div class="txt"><p class="bt"><a href="/lines/show_24.html" target="_blank">最美黄石公园深度4天自驾游<img src="http://www.usyilu.com/uploads/icon/discount.png" /><img src="http://www.usyilu.com/uploads/icon/buy.png" /></a></p><p class="data"><span>销量：125</span><s>|</s><span>满意度：100%</span><s>|</s><span>推荐：56</span></p><!--                        <p class="ts">特色：盐湖城一路自驾到黄石公园，说走就走。Array</p>--><p class="ts strongPoints">特色：
-                            <p class="strongPoint">盐湖城一路自驾到黄石公园，说走就走。</p></p><p class="msg"><span>                                 [黄石出发]
-                                </span><span>行程：4 天</span><span>出团日期：07-01、07-02、07-03日,</span></p></div><div class="booking"><span class="yh"><i class="currency_sy">$</i><b>510</b>起
-                            </span><span class="yj">原价：<del><i class="currency_sy">$</i>510</del></span><a href="/lines/show_24.html" target="_blank">立即预订</a></div></li></ul><div class="main_mod_page clear"><p class="page_right">
-    
-        <span class="mod_pagenav_count">
-
-                                            <a title="1" href="/lines/all-0-0-0-0-0-0" class="current">1</a>
-                                                <a title="2" href="/lines/all-0-0-0-0-0-0-2">2</a>
-                                                <a title="3" href="/lines/all-0-0-0-0-0-0-3">3</a>
-                    
-    </span>
-    
-            <a class="go-last" title="最后一页" href="/lines/all-0-0-0-0-0-0-3"></a>
-    </p></div></div><!--搜索列表--></div></div><!--列表主体--><div class="st-sidebox"></div><!--边栏模块--></div></div></div><link type="text/css" href="/min/?f=/usertpl/dw_st16239_no198_index/css/footer.css" rel="stylesheet"  />
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">--><div class="st-help"><div class="wm-1200"><div class="help-lsit"><dl><dt><a href="/help/index_1.html" rel="nofollow">关于我们</a></dt><dd><a href="/help/show_51.html" target="_blank" rel="nofollow">发展历程</a><a href="/help/show_52.html" target="_blank" rel="nofollow">加入我们</a><a href="/help/show_53.html" target="_blank" rel="nofollow">联系我们</a><a href="/help/show_27.html" target="_blank" rel="nofollow">专业团队</a><a href="/help/show_3.html" target="_blank" rel="nofollow">美国一路简介</a></dd></dl><dl><dt><a href="/help/index_10.html" rel="nofollow">服务条款</a></dt><dd><a href="/help/show_48.html" target="_blank" rel="nofollow">客户协议</a><a href="/help/show_16.html" target="_blank" rel="nofollow">预订酒店的问题</a><a href="/help/show_49.html" target="_blank" rel="nofollow">签订旅游合同</a><a href="/help/show_1.html" target="_blank" rel="nofollow">纯玩是什么意思？</a><a href="/help/show_8.html" target="_blank" rel="nofollow">外地游客怎样付款？</a></dd></dl><dl><dt><a href="/help/index_11.html" rel="nofollow">签订合同</a></dt><dd><a href="/help/show_9.html" target="_blank" rel="nofollow">定金支付比例如何？</a><a href="/help/show_7.html" target="_blank" rel="nofollow">本地游客如何付款？</a><a href="/help/show_10.html" target="_blank" rel="nofollow">对于支付团款的建议</a></dd></dl><dl><dt><a href="/help/index_12.html" rel="nofollow">帮助中心</a></dt><dd><a href="/help/show_47.html" target="_blank" rel="nofollow">旅游保险</a><a href="/help/show_45.html" target="_blank" rel="nofollow">常见问题</a><a href="/help/show_46.html" target="_blank" rel="nofollow">旅美需知</a></dd></dl><div class="st-wechat"><img src="/uploads/main/allimg/20161123/20161123005148.png" width="100" height="100" /><span>微信扫一扫，<br />优惠多多！</span></div></div></div></div><!--帮助 扫码--><div class="st-help"><ul class="wm-1200 foot-ad"><ul class="foot-nav-pills" style="text-align: center"><li class="foot-nav-item foot-nav-item-certificate">
-                企业认证
-            </li><li class="foot-nav-item foot-nav-item-certificate">
-                |
-            </li><li class="foot-nav-item foot-nav-item-coop">
-                合作伙伴
-            </li><li class="foot-nav-item foot-nav-item-certificate">
-                |
-            </li><li class="foot-nav-item foot-nav-item-otherlinks">
-                友情链接
-            </li></ul><ul class="foot-certificate" style="text-align: center"><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/IATA2.jpg" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/NTA.gif" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/DOT.jpg" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/CHP.jpg" ></li></ul><ul class="foot-coop" style="text-align: center"><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/中国国旅.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/惠租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/携程.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/港中旅.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/租租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/锦江旅游.gif" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/飞猪.jpg" ></li></ul><ul class="foot-otherlinks" style="text-align: center"><li class="foot-otherlinks-item" id="" ><a target="_blank"  href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li></ul></div></div><div class="st-footer"><div class="wm-1200"><div class="st-foot-menu"><a href="/servers/index_1.html" target="_blank" rel="nofollow">一日游</a><a href="/servers/index_4.html" target="_blank" rel="nofollow">精品多日游</a><a href="/servers/index_2.html" target="_blank" rel="nofollow">自驾游</a><a href="/servers/index_11.html" target="_blank" rel="nofollow">热门景点</a><a href="/servers/index_10.html" target="_blank" rel="nofollow">友情链接</a></div><!--底部导航--><div class="st-foot-edit"><div class="foot_con"><p>
-        经营许可证号：XXX　业务接待地址：美国纽约州纽约XXXX</p></div></div><!--网站底部介绍--><p></p></div></div><script src="/plugins/qq_kefu/public/js/qqkefu.js"></script><!-- 编辑器内容 --><div class="st-link"><div class="wm-1200"><div class="st-link-list"><strong>友情链接：</strong><div class="child"><a href="http://www.gogogous.com" target="_blank">佳晨旅游</a></div></div></div></div><!--友情链接--><script>
-    $(".foot-nav-item-certificate").hover(
-        function () {
-            $(this).addClass('hover');
-//            $("foot-certificate-item").addClass('showContent');
-//            $(".foot-certificate").css({"background-color": "yellow"});
-            $(".foot-certificate").show();
-            $(".foot-coop").hide();
-            $(".foot-otherlinks").hide();
-//            $(".foot-certificate").addClass('showContent');
-        },
-        function () {
-            $(this).removeClass("hover");
-//            $(".foot-certificate").hide();
-        }
-    );
-    $(".foot-nav-item-coop").hover(
-        function () {
-            $(this).addClass('hover');
-//            $("foot-certificate-item").addClass('showContent');
-//            $(".foot-certificate").css({"background-color": "yellow"});
-            $(".foot-certificate").hide();
-            $(".foot-coop").show();
-            $(".foot-coop").css({"visibility" : "visible"});
-            $(".foot-otherlinks").hide();
-//            $(".foot-certificate").addClass('showContent');
-        },
-        function () {
-            $(this).removeClass("hover");
-//            $(".foot-certificate").hide();
-        }
-    );
-    $(".foot-nav-item-otherlinks").hover(
-        function () {
-            $(this).addClass('hover');
-//            $("foot-certificate-item").addClass('showContent');
-//            $(".foot-certificate").css({"background-color": "yellow"});
-            $(".foot-certificate").hide();
-            $(".foot-coop").hide();
-            $(".foot-otherlinks").css({"visibility" : "visible"});
-            $(".foot-otherlinks").show();
-//            $(".foot-certificate").addClass('showContent');
-        },
-        function () {
-            $(this).removeClass("hover");
-//            $(".foot-certificate").hide();
-        }
-    );
-    $(".foot-otherlinks-item").click(function() {
-        $(this).css('color', '#fff');
-    });
-</script><script>
-        $(function(){
-            //线路搜索条件去掉最后一条边框
-            $('.line-search-tj').find('dl').last().addClass('bor_0')
-            $(".line-search-tj dl dd em").toggle(function(){
-                $(this).prev().height('24px');
-                $(this).children('b').text('展开');
-                $(this).children('i').removeClass('up')
-            },function(){
-                $(this).prev().height('auto');
-                $(this).children('b').text('收起');
-                $(this).children('i').addClass('up')
-            });
-            //排序方式点击
-            $('.sort-sum').find('a').click(function(){
-                var url = $(this).find('i').attr('data-url');
-                if(url==undefined){
-                    url = location.href;
-                }
-                window.location.href = url;
-            })
-            //删除已选
-            $(".chooseitem").find('i').click(function(){
-                var url = $(this).parent().attr('data-url');
-                window.location.href = url;
-            })
-            //清空筛选条件
-            $('.clearc').click(function(){
-                var url = SITEURL+'lines/all/';
-                window.location.href = url;
-            })
-            //隐藏没有属性下级分类
-            $(".type").each(function(i,obj){
-                var len = $(obj).find('dd p a').length;
-                if(len<1){
-                    $(obj).hide();
-                }
-            })
-            $(".customizeNav").next(".item").click(function(){
-                $(this).css({"background-color" : "#24ccff"});
-            })
-        })
-    </script></body></html>
-";

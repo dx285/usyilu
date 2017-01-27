@@ -1,0 +1,292 @@
+@CHARSET "UTF-8";
+
+/* Placeholder styles */
+input {}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    red;
+    font-size: 1.2em;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    red;
+    font-size: 1.2em;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    red;
+    font-size: 1.2em;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    red;
+    font-size: 1.2em;
+}
+
+
+.cnfrm-header {
+	background: linear-gradient(to bottom,#f8f8f8 0,#ccc 100%) !important;
+	border: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 1070;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 8px grey;
+}
+
+.cnfirm-reg {
+	display: inline-block;
+	float: right;
+    width: 15%;
+    position: absolute;
+    bottom: 3px;
+    right: 22%;
+    margin-bottom: 3px;
+}
+
+#loginstatus {
+	float: right;
+}
+
+#loginstatus a {
+	color: #888; !important;
+}
+
+#loginstatus a:hover {
+	color: #d4002a;
+}
+
+.cnfrm-wrapper {
+	width:60%; 
+	min-height:220px; 
+	margin:5px auto 10px; 
+	border-width:8px;
+	border-color: #aaaaaa;
+	border-radius:8px; box-shadow:0px 0px 5px #d4002a;
+	overflow: auto;
+}
+
+.cnfrm-step {
+	width:80%; 
+	min-height:10px; 
+	margin:5px auto 5px; 
+	padding-top: 5px;
+}
+
+.cnfrm-step ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.cnfrm-step li {
+    display: table-cell;
+    width: 25%;
+    padding: 0;
+    padding-left: 10px;
+    height: 30px;
+}
+
+.cnfrm-step li p {
+    font-size: 1.6em;
+    text-align: center;
+    vertical-align: bottom;
+    color: #ccc;
+}
+
+.steps {
+	border-bottom: 4px solid #ccc;
+    height: 100%;
+    float: left;
+    width: 100%;
+}
+
+.steps.active {
+	border-bottom: 4px solid #d4002a;
+}
+
+
+
+.steps.active p {
+    color: #d4002a;
+}
+
+#step1 {
+	display: none;
+	margin: 20px 40px;
+}
+
+#step2 {
+	display: none;
+	margin: 20px 40px;
+}
+
+#step3 {
+	display: none;
+	margin: 20px 40px;
+}
+
+#step1.active {
+	display: block;
+}
+
+#step2.active {
+	display: block;
+}
+
+#step3.active {
+	display: block;
+}
+
+.buttons {
+	margin-bottom: 8px;
+}
+
+.buttons button {
+	background-color: #d4002a; /* Red */
+    border: none;
+    color: white;
+    margin: 0 5px;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.info, .login-info, .success-info {
+	margin-bottom: 20px;
+}
+
+.info h1, .login-info h1, .success-info h1 {
+	width: 100%;
+    font-size: 1.5em;
+	margin-bottom: 30px;
+}
+
+.info h1 span, .login-info h1 span, .success-info h1 span {
+	font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.success-info p {
+	margin-top: -20px;
+	margin-bottom: 15px;
+}
+
+.section-title {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.section-title p {
+    font-size: 1.3em;
+	color: #d4002a;
+    text-align: center;
+    vertical-align: bottom;
+	padding-top: 15px;
+}
+
+.seperator {
+	height: 0;
+	border-bottom: 2px solid #d4002a;
+	margin-bottom: 8px;
+}
+
+.section {
+	width: 100%;
+	margin: 5px 0 15px;
+	overflow: auto;
+}
+
+.width-6 {
+	float: left;
+	min-height: 5px;
+	width:45%;
+	padding-left: 5%;
+    vertical-align: bottom;
+}
+
+.width-12 {
+	float: left;
+	min-height: 5px;
+	width: 80%;
+	padding: 0 5%;
+    vertical-align: bottom;
+}
+
+.width-12 .psw {
+	float: right;
+}
+
+.section p span {
+    font-size: 1.2em;
+	font-weight: bolder;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.section p {
+	width: 100%;
+	height: 30px;
+    font-size: 1.1em; 
+    text-align: left;
+}
+
+.p-span {
+    font-size: 1.2em;
+	font-weight: bolder;
+    vertical-align: bottom;
+    width: 30%; 
+    display: inline-block;
+    float: left;
+}
+
+.section .p-span p {
+	text-align: right;
+}
+
+.section .p- {
+	width: 30%;
+	height: 30px;
+    vertical-align: bottom;
+    padding-left: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.p- input {
+    vertical-align: bottom;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1.1em; 
+}
+
+.login-error {
+	display: none;
+	font-size: 1em;
+	width: 30%;
+	float: left;
+	color: red;
+}
+
+.sign-up {
+    font-size: 1.2em; 
+    vertical-align: bottom;
+}
+
+.sign-up span {
+    font-size: 1.2em; 
+	color: #d4002a;
+	text-decoration: underline;
+    vertical-align: bottom;
+}
+
+
+
+
+	
+
+button {
+
+}

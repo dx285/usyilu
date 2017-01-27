@@ -60,55 +60,55 @@
 
         <ul class="foot-certificate" style="text-align: center">
             <li class="foot-certificate-item" id="" >
-                <img src="http://usyilu.com/uploads/2016/1130/IATA2.jpg" >
+                <img src="https://usyilu.com/uploads/2016/1130/IATA2.jpg" >
             </li>
             <li class="foot-certificate-item" id="" >
-                <img src="http://usyilu.com/uploads/2016/1130/NTA.gif" >
+                <img src="https://usyilu.com/uploads/2016/1130/NTA.gif" >
             </li>
             <li class="foot-certificate-item" id="" >
-                <img src="http://usyilu.com/uploads/2016/1130/DOT.jpg" >
+                <img src="https://usyilu.com/uploads/2016/1130/DOT.jpg" >
             </li>
             <li class="foot-certificate-item" id="" >
-                <img src="http://usyilu.com/uploads/2016/1130/CHP.jpg" >
+                <img src="https://usyilu.com/uploads/2016/1130/CHP.jpg" >
             </li>
         </ul>
 
         <ul class="foot-coop" style="text-align: center">
             <li class="foot-coop-item" id="" >
-                <img src="http://usyilu.com/uploads/2016/1201/中国国旅.png" >
+                <img src="https://usyilu.com/uploads/2016/1201/中国国旅.png" >
             </li>
             <li class="foot-coop-item" id="" >
-                <img src="http://usyilu.com/uploads/2016/1201/惠租车.jpg" >
+                <img src="https://usyilu.com/uploads/2016/1201/惠租车.jpg" >
             </li>
             <li class="foot-coop-item" id="" >
-                <img src="http://usyilu.com/uploads/2016/1201/携程.png" >
+                <img src="https://usyilu.com/uploads/2016/1201/携程.png" >
             </li>
             <li class="foot-coop-item" id="" >
-                <img src="http://usyilu.com/uploads/2016/1201/港中旅.png" >
+                <img src="https://usyilu.com/uploads/2016/1201/港中旅.png" >
             </li>
             <li class="foot-coop-item" id="" >
-                <img src="http://usyilu.com/uploads/2016/1201/租租车.jpg" >
+                <img src="https://usyilu.com/uploads/2016/1201/租租车.jpg" >
             </li>
             <li class="foot-coop-item" id="" >
-                <img src="http://usyilu.com/uploads/2016/1201/锦江旅游.gif" >
+                <img src="https://usyilu.com/uploads/2016/1201/锦江旅游.gif" >
             </li>
             <li class="foot-coop-item" id="" >
-                <img src="http://usyilu.com/uploads/2016/1201/飞猪.jpg" >
+                <img src="https://usyilu.com/uploads/2016/1201/飞猪.jpg" >
             </li>
         </ul>
 
         <ul class="foot-otherlinks" style="text-align: center">
             <li class="foot-otherlinks-item" id="" >
-                <a target="_blank"  href="http://www.gogogous.com">xxx旅行社</a>
+                <a target="_blank"  href="https://www.gogogous.com">xxx旅行社</a>
             </li>
             <li class="foot-otherlinks-item" id="" >
-                <a target="_blank" href="http://www.gogogous.com">xxx旅行社</a>
+                <a target="_blank" href="https://www.gogogous.com">xxx旅行社</a>
             </li>
             <li class="foot-otherlinks-item" id="" >
-                <a target="_blank" href="http://www.gogogous.com">xxx旅行社</a>
+                <a target="_blank" href="https://www.gogogous.com">xxx旅行社</a>
             </li>
             <li class="foot-otherlinks-item" id="" >
-                <a target="_blank" href="http://www.gogogous.com">xxx旅行社</a>
+                <a target="_blank" href="https://www.gogogous.com">xxx旅行社</a>
             </li>
         </ul>
     </div>
@@ -132,10 +132,10 @@
             {$GLOBALS['cfg_footer']}
         </div>
         <!--网站底部介绍-->
-        <p>{stripslashes($GLOBALS['cfg_tongjicode'])}{$GLOBALS['cfg_html_kefu']}</p>
+<!--        <p>{stripslashes($GLOBALS['cfg_tongjicode'])}{$GLOBALS['cfg_html_kefu']}</p>-->
     </div>
 </div>
-<script src="/plugins/qq_kefu/public/js/qqkefu.js"></script>
+<!--<script src="/plugins/qq_kefu/public/js/qqkefu.js"></script>-->
 <!-- 编辑器内容 -->
 
 <div class="st-link">

@@ -160,6 +160,9 @@ class Controller_Mobile_Car extends Stourweb_Controller
      */
     public function action_book()
     {
+
+        echo("<script>console.log(\"手机预定后台 \")</script>");
+
         $userinfo = Common::session('member');
         //要求预订前必须登陆
         if (!empty($GLOBALS['cfg_login_order']) && empty($userinfo['mid']))

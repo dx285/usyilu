@@ -104,10 +104,10 @@
 }
 .st-link-list strong{
     float: left;
-    width: 65px;
+    width: 80px;
 }
 .st-link-list .child{
-    float: left;
+    /*float: left;*/
     width: 1135px;
 }
 .st-link-list a{

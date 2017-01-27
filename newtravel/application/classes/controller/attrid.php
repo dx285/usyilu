@@ -773,6 +773,8 @@ class Controller_Attrid extends Stourweb_Controller
         $this->assign('attridList', $attridList);
         $this->display('stourtravel/attr/dialog_setattrid');
 
+        echo("<script>console.log(\" action_dialog_setattrid \")</script>");
+
     }
 
     public function action_ajax_addfield()

@@ -1,0 +1,83 @@
+3600
+s:4875:"<!doctype html> <html> <head border_font=jW73Hk > <meta charset="utf-8"> <title>帮助中心-美国一路</title> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <link type="text/css" href="/public/css/amazeui.css" rel="stylesheet" />
+<link type="text/css" href="/public/css/style.css" rel="stylesheet" />
+<link type="text/css" href="/public/css/extend.css" rel="stylesheet" />
+ <script type="text/javascript" src="/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/public/js/amazeui.js"></script>
+<script type="text/javascript" src="/public/js/template.js"></script>
+<script type="text/javascript" src="/public/js/delayLoading.min.js"></script>
+ <script>
+        $(function(){
+            $('#my-st-slide').offCanvas('close');
+        })
+    </script> </head> <body> <header>  <div class="header_top sys_header">  <div class="st_back"><a href="http://usyilu.com"></a></div>  <h1 class="tit"> 帮助中心 </h1> <div class="st_top_menu"> <span data-am-offcanvas="{target: '#my-st-slide'}"></span> <div id="my-st-slide" class="am-offcanvas"> <!--登录后--> <div class="am-offcanvas-bar" id="login-html"> <div class="st_user_header_pic" id="log_head"> <img src="/phone/public/images/member_nopic.png" /> <p> <a href="/member/login">登录</a>|
+                            <a href="/member/register">注册</a> </p> </div> <div class="st_user_cz" id="log_nav"> <a href="/order/index"><i class="ico_05"></i>订单查询</a> </div> </div> </div> </div> </div> </header> <script>
+    var SITEURL = "/";
+    $(function(){
+        $('#my-st-slide').offCanvas('close');
+        $('.st-slider').flexslider({pauseOnAction: false});
+        $("body").delegate("#logout",'click',function(){
+            $.get(SITEURL+'member/login/ajax_out','',function(){
+                window.location.href='http://'+window.location.host+SITEURL;
+            });
+        })
+        //检测登陆
+        $('body').append('<script'+' type="text/javascript" src="'+SITEURL+'member/login/ajax_islogin"></'+'script>');
+    })
+    function is_login($obj){
+        var fx_url="content=";
+         if($obj['islogin']==1){
+           $('#log_head').html($obj['info']['head']);
+           $('#log_nav').html($obj['info']['nav']);
+           if($obj['info']['fx_member']){
+               if(window.location.href.indexOf('/show_')!=-1)
+                   $('.bom_fixed').append($obj['info']['fx_btn'].replace('[fx_url]',fx_url));
+           }
+         }
+    }
+</script> <section> <div class="mid_content"> <div class="st-help-block"> <h3>帮助中心</h3> <ul id="help_list"> </ul> <a class="more-link" id="btn_more" href="javascript:;">查看更多</a> </div> </div> </section> <footer> <div class="foot"> <div class="foot_menu">   <a href="http://usyilu.com/servers/index_1.html">一日游</a> |  <a href="http://usyilu.com/servers/index_4.html">精品多日游</a> |  <a href="http://usyilu.com/servers/index_2.html">自驾游</a> |  <a href="http://usyilu.com/servers/index_11.html">热门景点</a> |  <a href="http://usyilu.com/servers/index_10.html">友情链接</a> |  <a href="http://usyilu.com/servers/index_12.html">底端导航</a>   </div> <div class="txt"></div> <div class="foot_btn clearfix"> <a class="foot_ico01" href="http://usyilu.com"> <em></em> <span>首页</span> </a> <a class="foot_ico02" href="/help/"> <em></em> <span>帮助中心</span> </a> <a class="foot_ico03" href="tel:"> <em></em> <span>客服电话</span> </a> <a class="foot_ico04" id="roll_top" href="javascript:;"> <em></em> <span>返回顶部</span> </a> </div> </div> </footer> <script>
+   $(function(){
+       //返回顶部
+       $('#roll_top').click(function(){
+           $('html,body').animate({scrollTop: '0px'}, 800);
+       });
+   })
+</script> <script>
+    var kindid = "12";
+    var page=1;
+    $(function(){
+        $("#btn_more").click(function(){
+            get_list(page+1);
+        });
+        get_list(1);
+    });
+    function get_list(curpage)
+    {
+        var url= SITEURL+'help/ajax_help_list'
+        $.ajax({
+            type: 'POST',
+            url: url ,
+            data: {kindid:kindid,page:curpage},
+            dataType: 'json',
+            success:function(result)
+            {
+                var html='';
+                for(var i in result.list)
+                {
+                    var row=result.list[i];
+                    html+='<li><a href="'+row['url']+'">'+row['title']+'</a><i class="ico"></i></li>';
+                }
+                $("#help_list").append(html);
+                if(!result.hasmore)
+                {
+                    $("#btn_more").hide();
+                }
+                if(html!='')
+                {
+                    page=curpage;
+                }
+            }
+        });
+    }
+</script> </body> </html>
+";

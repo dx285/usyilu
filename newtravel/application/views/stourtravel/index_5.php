@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<head size_float=jGdckk >
+<head>
     <meta charset="utf-8">
     <title>12思途旅游CMS{$coreVersion}</title>
     {php echo Common::getScript('jquery-1.8.3.min.js,common.js,jquery.hotkeys.js,msgbox/msgbox.js,slideTabs.js,DatePicker/WdatePicker.js,echarts.js,echart-data.js'); }
@@ -23,7 +23,7 @@
                 <div class="scroll-msg">
                     <div class="scorll-list">
                         <ul>
-                            <script type="text/javascript" src="http://www.stourweb.com/api/cms/notice/"></script>
+                            <script type="text/javascript" src="https://www.stourweb.com/api/cms/notice/"></script>
                         </ul>
                     </div>
                 </div>
@@ -43,7 +43,11 @@
         <!-- 管理员 -->
         <div class="cms-msg-box">
             <div class="admin_msg">
-                <img class="fl" src="{$GLOBALS['cfg_public_url']}images/admin-img.png" alt="管理员" width="50" height="50" />
+                {if !empty($admin_litpic)}
+                    <img class="fl" src="{$admin_litpic}" alt="{$username}" width="50" height="50" />
+                {else}
+                    <img class="fl" src="{$GLOBALS['cfg_public_url']}images/admin-img.png" alt="{$username}" width="50" height="50" />
+                {/if}
                 <p class="name">{$username}<!--<span class="msg"><i class="ico">5</i></span>--></p>
                 <p class="time">{$rolename}</p>
             </div>
@@ -77,12 +81,11 @@
 
                     {php}$_article=array();{/php}
                     {loop Model_Menu_New::get_config_by_pid(1) $data}
-                    {php} if(in_array($data['typeid'],array(4,6,10,11,14,101,null))){$_article[]=$data;continue;}{/php}
+                    {php} if(in_array($data['typeid'],array(4,6,10,11,101,null))){$_article[]=$data;continue;}{/php}
                     <li>
                         <div class="ietm-child">
-<!--                            <strong class="column-tit"><a href="javascript:;" class="product_item" data-url="{$data['url']}">{if !empty($data['typeid'])}{Model_Menu_New::get_nav_title($data['typeid'],'shortname')}{else}{$data['title']}{/if}</a></strong>-->
-                            <strong class="column-tit"><a href="javascript:;" class="product_item" data-url="{$data['url']}">{if !empty($data['typeid'])}{if Model_Menu_New::get_nav_title($data['typeid'],'shortname')=='一路小团'}一路旅行{else}{Model_Menu_New::get_nav_title($data['typeid'],'shortname')}{/if}{else}{$data['title']}{/if}</a></strong>
-                            <span class="column-cz clearfix">
+                            <strong class="column-tit"><a href="javascript:;" class="product_item" data-url="{$data['url']}">{if !empty($data['typeid'])}{Model_Menu_New::get_nav_title($data['typeid'],'shortname')}{else}{$data['title']}{/if}</a></strong>
+                                <span class="column-cz clearfix">
                                     {if strpos($data['datainfo'],'1') !== false}
                                     {php}
                                     if(isset($data['order_id'])){
@@ -353,7 +356,7 @@
             <ul class="list-kf-name">
                 <li>1、通过<a href="http://www.stourweb.com/help/" target="_blank">官方帮助中心</a>自助查询需要的帮助内容。<span>（对于操作性等问题，请到帮助中心自助查询）</span></li>
                 <li>2、通过<a href="http://www.stourweb.com/user/myfeedback/commitlist" target="_blank">提交工单</a>反馈问题或建议。<span>（针对BUG性问题，我们会在24小时以内相应处理。建议性问题会进行评估排期后根据客户需求量进行选择开发）</span></li>
-                <li>3、工作时间外遇站点无法访问等紧急问题，请电话联系客服出来。<br>联系电话：400-609-9927转2<span>（售后工作时间：周一至周五9:00-18:00）</span></li>
+                <li>3、工作时间外遇站点无法访问等紧急问题，请电话联系客服处理。<br>联系电话：400-609-9927转2<span>（售后工作时间：周一至周五9:00-18:00）</span></li>
             </ul>
             <div class="link-st-btn kf_close"><a href="javascript:;">确认</a></div>
         </div>

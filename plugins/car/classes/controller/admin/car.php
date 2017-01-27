@@ -528,6 +528,8 @@ class Controller_Admin_Car extends Stourweb_Controller
      */
     public function action_addsuit()
     {
+        echo("<script>console.log(\" add suit\")</script>");
+
         $carid = $this->params['carid'];
         $carinfo = ORM::factory('car', $carid)->as_array();
         $info = array('lastoffer' => array('pricerule' => 'all','number'=>'-1'));
@@ -545,7 +547,12 @@ class Controller_Admin_Car extends Stourweb_Controller
      */
     public function action_editsuit()
     {
+
+        echo("<script>console.log(\" edit suit\")</script>");
+
         $suitid = $this->params['suitid'];
+        echo("<script>console.log(\" edit suit ID: ".$suitid."\")</script>");
+
         $info = ORM::factory('car_suit', $suitid)->as_array();
         $info['lastoffer'] = unserialize($info['lastoffer']);
         if (empty($info['lastoffer']))
@@ -628,30 +635,62 @@ class Controller_Admin_Car extends Stourweb_Controller
      */
     public function action_ajax_suitsave()
     {
+
+        echo("<script>console.log(\" save suit\")</script>");
+
         $carid = Arr::get($_POST, 'carid');
+        echo("<script>console.log(\" save carid: ".$carid."\")</script>");
+
         $suitid = Arr::get($_POST, 'suitid');
+        echo("<script>console.log(\" save suit id: ".$suitid."\")</script>");
+
         $data_arr = array();
         $data_arr['suitname'] = Arr::get($_POST, 'suitname');
+        echo("<script>console.log(\" save suit name: ".$data_arr['suitname']."\")</script>");
+
         $data_arr['carid'] = Arr::get($_POST, 'carid');
+        echo("<script>console.log(\" save carid: ".$data_arr['carid']."\")</script>");
+
         $data_arr['content'] = Arr::get($_POST, 'content');
+        echo("<script>console.log(\" save content: ".$data_arr['content']."\")</script>");
+
         $data_arr['unit'] = Arr::get($_POST, 'unit');
+        echo("<script>console.log(\" save unit: ".$data_arr['unit']."\")</script>");
+
         $data_arr['suittypeid'] = Arr::get($_POST, 'suittypeid');
+        echo("<script>console.log(\" save suit type id: ".$data_arr['suittypeid']."\")</script>");
+
         $data_arr['jifentprice'] = Arr::get($_POST, 'jifentprice') ? Arr::get($_POST, 'jifentprice') : 0;
+        echo("<script>console.log(\" save jifenPrice: ".$data_arr['jifentprice']."\")</script>");
+
         $data_arr['jifenbook'] = Arr::get($_POST, 'jifenbook') ? Arr::get($_POST, 'jifenbook') : 0;
+        echo("<script>console.log(\" save jifenbook: ".$data_arr['jifenbook']."\")</script>");
+
         $data_arr['jifencomment'] = Arr::get($_POST, 'jifencomment') ? Arr::get($_POST, 'jifencomment') : 0;
+        echo("<script>console.log(\" save jifen comment: ".$data_arr['jifencomment']."\")</script>");
+
         $data_arr['paytype'] = Arr::get($_POST, 'paytype');
+        echo("<script>console.log(\" save pay type: ".$data_arr['paytype']."\")</script>");
+
         $data_arr['dingjin'] = Arr::get($_POST, 'dingjin') ? Arr::get($_POST, 'dingjin') : 0;
+        echo("<script>console.log(\" save dingjin: ".$data_arr['dingjin']."\")</script>");
+
         if ($data_arr['paytype'] != 2)
         {
             $data_arr['dingjin'] = 0;
         }
         $data_arr['lastoffer'] = Common::last_offer(3, $_POST);
+        echo("<script>console.log(\" save last offer: ".$data_arr['lastoffer']."\")</script>");
+
         if ($suitid)
         {
             $model = ORM::factory('car_suit', $suitid);
         }
-        else
+        else {
             $model = ORM::factory('car_suit');
+            echo("<script>console.log(\" save get new suitId model: ".$model."\")</script>");
+
+        }
         foreach ($data_arr as $k => $v)
         {
             $model->$k = $v;
@@ -659,6 +698,7 @@ class Controller_Admin_Car extends Stourweb_Controller
         $model->save();
         if ($model->saved())
         {
+            echo("<script>console.log(\" saved model\")</script>");
             $model->reload();
             $this->save_baojia($carid, $model->id, $_POST);
             echo $model->id;

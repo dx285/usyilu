@@ -14,6 +14,13 @@
     {Common::css_plugin('lines.css','line')}
     {Common::css('base.css,extend.css,calendar.css')}
     {Common::js('jquery.min.js,base.js,common.js')}
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="/tools/js/notify.min.js"></script>
+
+
 </head>
 
 <body>
@@ -92,9 +99,19 @@
                 </dd>
                 <dd class="select-bj">
                       <span>出发日期：</span>
-                      <select class="bj-list date-list">
+                        <input type="text" id="datepicker">
+                        <script>
+                            $( function() {
+                                $( "#datepicker" ).datepicker({dateFormat: "yy-mm-dd",minDate: 0});
 
-                      </select>
+                            } );
+                        </script>
+
+                    <!--                    <div class="tabcon-list" id="calendar" >-->
+<!--                    </div>-->
+<!--                      <select class="bj-list date-list">-->
+<!---->
+<!--                      </select>-->
                   </dd>
                 <dd class="yd-btn">
                   <a href="javascript:;" class="btn-yd gobook">立即预订</a>
@@ -120,7 +137,7 @@
           </div>
           <div class="lineshow-con">
           	<div class="tabnav-list">
-            	<span class="on">在线预订</span>
+<!--            	<span class="on">在线预订</span>-->
                 {st:detailcontent action="get_content" pc="1" typeid="$typeid" productinfo="$info" return="linecontent"}
                     {loop $linecontent $row}
             	        <span>{$row['chinesename']}</span>
@@ -131,9 +148,9 @@
               <a class="yd-btn yd-btn-menu hide gobook btn-yd"  href="javascript:;">立即预订</a>
             </div><!--线路导航-->
             <div class="tabbox-list">
-                <div class="tabcon-list" id="calendar">
-
-                </div>
+<!--                <div class="tabcon-list" id="calendar">-->
+<!---->
+<!--                </div>-->
             {loop $linecontent $line}
                 {if preg_match('/^\d+$/',$line['content']) && $line['columnname']=='jieshao'}
                     <div class="tabcon-list">
@@ -277,6 +294,7 @@
     {request "pub/footer"}
     {request "pub/flink"}
     {Common::js('floatmenu/floatmenu.js')}
+<!--    {Common::js('SuperSlide.min.js,template.js,date.js,calendar.js,scorll.img.js')}-->
     {Common::js('SuperSlide.min.js,template.js,date.js,calendar.js,scorll.img.js')}
     {Common::css('/res/js/floatmenu/floatmenu.css',0,0)}
     <!--隐藏域-->
@@ -339,13 +357,22 @@ $(document).ready(function(){
     //预订页面
     $('body').delegate('.gobook','click',function(){
 
-        var usedate = $('.date-list').val();
+        //console.log("get datepicker: "+$("#datepicker").datepicker( "getDate" ));
+        var bookDate = $("#datepicker").val().trim();
+        console.log("get datepicker: "+bookDate);
+        var dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+        var suitPrice = {$info['price']};
+        //var usedate = $('.date-list').val();
         var suitid = $('#suitid').val();
         var lineid = $('#lineid').val();
-        if(usedate == null){
+        if(!dateRegex.test(bookDate)){
+            console.log("error");
+            $("#datepicker").datepicker( "setDate", "请从下拉框中选择有效日期" );
+            //$("#datepicker").notify("请从下拉框中选择有效日期", {className: "info", position:"right bottom"});
             return false;
         }
-        var url = "{$GLOBALS['cfg_basehost']}/lines/book/?usedate="+usedate+'&suitid='+suitid+"&lineid="+lineid;
+        var url = "{$GLOBALS['cfg_basehost']}/lines/book/?usedate="+bookDate+'&suitid='+suitid+"&lineid="+lineid+"&suitPrice="+suitPrice;
+        console.log("url: "+url)
         window.location.href = url;
     })
 

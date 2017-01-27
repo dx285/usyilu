@@ -8,6 +8,7 @@
                 {if !empty($GLOBALS['cfg_logo'])}
                 <a href="{$GLOBALS['cfg_logourl']}"><img src="{Common::img($GLOBALS['cfg_logo'],70,70)}" alt="{$GLOBALS['cfg_logotitle']}" /></a>
                 {/if}<p>全美首家:租车 + 小团</p>
+                <p id="phoneNum">{str_replace(array(',',';',':','，'),'<br />',$GLOBALS['cfg_phone'])}</p>
             </div>
 
             <div class="st-nav">
@@ -26,9 +27,7 @@
 <!--                        <i class="st-jian-ico"></i><s></s>-->
 <!--                        {/if}-->
 
-                        {if $row['url']=="http://www.usyilu.com/customize/"}
-                            <a href="{$row['url']}">{$row['title']}</a>
-                        {elseif $row['url']=="http://usyilu.com/customize/"}
+                        {if $row['url']=="https://www.usyilu.com/customize/"}
                             <a href="{$row['url']}">{$row['title']}</a>
                         {elseif $row['title'] == "一路小团"}
                             <a href="{$row['url']}all-0-0-0-0-0-18-1">{$row['title']}</a>
@@ -38,9 +37,10 @@
                             <a href="{$row['url']}">{$row['title']}</a>
                         {elseif $row['title'] == "落地参团"}
                             <a href="{$row['url']}all-0-0-0-0-0-27-1">{$row['title']}</a>
-
+                        {elseif $row['title'] == "特价酒店"}
+                            <a href="https://www.usyilu.com/hotels/all">{$row['title']}</a>
                         {else}
-                            <a href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1">{$row['title']}</a>
+                            <a href="https://www.usyilu.com/lines/all-0-0-0-0-0-0-1">{$row['title']}</a>
                         {/if}
 <!--                        <a href="{$row['url']}">{$row['title']}</a>-->
 
@@ -62,7 +62,7 @@
             </div>
             <!-- 主导航 -->
             <div class="st-rig">
-                <div class="phone-num">{str_replace(array(',',';',':','，'),'<br />',$GLOBALS['cfg_phone'])}</div>
+<!--                <div class="phone-num">{str_replace(array(',',';',':','，'),'<br />',$GLOBALS['cfg_phone'])}</div>-->
                 <span id="loginstatus"></span>
             </div>
         </div>

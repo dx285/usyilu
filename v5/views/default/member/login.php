@@ -112,6 +112,8 @@
                 var loginname = $("#loginname").val();
                 var loginpwd = $.md5($("#loginpwd").val());
                 var frmcode = $("#frmcode").val();
+
+                console.log("submit login request: " +loginname + ",loginpwd: " +loginpwd + ",frmcode: " +frmcode);
                 $.ajax({
                     type:"post",
                     async: false,
@@ -122,8 +124,10 @@
 
                         if(data.status == '1'){//登陆成功,跳转到来源网址
                             var url = $("#fromurl").val();
+
                             setTimeout(function(){window.open(url,'_self');},500);
                             $('body').append(data.js);//同步登陆js
+                            console.log("login success: " +JSON.stringify(data));
                         }
                         else{
                             if(data.msg!=undefined){
@@ -131,6 +135,7 @@
                             }else{
                                 $(".login_err").html('{__("error_user_pwd")}');
                             }
+                            console.log("login err: " + JSON.stringify(data));
 
                         }
 

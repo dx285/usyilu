@@ -42,7 +42,7 @@ return array (
   'cfg_py_open' => '1',
   'cfg_footer' => '<div class="foot_con"><p>
         经营许可证号：XXX　业务接待地址：美国纽约州纽约XXXX</p></div>',
-  'cfg_phone' => '1718-475-9550',
+  'cfg_phone' => '1-718-475-9550',
   'cfg_weixin_logo' => '/uploads/main/allimg/20161123/20161123005148.png',
   'cfg_weibo_url' => '',
   'cfg_qq_appid' => '',
@@ -55,7 +55,7 @@ return array (
   'cfg_pay_type' => '4',
   'cfg_huicao_account' => '',
   'cfg_huicao_key' => '',
-  'cfg_sms_username' => '',
+  'cfg_sms_username' => 'stourweb',
   'cfg_sms_password' => '',
   'cfg_logotitle' => '美国一路',
   'cfg_yinlian_merid' => '',
@@ -177,4 +177,5 @@ return array (
   'cfg_order_agreement_open' => '1',
   'cfg_order_agreement_title' => '协议说明',
   'cfg_order_agreement' => '<p>协议说明test</p>',
+  'alipay_cash' => '11',
 );

@@ -523,6 +523,9 @@ class Model_Car extends ORM
     public static function get_search_url($v, $paramname, $p, $currentpage = 1)
     {
 
+        //echo("<script>console.log(\" search 所得参数:  ".$v."\")</script>");
+
+
         $url = $GLOBALS['cfg_basehost'] . '/cars/';
         switch ($paramname)
         {
@@ -556,6 +559,7 @@ class Model_Car extends ORM
                     $attr_list = 0;
                 }
                 $url .= $p['destpy'] . '-' . $p['carkindid'] . '-' . $p['sorttype'] . '-';
+                //$url .= $p['sorttype'] . '-';
                 $url .= $attr_list . '-' . $currentpage;
                 break;
 

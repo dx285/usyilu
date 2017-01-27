@@ -10,6 +10,8 @@ class Controller_Pc_Car_member extends Stourweb_Controller
     private $_mid = '';
     public function before()
     {
+        echo("<script>console.log(\"后台member租车before \")</script>");
+
         parent::before();
         //检查缓存
         $this->refer_url = $_SERVER['HTTP_REFERER'] ? $_SERVER['HTTP_REFERER'] : $GLOBALS['cfg_cmsurl'];
@@ -28,6 +30,7 @@ class Controller_Pc_Car_member extends Stourweb_Controller
     }
     public function action_orderlist()
     {
+        echo("<script>console.log(\"后台member租车 orderList \")</script>");
 
         $pageSize = 10;
         $orderType = $_GET['ordertype'];
@@ -60,6 +63,9 @@ class Controller_Pc_Car_member extends Stourweb_Controller
     }
     public function action_orderview()
     {
+        echo("<script>console.log(\"后台member租车 orderOverview \")</script>");
+
+
         $orderSn = Arr::get($_GET, 'ordersn');
         $info = Model_Member_Order::order_info($orderSn,$this->_mid);
         $model= ORM::factory('model',$info['typeid']);

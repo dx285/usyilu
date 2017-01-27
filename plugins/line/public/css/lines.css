@@ -1238,3 +1238,7 @@
 	/*color: white;*/
 	/*background-color: #008CBA;*/
 /*}*/
+#datepicker{
+	height: 25px;
+	width: 200px;
+}

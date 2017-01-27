@@ -1,4 +1,25 @@
 @charset "utf-8";
+
+/* Placeholder styles */
+input {}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    red;
+    font-size: 1.2em;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    red;
+    font-size: 1.2em;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    red;
+    font-size: 1.2em;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    red;
+    font-size: 1.2em;
+}
+
+
 .custom-super:after,
 .block-content:after{
 	content:'.';
@@ -96,7 +117,18 @@
 	padding:10px 80px}
 .block-content li{
 	float:left;
-	margin:10px 0}
+	width: 920px;
+	margin:10px 0;
+	padding:0 50px;
+    overflow: hidden}
+.block-content li img{
+	margin: 0 50px;
+	width: 820px;}
+.block-content .half-li{
+	float:left;
+	width: 460px;
+	padding:0 0 0 50px;  
+    overflow: hidden} 
 .half-li{
 	width:50%}
 .full-li{
@@ -109,9 +141,23 @@
 	line-height:35px;
 	text-align:right;
 	font-size:14px}
+.block-content li .required::before{
+	content: "* ";
+	color: red;}
 .block-content li .con{
 	min-height:35px;
 	padding-left:80px}
+.block-content li .con input{
+	width: 235px;
+	font-size: 1.1em;}
+.block-content li .con-phone input{
+	width: 125px;
+	font-size: 1.1em;}
+.block-content li .con-phone select{
+	width: 110px;
+	height: 32px;
+    font-size: 1.2em;
+	padding:2px 5px;}
 .custom-default-text{
 	height:33px;
 	line-height:33px;
@@ -179,13 +225,15 @@
 .dest-city-ny{
 	color: #fff;
 	height: 300px;
-	padding-top: 90px;
+	padding-top: 60px;
 	/*visibility: hidden;*/
 }
 
 .dest-city-ny .foot-certificate-item{
 	/*display: inline;*/
-	margin: -3%;
+	margin: 0 auto 5px;
+	min-height: 100px;
+	overflow: auto;
 }
 
 .dest-city-ny .foot-certificate-item > img{
@@ -198,13 +246,15 @@
 	visibility: hidden;
 	display: none;
 	height: 300px;
-	padding-top: 90px;
+	padding-top: 60px;
 
 }
 
 .dest-city-boston .foot-coop-item{
 	/*display: inline;*/
-	margin: -3%;
+	margin: 0 auto 5px;
+	min-height: 100px;
+	overflow: auto;
 }
 
 .dest-city-boston .foot-coop-item > img{
@@ -216,14 +266,16 @@
 
 	/*color: #fff;*/
 	height: 300px;
-	padding-top: 90px;
+	padding-top: 60px;
 	visibility: hidden;
 	display: none;
 }
 
 .dest-city-dc .foot-otherlinks-item{
 	/*display: inline;*/
-	margin: -3%;
+	margin: 0 auto 5px;
+	min-height: 100px;
+	overflow: auto;
 	/*background-color: #fff;*/
 	font-size: 18px;
 
@@ -242,14 +294,16 @@
 
 	/*color: #fff;*/
 	height: 300px;
-	padding-top: 90px;
+	padding-top: 60px;
 	visibility: hidden;
 	display: none;
 }
 
 .dest-city-ys .foot-otherlinks-item{
 	/*display: inline;*/
-	margin: -3%;
+	margin: 0 auto 5px;
+	min-height: 100px;
+	overflow: auto;
 	/*background-color: #fff;*/
 	font-size: 18px;
 
@@ -259,14 +313,16 @@
 
 	/*color: #fff;*/
 	height: 300px;
-	padding-top: 90px;
+	padding-top: 60px;
 	visibility: hidden;
 	display: none;
 }
 
 .dest-city-lv .foot-otherlinks-item{
 	/*display: inline;*/
-	margin: -3%;
+	margin: 0 auto 5px;
+	min-height: 100px;
+	overflow: auto;
 	/*background-color: #fff;*/
 	font-size: 18px;
 
@@ -276,14 +332,16 @@
 
 	/*color: #fff;*/
 	height: 300px;
-	padding-top: 90px;
+	padding-top: 60px;
 	visibility: hidden;
 	display: none;
 }
 
 .dest-city-la .foot-otherlinks-item{
 	/*display: inline;*/
-	margin: -3%;
+	margin: 0 auto 5px;
+	min-height: 100px;
+	overflow: auto;
 	/*background-color: #fff;*/
 	font-size: 18px;
 
@@ -293,14 +351,16 @@
 
 	/*color: #fff;*/
 	height: 300px;
-	padding-top: 90px;
+	padding-top: 60px;
 	visibility: hidden;
 	display: none;
 }
 
 .dest-city-sf .foot-otherlinks-item{
 	/*display: inline;*/
-	margin: -3%;
+	margin: 0 auto 5px;
+	min-height: 100px;
+	overflow: auto;
 	/*background-color: #fff;*/
 	font-size: 18px;
 
@@ -359,18 +419,40 @@
 }
 
 img.destPicSize{
-	height: 370px;
-	width: 560px;
-	padding-bottom: 36px;
-	padding-left: 2.5%;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 img.carPicSize{
 	height: 400px;
-	width: 600px;
+	width: 820px;
 	max-width: 100%;
 	max-height: 100%;
-	padding-left: 33%;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
+.error{
+	display: none;
+	color: red;
+	padding-left: 30px;
+	font-size: 1.3em;
+}
 
+.dropdown-list {
+	display: none;
+	width: 150px;
+	height: 32px;
+    font-size: 1.2em;
+	padding:2px 5px;
+}
+
+.dropdown-list option {
+	vertical-align: middle;
+}
+
+.dropdown-list option:hover {
+	background-color: #65b17f;
+}

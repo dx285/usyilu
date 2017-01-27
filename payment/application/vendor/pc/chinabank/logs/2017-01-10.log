@@ -1,0 +1,93 @@
+2017-01-10 0:12:48, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[13]------ =====签名报文开始====== 
+2017-01-10 0:12:48, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[20]------ 签名key=val&...串 >accessType=0&backUrl=http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-notify_url/&bizType=000201&certId=&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-return_url/&merId=&orderId=03783467210245&signMethod=01&txnAmt=11100&txnSubType=01&txnTime=20170110001248&txnType=01&version=5.0.0 
+2017-01-10 0:12:48, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[23]------ 摘要sha1x16 >fcef379151273b7963a2b748e504bc7c6282e478 
+2017-01-10 0:12:48, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[36]------ >>>>>签名失败<<<<<<< 
+2017-01-10 0:12:48, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[38]------ =====签名报文结束====== 
+2017-01-10 0:12:48, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/acp_service.php ], Line[161]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://gateway.95516.com/gateway/api/frontTransReq.do" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="certId" id="certId" value="" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-return_url/" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-notify_url/" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="" />
+    <input type="hidden" name="orderId" id="orderId" value="03783467210245" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20170110001248" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="11100" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 
+2017-01-10 1:01:53, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[13]------ =====签名报文开始====== 
+2017-01-10 1:01:53, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[20]------ 签名key=val&...串 >accessType=0&backUrl=http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-notify_url/&bizType=000201&certId=&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-return_url/&merId=&orderId=03813004000861&signMethod=01&txnAmt=11100&txnSubType=01&txnTime=20170110010153&txnType=01&version=5.0.0 
+2017-01-10 1:01:53, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[23]------ 摘要sha1x16 >49e849a0236c8f79512eff7bce03951221dc3371 
+2017-01-10 1:01:53, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[36]------ >>>>>签名失败<<<<<<< 
+2017-01-10 1:01:53, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[38]------ =====签名报文结束====== 
+2017-01-10 1:01:53, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/acp_service.php ], Line[161]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://gateway.95516.com/gateway/api/frontTransReq.do" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="certId" id="certId" value="" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-return_url/" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-notify_url/" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="" />
+    <input type="hidden" name="orderId" id="orderId" value="03813004000861" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20170110010153" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="11100" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 
+2017-01-10 1:05:58, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[13]------ =====签名报文开始====== 
+2017-01-10 1:05:58, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[20]------ 签名key=val&...串 >accessType=0&backUrl=http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-notify_url/&bizType=000201&certId=&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-return_url/&merId=&orderId=03815250710393&signMethod=01&txnAmt=11100&txnSubType=01&txnTime=20170110010558&txnType=01&version=5.0.0 
+2017-01-10 1:05:58, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[23]------ 摘要sha1x16 >2c8314e2a4623855a2f17c9a9b1484a0c0f2f1aa 
+2017-01-10 1:05:58, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[36]------ >>>>>签名失败<<<<<<< 
+2017-01-10 1:05:58, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/secureUtil.php ], Line[38]------ =====签名报文结束====== 
+2017-01-10 1:05:58, INFO, 69.203.90.65, File[ /var/www/gogogous/payment/application/vendor/pc/chinabank/sdk/acp_service.php ], Line[161]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://gateway.95516.com/gateway/api/frontTransReq.do" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="certId" id="certId" value="" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-return_url/" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.usyilu.com/payment/callback/index/Pay_Pc_ChinaBank-notify_url/" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="" />
+    <input type="hidden" name="orderId" id="orderId" value="03815250710393" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20170110010558" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="11100" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 

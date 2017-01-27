@@ -2,14 +2,29 @@
 /* CSS Document */
 .st-car-home-top{
 	float:left;
-	width:1200px}
+	width:1200px;
+	height:458px;
+}
 
+.st-main-page{
+	display: inline-block;
+	/*text-align: center;*/
+}
+
+.car-search-page{
+	height: 550px;
+}
+
+.st-car-search-center{
+	text-align: center;
+}
 .st-car-search{
 	float:left;
-	width:342px;
-	height:440px;
+	width:54%;
+	height: 48%;
 	padding:13px 15px 94px;
-	background:#e5e5e5}
+	background: rgba(53, 52, 52,0.4);
+}
 .st-car-search .item{
 	float: left;
 	font-size: 13px;
@@ -21,7 +36,7 @@
 }
 .st-car-search .search-dl{
 	float:left;
-	width:310px;
+	width:50%;
 	height:36px;
 	margin-bottom:18px;
 	background:#fff}
@@ -35,6 +50,11 @@
 	text-align:right;
 	font-size:14px;}
 .st-car-search .search-dl .con .pickTime{
+	height: 100%;
+	margin-left: 10px;
+}
+
+.st-car-search .search-dl .con .pickTime_songji{
 	height: 100%;
 	margin-left: 10px;
 }
@@ -61,7 +81,7 @@
 	background-position:0 bottom}
 .st-car-search .search-dl dd{
 	float:left;
-	width:210px;
+	width:100%;
 	height:36px;
 	position:relative}
 .st-car-search .search-dl dd .cs-text{
@@ -72,11 +92,20 @@
 	padding-left:10px;
 	font-size:14px}
 .st-car-search .search-dl dd .up-ico{
-	background:url(../images/hotel-ico.png) no-repeat 190px -12px}
+	width: 100%;
+	background:url(../images/hotel-ico.png) no-repeat 190px -12px;
+	background-position: right -12px;
+}
 .st-car-search .search-dl dd .down-ico{
-	background:url(../images/hotel-ico.png) no-repeat 190px 15px}
+	width: 100%;
+	background:url(../images/hotel-ico.png) no-repeat 190px 15px;
+	background-position: right -12px;
+}
 .st-car-search .search-dl dd .up-ico-day{
-	background:url(../images/hotel-ico.png) no-repeat 179px -12px}
+	width:97%;
+	background:url(../images/hotel-ico.png) no-repeat 179px -12px;
+	background-position: right -12px;
+}
 
 
 .st-car-search .search-dl dd .cs-select-box{
@@ -95,11 +124,8 @@
 	line-height:30px;
 	cursor:pointer;
 	font-size:14px}
+
 .st-car-search .car-search-btn{
-	float:left;
-	width:310px;
-	height:36px}
-.st-car-search .car-search-btn a{
 	float:left;
 	color:#fff;
 	width:310px;
@@ -108,6 +134,17 @@
 	text-align:center;
 	font-size:14px;
 	background:#00ccff}
+
+.st-car-search .car-search-btn-songji{
+	float:left;
+	color:#fff;
+	width:310px;
+	height:36px;
+	line-height:36px;
+	text-align:center;
+	font-size:14px;
+	background:#00ccff}
+
 /*焦点图*/
 .st-car-slideBox{
 	float:right;
@@ -425,11 +462,15 @@
 
 .st-carlist-box,
 .st-carlist-con{
-	float:left;
-	width:905px}
+	/*float:left;*/
+	width:905px;
+	display: inline-block;
+}
 .car-list-con{
 	float:left;
-	width:905px}
+	width:905px;
+	text-align: left;
+}
 
 .car-list-con .list-child{
 	float:left;
@@ -468,7 +509,7 @@
 .car-list-con .list-child .text{
 	float:left;
 	width:430px;
-	height:180px;
+	height:183px;
 	margin-left:30px;
 	overflow:hidden}
 .car-list-con .list-child .text p{
@@ -512,7 +553,8 @@
 .car-list-con .list-child .lowest-jg{
 	float:right;
 	width:150px;
-	height:180px}
+	height:180px;
+	margin-right: 9px;}
 .car-list-con .list-child .lowest-jg span{
 	float:left;
 	color:#f60;
@@ -527,7 +569,7 @@
 
 .car-typetable{
 	float:left;
-	width:893px;
+	width: 100%;
 	margin-top:5px}
 .car-typetable th{
 	text-align:center;
@@ -536,7 +578,9 @@
 	float:left;
 	padding-left:20px}
 .car-typetable td{
-	border-top:1px solid #d8d8d8}
+	/*border-top:1px solid #d8d8d8;*/
+	width: 25%;
+}
 .car-typetable td .type-tit{
 	float:left;
 	padding-left:20px;
@@ -597,6 +641,20 @@
 	background:#ff8a00}
 .car-typetable td .booking-btn:hover{
 	background:#f60}
+
+.car-typetable td .booking-out{
+	float:right;
+	color:#fff;
+	width:70px;
+	height:25px;
+	line-height:25px;
+	margin-right:20px;
+	font-size:14px;
+	text-align:center;
+	border-radius:3px;
+	background: rgba(30, 20, 36, 0.33)
+}
+
 .car-typetable .cartype-nr{
 	line-height:20px;
 	padding:10px 20px;
@@ -620,10 +678,11 @@
 /*租车详情页面*/
 .st-car-show{
 	float:left;
-	width:905px}
+	margin-left: 6%;
+	width:85%;}
 .carshow-tw{
 	float:left;
-	width:869px;
+	width:100%;
 	padding:15px;
 	border:3px solid #d8d8d8}
 .focus-slide{
@@ -747,8 +806,9 @@
 .cp-show-msg .price{
 	float:left;
 	width:394px;
-	height:40px;
-	margin-bottom:10px}
+	min-height:40px;
+	margin-bottom:10px;
+	over-flow:auto}
 .cp-show-msg .price span{
 	float:left;
 	color:#fc6000;
@@ -837,7 +897,8 @@
 	height:40px;
 	line-height:39px;
 	border:0;
-	background:#00b7ee}
+	background: #00b7ee;
+}
 	
 .tabbox-list{
 	float:left;
@@ -861,12 +922,15 @@
 	font-size:16px;
 	/*background:url(../images/list-tit-bg.png) left no-repeat*/}
 .tabcon-list .list-txt{
-	color:#000;
+	color:#555;
 	float:left;
 	width:833px;
+	font-size: 15px;
 	line-height:24px;
 	overflow: hidden;
-	padding:10px 15px 0}
+	padding:10px 15px 0;
+	padding-bottom: 4px;
+}
 .tabcon-list .list-txt img{
 	max-width:100%}
 .tabcon-list .list-txt strong{
@@ -918,16 +982,18 @@
 	color: #666;
 }
 
-
+.st-sort-menu{
+	width: 894px;
+}
 /* Style the list */
 ul.tab {
 	list-style-type: none;
-	margin: 0;
+	margin: 7% 0% 0% 2%;
 	padding: 0;
-	width: 342px;
+	width: 54%;
 	overflow: hidden;
 	border: 1px solid #ccc;
-	background-color: #f1f1f1;
+	background: rgba(53, 52, 52,0.4);
 }
 
 /* Float the list items side by side */
@@ -939,7 +1005,7 @@ ul.tab li {
 /* Style the links inside the list items */
 ul.tab li a {
 	display: inline-block;
-	color: black;
+	color: #ffffff;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -949,14 +1015,15 @@ ul.tab li a {
 }
 
 /* Change background color of links on hover */
-ul.tab li a:hover {background-color: #ddd;}
+ul.tab li a:hover {}
 
 /* Create an active/current tablink class */
-ul.tab li a:focus, .active {background-color: #ccc;}
+ul.tab li a:focus, .active {background: rgba(53, 52, 52,0.4);}
 
 /* Style the tab content */
 .tabcontent {
-	display: none;
+	/*display: none;*/
+	margin: 0% 0% 0% 2%;
 	padding: 6px 12px;
 	border: 1px solid #ccc;
 	border-top: none;
@@ -1008,3 +1075,309 @@ ul.tab li a:focus, .active {background-color: #ccc;}
 	margin-top: 585px;
 
 }
+
+.car-payment-icon{
+	width: 50px;
+	height:40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.orderForm{
+	/*width: 47%;*/
+	float: right;
+}
+
+.car-order-btn{
+	margin-top:7px;
+	margin-left: -30px;
+	background-color: #008CBA;
+	border: none;
+	color: white;
+	padding: 9px 23px 9px 23px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 19px;
+}
+#total_price{
+	margin-top:7px;
+	/*margin-left: -30px;*/
+	background-color: #008CBA;
+	border: none;
+	color: white;
+	padding: 9px 23px 9px 23px;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 19px;
+}
+.car-order-btn2{
+	margin-top:7px;
+	margin-left: 72px;
+	background: #008CBA;
+    background: -webkit-linear-gradient(#87CEFA,#008CBA);
+    background: -o-linear-gradient(#87CEFA,#008CBA);
+    background: -moz-linear-gradient(#87CEFA,#008CBA);
+    background: linear-gradient(#87CEFA,#008CBA);
+    border-radius: 15px;
+	border: none;
+	color: white;
+	padding: 9px 23px 9px 23px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 19px;
+}
+.car-order-btn2:hover {
+	cursor: pointer;
+}
+
+.car-info-box{
+	width: 100%;
+}
+
+.car-price-box{
+	float: left;
+	font-size: 36px;
+	width: 100%;
+}
+
+.car-price-box .text{
+	float: left;
+	font-size: 14px;
+	margin-top: 4.5%;
+}
+
+.car-extra-service-box .text{
+	float: left;
+	font-size: 14px;
+	margin-top: 6%;
+}
+
+.add-btn, .sub-btn, .service-sub-btn{
+	/*border: 1px solid #d8d8d8;*/
+	margin-top:11px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 4px;
+	/*margin-left: -30px;*/
+	background: #008CBA; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#87CEFA, #008CBA); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#87CEFA, #008CBA); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#87CEFA, #008CBA); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#87CEFA, #008CBA); /* Standard syntax */
+	/*border: 1px solid #fc6000;*/
+	border-radius: 15px;
+	color: white;
+	padding: 3px;
+	width: 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 19px;
+}
+.add-btn, .sub-btn:hover {
+	cursor: pointer;
+}
+
+#dingnum{
+	margin-top:7px;
+	/*margin-left: -30px;*/
+	background-color: #eeeeee; /*#008CBA*/;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: black;
+	padding: 3px 15px 3px 15px;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 19px;
+}
+
+.number-text{
+	text-align: center;
+	font-size: 24px;
+}
+
+.car-order-update-form{
+	height: 100px;
+	width: 28%;
+	float: left;
+	clear: both;
+}
+
+.car-extra-service-box{
+	float: left;
+	clear: both;
+}
+
+#serviceNum{
+	margin-top:7px;
+	/*margin-left: -30px;*/
+	background-color: #eeeeee; /*#008CBA*/;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: black;
+	padding: 3px 15px 3px 15px;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 19px;
+}
+
+#jupai{
+	margin-top:7px;
+	margin-left: 10px;
+	/*margin-left: -30px;*/
+	background-color: #008CBA;
+	border: none;
+	color: white;
+	padding: 9px 23px 9px 23px;
+	width: 28px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.songjiForm{
+	visibility: hidden;
+}
+
+.total_price{
+	background-color: transparent;
+	font-size: 15px;
+	width: 50px;
+	color: #fc6000;
+}
+
+.pm-list{
+	font-size: 14px;
+	clear: both;
+	margin-bottom: 6px;
+}
+
+.pm-list .pm-list-format{
+	float: left;
+	width: 80px;
+}
+
+#jieji-zipcode, #songji-zipcode{
+	cursor: not-allowed;
+}
+
+
+/* SLIDE BAR - selecting if have a note while pickup */
+.slideThree {
+	width: 80px;
+	height: 26px;
+	background: #888;
+	margin-top: 3.5%;
+	margin-left: 75px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.slideThree:after {
+	content: 'OFF';
+	font: 12px/26px Arial, sans-serif;
+	color: #000;
+	position: absolute;
+	right: 10px;
+	z-index: 0;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px rgba(255,255,255,.15);
+}
+
+.slideThree:before {
+	content: 'ON';
+	font: 12px/26px Arial, sans-serif;
+	color: #87CEFA;
+	position: absolute;
+	left: 10px;
+	z-index: 0;
+	font-weight: bold;
+}
+
+.slideThree input {
+	visibility: hidden;
+}
+
+.slideThree label {
+	display: block;
+	width: 34px;
+	height: 20px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	z-index: 1;
+
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	background: #fcfff4;
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.slideThree input[type=checkbox]:checked + label {
+	left: 43px;
+}
+
+.con-order-box .orderTitle{
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.con-order-box .pm-list .keepLeft{
+	float: left;
+	width: 12%;
+}
+
+.pm-list dd p {
+display: inline-block;
+width: 40px;
+float: left;
+font-weight: bolder;
+}
+
+.pm-list dd .thinner {
+display: inline-block;
+width: 20px;
+float: left;
+}
+
+.price-lable {
+display: inline-block;
+height: 40px;
+width: 100px;
+float: left;
+} 
+

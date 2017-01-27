@@ -16,13 +16,13 @@ a{display:inline-block;*zoom:1;*display:inline;color:#858585;width:28px;height:2
 1px 0;border:1px
 solid #c9c9c9;border-radius:3px}.main_mod_page .mod_pagenav_count a.current,
 .main_mod_page .mod_pagenav_count a:hover{color:#00a0e9;border:1px
-solid #00a0e9}.st-list-search{float:left;width:903px;border:1px
+solid #00a0e9}.st-list-search{float:left;width:896px;border:1px
 solid #d8d8d8}.st-list-search .been-tj{float:left;width:903px;min-height:44px;background:#f9f9f9}.st-list-search .been-tj strong,
 .st-list-search .line-search-tj dl
 dt{float:left;color:#333;width:83px;height:24px;line-height:24px;margin:10px
 0;text-align:right}.st-list-search .been-tj p,
 .st-list-search .line-search-tj dl
-dd{float:left;width:820px;min-height:24px;margin:10px
+dd{float:left;width:800px;min-height:24px;margin:10px
 0}.st-list-search .been-tj p
 span{float:left;color:#fff;height:24px;line-height:24px;padding:0
 8px 0 10px;margin:0
@@ -31,7 +31,7 @@ i{float:right;display:block;width:7px;height:7px;margin:9px
 0 0 5px;cursor:pointer;background:url(/usertpl/dw_st16239_no198_index/images/st-line-ico.png) no-repeat 0 0}.st-list-search .been-tj p
 a{float:left;height:24px;line-height:24px}.st-list-search .line-search-tj{position:relative}.st-list-search .line-search-tj,
 .st-list-search .line-search-tj
-dl{float:left;width:903px}.st-list-search .line-search-tj
+dl{float:left;width:894px}.st-list-search .line-search-tj
 dl{border-bottom:1px solid #d8d8d8}.st-list-search .line-search-tj
 dl.bor_0{border-bottom:0}.st-list-search .line-search-tj dl.type dd
 p{float:left;width:720px;overflow:hidden}.st-list-search .line-search-tj dl.type dd p
@@ -47,7 +47,7 @@ dt{height:28px;line-height:28px}.st-list-search .line-search-tj dl.date
 input{float:left;color:#333;width:120px;height:26px;line-height:26px;padding-left:5px;border:1px
 solid #d8d8d8;border-radius:3px;background:url(/usertpl/dw_st16239_no198_index/images/st-line-ico.png) no-repeat 104px -140px}.st-list-search .line-search-tj dl.date
 span{float:left;height:28px;line-height:28px;margin:0
-10px}.st-sort-menu{float:left;width:905px;height:46px;margin-top:15px;background:#f9f8f8}.st-sort-menu .sort-sum{float:left;height:46px}.st-sort-menu .sort-sum
+10px}.st-sort-menu{float:left;width:894px;height:46px;margin-top:15px;background:#f9f8f8}.st-sort-menu .sort-sum{float:left;height:46px}.st-sort-menu .sort-sum
 a{float:left;height:46px;line-height:46px;padding:0
 20px;font-size:14px}.st-sort-menu .sort-sum a
 i{display:inline-block;*zoom:1;*display:inline;width:7px;height:10px;margin-left:2px;background:url(/usertpl/dw_st16239_no198_index/images/sort-menu-ico.png) no-repeat}.st-sort-menu .sort-sum a i.jg-default{background-position:0 0}.st-sort-menu .sort-sum a i.jg-up{background-position:-8px 0}.st-sort-menu .sort-sum a i.jg-down{background-position:-16px 0}.st-sort-menu .sort-sum a i.xl-default,

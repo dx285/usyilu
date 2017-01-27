@@ -26,14 +26,14 @@
                 <li class="clear-style"><a href="javascript:;" id="clearbtn">清除缓存</a></li>
                 <li class="create-txt"><a href="javascript:;" id="makehtml">生成html</a></li>
                 <li class="manager">
-                    <a href="http://www.stourweb.com/help" target="_blank">帮助中心</a>
+                    <a href="https://www.stourweb.com/help" target="_blank">帮助中心</a>
 
                     <div class="top-help-list">
-                        <a class="ico_1" target="_blank" href="http://www.stourweb.com/peixun/yingxiao-19">使用帮助</a>
+                        <a class="ico_1" target="_blank" href="https://www.stourweb.com/peixun/yingxiao-19">使用帮助</a>
                         <a class="ico_2" target="_blank" href="javascript:;">视频教程</a>
-                        <a class="ico_3" target="_blank" href="http://www.stourweb.com/Member/login">意见反馈</a>
-                        <a class="ico_4"  target="_blank" href="http://www.stourweb.com">思途官网</a>
-                        <a class="ico_5" target="_blank" href="http://www.stourweb.com/cms/jieshao">关于系统</a>
+                        <a class="ico_3" target="_blank" href="https://www.stourweb.com/Member/login">意见反馈</a>
+                        <a class="ico_4"  target="_blank" href="https://www.stourweb.com">思途官网</a>
+                        <a class="ico_5" target="_blank" href="https://www.stourweb.com/cms/jieshao">关于系统</a>
                     </div>
                 </li>
                 <li class="drop-out"><a href="javascript:;" id="clickout">退出</a></li>
@@ -250,16 +250,18 @@ Ext.onReady(function () {
                 type: "post",
                 url: SITEURL + 'index/ajax_clearcache',
                 beforeSend: function () {
+                    //console.log("url: "+url);
                     ST.Util.showMsg('正在清除缓存,请稍后...', 6, 20000);
                 },
                 success: function (data) {
                     if (data == 'ok') {
+                        console.log("ok cache ");
                         ST.Util.showMsg('缓存清除成功', 4, 1000);
                     }
                 },
 
                 error: function () {
-
+                    console.log("error cache ");
                     ST.Util.showMsg("请求出错,请联系管理员", 5, 1000);
                 }
 

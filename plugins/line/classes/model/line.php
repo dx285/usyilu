@@ -998,7 +998,7 @@ class Model_Line extends ORM
         {
             $status = false;
         }
-        return $status;
+        return true;
     }
 
     /**

@@ -76,6 +76,7 @@ class Controller_Member_Login extends Stourweb_Controller
         $loginPwd = Arr::get($_POST, 'loginpwd');
         $frmCode = Arr::get($_POST, 'frmcode');
         //安全校验码验证
+        /* not checking form code - Alex
         $orgCode = Common::session('crsf_code');
         if ($orgCode != $frmCode && !Captcha::valid($frmCode))
         {
@@ -84,6 +85,7 @@ class Controller_Member_Login extends Stourweb_Controller
             echo json_encode($out);
             exit;
         }
+        */
         $user = Model_Member::login($loginName, $loginPwd, 1);
         $status = !empty($user) ? 1 : 0;
 

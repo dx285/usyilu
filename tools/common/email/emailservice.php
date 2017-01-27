@@ -1,5 +1,7 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 require_once TOOLS_COMMON . 'sms/noticecommon.php';
+// PHPMailer tools
+require_once TOOLS_COMMON . '/email/PHPMailer/PHPMailerAutoload.php';
 
 /**
  * 邮件发送公共类.
@@ -9,7 +11,57 @@ require_once TOOLS_COMMON . 'sms/noticecommon.php';
  */
 class EmailService
 {
-    /*
+	/*
+	 * PHPMailer function
+	 */
+	public function PHPMailer_send_email($mailto, $rcvrName, $title, $content) {
+		$mail = new PHPMailer;
+		
+		//Set character set
+		$mail->CharSet = "utf-8"; 
+		
+		//Set PHPMailer to use SMTP.
+		$mail->isSMTP();  
+		//Enable SMTP debugging. 
+		//$mail->SMTPDebug = 1; 
+		//Set this to true if SMTP host requires authentication to send email
+		$mail->SMTPAuth = true;
+		
+		//Set SMTP host name                          
+		$mail->Host = "smtp.mxhichina.com";
+		//Provide username and password     
+		$mail->Username = "sales@lillianbear.com";                 
+		$mail->Password = "WaterLand45$";                             
+		//If SMTP requires SSL encryption then set it
+		$mail->SMTPSecure = "ssl";                           
+		//Set TCP port to connect to  
+		$mail->Port = 465;    
+		
+		$mail->From = "sales@lillianbear.com";
+		$mail->FromName = "GoGoGoUS";
+		$mail->addReplyTo('sales@lillianbear.com','GoGoGoUS');
+		$mail->addAddress($mailto, $rcvrName);
+		$mail->isHTML(true);
+		
+		$mail->Subject = $title;
+		$mail->Body = $content; // $content;
+		$mail->AltBody = "您的订单已确认 - USYiLu.com";
+		/*
+		var_dump($mail->send());
+		*/
+		if(!$mail->send()) 
+		{
+		    echo "Mailer Error: " . $mail->ErrorInfo;
+		} 
+		else 
+		{
+		    echo "Message has been sent successfully";
+		}
+		
+
+	}
+	
+	/*
      *@function 直接给某个email发送任意内容邮件
      *@param string $maillto,接收email
      *@param string $title,邮件标题
@@ -23,12 +75,14 @@ class EmailService
 
         //如果没有自定义SMTP配置
         $smtp_config = self::get_email_config();
-        $cfg_mail_smtp = ($smtp_config['cfg_mail_smtp'] == '' ? "smtp.163.com" : $smtp_config['cfg_mail_smtp']);
+        
+        $cfg_mail_smtp = ($smtp_config['cfg_mail_smtp'] == '' ? "smtp.gmail.com" : $smtp_config['cfg_mail_smtp']);
+        // $cfg_mail_smtp = "smtp.gmail.com";
         $cfg_mail_port = ($smtp_config['cfg_mail_port'] == '' ? 25 : $smtp_config['cfg_mail_port']);
         if ($smtp_config['cfg_mail_user'] == '')
         {
-            $cfg_mail_user = "Stourweb@163.com";
-            $cfg_mail_pass = "kelly12345";
+            $cfg_mail_user = "spot.gogogous@gmail.com";
+            $cfg_mail_pass = "spotgogogous";
         } else
         {
             $cfg_mail_user = $smtp_config['cfg_mail_user'];

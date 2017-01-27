@@ -24,3 +24,12 @@ Route::set('customize_other', 'customize(/<action>(/<params>))', array('params' 
         'controller' => 'customize',
         'directory' => 'pc'
     ));
+
+    
+//Conformation page
+Route::set('customize_confirmation', 'customize/confirmation(/<params>)', array('params' => '.*'))
+    ->defaults(array(
+        'action' => 'confirmation',
+        'controller' => 'customize',
+        'directory' => 'pc'
+));

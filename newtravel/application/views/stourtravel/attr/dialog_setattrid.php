@@ -54,12 +54,18 @@
                          var pname=$(element).attr('pname');
                          if($.inArray(pid,pids)==-1)
                          {
-                             attrs.push({id:pid,attrname:pname});
-                             pids.push(pid);
+                             if($(element).attr('pname') !='邮编' && $(element).attr('pname') !='机场' && $(element).attr('pname') !='专拼' && $(element).attr('pname') !='优势服务' && $(element).attr('pname') !='航班' && $(element).attr('pname') !='额外属性') {
+
+                                 attrs.push({id: pid, attrname: pname});
+                                 console.log("attrname: " + pname);
+                                 pids.push(pid);
+                             }
                          }
                          var attrname=$(element).siblings('.i-lb:first').text();
                          var id=$(element).val();
                          attrs.push({id:id,attrname:attrname});
+                         console.log("out attrname: "+attrname);
+
                   });
 
                  ST.Util.responseDialog({id:id,data:attrs,selector:selector},true);

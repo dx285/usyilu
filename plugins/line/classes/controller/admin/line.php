@@ -956,6 +956,9 @@ c.lineid,c.id,min(c.suitday) as suitday from(select a.lineid,a.id,max(ifnull(b.d
 
     public function save_baojia($lineid, $suitid, $arr)
     {
+        echo("<script>console.log(\" 报价save\")</script>");
+
+
         //$pricerule,$starttime,$endtime,$hotelid,$roomid,$basicprice,$profit,$description
         $pricerule = Arr::get($arr, 'pricerule');
         $starttime = Arr::get($arr, 'starttime');
@@ -964,6 +967,9 @@ c.lineid,c.id,min(c.suitday) as suitday from(select a.lineid,a.id,max(ifnull(b.d
         {
             return false;
         }
+
+        echo("<script>console.log(\" 报价时间有效\")</script>");
+
         //儿童
         $childbasicprice = $childprofit = 0;
         if (in_array(1, Arr::get($arr, 'propgroup')))
@@ -1000,26 +1006,61 @@ c.lineid,c.id,min(c.suitday) as suitday from(select a.lineid,a.id,max(ifnull(b.d
         //按日期范围报价
         if ($pricerule == 'all')
         {
+
+            echo("<script>console.log(\" 报价按日期id: ".$suitid."\")</script>");
+            echo("<script>console.log(\" 报价start time: ".$stime."\")</script>");
+
+
             $begintime = $stime;
             while (true)
             {
                 $model = ORM::factory('line_suit_price')->where("suitid=$suitid and day='$begintime'")->find();
                 $data_arr = array();
                 $data_arr['lineid'] = $lineid;
+                echo("<script>console.log(\" 报价save model lineid : ".$data_arr['lineid']."\")</script>");
+
                 $data_arr['suitid'] = $suitid;
+                echo("<script>console.log(\" 报价save model suitid : ".$data_arr['suitid']."\")</script>");
+
                 $data_arr['adultbasicprice'] = $adultbasicprice;
+                echo("<script>console.log(\" 报价save model adultbasicprice : ".$data_arr['adultbasicprice']."\")</script>");
+
                 $data_arr['adultprofit'] = $adultprofit;
+                echo("<script>console.log(\" 报价save model adultprofit : ".$data_arr['adultprofit']."\")</script>");
+
                 $data_arr['adultprice'] = $adultprice;
+                echo("<script>console.log(\" 报价save model adultprice : ".$data_arr['adultprice']."\")</script>");
+
                 $data_arr['childbasicprice'] = $childbasicprice;
+                echo("<script>console.log(\" 报价save model childbasicprice : ".$data_arr['childbasicprice']."\")</script>");
+
                 $data_arr['childprofit'] = $childprofit;
+                echo("<script>console.log(\" 报价save model childprofit : ".$data_arr['childprofit']."\")</script>");
+
                 $data_arr['childprice'] = $childprice;
+                echo("<script>console.log(\" 报价save model childprice : ".$data_arr['childprice']."\")</script>");
+
                 $data_arr['oldbasicprice'] = $oldbasicprice;
+                echo("<script>console.log(\" 报价save model oldbasicprice : ".$data_arr['oldbasicprice']."\")</script>");
+
                 $data_arr['oldprofit'] = $oldprofit;
+                echo("<script>console.log(\" 报价save model oldprofit : ".$data_arr['oldprofit']."\")</script>");
+
                 $data_arr['oldprice'] = $oldprice;
+                echo("<script>console.log(\" 报价save model oldprice : ".$data_arr['oldprice']."\")</script>");
+
                 $data_arr['day'] = $begintime;
+                echo("<script>console.log(\" 报价save model day : ".$data_arr['day']."\")</script>");
+
                 $data_arr['description'] = $description;
+                echo("<script>console.log(\" 报价save model description : ".$data_arr['description']."\")</script>");
+
                 $data_arr['roombalance'] = empty($roombalance) ? 0 : $roombalance;
+                echo("<script>console.log(\" 报价save model roombalance : ".$data_arr['roombalance']."\")</script>");
+
                 $data_arr['number'] = $number;
+                echo("<script>console.log(\" 报价save model number : ".$data_arr['number']."\")</script>");
+
 
                 if($isdelete)
                 {
@@ -1028,16 +1069,29 @@ c.lineid,c.id,min(c.suitday) as suitday from(select a.lineid,a.id,max(ifnull(b.d
                 }
                 else if ($model->suitid)
                 {
+                    echo("<script>console.log(\" 报价 update model suitid: ".$model->suitid."\")</script>");
                     $query = DB::update('line_suit_price')->set($data_arr)->where("suitid=$suitid and day='$begintime'");
                     $query->execute();
+                    echo("<script>console.log(\" 报价 update model effect rows: ".$query->execute()."\")</script>");
+
                 }
                 else
                 {
+                    echo("<script>console.log(\" 报价 save model suitid: ".$model->suitid."\")</script>");
+
                     foreach ($data_arr as $k => $v)
                     {
+                        echo("<script>console.log(\" 报价 save model: ".$model->$k."\")</script>");
+                        echo("<script>console.log(\" 报价 save model: ".$v."\")</script>");
+
                         $model->$k = $v;
                     }
                     $model->save();
+                    if ($model->saved())
+                    {
+
+                        echo("<script>console.log(\" 报价save model success : ".$model->suitid."\")</script>");
+                    }
                 }
                 $begintime = $begintime + 86400;
                 if ($begintime > $etime)

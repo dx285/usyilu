@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>{$info['modulename']}订单-{$webname}</title>
+    <title>{$info['modulename']}{__('订单')}-{$webname}</title>
     {Common::css('user.css,base.css,extend.css')}
     {Common::js('jquery.min.js,base.js,common.js,layer/layer.js')}
 </head>
@@ -15,7 +15,7 @@
     <div class="wm-1200">
 
         <div class="st-guide">
-            <a href="{$cmsurl}">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;{$info['modulename']}订单
+            <a href="{$cmsurl}">{__('首页')}</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;{$info['modulename']}{__('订单')}
         </div><!--面包屑-->
 
         <div class="st-main-page">

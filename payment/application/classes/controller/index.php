@@ -38,6 +38,8 @@ class Controller_Index extends Stourweb_Controller
      */
     public function action_index()
     {
+        echo("<script>console.log(\"后台订单展示函数 \")</script>");
+
         $ordersn = $_REQUEST['ordersn'];
         $this->_ordersn_checked($ordersn);
         //支付模板

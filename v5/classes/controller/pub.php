@@ -74,6 +74,16 @@ class Controller_Pub extends Stourweb_Controller
         $templet = $templet ? $templet : 'pub/header';
         $this->display($templet);
     }
+    
+/*
+     * 网站头部
+     * */
+    public function action_blankheader()
+    {
+        $templet = Product::get_use_templet('blankheader');
+        $templet = $templet ? $templet : 'pub/blankheader';
+        $this->display($templet);
+    }
 
     /*
      * 网站底部

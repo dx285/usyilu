@@ -51,7 +51,7 @@
 
             {st:channel action="pc" row="4"}
             {loop $data $row}
-            {if $row['url']=="http://www.usyilu.com/lines/"}
+            {if $row['url']=="https://www.usyilu.com/lines/"}
             <li class="item">
                 <a href="{$row['url']}all">接送</a>
             <li class="item">
@@ -63,7 +63,7 @@
             <li class="item">
                 <a href="{$row['url']}all">自驾游</a>
             </li>
-            {elseif $row['url']=="http://www.usyilu.com/hotels/"}
+            {elseif $row['url']=="https://www.usyilu.com/hotels/"}
                 <li class="item" style="background-color: #00a0de">
                     {if $row['kind']==2}
                     <i class="st-hot-ico"></i><s></s>
@@ -76,7 +76,7 @@
                     <a href="{$row['url']}all" style="color: white">{$row['title']}</a>
 
                 </li>
-            {elseif $row['url']=="http://www.usyilu.com/customize/"}
+            {elseif $row['url']=="https://www.usyilu.com/customize/"}
                 <li class="item">
                     {if $row['kind']==2}
                     <i class="st-hot-ico"></i><s></s>

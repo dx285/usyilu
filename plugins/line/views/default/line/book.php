@@ -29,7 +29,7 @@
                 </div>
                 <!-- 未登录提示 -->
                 {/if}
-                <form id="orderfrm" method="post" action="{$cmsurl}line/create">
+                <form id="orderfrm" method="post" action="{$cmsurl}line/createrev">
                     <div class="con-order-box">
                         <div class="product-msg">
                             <h3 class="pm-tit"><strong class="ico01">预定信息</strong></h3>
@@ -62,14 +62,14 @@
                                     {if Common::check_instr($suitInfo['propgroup'],2)}
                                     <tr>
                                         <td height="40"><span class="l-con usedate">{$info['usedate']}</span></td>
-                                        <td>成人</td>
+                                        <td>双人间</td>
                                         <td><i class="currency_sy">{Currency_Tool::symbol()}</i><span
                                                 class="txt_adultprice">{$suitPrice['adultprice']}</span></td>
                                         <td>
                                             <div class="control-box">
                                                 <span class="add-btn sub is_order_number">-</span>
                                                 <input type="text" id="adult_num" name="adult_num" class="number-text"
-                                                       readonly value="1"/>
+                                                       readonly value="{$adult_num}"/>
                                                 <span class="sub-btn add">+</span>
                                             </div>
                                         </td>
@@ -135,7 +135,7 @@
                             </dl>
                             <dl class="pm-list">
                                 <dt>订单留言：</dt>
-                                <dd><textarea class="order-remarks" name="remark" cols="" rows=""></textarea></dd>
+                                <dd><textarea class="order-remarks" name="remark" cols="" rows="">{$remark}</textarea></dd>
                             </dl>
                         </div>
                         <!--联系人信息-->
@@ -409,15 +409,15 @@
                         <li>购买时间：{php echo date('Y-m-d');}</li>
                         <li>出行日期：<span class="usedate">{$info['usedate']}</span></li>
                         {if Common::check_instr($suitInfo['propgroup'],2)}
-                        <li>成人：<span id="people_adult_num"></span>位 &times; <i class="currency_sy">{Currency_Tool::symbol()}</i><span
+                        <li>双人间：<span id="people_adult_num"></span>间 &times; <i class="currency_sy">{Currency_Tool::symbol()}</i><span
                                 class="txt_adultprice">{$suitPrice['adultprice']}</span></li>
                         {/if}
                         {if Common::check_instr($suitInfo['propgroup'],1)}
-                        <li>儿童：<span id="people_child_num"></span>位 &times; <i class="currency_sy">{Currency_Tool::symbol()}</i><span
+                        <li>三人间：<span id="people_child_num"></span>间 &times; <i class="currency_sy">{Currency_Tool::symbol()}</i><span
                                 class="txt_childprice">{$suitPrice['childprice']}</span></li>
                         {/if}
                         {if Common::check_instr($suitInfo['propgroup'],3)}
-                        <li>老人：<span id="people_old_num"></span>位 &times; <i class="currency_sy">{Currency_Tool::symbol()}</i><span
+                        <li>单人间：<span id="people_old_num"></span>间 &times; <i class="currency_sy">{Currency_Tool::symbol()}</i><span
                                 class="txt_oldprice"> {$suitPrice['oldprice']}</span></
                         </li>
                         {/if}
@@ -632,12 +632,12 @@
         })
 
         //出发日期选择
-        $("#inputdate").click(function () {
-            var suitid = $("#suitid").val();
-            var date = $(this).val().split('-');
-            get_calendar(suitid, this, date[0], date[1]);
-
-        });
+//        $("#inputdate").click(function () {
+//            var suitid = $("#suitid").val();
+//            var date = $(this).val().split('-');
+//            get_calendar(suitid, this, date[0], date[1]);
+//
+//        });
         $('body').delegate('.prevmonth,.nextmonth', 'click', function () {
 
             var year = $(this).attr('data-year');

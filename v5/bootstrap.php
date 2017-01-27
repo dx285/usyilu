@@ -161,7 +161,7 @@ Kohana::modules($default_modules);
  */
 
 require(APPPATH . 'route.php');
-$cfg_basehost = 'http://' . $_SERVER['HTTP_HOST']; //网站域名
+$cfg_basehost = 'https://' . $_SERVER['HTTP_HOST']; //网站域名
 $cfg_phone_cmspath = '';
 $cfg_default_templet = '/default/';
 $cfg_public_url = '/res/';
@@ -236,7 +236,7 @@ if ($cfg_mobile_open == '1')
         //检测域名
         $mobile = include SLINEDATA . '/mobile.php';
         $path = rtrim($mobile['version'][$cfg_mobile_version]['path'], '/');
-        $url = 'http://' . $_SERVER['HTTP_HOST'] . $path . $uri;
+        $url = 'https://' . $_SERVER['HTTP_HOST'] . $path . $uri;
         if (substr_count($mobile['domain']['mobile'], $_SERVER['HTTP_HOST']) && !substr_count($mobile['domain']['main'], $_SERVER['HTTP_HOST']))
         {
             $url = $mobile['domain']['mobile'] . $uri;

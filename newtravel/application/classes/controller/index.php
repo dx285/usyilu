@@ -126,6 +126,8 @@ class Controller_Index extends Stourweb_Controller
     {
         Model_Config::clear_cache();
         echo 'ok';
+        //echo("<script>console.log(\"clear cache\")</script>");
+
     }
 
     //生成HTML

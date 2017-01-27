@@ -541,7 +541,7 @@ function showCalendar(containid, suitid,func,lineid)
 		
 	}*/
 
-	Calendar_GetPdateAndPrice_New(document.getElementById(containid), suitid,"",true,null,null,func,lineid);
+	Calendar_GetPdateAndPrice_New(document.getElementById(containid), suitid,"",false,null,null,func,lineid);
 }
 
 function _hide()

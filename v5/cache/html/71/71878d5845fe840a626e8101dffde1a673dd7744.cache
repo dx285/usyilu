@@ -1,12 +1,12 @@
 3600
-s:40120:"<!doctype html><html><head><meta charset="utf-8"><title>租车-美国一路</title><!--    <link rel="stylesheet" href="/tools/js/DatePicker/jquery-ui-timepicker/include/ui-1.10.0/ui-lightness/jquery-ui-1.10.0.custom.min.css" type="text/css">--><!--    <link rel="stylesheet" href="/tools/js/DatePicker/jquery-ui-timepicker/jquery.ui.timepicker.css">--><!--    <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/include/jquery-1.9.0.min.js"></script>--><!--    <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/include/ui-1.10.0/jquery.ui.core.min.js"></script>--><!--    <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/include/ui-1.10.0/jquery.ui.position.min.js"></script>--><!--    <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/include/ui-1.10.0/jquery.ui.tabs.min.js"></script>--><!--    <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/include/ui-1.10.0/jquery.ui.widget.min.js"></script>--><script type="text/javascript" src="/tools/js/DatePicker/WdatePicker.js"></script><!----><script>
+s:34860:"<!doctype html><html><head><meta charset="utf-8"><title>租车-美国一路</title><!--    <script type="text/javascript" src="/tools/js/DatePicker/WdatePicker.js"></script>--><script>
     window.SITEURL = "/";
     window.CURRENCY_SYMBOL="$";
 </script><link type="text/css" href="/min/?f=plugins/car/public/css/car.css" rel="stylesheet"  />
 <link type="text/css" href="/min/?f=/res/css/base.css,/res/css/extend.css" rel="stylesheet"  />
-<script type="text/javascript"src="/min/?f=/res/js/jquery.min.js,/res/js/base.js,/res/js/common.js,/res/js/SuperSlide.min.js,/res/js/template.js,/res/js/delayLoading.min.js"></script>
+<script type="text/javascript"src="/min/?f=/res/js/jquery.min.js,/res/js/base.js,/res/js/common.js,/res/js/SuperSlide.min.js,/res/js/template.js"></script>
 <link rel="stylesheet" href="/tools/js/DatePicker/jquery-timepicker2/jonthornton-jquery-timepicker-0aea507/jquery.timepicker.css"><script type="text/javascript" src="/tools/js/DatePicker/jquery-timepicker2/jonthornton-jquery-timepicker-0aea507/jquery.timepicker.min.js"></script><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></head><body><link type="text/css" href="/min/?f=/usertpl/dw_st16239_no198_index/css/header.css" rel="stylesheet"  />
-<!-- header开始 --><div class="st-header"><div class="wm-1200"><div class="header-block"><div class="st-logo"><a href="http://www.usyilu.com"><img src="http://www.usyilu.com/uploads/main/allimg/20161217/20161217030520_70x70.png" alt="美国一路" /></a><p>全美首家:租车 + 小团</p></div><div class="st-nav"><ul class="clearfix"><li><a href="/">首页</a></li><li><!--                        --><a href="/cars/">一路接机</a><!--                        <a href="/cars/">一路接机</a>--></li><li><!--                        --><a href="/lines/all-0-0-0-0-0-27-1">落地参团</a><!--                        <a href="/lines/">落地参团</a>--></li><li><!--                        --><a href="http://www.usyilu.com/cars/">一路租车</a><!--                        <a href="http://www.usyilu.com/cars/">一路租车</a>--></li><li><!--                        --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1">一路自驾</a><!--                        <a href="/lines/">一路自驾</a>--></li><li><!--                        --><a href="http://www.usyilu.com/customize/">一路包车</a><!--                        <a href="http://www.usyilu.com/customize/">一路包车</a>--></li><li><!--                        --><a href="http://www.usyilu.com/lines/all-0-0-0-0-0-0-1">特价酒店</a><!--                        <a href="http://www.usyilu.com/hotels/">特价酒店</a>--></li><li><a href="/help/index_1.html" rel="nofollow">关于我们</a></li><li></li><li></li><li></li></ul></div><!-- 主导航 --><div class="st-rig"><div class="phone-num">1718-475-9550</div><span id="loginstatus"></span></div></div></div></div><script>
+<!-- header开始 --><div class="st-header"><div class="wm-1200"><div class="header-block"><div class="st-logo"><a href="http://www.usyilu.com"><img src="https://www.usyilu.com/uploads/main/allimg/20161217/20161217030520_70x70.png" alt="美国一路" /></a><p>全美首家:租车 + 小团</p><p id="phoneNum">1-718-475-9550</p></div><div class="st-nav"><ul class="clearfix"><li><a href="/">首页</a></li><li><!--                        --><a href="/cars/">一路接机</a><!--                        <a href="/cars/">一路接机</a>--></li><li><!--                        --><a href="/lines/all-0-0-0-0-0-27-1">落地参团</a><!--                        <a href="/lines/">落地参团</a>--></li><li><!--                        --><a href="https://www.usyilu.com/cars/">一路租车</a><!--                        <a href="https://www.usyilu.com/cars/">一路租车</a>--></li><li><!--                        --><a href="https://www.usyilu.com/lines/all-0-0-0-0-0-0-1">一路自驾</a><!--                        <a href="/lines/">一路自驾</a>--></li><li><!--                        --><a href="https://www.usyilu.com/customize/">一路包车</a><!--                        <a href="https://www.usyilu.com/customize/">一路包车</a>--></li><li><!--                        --><a href="https://www.usyilu.com/hotels/all">特价酒店</a><!--                        <a href="https://www.usyilu.com/hotels/">特价酒店</a>--></li><li><a href="/help/index_1.html" rel="nofollow">关于我们</a></li><li></li><li></li><li></li></ul></div><!-- 主导航 --><div class="st-rig"><!--                <div class="phone-num">1-718-475-9550</div>--><span id="loginstatus"></span></div></div></div></div><script>
     var SITEURL = "/";
     $(function(){
         //导航的选中状态
@@ -30,15 +30,15 @@ s:40120:"<!doctype html><html><head><meta charset="utf-8"><title>租车-美国�
                 if(data.status){
                     $txt = '<div class="login-after"><a class="dl" style="padding:0" href="javascript:;">你好,</a>';
                     //Di 避免直接暴露ip
-//                    $txt+= '<a class="dl" href="http://47.90.15.0/member/">'+data.user.nickname+  '&nbsp;&nbsp;</a>';
-//                    $txt+= '<a class="dl" href="http://47.90.15.0/member/login/loginout">退出</a></div>';
+//                    $txt+= '<a class="dl" href="https://www.usyilu.com/member/">'+data.user.nickname+  '&nbsp;&nbsp;</a>';
+//                    $txt+= '<a class="dl" href="https://www.usyilu.com/member/login/loginout">退出</a></div>';
                     $txt+= '<a class="dl" href="/member/">'+data.user.nickname+  '&nbsp;&nbsp;</a>';
                     $txt+= '<a class="dl" href="/member/login/loginout">退出</a></div>';
                     //$txt+= '<a class="dl" href="/member">个人中心</a>';
                 }else{
                     //Di 避免直接暴露ip
-//                    $txt = ' <div class="login-before"><a class="dl" href="http://47.90.15.0/member/login">登录</a>|';
-//                    $txt+= '<a class="zc" href="http://47.90.15.0/member/register">注册</a></div>';
+//                    $txt = ' <div class="login-before"><a class="dl" href="https://www.usyilu.com/member/login">登录</a>|';
+//                    $txt+= '<a class="zc" href="https://www.usyilu.com/member/register">注册</a></div>';
                     $txt = ' <div class="login-before"><a class="dl" href="/member/login">登录</a>|';
                     $txt+= '<a class="zc" href="/member/register">注册</a></div>';
                 }
@@ -46,19 +46,45 @@ s:40120:"<!doctype html><html><head><meta charset="utf-8"><title>租车-美国�
             }
         })
     })
-</script><div class="big"><div class="wm-1200"><!--      <div class="st-guide">--><!--            <a href="/">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;一路租车--><!--      </div><!--面包屑--><div class="st-car-home-top"><ul class="tab"><li><a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openCity(event, 'jieji')">接机</a></li><li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'songji')">送机</a></li></ul><div id="jieji" class="st-car-search tabcontent"><!--        <dl class="search-dl">--><!--          <dt>选择车型</dt>--><!--            <dd>--><!--              <input type="text" class="cs-text up-ico carkind" placeholder="车选择型" data-id="0" />--><!--              <div class="cs-select-box">--><!--                --><!--                  --><!--                    <span data-id="1">5座SUV</span>--><!--                  --><!--                    <span data-id="2">7座商旅车</span>--><!--                  --><!--                    <span data-id="3">12座福特</span>--><!--                  --><!--                --><!----><!--              </div>--><!--            </dd>--><!--          </dl>--><dl class="search-dl"><dt>接机航班</dt><dd><input type="text" class="cs-text up-ico searchattr" placeholder="接机航班" data-id="0" /><div class="cs-select-box"><span data-id="5">uA3271</span><span data-id="16">UA3333</span><span data-id="17">UA2333</span></div></dd></dl><dl class="search-dl"><dt>接机机场</dt><dd><input type="text" class="cs-text up-ico searchattr" placeholder="接机机场" data-id="0" /><div class="cs-select-box"><span data-id="6">JFK</span><span data-id="7">Newark</span></div></dd></dl><dl class="search-dl"><dt>专拼</dt><dd><input type="text" class="cs-text up-ico searchattr" placeholder="专拼" data-id="0" /><div class="cs-select-box"><span data-id="14">专车</span><span data-id="15">拼车</span></div></dd></dl><dl class="search-dl"><dt>送达地点</dt><dd><input type="text" class="cs-text up-ico searchattr" id="autocomplete1" placeholder="送达地点" " data-id="0" /><div class="cs-select-box"><!--                        --><!--                        --><!--                        --></div></dd></dl><dl class="search-dl"><dt>邮编</dt><dd><input type="text" class="cs-text up-ico searchattr" id="zipcode_jie" placeholder="邮编" data-id="0" /><div class="cs-select-box"><span data-id="22">07307</span><span data-id="23">07093</span><span data-id="24">10024</span><span data-id="25">10019</span><span data-id="26">10036</span><script type="text/javascript">
-                              var complex = [{"id":"22","webid":"0","aid":null,"attrname":"07307","displayorder":null,"isopen":"1","pid":"21","destid":null,"issystem":"0","litpic":null,"description":null,"title":"07307"},{"id":"23","webid":"0","aid":null,"attrname":"07093","displayorder":null,"isopen":"1","pid":"21","destid":null,"issystem":"0","litpic":null,"description":null,"title":"07093"},{"id":"24","webid":"0","aid":null,"attrname":"10024","displayorder":null,"isopen":"1","pid":"21","destid":null,"issystem":"0","litpic":null,"description":null,"title":"10024"},{"id":"25","webid":"0","aid":null,"attrname":"10019","displayorder":null,"isopen":"1","pid":"21","destid":null,"issystem":"0","litpic":null,"description":null,"title":"10019"},{"id":"26","webid":"0","aid":null,"attrname":"10036","displayorder":null,"isopen":"1","pid":"21","destid":null,"issystem":"0","litpic":null,"description":null,"title":"10036"}];
-                              console.log("complex: "+complex);
-                          </script></div></dd></dl><dl class="search-dl" style="display: none; "><dt>车型选择</dt><dd><input type="text" class="cs-text up-ico carkind" placeholder="车型选择" data-id="0" /><div class="cs-select-box"><span data-id="1">5座SUV</span><span data-id="2">7座商旅车</span><span data-id="3">12座福特</span></div></dd></dl><dl class="search-dl"><dt class="item">选择日期</dt><dd class="con"><input type="text" class="custom-default-text up-ico-day noblank endtime_jieji" placeholder="选择日期" name="days" style="width: 95%; font-size:14px; " /></dd></dl><dl class="search-dl"><dt class="item">选择时间</dt><dd class="con"><input type="text" class="custom-default-text up-ico-day pickTime" placeholder="选择时间" id="jieji-time-inputs" name="more" style="width: 95%; font-size:14px;" /></dd></dl><div class="car-search-btn"><a href="javascript:;">搜索</a></div></div><!--接车搜索--><!--送车搜索--><div id="songji" class="st-car-search tabcontent"><!--                <dl class="search-dl">--><!--                    <dt>选择车型</dt>--><!--                  <dd>--><!--                    <input type="text" class="cs-text up-ico carkind" placeholder="车选择型" data-id="0" />--><!--                    <div class="cs-select-box">--><!--                      --><!--                        --><!--                          <span data-id="1">5座SUV</span>--><!--                        --><!--                          <span data-id="2">7座商旅车</span>--><!--                        --><!--                          <span data-id="3">12座福特</span>--><!--                        --><!--                      --><!----><!--                    </div>--><!--                  </dd>--><!--                </dl>--><dl class="search-dl"><dt>送机机场</dt><dd><input type="text" class="cs-text up-ico searchattr" placeholder="送机机场" data-id="0" /><div class="cs-select-box"><script type="text/javascript">
-                              var complex = [];
-                              console.log("complex: "+complex);
-                          </script></div></dd></dl><dl class="search-dl"><dt>出发地点</dt><dd><input type="text" class="cs-text up-ico searchattr" placeholder="出发地点" id="autocomplete2" onFocus="geolocate1()" data-id="0" /><div class="cs-select-box"><script type="text/javascript">
-                              var complex = [];
-                              console.log("complex: "+complex);
-                          </script></div></dd></dl><dl class="search-dl"><dt>邮编</dt><dd><input type="text" class="cs-text up-ico searchattr" id="zipcode_song" placeholder="邮编" data-id="0" /><div class="cs-select-box"><span data-id="22">07307</span><span data-id="23">07093</span><span data-id="24">10024</span><span data-id="25">10019</span><span data-id="26">10036</span><script type="text/javascript">
-                              var complex = [{"id":"22","webid":"0","aid":null,"attrname":"07307","displayorder":null,"isopen":"1","pid":"21","destid":null,"issystem":"0","litpic":null,"description":null,"title":"07307"},{"id":"23","webid":"0","aid":null,"attrname":"07093","displayorder":null,"isopen":"1","pid":"21","destid":null,"issystem":"0","litpic":null,"description":null,"title":"07093"},{"id":"24","webid":"0","aid":null,"attrname":"10024","displayorder":null,"isopen":"1","pid":"21","destid":null,"issystem":"0","litpic":null,"description":null,"title":"10024"},{"id":"25","webid":"0","aid":null,"attrname":"10019","displayorder":null,"isopen":"1","pid":"21","destid":null,"issystem":"0","litpic":null,"description":null,"title":"10019"},{"id":"26","webid":"0","aid":null,"attrname":"10036","displayorder":null,"isopen":"1","pid":"21","destid":null,"issystem":"0","litpic":null,"description":null,"title":"10036"}];
-                              console.log("complex: "+complex);
-                          </script></div></dd></dl><dl class="search-dl" style="display: none; "><!--                <dt>车型选择</dt>--><dt>车型选择</dt><dd><input type="text" class="cs-text up-ico carkind" placeholder="车型选择" data-id="0" /><div class="cs-select-box"><span data-id="1">5座SUV</span><span data-id="2">7座商旅车</span><span data-id="3">12座福特</span></div></dd></dl><dl class="search-dl"><dt class="item">选择日期</dt><dd class="con"><input type="text" class="custom-default-text up-ico-day noblank2 endtime_songji" placeholder="选择日期" name="days" style="width: 95%; font-size:14px; " /></dd></dl><dl class="search-dl"><dt class="item">选择时间</dt><dd class="con"><input type="text" class="custom-default-text up-ico-day pickTime" placeholder="选择时间" id="songji-time-inputs" name="more" style="width: 95%; font-size:14px;" /></dd></dl><div class="car-search-btn-songji"><a href="javascript:;">搜索</a></div></div><!--送车搜索--><div id="st-car-slideBox" class="st-car-slideBox"><div class="hd"><ul><li>0</li><li>1</li><li>2</li><li>3</li></ul></div><div class="bd"><ul><li><a href="" target="_blank"><img src="/res/images/grey.gif" original-src="http://www.usyilu.com/uploads/2016/1229/c885d2fe4d2f468811529dfaaa0a603d.jpg" /></a></li><li><a href="" target="_blank"><img src="/res/images/grey.gif" original-src="http://www.usyilu.com/uploads/2016/1027/cbef3da44d7da14548603e1328bed370.jpg" /></a></li><li><a href="" target="_blank"><img src="/res/images/grey.gif" original-src="http://www.usyilu.com/uploads/2016/1027/82b18206fd3ea7f5b71ead2bd688fdfc.png" /></a></li><li><a href="" target="_blank"><img src="/res/images/grey.gif" original-src="http://www.usyilu.com/uploads/2016/1027/781437329e752758a29ecb00b9f2d983.jpg" /></a></li></ul></div><!--前/后按钮代码--><a class="prev" href="javascript:void(0)"></a><a class="next" href="javascript:void(0)"></a></div><!--租车首页焦点图--></div><!--        <div id="locationField">--><!--            <input id="autocomplete" placeholder="Enter your address"--><!--                   onFocus="geolocate1()" type="text"/>--><!--        </div>--><div class="st-cp-slideTab"><div class="st-tabnav"><h3>热门推荐</h3><span data-id="1" class="on">5座SUV<i></i></span><span data-id="2" >7座商旅车<i></i></span><span data-id="3" >12座福特<i></i></span><a href="/cars/all" class="more">更多</a></div><div class="st-tabcon"><ul><li ><i class="hot-ico"></i><a class="pic" href="/cars/show_3.html" target="_blank"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/cbef3da44d7da14548603e1328bed370_283x193.jpg" alt="奔驰GL450" /></a><p class="tit"><a href="/cars/show_3.html" target="_blank">奔驰GL450</a></p><p class="data"><em>满意度 100%</em><span>电询</span></p></li><li ><i class="hot-ico"></i><a class="pic" href="/cars/show_1.html" target="_blank"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/781437329e752758a29ecb00b9f2d983_283x193.jpg" alt="凯迪拉克" /></a><p class="tit"><a href="/cars/show_1.html" target="_blank">凯迪拉克</a></p><p class="data"><em>满意度 100%</em><span>电询</span></p></li></ul></div></div><script type="text/html" id="tpl_car"><ul>
+</script><div class="big car-search-page"><div class="wm-1200"><div class="st-car-home-top" style="background-image: url(/uploads/2017/0113/car_backgroundImg1.jpg);"><!--          --><!--          --><!--          <li><a href="" target="_blank"><img src="/res/images/grey.gif" original-src="/uploads/main/allimg/20160819/20160819142421.jpg" /></a></li>--><!--          --><!--              --><ul class="tab"><li><a href="javascript:void(0)" class="tablinks" id="defaultOpen" onclick="openCity(event, 'jieji')">接机</a></li><li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'songji')">送机</a></li></ul><form id="jiejiForm" name="cusfrm" method="post" action="" ><div id="jieji" class="st-car-search tabcontent"><dl class="search-dl"><!--                <dt class="item">选择日期</dt>--><dd class="con"><input type="text" class="custom-default-text up-ico-day noblank endtime_jieji jieji-searchattr-submit" id="jieji-date" name="jieji-date" placeholder="选择日期(必选)" name="days" style="font-size:14px; " /></dd></dl><dl class="search-dl"><!--                <dt class="item">选择时间</dt>--><dd class="con"><input type="text" class="custom-default-text up-ico-day pickTime jieji-searchattr-submit" placeholder="选择时间(必选)" id="jieji-time" name="jieji-time" style="font-size:14px;" /></dd></dl><dl class="search-dl"><!--                <dt></dt>--><dd><input type="text" class="cs-text up-ico jichang jieji-searchattr searchattr jieji-searchattr-submit" id="jieji-airport" name="jieji-airport" placeholder="机场(必选)" data-id="0" /><div class="cs-select-box"><!--                        <span data-id="6">纽约肯尼迪国际机场,John F. Kennedy International Airport,JFK</span>--><span data-id="6">纽约肯尼迪国际机场</span><!--                        <span data-id="7">纽瓦克自由国际机场,Newark Liberty International Airport,EWR</span>--><span data-id="7">纽瓦克自由国际机场</span><!--                        <span data-id="43">Arcata Airport</span>--><span data-id="43">Arcata Airport</span><!--                        <span data-id="52">Manhattan</span>--><span data-id="52">Manhattan</span><!--                        <span data-id="53">Queens</span>--><span data-id="53">Queens</span><!--                        <span data-id="54">Bronx</span>--><span data-id="54">Bronx</span><!--                        <span data-id="55">Brooklyn</span>--><span data-id="55">Brooklyn</span><!--                        <span data-id="56">Downtown</span>--><span data-id="56">Downtown</span><!--                        <span data-id="57">Arlington</span>--><span data-id="57">Arlington</span><!--                        <span data-id="58">Fairfax</span>--><span data-id="58">Fairfax</span><script type="text/javascript">
+                              var airports = [{"id":"6","webid":"0","aid":null,"attrname":"\u7ebd\u7ea6\u80af\u5c3c\u8fea\u56fd\u9645\u673a\u573a,John F. Kennedy International Airport,JFK","displayorder":null,"isopen":"1","pid":"2","destid":null,"issystem":"0","litpic":null,"description":null,"title":"\u7ebd\u7ea6\u80af\u5c3c\u8fea\u56fd\u9645\u673a\u573a,John F. Kennedy International Airport,JFK"},{"id":"7","webid":"0","aid":null,"attrname":"\u7ebd\u74e6\u514b\u81ea\u7531\u56fd\u9645\u673a\u573a,Newark Liberty International Airport,EWR","displayorder":null,"isopen":"1","pid":"2","destid":null,"issystem":"0","litpic":null,"description":null,"title":"\u7ebd\u74e6\u514b\u81ea\u7531\u56fd\u9645\u673a\u573a,Newark Liberty International Airport,EWR"},{"id":"43","webid":"0","aid":null,"attrname":"Arcata Airport","displayorder":null,"isopen":"1","pid":"2","destid":null,"issystem":"0","litpic":null,"description":null,"title":"Arcata Airport"},{"id":"52","webid":"0","aid":null,"attrname":"Manhattan","displayorder":null,"isopen":"1","pid":"2","destid":null,"issystem":"0","litpic":null,"description":null,"title":"Manhattan"},{"id":"53","webid":"0","aid":null,"attrname":"Queens","displayorder":null,"isopen":"1","pid":"2","destid":null,"issystem":"0","litpic":null,"description":null,"title":"Queens"},{"id":"54","webid":"0","aid":null,"attrname":"Bronx","displayorder":null,"isopen":"1","pid":"2","destid":null,"issystem":"0","litpic":null,"description":null,"title":"Bronx"},{"id":"55","webid":"0","aid":null,"attrname":"Brooklyn","displayorder":null,"isopen":"1","pid":"2","destid":null,"issystem":"0","litpic":null,"description":null,"title":"Brooklyn"},{"id":"56","webid":"0","aid":null,"attrname":"Downtown","displayorder":null,"isopen":"1","pid":"2","destid":null,"issystem":"0","litpic":null,"description":null,"title":"Downtown"},{"id":"57","webid":"0","aid":null,"attrname":"Arlington","displayorder":null,"isopen":"1","pid":"2","destid":null,"issystem":"0","litpic":null,"description":null,"title":"Arlington"},{"id":"58","webid":"0","aid":null,"attrname":"Fairfax","displayorder":null,"isopen":"1","pid":"2","destid":null,"issystem":"0","litpic":null,"description":null,"title":"Fairfax"}];
+                            //console.log("airports array: "+JSON.stringify(airports, null, 2));
+                            var airportsHashMap = {};
+                            var airportsShortNameHashMap = {};
+                            for(airport of airports){
+                                var tmpAirportNameArr = airport['title'].split(',');
+                                //console.log("airport: "+tmpAirportNameArr[0]);
+                                airportsHashMap[tmpAirportNameArr[0]] = airport['id'];
+                                airportsShortNameHashMap[tmpAirportNameArr[0]] = tmpAirportNameArr[2];
+                            }
+//
+//
+                        </script></div></dd></dl><dl class="search-dl"><!--                <dt></dt>--><dd><input type="text" class="cs-text up-ico jieji-searchattr-submit" id="jieji-flightNum" name="jieji-flightNum" placeholder="航班(必填)"   data-id="0" /><!--                    <div class="cs-select-box">--><!--                        --><!--                        --><!--                        <span data-id="22">UA2333</span>--><!--                        --><!--                        <span data-id="23">SB1111</span>--><!--                        --><!--                        <span data-id="24">NB2333</span>--><!--                        --><!--                        <span data-id="25">Jo3333</span>--><!--                        --><!--                        <span data-id="26">RT123</span>--><!--                        --><!--                        --><!--                    </div>--></dd></dl><dl class="search-dl"><!--                <dt></dt>--><dd><input type="text" class="cs-text up-ico jieji-searchattr-submit" id="jieji-addr" name="jieji-addr" placeholder="送达地点(必填)"  data-id="0"  /><div class="cs-select-box"><!--                        --><!--                        --><!--                        --></div></dd></dl><dl class="search-dl"><!--                    <dt></dt>--><dd><input type="text" class="cs-text up-ico youbian jieji-searchattr searchattr jieji-searchattr-submit" id="jieji-zipcode" name="jieji-zipcode" placeholder="邮编" data-id="0" readonly/><input type="hidden" class="cs-text up-ico youbian  searchattr" id="jieji-zipcode-bool" name="jieji-zipcode-bool" value="true" /><div class="cs-select-box"><span data-id="5">07307</span><span data-id="16">07093</span><span data-id="17">10024</span><span data-id="41">10019</span><span data-id="42">10036</span><span data-id="45">10002</span><span data-id="46">11355</span><span data-id="47">10460</span><span data-id="48">11220</span><span data-id="49">20005</span><script type="text/javascript">
+                          var zipcodes = [{"id":"5","webid":"0","aid":null,"attrname":"07307","displayorder":null,"isopen":"1","pid":"1","destid":null,"issystem":"0","litpic":null,"description":null,"title":"07307"},{"id":"16","webid":"0","aid":null,"attrname":"07093","displayorder":null,"isopen":"1","pid":"1","destid":null,"issystem":"0","litpic":null,"description":null,"title":"07093"},{"id":"17","webid":"0","aid":null,"attrname":"10024","displayorder":null,"isopen":"1","pid":"1","destid":null,"issystem":"0","litpic":null,"description":null,"title":"10024"},{"id":"41","webid":"0","aid":null,"attrname":"10019","displayorder":null,"isopen":"1","pid":"1","destid":null,"issystem":"0","litpic":null,"description":null,"title":"10019"},{"id":"42","webid":"0","aid":null,"attrname":"10036","displayorder":null,"isopen":"1","pid":"1","destid":null,"issystem":"0","litpic":null,"description":null,"title":"10036"},{"id":"45","webid":"0","aid":null,"attrname":"10002","displayorder":null,"isopen":"1","pid":"1","destid":null,"issystem":"0","litpic":null,"description":null,"title":"10002"},{"id":"46","webid":"0","aid":null,"attrname":"11355","displayorder":null,"isopen":"1","pid":"1","destid":null,"issystem":"0","litpic":null,"description":null,"title":"11355"},{"id":"47","webid":"0","aid":null,"attrname":"10460","displayorder":null,"isopen":"1","pid":"1","destid":null,"issystem":"0","litpic":null,"description":null,"title":"10460"},{"id":"48","webid":"0","aid":null,"attrname":"11220","displayorder":null,"isopen":"1","pid":"1","destid":null,"issystem":"0","litpic":null,"description":null,"title":"11220"},{"id":"49","webid":"0","aid":null,"attrname":"20005","displayorder":null,"isopen":"1","pid":"1","destid":null,"issystem":"0","litpic":null,"description":null,"title":"20005"}];
+                          //console.log("zipcode array: "+JSON.stringify(zipcodes, null, 2));
+                          var zipcodeHashMap = {};
+                          //console.log("zipcode element: "+zipcodes[0]['id']);
+                          //console.log("zipcode element: "+zipcodes[0]['title']);
+                          for(zipcode of zipcodes){
+                              //console.log("zipcode: "+zipcode);
+                              zipcodeHashMap[zipcode['title']] = zipcode['id'];
+                          }
+                      </script></div></dd></dl><dl class="search-dl"><!--                <dt></dt>--><dd><input type="text" class="cs-text up-ico searchattr zhuanpin jieji-searchattr jieji-searchattr-submit" id="jieji-zhuanpin" name="jieji-zhuanpin" placeholder="专拼(必选)"   data-id="0"  /><div class="cs-select-box"><span data-id="14">专车</span><span data-id="15">拼车</span><script type="text/javascript">
+//                              var zhuanpins = //;
+//                              var zhuanpinBool = true;
+//                              //console.log("zhuanpins array: "+JSON.stringify(zhuanpins, null, 2));
+//                              var zhuanpinsHashMap = {};
+//
+//                              //console.log("airports element: "+zhuanpins[0]['id']);
+//                              //console.log("airports element: "+zhuanpins[0]['title']);
+//                              for(zp of zhuanpins){
+//                                  //console.log("专拼: "+zp);
+//                                  zhuanpinsHashMap[zp['title']] = zp['id'];
+//                              }
+                              //console.log("key: JFK, value: "+zhuanpinsHashMap['JFK']);
+                          </script></div></dd></dl><input type="submit" value="接机搜索" name="jiejiBtn" class="car-search-btn clearbtn" onClick="return isValidateJieji(this)"></div><!--接车搜索--></form><form class="songjiForm" id="songjiForm" name="cusfrm" method="post" action="" ><!-- action="/customize/ajax_save" --><!--送车搜索--><div id="songji" class="st-car-search tabcontent"><dl class="search-dl"><dt class="item" style="display: none;">选择日期</dt><dd class="con"><input type="text" class="custom-default-text up-ico-day noblank2 endtime_songji songji-searchattr-submit" id="songji-date" name="songji-date" placeholder="选择日期(必选)" name="days" style="font-size:14px; " /></dd></dl><dl class="search-dl"><dt class="item" style="display: none;">选择时间</dt><dd class="con"><input type="text" class="custom-default-text up-ico-day pickTime_songji songji-searchattr-submit" id="songji-time" placeholder="选择时间(必选)" name="songji-time" style="font-size:14px;" /></dd></dl><dl class="search-dl"><dt style="display: none;">机场</dt><dd><input type="text" class="cs-text up-ico searchattr songji-searchattr songji-searchattr-submit" id="songji-airport" name="songji-airport" placeholder="机场(必选)" data-="0" /><div class="cs-select-box"><span data-id="6">纽约肯尼迪国际机场,John F. Kennedy International Airport,JFK</span><span data-id="7">纽瓦克自由国际机场,Newark Liberty International Airport,EWR</span><span data-id="43">Arcata Airport</span><span data-id="52">Manhattan</span><span data-id="53">Queens</span><span data-id="54">Bronx</span><span data-id="55">Brooklyn</span><span data-id="56">Downtown</span><span data-id="57">Arlington</span><span data-id="58">Fairfax</span><script type="text/javascript">
+//
+                          </script></div></dd></dl><dl class="search-dl"><dt style="display: none;">航班</dt><dd><input type="text" class="cs-text up-ico songji-searchattr-submit" id="songji-flightNum" name="songji-flightNum" placeholder="航班(必填)" data-id="0" /><!--                      <div class="cs-select-box">--><!--                          --><!--                          --><!--                          <span data-id="22">UA2333</span>--><!--                          --><!--                          <span data-id="23">SB1111</span>--><!--                          --><!--                          <span data-id="24">NB2333</span>--><!--                          --><!--                          <span data-id="25">Jo3333</span>--><!--                          --><!--                          <span data-id="26">RT123</span>--><!--                          --><!--                          --><!----><!--                      </div>--></dd></dl><dl class="search-dl"><dt style="display: none;">接送地点</dt><dd><input type="text" class="cs-text up-ico songji-searchattr-submit" placeholder="送机地点(必填)" id="songji-addr" name="songji-addr"  data-id="0" /><div class="cs-select-box"></div></dd></dl><dl class="search-dl"><dt style="display: none;">邮编</dt><dd><input type="text" class="cs-text up-ico searchattr songji-searchattr songji-searchattr-submit" id="songji-zipcode" name="songji-zipcode" placeholder="邮编"  data-id="0" readonly/><input type="hidden" class="cs-text up-ico youbian  searchattr" id="songji-zipcode-bool" name="songji-zipcode-bool" value="true" /><div class="cs-select-box"><span data-id="5">07307</span><span data-id="16">07093</span><span data-id="17">10024</span><span data-id="41">10019</span><span data-id="42">10036</span><span data-id="45">10002</span><span data-id="46">11355</span><span data-id="47">10460</span><span data-id="48">11220</span><span data-id="49">20005</span><script type="text/javascript"></script></div></dd></dl><!--              <dl class="search-dl">--><!--                  <dt class="item" style="display: none;">选择日期</dt>--><!--                  <dd class="con"><input type="text" class="custom-default-text up-ico-day noblank2 endtime_songji songji-searchattr-submit" id="songji-date" name="songji-date" placeholder="选择日期(必选)" name="days" style="font-size:14px; " /></dd>--><!--              </dl>--><!----><!--              <dl class="search-dl">--><!--                  <dt class="item" style="display: none;">选择时间</dt>--><!--                  <dd class="con"><input type="text" class="custom-default-text up-ico-day pickTime_songji songji-searchattr-submit" id="songji-time" placeholder="选择时间(必选)" name="songji-time" style="font-size:14px;" /></dd>--><!--              </dl>--><dl class="search-dl"><!--                <dt></dt>--><dd><input type="text" class="cs-text up-ico searchattr songji-searchattr songji-searchattr-submit" id="songji-zhuanpin" name="songji-zhuanpin" placeholder="专拼(必选)"   data-id="0"  /><div class="cs-select-box"><span data-id="14">专车</span><span data-id="15">拼车</span><script type="text/javascript"></script></div></dd></dl><!--              <div class="car-search-btn-songji"><a href="javascript:;">送机搜索</a></div>--><input type="submit" value="送机搜索" name="songjiBtn" class="car-search-btn-songji" onClick="return isValidateSongji(this)"></div></form></div><!--送车搜索--><script type="text/html" id="tpl_car"><ul>
           {{each list as value i}}
             <li {{if (i+1)%4==0}}class="mr_0"{{/if}}><i class="hot-ico"></i><a class="pic" href="{{value.url}}" target="_blank"><img src="{{value.litpic}}" alt="{{value.title}}" /></a><p class="tit"><a href="{{value.url}}" target="_blank">{{value.title}}</a></p><p class="data"><em>满意度 {{if value.satisfyscore}}{{value.satisfyscore}}%{{/if}}</em>
                 {{if value.price!=''}}
@@ -88,7 +114,7 @@ s:40120:"<!doctype html><html><head><meta charset="utf-8"><title>租车-美国�
                     }
                 })
             })
-        </script><div class="comment-list-box"><div class="com-tit"><h3>客户点评</h3><p>已为<span>18</span>位客户提供旅游租车服务</p></div><div class="com-conbox"><dl><dt><a href="javascript:;" target="_blank"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/cbef3da44d7da14548603e1328bed370_180x110.jpg" /></a></dt><dd><p class="bt"><a href="/cars/show_3.html" target="_blank">奔驰GL450</a><span class="price"></span></p><p class="user"><span class="name">nanase</span><span class="date">2016-10-29</span></p><p class="txt">很舒适啦啦啦啦啦啦啦啦啦啦</p><p class="score"><em>综合评分：</em><span><i style=" width:100%"></i></span></p></dd></dl><dl><dt><a href="javascript:;" target="_blank"><img src="/res/images/grey.gif" st-src="http://www.usyilu.com/uploads/2016/1027/781437329e752758a29ecb00b9f2d983_180x110.jpg" /></a></dt><dd><p class="bt"><a href="/cars/show_1.html" target="_blank">凯迪拉克</a><span class="price"></span></p><p class="user"><span class="name">nanamin</span><span class="date">2016-10-29</span></p><p class="txt">哈哈哈哈哈哈还好</p><p class="score"><em>综合评分：</em><span><i style=" width:100%"></i></span></p></dd></dl></div></div></div></div><link type="text/css" href="/min/?f=/usertpl/dw_st16239_no198_index/css/footer.css" rel="stylesheet"  />
+        </script></div></div><link type="text/css" href="/min/?f=/usertpl/dw_st16239_no198_index/css/footer.css" rel="stylesheet"  />
 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">--><div class="st-help"><div class="wm-1200"><div class="help-lsit"><dl><dt><a href="/help/index_1.html" rel="nofollow">关于我们</a></dt><dd><a href="/help/show_51.html" target="_blank" rel="nofollow">发展历程</a><a href="/help/show_52.html" target="_blank" rel="nofollow">加入我们</a><a href="/help/show_53.html" target="_blank" rel="nofollow">联系我们</a><a href="/help/show_27.html" target="_blank" rel="nofollow">专业团队</a><a href="/help/show_3.html" target="_blank" rel="nofollow">美国一路简介</a></dd></dl><dl><dt><a href="/help/index_10.html" rel="nofollow">服务条款</a></dt><dd><a href="/help/show_48.html" target="_blank" rel="nofollow">客户协议</a><a href="/help/show_16.html" target="_blank" rel="nofollow">预订酒店的问题</a><a href="/help/show_49.html" target="_blank" rel="nofollow">签订旅游合同</a><a href="/help/show_1.html" target="_blank" rel="nofollow">纯玩是什么意思？</a><a href="/help/show_8.html" target="_blank" rel="nofollow">外地游客怎样付款？</a></dd></dl><dl><dt><a href="/help/index_11.html" rel="nofollow">签订合同</a></dt><dd><a href="/help/show_9.html" target="_blank" rel="nofollow">定金支付比例如何？</a><a href="/help/show_7.html" target="_blank" rel="nofollow">本地游客如何付款？</a><a href="/help/show_10.html" target="_blank" rel="nofollow">对于支付团款的建议</a></dd></dl><dl><dt><a href="/help/index_12.html" rel="nofollow">帮助中心</a></dt><dd><a href="/help/show_47.html" target="_blank" rel="nofollow">旅游保险</a><a href="/help/show_45.html" target="_blank" rel="nofollow">常见问题</a><a href="/help/show_46.html" target="_blank" rel="nofollow">旅美需知</a></dd></dl><div class="st-wechat"><img src="/uploads/main/allimg/20161123/20161123005148.png" width="100" height="100" /><span>微信扫一扫，<br />优惠多多！</span></div></div></div></div><!--帮助 扫码--><div class="st-help"><ul class="wm-1200 foot-ad"><ul class="foot-nav-pills" style="text-align: center"><li class="foot-nav-item foot-nav-item-certificate">
                 企业认证
             </li><li class="foot-nav-item foot-nav-item-certificate">
@@ -99,8 +125,8 @@ s:40120:"<!doctype html><html><head><meta charset="utf-8"><title>租车-美国�
                 |
             </li><li class="foot-nav-item foot-nav-item-otherlinks">
                 友情链接
-            </li></ul><ul class="foot-certificate" style="text-align: center"><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/IATA2.jpg" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/NTA.gif" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/DOT.jpg" ></li><li class="foot-certificate-item" id="" ><img src="http://usyilu.com/uploads/2016/1130/CHP.jpg" ></li></ul><ul class="foot-coop" style="text-align: center"><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/中国国旅.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/惠租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/携程.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/港中旅.png" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/租租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/锦江旅游.gif" ></li><li class="foot-coop-item" id="" ><img src="http://usyilu.com/uploads/2016/1201/飞猪.jpg" ></li></ul><ul class="foot-otherlinks" style="text-align: center"><li class="foot-otherlinks-item" id="" ><a target="_blank"  href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="http://www.gogogous.com">xxx旅行社</a></li></ul></div></div><div class="st-footer"><div class="wm-1200"><div class="st-foot-menu"><a href="/servers/index_1.html" target="_blank" rel="nofollow">一日游</a><a href="/servers/index_4.html" target="_blank" rel="nofollow">精品多日游</a><a href="/servers/index_2.html" target="_blank" rel="nofollow">自驾游</a><a href="/servers/index_11.html" target="_blank" rel="nofollow">热门景点</a><a href="/servers/index_10.html" target="_blank" rel="nofollow">友情链接</a></div><!--底部导航--><div class="st-foot-edit"><div class="foot_con"><p>
-        经营许可证号：XXX　业务接待地址：美国纽约州纽约XXXX</p></div></div><!--网站底部介绍--><p></p></div></div><script src="/plugins/qq_kefu/public/js/qqkefu.js"></script><!-- 编辑器内容 --><div class="st-link"><div class="wm-1200"><div class="st-link-list"><strong>友情链接：</strong><div class="child"><a href="http://www.gogogous.com" target="_blank">佳晨旅游</a></div></div></div></div><!--友情链接--><script>
+            </li></ul><ul class="foot-certificate" style="text-align: center"><li class="foot-certificate-item" id="" ><img src="https://usyilu.com/uploads/2016/1130/IATA2.jpg" ></li><li class="foot-certificate-item" id="" ><img src="https://usyilu.com/uploads/2016/1130/NTA.gif" ></li><li class="foot-certificate-item" id="" ><img src="https://usyilu.com/uploads/2016/1130/DOT.jpg" ></li><li class="foot-certificate-item" id="" ><img src="https://usyilu.com/uploads/2016/1130/CHP.jpg" ></li></ul><ul class="foot-coop" style="text-align: center"><li class="foot-coop-item" id="" ><img src="https://usyilu.com/uploads/2016/1201/中国国旅.png" ></li><li class="foot-coop-item" id="" ><img src="https://usyilu.com/uploads/2016/1201/惠租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="https://usyilu.com/uploads/2016/1201/携程.png" ></li><li class="foot-coop-item" id="" ><img src="https://usyilu.com/uploads/2016/1201/港中旅.png" ></li><li class="foot-coop-item" id="" ><img src="https://usyilu.com/uploads/2016/1201/租租车.jpg" ></li><li class="foot-coop-item" id="" ><img src="https://usyilu.com/uploads/2016/1201/锦江旅游.gif" ></li><li class="foot-coop-item" id="" ><img src="https://usyilu.com/uploads/2016/1201/飞猪.jpg" ></li></ul><ul class="foot-otherlinks" style="text-align: center"><li class="foot-otherlinks-item" id="" ><a target="_blank"  href="https://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="https://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="https://www.gogogous.com">xxx旅行社</a></li><li class="foot-otherlinks-item" id="" ><a target="_blank" href="https://www.gogogous.com">xxx旅行社</a></li></ul></div></div><div class="st-footer"><div class="wm-1200"><div class="st-foot-menu"><a href="/servers/index_1.html" target="_blank" rel="nofollow">一日游</a><a href="/servers/index_4.html" target="_blank" rel="nofollow">精品多日游</a><a href="/servers/index_2.html" target="_blank" rel="nofollow">自驾游</a><a href="/servers/index_11.html" target="_blank" rel="nofollow">热门景点</a><a href="/servers/index_10.html" target="_blank" rel="nofollow">友情链接</a></div><!--底部导航--><div class="st-foot-edit"><div class="foot_con"><p>
+        经营许可证号：XXX　业务接待地址：美国纽约州纽约XXXX</p></div></div><!--网站底部介绍--><!--        <p></p>--></div></div><!--<script src="/plugins/qq_kefu/public/js/qqkefu.js"></script>--><!-- 编辑器内容 --><div class="st-link"><div class="wm-1200"><div class="st-link-list"><strong>友情链接：</strong><div class="child"><a href="http://www.gogogous.com" target="_blank">佳晨旅游</a></div></div></div></div><!--友情链接--><script>
     $(".foot-nav-item-certificate").hover(
         function () {
             $(this).addClass('hover');
@@ -151,295 +177,82 @@ s:40120:"<!doctype html><html><head><meta charset="utf-8"><title>租车-美国�
     $(".foot-otherlinks-item").click(function() {
         $(this).css('color', '#fff');
     });
-</script><!-- <script type="text/javascript" src="/tools/js/DatePicker/jquery-ui-timepicker/jquery.ui.timepicker.js" />--><script>
-     // This example displays an address form, using the autocomplete feature
-     // of the Google Places API to help users fill in the information.
-     // This example requires the Places library. Include the libraries=places
-     // parameter when you first load the API. For example:
-     // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-    var zipcodeValid = true;
-//     var placeSearch, autocomplete1, autocomplete2, placeValid;
-//     var componentForm = {
-//
-//         postal_code: 'short_name'
-//
-//     };
-//
-//     function initAutocomplete() {
-//         // Create the autocomplete object, restricting the search to geographical
-//         // location types.
-//         autocomplete1 = new google.maps.places.Autocomplete(
-//             /** @type {!HTMLInputElement} */(document.getElementById('autocomplete1')),
-//             {types: ['geocode']});
-//
-//         autocomplete2 = new google.maps.places.Autocomplete(
-//             /** @type {!HTMLInputElement} */(document.getElementById('autocomplete2')),
-//             {types: ['geocode']});
-//
-//         // When the user selects an address from the dropdown, populate the address
-//         // fields in the form.
-//         autocomplete1.addListener('place_changed', fillInAddress1);
-//         autocomplete2.addListener('place_changed', fillInAddress2);
-//     }
-//
-//     function fillInAddress1() {
-//         // Get the place details from the autocomplete object.
-//         var place = autocomplete1.getPlace();
-//         console.log("user select place: " + JSON.stringify(place));
-//         console.log("user select components: " + place.address_components);
-//         if(place.address_components && place.address_components !== "null" && place.address_components !== "undefined") {
-//             console.log("place is valid");
-//
-//
-//             // Get each component of the address from the place details
-//             // and fill the corresponding field on the form.
-//             for (var i = 0; i < place.address_components.length; i++) {
-//                 var addressType = place.address_components[i].types[0];
-//
-//                 if (addressType == 'postal_code') {
-//                     console.log("component val: " + place.address_components[i][componentForm[addressType]]);
-//                     var val = place.address_components[i][componentForm[addressType]];
-//                     document.getElementById('zipcode_jie').value = val;
-//                 }
-//             }
-//             placeValid = true;
-//         }else{
-//             console.log("place not valid");
-//             placeValid = false;
-//             return false;
-//         }
-//     }
-//
-//     function fillInAddress2() {
-//         // Get the place details from the autocomplete object.
-//         var place = autocomplete2.getPlace();
-//
-//         // Get each component of the address from the place details
-//         // and fill the corresponding field on the form.
-//         for (var i = 0; i < place.address_components.length; i++) {
-//             var addressType = place.address_components[i].types[0];
-//
-//             if(addressType=='postal_code'){
-//                 console.log("component val: "+place.address_components[i][componentForm[addressType]]);
-//                 var val = place.address_components[i][componentForm[addressType]];
-//                 document.getElementById('zipcode_song').value = val;
-//             }
-//         }
-//     }
-//
-//     // Bias the autocomplete object to the user's geographical location,
-//     // as supplied by the browser's 'navigator.geolocation' object.
-//     function geolocate1() {
-//         if (navigator.geolocation) {
-//             navigator.geolocation.getCurrentPosition(function(position) {
-//                 var geolocation = {
-//                     lat: position.coords.latitude,
-//                     lng: position.coords.longitude
-//                 };
-//                 var circle = new google.maps.Circle({
-//                     center: geolocation,
-//                     radius: position.coords.accuracy
-//                 });
-//                 autocomplete1.setBounds(circle.getBounds());
-//                 autocomplete2.setBounds(circle.getBounds());
-//             });
-//         }
-//     }
-//
-//
-//     $("#autocomplete1").focus(function() {
-//
-//         console.log('in');
-//
-//     }).blur(function() {
-//
-//         console.log('out');
-//
-//         console.log("out get current address: "+ document.getElementById('autocomplete1').value);
-//         fillInAddress1();
-//     });
- </script><!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeQdRCMmFcS4EBmFpGk-hzF-dm-9p6gvU&libraries=places&callback=initAutocomplete" async defer></script>--><script>
-     $(function(){
-         //租车首页焦点图
-         $('.st-car-slideBox').slide({
- mainCell:'.bd ul',
- effect:"fold",
-interTime: 5000,
-delayTime: 500,
-autoPlay:true,
-                        switchLoad:"original-src"
- })
-         //租车下拉选择
-         $('.cs-text').click(function(){
-             $('.cs-select-box').hide();
-             var selectBox =$(this).parent().find('.cs-select-box');
-             if(selectBox.css("display")=="none"){
-                 $(this).removeClass('up-ico').addClass('down-ico')
-                 $(this).next().slideDown("fast");
-             }else{
-                 $(this).next().slideUp("fast");
-                 $(this).removeClass('down-ico').addClass('up-ico');
-                 selectBox.hide();
-             }
-         });
-         $(".cs-select-box span").click(function(){
-             $(this).parent().prev().removeClass('down-ico').addClass('up-ico')
-             var txt = $(this).text();
-             $(this).parent().prev().val(txt);
-             var value = $(this).attr("data-id");
-             $(this).parent().prev().attr('data-id',value);
-             $(this).parent().hide();
-         });
-         //接机搜索
-         $(".car-search-btn").click(function(){
-             if (checkForm()) {
-                 console.log("checkForm return true");
-                 var carkind = $(".carkind").attr('data-id');
-                 var attrid = '';
-                 var attrArr = [];
-                 console.log("carkind: " + carkind);
-                 $('.searchattr').each(function (i, obj) {
-                     attrArr.push($(obj).attr('data-id'))
-                 })
-                 attrid = attrArr.join('_', attrArr);
-                 console.log("carkind: " + attrid);
-//             var url = SITEURL+'cars/all-'+carkind+'-'+attrid;
-                 var url = SITEURL + 'cars/all-' + carkind + '-' + attrid;
-                 location.href = url;
-                 console.log("carkind: " + carkind);
-                 console.log("attrid: " + attrid);
-             }else {
-                 console.log("checkForm return false");
-             }
-         })
-         //送机搜索
-         $(".car-search-btn-songji").click(function(){
-             if (checkForm()) {
-                 console.log("checkForm return true");
-                 var carkind = $(".carkind").attr('data-id');
-                 var attrid = '';
-                 var attrArr = [];
-                 console.log("carkind: " + carkind);
-                 $('.searchattr').each(function (i, obj) {
-                     attrArr.push($(obj).attr('data-id'))
-                 })
-                 attrid = attrArr.join('_', attrArr);
-                 console.log("carkind: " + attrid);
-//             var url = SITEURL+'cars/all-'+carkind+'-'+attrid;
-                 var url = SITEURL + 'cars/all-' + carkind + '-' + attrid;
-                 location.href = url;
-                 console.log("carkind: " + carkind);
-                 console.log("attrid: " + attrid);
-             }else {
-                 console.log("checkForm return false");
-             }
-         })
-         $(document).mouseup(function(e){
-             var _con = $('.cs-select-box');   // 设置目标区域
-             if(!_con.is(e.target) && _con.has(e.target).length === 0){ // Mark 1
-                 $('.cs-select-box').hide();
-             }
-         });
-     })
-     function checkForm() {
-         $(".noblank").each(function (index, element) {
-             var val = $(element).val();
-             console.log("val: " + val);
-             val = $.trim(val);
-             document.cookie = "daytime="+val;
-             //alert(document.cookie);
-             console.log("after trim val: " + val);
-             var date_regex = /^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/ ;
-             console.log("regre date test: "+ date_regex.test(val));
-             if (!val || !(date_regex.test(val))) {
-                 var offset = $(element).offset();
-                 $(window).scrollTop(offset.top - 100);
-                 $(element).css("border", "1px solid red");
-                 isvalidateDate = false;
-//                 return false;
-             }
-             else {
-                 $(element).css("border", "1px solid #dcdcdc");
-                 isvalidateDate = true;
-             }
-         });
-         $(".pickTime").each(function (index, element) {
-             var val = $(element).val();
-             console.log("pickTime: " + val);
-             val = $.trim(val);
-             document.cookie = "pickTime="+val;
-             alert(document.cookie);
-             console.log("after trim pickTime: " + val);
-             var time_regex = /^(0?[1-9]|1[012])(:[0-5]\d)[APap][mM]$/;
-             console.log("regre time test: "+ time_regex.test(val));
-             if (!val || !(time_regex.test(val))) {
-                 console.log("pickTime val is not valid");
-                 var offset = $(element).offset();
-                 $(window).scrollTop(offset.top - 100);
-                 $(element).css("border", "1px solid red");
-                 isvalidateTime = false;
-                 //return false;
-             }
-             else {
-                 console.log("pickTime val is valid");
-                 $(element).css("border", "1px solid #dcdcdc");
-                 //return true;
-                 isvalidateTime = true;
-             }
-//             console.log("pickTime Finish false");
-//             return false;
-         });
-         
-         console.log("return true here: " + isvalidateDate +", " +isvalidateTime + ", "+zipcodeValid);
-         if(!isvalidateDate){
-             alert("您输入的日期不正确, 请重新填写正确日期。");
-             return false;
-         }else if(!isvalidateTime){
-             alert("您输入的时间不正确, 请重新填写正确时间。");
-             return false;
-         }else if(!zipcodeValid){
-             alert("您输入的地址不正确, 请重新填写正确地址。");
-             $('#autocomplete1').css("border", "1px solid red");
-             return false;
-         }
-         return (isvalidateDate & isvalidateTime & zipcodeValid);
-     }
+</script><script type="text/javascript" src="/tools/js/car-common.js"></script><link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><script src="https://code.jquery.com/jquery-1.12.4.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script type="text/javascript" src="/tools/js/notify.min.js"></script><script>
+     $.notify.defaults({autoHideDelay:2500});
  </script><script>
-    //结束时间
-    $(".endtime_jieji").click(function(){
-        WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd',minDate:'%y-%M-%d'});
-        console.log("end time pick");
-    })
-    $(".endtime_songji").click(function(){
-        WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd',minDate:'%y-%M-%d'});
-        console.log("end time pick");
-    })
-    //结束时间2
-//    $('#timepicker').timepicker();
-//    $(document).ready(function() {
-//        $('#timepicker').timepicker( {
-//            showAnim: 'blind'
-//        });
-//    });
-    $('#jieji-time-inputs').timepicker({ 'step': 15 });
-    $('#songji-time-inputs').timepicker({ 'step': 15 });
-    document.getElementById("defaultOpen").click();
-    function openCity(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+//<----------------------------------------------------------------------->
+//<--               This is the google autocompletion API               -->
+//<----------------------------------------------------------------------->  // This example displays an address form, using the autocomplete feature
+    // of the Google Places API to help users fill in the information.
+    // This example requires the Places library. Include the libraries=places
+    // parameter when you first load the API. For example:
+    // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+    var placeSearch, autocompleteJ;
+    var componentForm = {
+      // street_number: 'short_name',
+      // route: 'long_name',
+      // locality: 'long_name',
+      // administrative_area_level_1: 'short_name',
+      // country: 'long_name',
+      postal_code: 'short_name'
+    };
+    function initAutocomplete() {
+        // Create the autocomplete object, restricting the search to geographical
+        // location types with location bias.
+    autocompleteJ = new google.maps.places.Autocomplete(
+                /** @type {!HTMLInputElement} */(document.getElementById('jieji-addr')),
+                {types: ['geocode']});
+            // When the user selects an address from the dropdown, populate the address
+            // fields in the form.
+            autocompleteJ.addListener('place_changed', fillInAddress);
+      }
+    function fillInAddress() {
+        // Get the place details from the autocomplete object.
+        var place = autocompleteJ.getPlace();
+ /* 
+        for (var component in componentForm) {
+          document.getElementById(component).value = '';
+          document.getElementById(component).disabled = false;
+        } */
+        if(place.address_components && place.address_components !== "null" && place.address_components !== "undefined") {
+            console.log("place is valid");
+        // Get each component of the address from the place details
+        // and fill the corresponding field on the form.
+        for (var i = 0; i < place.address_components.length; i++) {
+          var addressType = place.address_components[i].types[0];
+          if (addressType == 'postal_code') {
+          // if (componentForm[addressType]) {
+            var val = place.address_components[i][componentForm[addressType]];
+            // document.getElementById(addressType).value = val;
+            document.getElementById('jieji-zipcode').value = val;
+          }
         }
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        // Show the current tab, and add an "active" class to the link that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
+        placeValid = true;
     }
-</script></body></html>
+    else{
+        console.log("place not valid");
+        placeValid = false;
+    }
+      }
+   // Bias the autocomplete object to the user's geographical location,
+      // as supplied by the browser's 'navigator.geolocation' object.
+      function geolocate() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var geolocation = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            var circle = new google.maps.Circle({
+              center: geolocation,
+              radius: position.coords.accuracy
+            });
+            autocomplete.setBounds(circle.getBounds());
+          });
+        }
+      }
+  
+ </script><script src="http://maps.google.cn/maps/api/js?key=AIzaSyAeQdRCMmFcS4EBmFpGk-hzF-dm-9p6gvU&libraries=places&callback=initAutocomplete"
+     async defer></script><script type="text/javascript"src="/min/?f=/res/js/delayLoading.min.js"></script>
+</body></html>
 ";

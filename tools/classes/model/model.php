@@ -138,7 +138,7 @@ class Model_Model extends ORM
         $sql = "SELECT a.typeid,a.shortname,a.url,b.pinyin,b.correct,b.issystem FROM `sline_nav` a ";
         $sql.= "INNER JOIN `sline_model` b ON a.typeid=b.id ";
         $sql.= "WHERE a.isopen=1 AND a.webid=0 AND a.linktype=1 ";
-        $sql.= "AND a.typeid not in(4,6,7,9,10,11,12,14,101) ";
+        $sql.= "AND a.typeid not in(4,6,7,9,10,11,12,101) ";
         $sql.= "ORDER BY a.displayorder ASC";
         $arr = DB::query(1,$sql)->execute()->as_array();
         foreach($arr as &$r)

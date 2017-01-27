@@ -39,15 +39,18 @@
           $tmp2 = substr($actual_link, -2, 2);
 
                 ?>
-              {if $tmp == '27' or $tmp == '18'}
+              {if $tmp == '27' or $tmp == '18' or $tmp == '28'}
+
+
                   {loop $grouplist $group}
                   <dl class="customizeNav">
 
                           {if $group['attrname'] == '旅行方式'}
+
                               {st:attr action="query" flag="childitem" typeid="$typeid" groupid="$group['id']" return="attrlist"}
                               {loop $attrlist $attr}
 
-                                  {if $attr['attrname'] == '小团' or $attr['attrname'] == '一日游'} 
+                                  {if $attr['attrname'] == '小团' or $attr['attrname'] == '一日游' or $attr['attrname'] == '大巴团'} 
                                     <div class="item">  <a href="{Model_Line::get_search_url($attr['id'],'attrid',$param)}" {if
                                                          Common::check_in_attr($param['attrid'],$attr['id'])!==false}class="on"{/if}>{$attr['attrname']}</a>
                                        
@@ -105,8 +108,18 @@
                   if ($item['itemname'] == "一日游"){
                       $choose_oneDayTrip = $item['itemname'];
                   }
+                  if ($item['itemname'] == "大巴团"){
+                      $choose_busTrip = $item['itemname'];
+                  }
 
                   ?>
+
+                  <script>
+                      //highlight choosen group
+
+
+                  </script>
+
               	    <span class="chooseitem" data-url="{$item['url']}">{$item['itemname']}<i></i></span>
                 {/loop}
                 <a href="javascript:;" class="clearc">清空筛选条件 </a>
@@ -214,7 +227,7 @@
                 {loop $grouplist $group}
                   <dl class="type">
                       {if $group['attrname'] == '车型选择'}
-                          {if $choose_xiaotuan != '小团' and $choose_oneDayTrip != '一日游' }
+                          {if $choose_xiaotuan != '小团' and $choose_oneDayTrip != '一日游' and $choose_busTrip != '大巴团' }
                           <dt>{$group['attrname']}：</dt>
                             <dd>
                                 <p>

@@ -81,8 +81,8 @@
 <div class="big bg-white">
     <div class="wm-1200">
             <div class="images">
-                <img class="single-ad" src="http://usyilu.com/uploads/2016/1123/7eec8aae940cb60883e2a3d85e8d4967_1920x730.jpg" >
-                <img class="single-ad" src="http://usyilu.com/uploads/2016/1123/633d904480a10da60330ba520bce2558_1920x730.jpg" alt="">
+                <img class="single-ad" src="https://www.usyilu.com/uploads/2016/1123/7eec8aae940cb60883e2a3d85e8d4967_1920x730.jpg" >
+                <img class="single-ad" src="https://www.usyilu.com/uploads/2016/1123/633d904480a10da60330ba520bce2558_1920x730.jpg" alt="">
             </div>
     </div>
 </div>
@@ -114,13 +114,13 @@
                             <div class="img-link-buttons">
                                 <!--   Indicates a dangerous or potentially negative action -->
                                 {if $ad['kindname'] == '拉斯维加斯'}
-                                    <button onclick="location.href='http://www.usyilu.com/cars/{$ad['pinyin']}/';" type="button" class="btn btn-danger btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/cars/{$ad['pinyin']}/';" type="button" class="btn btn-danger btn-lg cusmize-btn">
                                     <p>拉斯接送机</p>
                                 {elseif $ad['kindname'] == '纽约' or $ad['kindname'] == '黄石'}
-                                    <button onclick="location.href='http://www.usyilu.com/cars/{$ad['pinyin']}/';" type="button" class="btn btn-danger btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/cars/{$ad['pinyin']}/';" type="button" class="btn btn-danger btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}接送机</p>
                                 {else}
-                                    <button onclick="location.href='http://www.usyilu.com/cars/{$ad['pinyin']}/';" type="button" class="btn btn-danger btn-lg three-words-city cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/cars/{$ad['pinyin']}/';" type="button" class="btn btn-danger btn-lg three-words-city cusmize-btn">
                                     <p>{$ad['kindname']}接送机</p>
                                 </button>
                                 {/if}
@@ -128,72 +128,72 @@
 
                                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                                 {if $ad['kindname'] == '拉斯维加斯'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-79-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-79-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>拉斯落地参团</p>
                                 {elseif $ad['kindname'] == '纽约'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-75-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-75-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}落地参团</p>
                                 {elseif $ad['kindname'] == '华盛顿'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-77-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-77-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}落地参团</p>
                                 {elseif $ad['kindname'] == '波士顿'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-76-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-76-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}落地参团</p>
                                 {elseif $ad['kindname'] == '黄石'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-78-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-78-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}落地参团</p>
                                 {elseif $ad['kindname'] == '洛杉矶'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-80-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-80-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}落地参团</p>
                                 {elseif $ad['kindname'] == '旧金山'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-81-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-81-27-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                             <p>{$ad['kindname']}落地参团</p>
                                 </button>
                                 {/if}
 
                                 <!-- Indicates caution should be taken with this action -->
                                 {if $ad['kindname'] == '拉斯维加斯'}
-                                    <button onclick="location.href='http://www.usyilu.com/cars/{$ad['pinyin']}/';" type="button" class="btn btn-warning btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/cars/{$ad['pinyin']}/';" type="button" class="btn btn-warning btn-lg cusmize-btn">
                                     <p>拉斯租车</p>
 
                                 {else}
-                                    <button onclick="location.href='http://www.usyilu.com/cars/{$ad['pinyin']}/';" type="button" class="btn btn-warning btn-lg cusmize-btn ">
+                                    <button onclick="location.href='https://www.usyilu.com/cars/{$ad['pinyin']}/';" type="button" class="btn btn-warning btn-lg cusmize-btn ">
                                     <p>{$ad['kindname']}租车</p>
                                 </button>
                                 {/if}
 
                                 <!-- Contextual button for informational alert messages -->
                                 {if $ad['kindname'] == '拉斯维加斯'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/{$ad['pinyin']}-0-0-0-0-0-5-1';" type="button" class="btn btn-info btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/{$ad['pinyin']}-0-0-0-0-0-5-1';" type="button" class="btn btn-info btn-lg cusmize-btn">
                                     <p>拉斯自驾</p>
                                 
                                 {else}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/{$ad['pinyin']}-0-0-0-0-0-5-1';" type="button" class="btn btn-info btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/{$ad['pinyin']}-0-0-0-0-0-5-1';" type="button" class="btn btn-info btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}自驾</p>
                                 </button>
                                 {/if}
 
                                 <!-- Indicates a successful or positive action -->
                                 {if $ad['kindname'] == '拉斯维加斯'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-79-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-79-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>拉斯小团</p>
                                 {elseif $ad['kindname'] == '纽约'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-75-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-75-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}小团</p>
                                 {elseif $ad['kindname'] == '华盛顿'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-77-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-77-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}小团</p>
                                 {elseif $ad['kindname'] == '波士顿'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-76-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-76-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}小团</p>
                                 {elseif $ad['kindname'] == '黄石'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-78-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-78-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}小团</p>
                                 {elseif $ad['kindname'] == '洛杉矶'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-80-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-80-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}小团</p>
                                 {elseif $ad['kindname'] == '旧金山'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/all-0-0-0-0-81-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/lines/all-0-0-0-0-81-18-1/';" type="button" class="btn btn-success btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}小团</p>
 
                                 </button>
@@ -201,13 +201,13 @@
 
                                 <!-- Secondary, outline button -->
                                 {if $ad['kindname'] == '拉斯维加斯'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/{$ad['pinyin']}/';" type="button" class="btn btn-secondary btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/customize/';" type="button" class="btn btn-secondary btn-lg cusmize-btn">
                                     <p>拉斯包车</p>
                                 {elseif $ad['kindname'] == '纽约'}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/{$ad['pinyin']}/';" type="button" class="btn btn-secondary btn-lg cusmize-btn">
+                                    <button onclick="location.href='https://www.usyilu.com/customize/';" type="button" class="btn btn-secondary btn-lg cusmize-btn">
                                     <p>{$ad['kindname']}包车</p>
                                 {else}
-                                    <button onclick="location.href='http://www.usyilu.com/lines/{$ad['pinyin']}/';" type="button" class="btn btn-secondary btn-lg cusmize-btn ">
+                                    <button onclick="location.href='https://www.usyilu.com/customize/';" type="button" class="btn btn-secondary btn-lg cusmize-btn ">
                                     <p>{$ad['kindname']}包车</p>
                                 </button>
                                 {/if}

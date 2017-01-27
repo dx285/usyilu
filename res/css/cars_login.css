@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.step2-cls {
+	margin: 20px 40px;
+}
+
+#loginBtn {
+	margin: 0 auto;
+	display: block;
+}

@@ -161,6 +161,9 @@ class Controller_Pc_Line extends Stourweb_Controller
         }
         $productId = intval(Arr::get($_GET, 'lineid'));
         $suitId = intval(Arr::get($_GET, 'suitid'));
+        $adultnum = intval(Arr::get($_GET, 'adultnum'))?intval(Arr::get($_GET, 'adultnum')):1;
+        $remark = Arr::get($_GET, 'remark');
+        $orderSn = Arr::get($_GET, 'orderSn');
         //如果参数为空,则返回上级页面
         if (empty($productId) || empty($suitId))
         {
@@ -188,6 +191,13 @@ class Controller_Pc_Line extends Stourweb_Controller
         //积分抵现所需积分
         $needjifen = $GLOBALS['cfg_exchange_jifen'] * $suitInfo['jifentprice']; //所需积分
 
+        // submit tourers to the member account
+        $memberId = $userInfo ? $userInfo['mid'] : 0;
+        if($memberId) {
+	        $orderInfo = Model_Member_Order::get_order_by_ordersn($orderSn);
+		    Model_Member_Order_Tourer::add_tourer_pc($orderInfo['id'], $tourer, $memberId);
+        }
+        
         $this->assign('info', $info);
         $this->assign('suitInfo', $suitInfo);
         $this->assign('suitPrice', $suitPrice);
@@ -195,13 +205,270 @@ class Controller_Pc_Line extends Stourweb_Controller
         $this->assign('userInfo', $userInfo);
         $this->assign('needjifen', $needjifen);
         $this->assign('frmcode', $code);
+        $this->assign('adult_num', $adultnum);
+        $this->assign('remark', $remark);
         $this->display('line/book');
     }
+    
+    
+    /*
+ 	 * 创建订单前检查是否已登陆
+ 	 * */
+    public function action_createrev()
+    {
+    	echo "<script>console.log('line-create called');</script>";
+    	$frmCode = Arr::get($_POST, 'frmcode');
+        $checkCode = strtolower(Arr::get($_POST, 'checkcode'));
+        //验证码验证
+        if (!Captcha::valid($checkCode) || empty($checkCode))
+        {
+            exit();
+        }
+        //安全校验码验证
+        $orgCode = Common::session('code');
+        if ($orgCode != $frmCode)
+        {
+            exit();
+        }
+        //会员信息
+        $userInfo = Product::get_login_user_info();
+        $memberId = $userInfo ? $userInfo['mid'] : 0;//会员id
+        $webid = intval(Arr::get($_POST, 'webid'));//网站id
+        $adultNum = intval(Arr::get($_POST, 'adult_num'));//成人数量
+        $childNum = intval(Arr::get($_POST, 'child_num'));//小孩数量
+        $oldNum = intval(Arr::get($_POST, 'old_num'));//老人数量
+        $suitId = intval(Arr::get($_POST, 'suitid'));//套餐id
+        $lineId = intval(Arr::get($_POST, 'lineid'));//线路id
+        $useDate = Arr::get($_POST, 'usedate');//出发日期
+        $linkMan = Arr::get($_POST, 'linkman');//联系人姓名
+        $linkTel = Arr::get($_POST, 'linktel');//联系人电话
+        $linkEmail = Arr::get($_POST, 'linkemail');//联系人邮箱
+        $remark = Arr::get($_POST, 'remark');//订单备注
+        $roomBalanceNum = intval(Arr::get($_POST, 'roombalance_num'));//单房差数量
+        $roomBalance_Paytype = intval(Arr::get($_POST, 'roombalance_paytype'));//单房差支付方式.
+        
+        $isneedBill = intval(Arr::get($_POST, 'isneedbill'));//是否需要发票
+        $billTitle = Arr::get($_POST, 'bill_title');//发票抬头
+        $billReceiver = Arr::get($_POST, 'bill_receiver');//发票接收人
+        $billPhone = Arr::get($_POST, 'bill_phone');//发票联系人电话
+        $billProv = Arr::get($_POST, 'bill_prov');//发票联系人省份
+        $billCity = Arr::get($_POST, 'bill_city');//发票联系人城市
+        $billAddress = Arr::get($_POST, 'bill_address');//发票联系人地址
+        
+        $payType = Arr::get($_POST, 'paytype');//支付方式
+        $insuranceCode = Arr::get($_POST, 'insurance_code');//选择的保险
+        $useJifen = intval(Arr::get($_POST, 'usejifen'));//是否使用积分
+        
+        //游客信息读取
+        $t_name = Arr::get($_POST, 't_name');
+        $t_cardtype = Arr::get($_POST, 't_cardtype');
+        $t_cardno = Arr::get($_POST, 't_cardno');
+	
+        //游客信息读取
+        $tourer = array();
+        $totalNum = $adultNum + $childNum + $oldNum;
+        for ($i = 0; $i < $totalNum; $i++)
+        {
+            if(empty($t_name[$i]))
+            {
+                continue;
+            }
+            $tourer[] = array(
+                'name' => $t_name[$i],
+                'cardtype' => $t_cardtype[$i],
+                'cardno' => $t_cardno[$i]
+            );
+        }
+        
+        //优惠券
+        $croleid = intval(Arr::get($_POST, 'couponid'));
+        //套餐信息
+        $suitInfo = Model_Line_Suit::suit_info($suitId);
+        //产品信息
+        $info = ORM::factory('line', $lineId)->as_array();
+        //套餐按出发日期价格
+        $suitPrice = Model_Line_Suit::suit_price($suitId, $useDate);
+        $orderSn = Product::get_ordersn('01');
+        
+        //判断是否已经登陆
+        if($memberId != 0) { // 用户已登陆，直接进入付款页面
+	        $linkTel = empty($linkTel) && !empty($userInfo)?$userInfo['mobile']:$linkTel;
+	        $linkEmail = empty($linkEmail) && !empty($userInfo)?$userInfo['email']:$linkEmail;
+        	
+	        //检测订单有效性
+	        $check_result = common::before_order_check(array('model' => 'line', 'productid' => $lineId, 'suitid' => $suitId, 'day' => strtotime($useDate)));
+	        if (!$check_result)
+	        {
+	            $this->request->redirect('/tips/order');
+	        };
+	        //发票信息
+	        $billInfo = array(
+	            'title' => $billTitle,
+	            'receiver' => $billReceiver,
+	            'mobile' => $billPhone,
+	            'province' => $billProv,
+	            'city' => $billCity,
+	            'address' => $billAddress
+	        );
+	
+	        //判断积分使用是否满足需求.
+	        $needJifen = 0;
+	        if ($useJifen)
+	        {
+	            $needJifen = $GLOBALS['cfg_exchange_jifen'] * $suitInfo['jifentprice']; //所需积分
+	            if (!$needJifen || $userInfo['jifen'] < $needJifen)
+	            {
+	                $useJifen = 0;
+	            }
+	        }
+	        //订单状态(全款支付,定金支付,二次确认)
+	        $status = $suitInfo['paytype'] != 3 ? 1 : 0;
+	
+	        //判断库存
+	        /*
+	        if (!Model_Line::check_storage($lineId, $totalNum, $suitId, $useDate))
+	        {
+	            exit('storage is not enough!');
+	        }
+	        */
+	
+	        $arr = array(
+	            'ordersn' => $orderSn,
+	            'webid' => $webid,
+	            'typeid' => $this->_typeid,
+	            'productautoid' => $info['id'],
+	            'productaid' => $info['aid'],
+	            'productname' => $info['title']."({$suitInfo['suitname']})",
+	            'price' => $suitPrice['adultprice'],
+	            'childprice' => $suitPrice['childprice'],
+	            'oldprice' => $suitPrice['oldprice'],
+	            'usedate' => $useDate,
+	            'dingnum' => $adultNum,
+	            'childnum' => $childNum,
+	            'oldnum' => $oldNum,
+	            'linkman' => $linkMan,
+	            'linktel' => $linkTel,
+	            'linkemail' => $linkEmail,
+	            'jifentprice' => $suitInfo['jifentprice'],
+	            'jifenbook' => $suitInfo['jifenbook'],
+	            'jifencomment' => $suitInfo['jifencomment'],
+	            'addtime' => time(),
+	            'memberid' => $memberId,
+	            'dingjin' => $suitInfo['dingjin'],
+	            'paytype' => $suitInfo['paytype'],
+	            'suitid' => $suitId,
+	            'usejifen' => $useJifen,
+	            'needjifen' => $needJifen,
+	            'roombalance' => $suitPrice['roombalance'],
+	            'roombalancenum' => $roomBalanceNum,
+	            'roombalance_paytype' => $roomBalance_Paytype,
+	            'status' => $status,
+	            'remark' => $remark,
+	            'isneedpiao' => $isneedBill
+	
+	        );
+	
+	
+	
+	        /*--------------------------------------------------------------优惠券信息------------------------------------------------------------*/
+	        //优惠券判断
+	        if($croleid)
+	        {
+	            $cid = DB::select('cid')->from('member_coupon')->where("id=$croleid")->execute()->current();
+	            $totalprice = Model_Coupon::get_order_totalprice($arr);
+	            $ischeck =  Model_Coupon::check_samount($croleid,$totalprice,1,$info['id']);
+	            if($ischeck['status']==1)
+	            {
+	                Model_Coupon::add_coupon_order($cid,$orderSn,$totalprice,$ischeck,$croleid); //添加订单优惠券信息
+	            }
+	            else
+	            {
+	                exit('coupon  verification failed!');//优惠券不满足条件
+	            }
+	        }
+	        /*-----------------------------------------------------------------优惠券信息--------------------------------------*/
+
+
+	        //添加订单
+	        if (St_Product::add_order($arr, 'Model_Line',$arr))
+	        {
+	            Common::session('_platform', 'pc');
+	            $orderInfo = Model_Member_Order::get_order_by_ordersn($orderSn);
+	            Model_Member_Order_Tourer::add_tourer_pc($orderInfo['id'], $tourer, $memberId);
+	            //发票信息存储
+	            if ($isneedBill)
+	            {
+	                Model_Member_Order_Bill::add_bill_info($orderInfo['id'], $billInfo);
+	            }
+	            //这里作判断是跳转到会员中心还是支付页面
+	            if ($suitInfo['paytype'] != 3)
+	            {
+	                $payurl = Common::get_main_host() . "/payment/?ordersn=" . $orderSn;
+	                $this->request->redirect($payurl);
+	            }
+	            else
+	            {
+	                $this->request->redirect("/member");
+	            }
+	        }
+        } 
+        
+        else { // 用户还未登陆，进入登陆页面
+        	//$this->assign('info', $info);
+        	//$this->assign('suitInfo', $suitInfo);
+        	//$this->assign('suitPrice', $suitPrice);
+        	//$this->assign('insuranceInfo', $insuranceInfo);
+       		//$this->assign('userInfo', $userInfo);
+       		$orderInfo = Model_Member_Order::get_order_by_ordersn($orderSn);
+       		$this->assign('orderInfo',$orderInfo);
+       		$this->assign('tourer',$tourer);
+       		$this->assign('frmCode',$frmCode);
+       		$this->assign('webid',$webid);//网站id
+	        $this->assign('adultNum',$adultNum);//成人数量
+	        $this->assign('childNum',$childNum);//小孩数量
+	        $this->assign('oldNum',$oldNum);//老人数量
+	        $this->assign('suitId',$suitId);//套餐id
+	        $this->assign('lineId',$lineId);//线路id
+	        $this->assign('useDate',$useDate);//出发日期
+	        $this->assign('linkMan',$linkMan);//联系人姓名
+	        $this->assign('linkTel',$linkTel);//联系人电话
+	        $this->assign('linkEmail',$linkEmail);//联系人邮箱
+	        $this->assign('remark',$remark);//订单备注
+	        $this->assign('roomBalanceNum',$roomBalanceNum);//单房差数量
+	        $this->assign('roomBalance_Paytype',$roomBalance_Paytype);//单房差支付方式.
+	        
+	        $this->assign('isneedBill',$isneedBill);//是否需要发票
+	        $this->assign('billTitle',$billTitle);//发票抬头
+	        $this->assign('billReceiver',$billReceiver);//发票接收人
+	        $this->assign('billPhone',$billPhone);//发票联系人电话
+	        $this->assign('billProv',$billProv);//发票联系人省份
+	        $this->assign('billCity',$billCity);//发票联系人城市
+	        $this->assign('billAddress',$billAddress);//发票联系人地址
+	        
+	        $this->assign('payType',$payType);//支付方式
+	        $this->assign('insuranceCode',$insuranceCode);//选择的保险
+	        $this->assign('useJifen',$useJifen);//是否使用积分
+	        $this->assign('orderSn',$orderSn);//是否使用积分
+	        
+	        //游客信息读取
+	        $this->assign('t_name',$t_name);
+	        $this->assign('t_cardtype',$t_cardtype);
+	        $this->assign('t_cardno',$t_cardno);
+	        
+	        //优惠券
+	         $this->assign('croleid',$croleid);
+       		
+        
+        	$this->display('line/login');
+        }
+    }
+    
+    
+    
 
     /*
  * 创建订单
  * */
-
     public function action_create()
     {
 

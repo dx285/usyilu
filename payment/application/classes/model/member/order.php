@@ -34,6 +34,9 @@ class Model_Member_Order extends ORM
      */
     public static function info($ordersn)
     {
+
+        echo("<script>console.log(\"后台订单数据库查询 \")</script>");
+
         if (!preg_match('~^\d+$~', $ordersn))
         {
             return;

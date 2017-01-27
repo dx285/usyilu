@@ -214,7 +214,7 @@ abbr,acronym{
 /*搜索*/
 .st-list-search{
 	float:left;
-	width:903px;
+	width:896px;
 	border:1px solid #d8d8d8}
 .st-list-search .been-tj{
 	float:left;
@@ -233,7 +233,7 @@ abbr,acronym{
 .st-list-search .been-tj p,
 .st-list-search .line-search-tj dl dd{
 	float:left;
-	width:820px;
+	width:800px;
 	min-height:24px;
 	margin:10px 0}
 .st-list-search .been-tj p span{
@@ -263,7 +263,7 @@ abbr,acronym{
 .st-list-search .line-search-tj,
 .st-list-search .line-search-tj dl{
 	float:left;
-	width:903px}
+	width:894px}
 .st-list-search .line-search-tj dl{
 	border-bottom:1px solid #d8d8d8}
 .st-list-search .line-search-tj dl.bor_0{
@@ -328,7 +328,7 @@ abbr,acronym{
 /*排序*/
 .st-sort-menu{
 	float:left;
-	width:905px;
+	width:894px;
 	height:46px;
 	margin-top:15px;
 	background:#f9f8f8}

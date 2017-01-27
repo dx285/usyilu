@@ -59,7 +59,7 @@
                             </dd>
                         </dl>
                         <dl>
-                            <dt>车辆卖点：</dt>
+                            <dt>产品特色：</dt>
                             <dd>
                                 <input type="text" name="sellpoint" value="{$info['sellpoint']}"  class="set-text-xh text_700 mt-2"/>
 
@@ -91,9 +91,11 @@
                             </dd>
                         </dl>
                         <dl>
-                            <dt>使用年限：</dt>
+                            <dt>建议行李数：</dt>
                             <dd>
-                                <input type="text" name="usedyears" data-regrex="number" value="{$info['usedyears']}"  data-msg="必须为数字" class="set-text-xh text_100 mt-2">
+<!--                                <input type="text" name="usedyears" data-regrex="number" value="{$info['usedyears']}"  data-msg="必须为数字" class="set-text-xh text_100 mt-2">-->
+                                <input type="text" name="usedyears" value="{$info['usedyears']}"  class="set-text-xh text_100 mt-2">
+
                             </dd>
                         </dl>
                         <dl>
@@ -136,7 +138,7 @@
                                 <a href="javascript:;" class="choose-btn mt-4" onclick="Product.getAttrid(this,'.attr-sel',3)" title="选择">选择</a>
                                 <div class="save-value-div mt-2 ml-10 attr-sel">
                                     {loop $info['attrlist_arr'] $k $v}
-                                     <span><s onclick="$(this).parent('span').remove()"></s>{$v['attrname']}<input type="hidden" name="attrlist[]" value="{$v['id']}"></span>
+                                     <span class="attrs" ><s class="attrs-s" onclick="$(this).parent('span').remove()"></s><div class="attrsItem" name={$v['attrname']}>{$v['attrname']}</div><input type="hidden" name="attrlist[]" value="{$v['id']}"></span>
                                     {/loop}
 
                                 </div>
@@ -293,8 +295,11 @@
 
 <!--右侧内容区-->
 
+
 <script>
  $(document).ready(function(e) {
+
+
      window.content=window.JSEDITOR('txt_content');
      window.content.ready(function(){
           window.content.setHeight(200);
