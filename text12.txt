@@ -1,1 +1,1 @@
-hello terminal
+hello github
